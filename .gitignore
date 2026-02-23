@@ -1,0 +1,8 @@
+# Only track Code/ — everything else is excluded
+Data/
+Manuscript/
+Old Manuscripts/
+.DS_Store
+*.Rhistory
+*.RData
+.Rproj.user/
