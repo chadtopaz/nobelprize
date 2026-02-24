@@ -1,7 +1,13 @@
-# Only track Code/ — everything else is excluded
-Data/
+# Raw data excluded; analysis results tracked
+Data/*
+!Data/results_*.csv
+
+# Manuscript/ is its own repo (nobelprize-manuscript → Overleaf)
 Manuscript/
+
+# Everything else excluded
 Old Manuscripts/
+Literature/
 .DS_Store
 *.Rhistory
 *.RData

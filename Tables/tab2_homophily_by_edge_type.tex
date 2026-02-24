@@ -1,0 +1,27 @@
+\begin{table}[ht]
+\centering
+\caption{Geographic homophily by edge type and geographic scale. Homophily ratio is observed same-geography rate divided by expected rate under random pairing. $p$-values from 1{,}000 permutations.}
+\label{tab:homophily_edge_type}
+\small
+\begin{tabular}{llrrrrc}
+\toprule
+Edge type & Scale & $N$ & Obs. & Exp. & Ratio & $p$ \\
+\midrule
+Nominator $\rightarrow$ Nominee & continent & 25,844 & 79.3\% & 58.0\% & 1.37 & $<$0.001 \\
+Nominator $\rightarrow$ Nominee & continent & 8,119 & 74.0\% & 62.7\% & 1.18 & $<$0.001 \\
+Nominator $\rightarrow$ Nominee (QID subset) & continent & 8,119 & 74.0\% & 62.7\% & 1.18 & $<$0.001 \\
+Governing $\rightarrow$ Laureate & continent & 96,506 & 50.6\% & 50.3\% & 1.01 & $<$0.001 \\
+Governing $\rightarrow$ Vetting & continent & 20,083 & 95.2\% & 95.2\% & 1.00 & 1.000 \\
+Vetting $\rightarrow$ Nominator & continent & 25,811 & 78.4\% & 78.4\% & 1.00 & 1.000 \\
+Vetting $\rightarrow$ Laureate & continent & 529 & 48.6\% & 48.6\% & 1.00 & 1.000 \\
+Nominator $\rightarrow$ Nominee & country & 25,844 & 46.8\% & 9.6\% & 4.85 & $<$0.001 \\
+Nominator $\rightarrow$ Nominee & country & 8,119 & 32.1\% & 8.4\% & 3.82 & $<$0.001 \\
+Nominator $\rightarrow$ Nominee (QID subset) & country & 8,119 & 32.1\% & 8.4\% & 3.82 & $<$0.001 \\
+Governing $\rightarrow$ Vetting & country & 20,083 & 72.4\% & 37.3\% & 1.94 & $<$0.001 \\
+Governing $\rightarrow$ Laureate & country & 96,506 & 4.4\% & 4.2\% & 1.06 & $<$0.001 \\
+Vetting $\rightarrow$ Nominator & country & 25,811 & 5.5\% & 5.4\% & 1.01 & 0.070 \\
+Vetting $\rightarrow$ Laureate & country & 529 & 1.7\% & 1.7\% & 1.00 & 1.000 \\
+Nominator $\rightarrow$ Nominee & subregion & 25,844 & 60.8\% & 24.9\% & 2.44 & $<$0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}
