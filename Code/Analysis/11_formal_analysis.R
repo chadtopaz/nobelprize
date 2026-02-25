@@ -328,6 +328,44 @@ message("  -> fig1_edge_type_homophily.pdf saved")
 
 
 # =============================================================================
+# COMBINED FIGURE 1: Schematic (A) + Edge-type homophily (B) — "hero figure"
+# =============================================================================
+message("  Generating combined Figure 1 (hero figure)...")
+
+library(png)
+library(grid)
+
+# Load the schematic PNG
+schematic_img <- readPNG(file.path("Manuscript", "Fig1.png"))
+
+# Panel A: schematic as a ggplot-wrapped raster
+p1a <- ggplot() +
+  annotation_raster(schematic_img, xmin = 0, xmax = 1, ymin = 0, ymax = 1) +
+  coord_fixed(ratio = nrow(schematic_img) / ncol(schematic_img),
+              xlim = c(0, 1), ylim = c(0, 1), expand = FALSE) +
+  labs(tag = "A") +
+  theme_void() +
+  theme(
+    plot.tag = element_text(face = "bold", size = 14, hjust = 0, vjust = 1),
+    plot.margin = margin(5, 10, 5, 5)
+  )
+
+# Panel B: bar chart with tag
+p1b <- p1 +
+  labs(tag = "B") +
+  theme(
+    plot.tag = element_text(face = "bold", size = 14, hjust = 0, vjust = 1)
+  )
+
+# Combine with patchwork: schematic on top, bar chart below
+p1_combined <- p1a / p1b +
+  plot_layout(heights = c(1, 1.3))
+
+ggsave(fig_path("fig1_combined.pdf"), p1_combined, width = 7.5, height = 9)
+message("  -> fig1_combined.pdf saved")
+
+
+# =============================================================================
 # TABLE 2: Full homophily results by edge type
 # =============================================================================
 message("  Generating Table 2...")
