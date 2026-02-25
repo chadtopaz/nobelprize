@@ -1,47 +1,236 @@
 # =============================================================================
-# 09_data_diagnostics.R
-# Comprehensive data quality audit for the Nobel Prize multilayer network
+# FILE: 09_data_diagnostics.R
+# TITLE: Data Quality Audit and Diagnostics Report Generator
 #
-# This script performs an exhaustive diagnostic of every data file produced by
-# scripts 01–08. It checks completeness, consistency, cross-references, and
-# documents all known structural gaps. Output is a plain-text report suitable
-# for reference when writing the manuscript methods section.
+# AUTHOR: Chad M. Topaz
+# LAST UPDATED: February 2025
 #
-# Output: Data/data_diagnostics_report.txt
+# =============================================================================
+# PURPOSE & GOALS
+# =============================================================================
+# This script performs a comprehensive, multi-layered data quality audit on all
+# intermediate data files and final network outputs produced by scripts 01-08.
+# The audit validates the Nobel Prize multilayer network pipeline by checking
+# completeness, consistency, cross-references, and documenting all known
+# structural gaps and limitations.
+#
+# Specific goals:
+#   1. Verify file inventory (sizes, record counts, timestamps)
+#   2. Audit governing body data (coverage gaps, QID matching rates, temporal anomalies)
+#   3. Audit vetting body data (completeness flags, parent-child relationships)
+#   4. Check nomination archive coverage (known secrecy rule gaps by prize)
+#   5. Validate nomination people QID matching (hit rates, multi-matches, duplicates)
+#   6. Audit laureate data (gender breakdown, multi-prize winners, edge coverage)
+#   7. Validate demographics (field completeness, birth/death year plausibility)
+#   8. Check geographic standardization (coverage of country→modern country mapping)
+#   9. Validate network structure (edge types, self-loops, degree distributions)
+#  10. Cross-layer consistency checks (laureates in multiple roles, QID coverage)
+#  11. Document known structural gaps (Karolinska post-1970, nomination secrecy, etc.)
+#
+# =============================================================================
+# METHODOLOGICAL DECISIONS & RATIONALE
+# =============================================================================
+# The diagnostic framework uses three status levels for each check:
+#   [PASS]:    Criterion met fully; no action needed
+#   [WARNING]: Criterion partially met or known gap documented; acceptable but flagged
+#   [INFO]:    Informational note; not a pass/fail criterion
+#
+# Cross-layer consistency checks verify that entities appear consistently across
+# files (e.g., all governing body QIDs should appear in demographics). This catches
+# data preparation errors and validates the completeness of QID matching.
+#
+# Known gaps are documented separately in Section 11. These are NOT bugs—they are
+# structural limitations of available sources (e.g., Karolinska post-1970 data is
+# simply not publicly available). Distinguishing gaps from errors is critical for
+# manuscript clarity.
+#
+# =============================================================================
+# INPUTS
+# =============================================================================
+# Intermediate files (Data/intermediate/):
+#   - governing_bodies.csv        Script 01 output; QIDs, years, body affiliation
+#   - vetting_bodies.csv          Script 02 output; committee membership data
+#   - nominations.csv             Script 03 output; nomination archive with geographic enrichment
+#   - laureates.csv               Script 04 output; Nobel Prize winners with QIDs
+#   - demographics.csv            Script 06 output; person-level data from Wikidata
+#   - nomination_people_qids.csv  Script 05 output; QID matching for nomination archive people
+#   - nomination_people.csv       Script 05 supporting file
+#   - Wikidata cache files (*.rds): Intermediate QID matching caches
+#
+# Final network files (Data/):
+#   - nodes.csv                   Script 08 output; all persons in the network
+#   - edges.csv                   Script 08 output; all relationships
+#
+# =============================================================================
+# OUTPUTS
+# =============================================================================
+# - Data/data_diagnostics_report.txt
+#     Plain-text report with section-by-section diagnostic results.
+#     Designed for reference during manuscript methods section writing.
+#     Suitable for inclusion as supplementary material (with formatting adjustments).
+#
+# - Console messages: Summary of check counts and warnings printed to console.
+#
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# R packages: tidyverse (readr, dplyr, stringr)
+# Utility functions: output_path(), data_path() from Code/Data Gathering/00_utils.R
+# Note: Do NOT use library(tidyverse) here—scripts 01-08 have already loaded it
+#       and we only need basic I/O. Using explicit readr::read_csv() is safer.
+#
+# =============================================================================
+# REPORT STRUCTURE OVERVIEW
+# =============================================================================
+# SECTION  1: File Inventory & Basic Counts
+#   - Lists all expected intermediate and output files
+#   - Reports file sizes, modification times, record counts
+#   - Flags missing files with [WARNING]
+#
+# SECTION  2: Governing Bodies (Script 01)
+#   - Record counts and years by body
+#   - QID completeness with 95% threshold
+#   - Karolinska coverage gap (post-1970 missing)
+#   - RSAS endyear imputation status
+#   - Temporal anomalies (startyear > endyear)
+#   - Duplicate QIDs (multiple terms)
+#   - Cross-check with demographics
+#
+# SECTION  3: Vetting Bodies (Script 02)
+#   - Record counts by committee
+#   - Year coverage gaps
+#   - QID completeness with 90% threshold
+#   - Known incompleteness flags (Swedish Wikipedia, Nuxt.js fragility)
+#   - Parent-child relationships (committee ⊂ governing body)
+#
+# SECTION  4: Nominations (Script 03)
+#   - Archive overview (total nominations, unique participants)
+#   - Year coverage by prize (flags missing data from 50-year secrecy rule)
+#   - Missing data in nominee/nominator person IDs
+#   - Self-nominations
+#   - Multi-nominee and multi-nominator nominations
+#   - Top 10 most-nominated and most-active participants
+#   - Contextual field completeness
+#
+# SECTION  5: Nomination People QID Matching (Script 05)
+#   - Biographical scraping completeness (name, birth_year, death_year, gender)
+#   - QID match method breakdown (wikidata_name_birthyear, manual_review, etc.)
+#   - Multi-match analysis (people with multiple QID candidates)
+#   - Duplicate QIDs (multiple person_ids → same QID)
+#   - Cross-check with nominations.csv person_ids
+#   - Gender distribution
+#   - Birth year anomalies
+#   - Matched QID coverage in demographics
+#
+# SECTION  6: Laureates (Script 04)
+#   - Overview (total records, unique individuals by QID, year range)
+#   - Distribution by prize and decade
+#   - QID completeness (should be 100%)
+#   - Gender breakdown
+#   - Multi-prize winners (individuals with >1 prize)
+#   - Cross-check: laureate QIDs in nodes.csv
+#   - Cross-check: laureates with governing→laureate edges
+#
+# SECTION  7: Demographics (Script 06)
+#   - Record counts and uniqueness (one row per QID)
+#   - Field completeness percentages
+#   - Gender distribution
+#   - Birth year distribution by decade
+#   - Top 20 birth countries
+#   - Temporal anomalies (birth > death)
+#   - Multi-valued fields (semicolon-delimited)
+#
+# SECTION  8: Geographic Standardization (Script 07)
+#   - Demographics: birth country → modern country mapping coverage
+#   - Demographics: continent and subregion distribution
+#   - Nominations: country mapping coverage for nominees and nominators
+#
+# SECTION  9: Network Structure (Script 08)
+#   - Node and edge counts
+#   - Edge type distribution (from_layer → to_layer)
+#   - Edge counts by prize
+#   - Year range of edges
+#   - NOM: prefix IDs (unresolved nomination people)
+#   - Self-loops (should be zero)
+#   - Duplicate edges
+#   - Degree distribution statistics
+#   - Isolate nodes (in nodes.csv but no edges)
+#   - Prize-year coverage: do all laureates have edges?
+#
+# SECTION 10: Cross-Layer Consistency
+#   - Laureates who appear as nominees
+#   - Laureates who are governing body members
+#   - Laureates who are vetting body members
+#   - People in multiple governing bodies
+#   - Edge QIDs not in nodes.csv
+#   - NOM: IDs orphaned (in edges but no nomination_people_qids entry)
+#
+# SECTION 11: Known Structural Gaps & Limitations
+#   - Karolinska post-1970 unavailability
+#   - 50-year nomination secrecy rule (varies by prize)
+#   - Medicine committee incompleteness (Swedish Wikipedia flag)
+#   - Literature committee fragility (Nuxt.js SPA source)
+#   - Nomination people QID matching rates
+#   - RSAS endyear imputation gaps
+#   - Storting term consolidation (consecutive vs non-consecutive)
+#
+# FINAL SUMMARY: Total checks performed, passed, and warnings issued.
+#
 # =============================================================================
 
 source("Code/Data Gathering/00_utils.R")
 
 # =============================================================================
-# Report setup: tee output to both console and file
+# REPORT SETUP: Tee Output to Both Console and File
 # =============================================================================
+# This section configures the diagnostic report to be written simultaneously to
+# the console (for real-time feedback) and to a persistent text file.
+# The rpt() function is a wrapper that uses message() and writeLines() to achieve
+# "tee" functionality—output appears both on-screen and in the report file.
+# The counters (check_count, warn_count) track the total number of checks performed
+# and how many resulted in warnings, used for the final summary.
+# =============================================================================
+
 report_file <- output_path("data_diagnostics_report.txt")
 report_con <- file(report_file, open = "wt")
 
+# rpt() - Unified print function that writes to both console and file
+# Wraps message() to console and writeLines() to file simultaneously
 rpt <- function(...) {
   msg <- paste0(...)
   message(msg)
   writeLines(msg, report_con)
 }
 
-warn_count <- 0
-check_count <- 0
+# Global counters for the summary scorecard at the end
+warn_count <- 0      # Count of [WARNING] status checks
+check_count <- 0     # Total count of all diagnostic checks
 
+# check_pass() - Log a successful diagnostic check
+# [PASS] status: criterion met fully
 check_pass <- function(msg) {
   check_count <<- check_count + 1
   rpt(sprintf("  [PASS] %s", msg))
 }
 
+# check_warn() - Log a diagnostic check that found a problem or known gap
+# [WARNING] status: criterion partially met or known gap present
+# Increments both check_count and warn_count for final scorecard
 check_warn <- function(msg) {
   warn_count <<- warn_count + 1
   check_count <<- check_count + 1
   rpt(sprintf("  [WARNING] %s", msg))
 }
 
+# check_info() - Log an informational message (not a pass/fail check)
+# [INFO] status: note about the data; not a diagnostic criterion
+# Does not increment check_count
 check_info <- function(msg) {
   rpt(sprintf("  [INFO] %s", msg))
 }
 
+# section() - Format and print a major section header
+# Creates visual separation between sections of the report
 section <- function(num, title) {
   rpt("")
   rpt(strrep("=", 78))
@@ -50,6 +239,8 @@ section <- function(num, title) {
   rpt("")
 }
 
+# subsection() - Format and print a subsection header
+# Used within sections to organize checks by topic
 subsection <- function(title) {
   rpt(sprintf("  --- %s ---", title))
 }
@@ -62,6 +253,12 @@ rpt("")
 
 # =============================================================================
 # SECTION 1: FILE INVENTORY
+# =============================================================================
+# Purpose: Verify that all expected data files exist and are accessible.
+# Reports file sizes, record counts, and modification times.
+# This serves as a quick sanity check before diving into detailed validation.
+# Flags [WARNING] if any expected file is missing, as this may indicate that
+# an upstream script has not been run or has failed.
 # =============================================================================
 section("1", "File Inventory & Basic Counts")
 
@@ -133,6 +330,22 @@ for (f in expected_output) {
 # =============================================================================
 # SECTION 2: GOVERNING BODIES
 # =============================================================================
+# Purpose: Validate the governing body data extracted in script 01.
+# These are the institutional bodies that award each Nobel Prize:
+#   - RSAS (Royal Swedish Academy of Sciences) → Chemistry, Physics
+#   - Karolinska Institutet → Physiology/Medicine
+#   - Swedish Academy → Literature
+#   - Storting (Norwegian Parliament) → Peace
+#
+# Validation checks:
+#   1. Record counts and membership by body
+#   2. Year coverage and temporal anomalies (startyear > endyear)
+#   3. QID completeness (should be high; 95% threshold)
+#   4. Karolinska coverage gap (post-1970 data unavailable—known structural gap)
+#   5. RSAS endyear imputation status (filled from Wikidata death_year in script 06)
+#   6. Duplicate QIDs within the same body (may indicate multiple terms)
+#   7. Cross-check: all governing body QIDs should appear in demographics
+# =============================================================================
 section("2", "Governing Bodies (Script 01)")
 
 gb <- read_csv(data_path("governing_bodies.csv"), show_col_types = FALSE)
@@ -164,6 +377,10 @@ for (i in seq_len(nrow(gb_years))) {
 }
 
 subsection("QID completeness")
+# Check what fraction of governing body members have Wikidata QIDs
+# This is critical because QIDs are the bridge between nobelprize.org data
+# and Wikidata/demographics. 95% is the target threshold; lower rates suggest
+# either matching failures in script 05 or missing members in the source data.
 gb_qid <- gb %>%
   group_by(body) %>%
   summarise(
@@ -179,6 +396,10 @@ for (i in seq_len(nrow(gb_qid))) {
 }
 
 subsection("Karolinska coverage gap")
+# Karolinska Institutet governs the Physiology/Medicine prize. This check looks
+# for the critical structural gap: post-1970 data is not publicly available.
+# The Nobel Assembly (the full voting body) was reorganized in 1977; membership
+# for 1971-1976 is not published. This is a fundamental data limitation, not a bug.
 ki <- gb %>% filter(body == "Karolinska Institutet")
 ki_max <- max(ki$endyear, na.rm = TRUE)
 if (ki_max < 1975) {
@@ -246,6 +467,23 @@ if (length(gb_missing_demo) > 0) {
 
 # =============================================================================
 # SECTION 3: VETTING BODIES
+# =============================================================================
+# Purpose: Validate the vetting committee data extracted in script 02.
+# These are the expert committees that review nominations before the prize is awarded:
+#   - Nobel Committee for Chemistry (⊂ RSAS)
+#   - Nobel Committee for Physics (⊂ RSAS)
+#   - Nobel Committee for Physiology/Medicine (⊂ Karolinska Institutet)
+#   - Nobel Committee for Literature (⊂ Swedish Academy)
+#   - Norwegian Nobel Committee (⊂ Storting)
+#
+# Validation checks:
+#   1. Record counts by committee
+#   2. Year coverage gaps
+#   3. QID completeness (90% threshold—slightly relaxed due to data fragility)
+#   4. Known incompleteness flags (Medicine committee: Swedish Wikipedia states "incomplete")
+#   5. Literature committee fragility flag (extracted from Nuxt.js SPA)
+#   6. Parent-child relationship validation: committee members should be in parent governing body
+#   7. Cross-check: vetting body QIDs should appear in demographics
 # =============================================================================
 section("3", "Vetting Bodies (Script 02)")
 
@@ -345,6 +583,27 @@ for (i in seq_len(nrow(parent_map))) {
 
 # =============================================================================
 # SECTION 4: NOMINATIONS
+# =============================================================================
+# Purpose: Validate the nomination archive extracted in script 03.
+# This is the core dataset linking nominators to nominees for each prize year.
+#
+# CRITICAL STRUCTURAL GAP: 50-Year Secrecy Rule
+# The Nobel Prize maintains a 50-year secrecy rule on nomination records.
+# Data availability varies by prize:
+#   - Physics/Chemistry: through 1974 (50 years from submission year)
+#   - Literature: through 1975
+#   - Peace: through 1975
+#   - Physiology/Medicine: through 1953 ONLY (Karolinska restriction)
+#   └─ Post-1954 data (up to 1974) is simply not available publicly
+#
+# Validation checks:
+#   1. Overview: total records, unique nominations, unique nominees, unique nominators
+#   2. Year coverage by prize (flags expected maxima, alerts if exceeded unexpectedly)
+#   3. Missing data: records without nominee_person_id or nominator_person_id
+#   4. Self-nominations (nominee = nominator; should be rare)
+#   5. Multi-nominee and multi-nominator nominations (nominations with multiple people)
+#   6. Top 10 most-nominated individuals and most-active nominators
+#   7. Contextual field completeness (university, city, country, profession from detail pages)
 # =============================================================================
 section("4", "Nominations (Script 03)")
 
@@ -474,6 +733,29 @@ if ("nominee_country" %in% names(noms)) {
 # =============================================================================
 # SECTION 5: NOMINATION PEOPLE QID MATCHING
 # =============================================================================
+# Purpose: Validate the Wikidata QID matching for people in the nomination archive.
+# Script 05 attempted to match every person in nominations.csv to a Wikidata QID.
+# This is crucial for building a unified network across data sources.
+#
+# Matching methodology:
+#   1. Extract biographical data (name, birth_year, gender) from nobelprize.org
+#   2. Query Wikidata API with name + birth year for candidates
+#   3. Select top-ranked candidate OR flag multi-match cases for manual review
+#   4. Multi-match: when multiple QID candidates have similar scores
+#   └─ Script 05 uses the API's top-ranked candidate; high match counts (≥3)
+#      warrant manual validation
+#
+# This section validates:
+#   1. Bio data completeness (name, birth_year, death_year, gender available?)
+#   2. QID match method breakdown (wikidata_name_birthyear, api_top_ranked, etc.)
+#   3. Matchability: what % had the data needed for matching?
+#   4. Multi-match cases and their frequency distribution
+#   5. Duplicate QIDs: multiple person_ids mapping to the same QID
+#      └─ Common causes: transliteration variants, same person with different IDs
+#   6. Coverage cross-check: matched QIDs should appear in demographics
+#   7. Gender distribution from nobelprize.org
+#   8. Birth year anomalies (birth > death)
+# =============================================================================
 section("5", "Nomination People QID Matching (Script 05)")
 
 nom_qids <- read_csv(data_path("nomination_people_qids.csv"), show_col_types = FALSE)
@@ -506,6 +788,10 @@ if (n_matched / nrow(nom_qids) < 0.10) {
 }
 
 subsection("Multi-match analysis")
+# Multi-match occurs when the Wikidata API returns multiple plausible candidates
+# for a person (e.g., multiple people with the same name and birth year).
+# Script 05 uses the top-ranked candidate by the API's relevance algorithm.
+# High multi-match counts (≥3 candidates) warrant manual validation.
 n_multi_match <- sum(nom_qids$multi_match_count > 1, na.rm = TRUE)
 rpt(sprintf("    People with multiple QID candidates (multi_match_count > 1): %d", n_multi_match))
 if (n_multi_match > 0) {
@@ -520,6 +806,11 @@ if (n_multi_match > 0) {
 }
 
 subsection("Duplicate QIDs (multiple person_ids → same QID)")
+# A single Wikidata QID may map to multiple nobelprize.org person_ids.
+# This typically means the same person was entered separately in the Nobel database
+# (e.g., under different name transliterations or due to data entry duplication).
+# When building the network, such duplicates must be consolidated.
+# This is reported as [INFO] (not a failure) because it documents real data ambiguity.
 matched_only <- nom_qids %>% filter(!is.na(qid))
 dup_qid_check <- matched_only %>%
   count(qid) %>%
@@ -588,6 +879,25 @@ if (length(not_in_demo) > 0) {
 
 # =============================================================================
 # SECTION 6: LAUREATES
+# =============================================================================
+# Purpose: Validate the laureate data (Nobel Prize winners) extracted in script 04.
+# Laureates are the individuals awarded the Nobel Prize each year.
+# This data comes from the official Nobel Prize website and is generally complete.
+#
+# Validation checks:
+#   1. Overview: total laureate-prize records, unique individuals by QID, year range
+#   2. Distribution by prize (Chemistry, Physics, Medicine, Literature, Peace)
+#   3. Distribution by decade (1901-1975 through 2020s)
+#   4. QID completeness (should be 100%; all laureates should have Wikidata QIDs)
+#   5. Gender breakdown from demographics
+#   6. Multi-prize winners (individuals who won more than once)
+#   7. Cross-check: laureate QIDs should be in nodes.csv
+#   8. Cross-check: non-Peace laureates should have governing→laureate edges
+#      └─ Peace laureates route through vetting→laureate instead
+#
+# Note: Some laureates may not have edges if they are "outside" the selection
+#       network (e.g., Peace laureates may be organizations, not tracked in
+#       governing/vetting bodies).
 # =============================================================================
 section("6", "Laureates (Script 04)")
 
@@ -683,6 +993,23 @@ if (length(laur_without) > 0) {
 # =============================================================================
 # SECTION 7: DEMOGRAPHICS
 # =============================================================================
+# Purpose: Validate the person-level demographic data collected in script 06.
+# Demographics are pulled from Wikidata for all QIDs in the project.
+# One row per unique QID; should be the "single source of truth" for attributes.
+#
+# Validation checks:
+#   1. Structure: one row per QID (no duplicates)
+#   2. Field completeness: name, gender, birth/death country, birth/death year,
+#      occupation, institution (percentages of non-null values)
+#   3. Gender distribution (should show expected historical bias toward male)
+#   4. Birth year distribution by decade (identifies temporal coverage)
+#   5. Birth country top 20 (identifies geographic bias)
+#   6. Temporal anomalies: birth_year > death_year (data quality issue)
+#   7. Plausibility checks: years outside 1700-2026 range (likely errors)
+#   8. Multi-valued fields: nationality, occupation, institution (semicolon-delimited)
+#      └─ These are legitimate (person may have multiple affiliations) but flagged
+#         for awareness during analysis
+# =============================================================================
 section("7", "Demographics (Script 06)")
 
 subsection("Overview")
@@ -764,6 +1091,27 @@ for (field in c("nationality", "occupation", "institution")) {
 # =============================================================================
 # SECTION 8: GEOGRAPHIC STANDARDIZATION (Script 07)
 # =============================================================================
+# Purpose: Validate geographic data standardization performed in script 07.
+# Script 07 maps historical country names to modern-day countries and classifies
+# all locations into UN geographic subregions and continents.
+#
+# Standardization is necessary because:
+#   - Historical data contains country names that no longer exist
+#     (e.g., "Czechoslovakia" → "Czech Republic" or "Slovakia")
+#   - Many Nobel laureates were born when borders were different
+#   - Analysis requires consistent geographic units
+#
+# This section checks:
+#   1. Demographics: birth country mapping coverage (% successfully mapped)
+#   2. Unmapped values: which birth countries could not be standardized?
+#   3. Demographics: distribution across continents and subregions
+#   4. Nominations: nominee and nominator country mapping coverage
+#      └─ Slightly lower threshold (95% vs 100%) due to data fragility in
+#         nominations.csv extracted fields
+#
+# Note: 100% mapping may not be achievable due to ambiguous historical names,
+#       extraction errors, or data entry variations.
+# =============================================================================
 section("8", "Geographic Standardization (Script 07)")
 
 subsection("Demographics — birth country mapping coverage")
@@ -829,6 +1177,40 @@ if ("nominee_country_modern" %in% names(noms)) {
 
 # =============================================================================
 # SECTION 9: NETWORK STRUCTURE (Script 08)
+# =============================================================================
+# Purpose: Validate the multilayer network structure assembled in script 08.
+# Script 08 combines all data sources into a unified node-edge representation.
+#
+# Network layers (node types):
+#   - governing_body: Members of prize-awarding institutions
+#   - vetting_body:   Members of expert committees
+#   - nominator:      People who submitted nominations
+#   - nominee:        People who received nominations
+#   - laureate:       Nobel Prize winners
+#
+# Edge types (relationships) include:
+#   - governing_body → vetting_body:  Institutional hierarchy
+#   - governing_body → laureate:      Selection pathway for Chemistry/Physics/Medicine/Literature
+#   - vetting_body → laureate:        Selection pathway for Peace
+#   - nominator → nominee:            Nomination relationships from archive
+#
+# Validation checks:
+#   1. Node and edge counts (basic sanity check)
+#   2. Edge type distribution (composition of the network)
+#   3. Edge counts by prize
+#   4. Year range of edges
+#   5. NOM: prefix IDs: These represent unresolved nomination archive people
+#      └─ Person IDs that couldn't be matched to Wikidata QIDs
+#      └─ Each NOM: ID is a temporary identifier (NOM:{person_id})
+#      └─ Script attempts to resolve these in script 08; residual NOM: IDs are
+#         people from the nomination archive with no Wikidata match
+#   6. Self-loops: edges where from_qid == to_qid (should be zero)
+#   7. Duplicate edges (should be zero after deduplication)
+#   8. Degree distribution: how many edges per node? (min, median, mean, max)
+#   9. Isolate nodes: nodes in nodes.csv with no edges (may occur if person
+#      appears in demographics but doesn't participate in selection)
+#  10. Prize-year coverage: for each non-Peace prize-year with a laureate,
+#      is there a governing→laureate edge? (catches missing data)
 # =============================================================================
 section("9", "Network Structure (Script 08)")
 
@@ -954,6 +1336,27 @@ if (length(missing_gl) > 0) {
 # =============================================================================
 # SECTION 10: CROSS-LAYER CONSISTENCY
 # =============================================================================
+# Purpose: Cross-layer consistency checks ensure entities are represented
+# consistently across the entire network and all underlying data files.
+#
+# Validation checks:
+#   1. Laureates who are also nominees
+#      └─ Can happen if a laureate receives a nomination for the prize
+#   2. Laureates who are governing body members
+#      └─ Very common; many past winners serve on future committees
+#   3. Laureates who are vetting body members
+#      └─ Common; expertise makes them valuable committee members
+#   4. People in multiple governing bodies
+#      └─ Rare but possible (cross-disciplinary appointments)
+#   5. Edge QIDs not in nodes.csv
+#      └─ Should be empty; every edge endpoint must be in nodes.csv
+#   6. Orphan NOM: IDs in edges but missing from nomination_people_qids.csv
+#      └─ Should be empty; all NOM: prefixes should be resolvable
+#
+# These checks catch two categories of issues:
+#   - Data preparation errors (missing entries that should exist)
+#   - Structural mismatches (inconsistencies in how entities are represented)
+# =============================================================================
 section("10", "Cross-Layer Consistency")
 
 subsection("Laureates who are also nominees")
@@ -1020,6 +1423,21 @@ if (length(orphan_nom) > 0) {
 
 # =============================================================================
 # SECTION 11: KNOWN STRUCTURAL GAPS SUMMARY
+# =============================================================================
+# Purpose: Document all KNOWN structural gaps and limitations in the dataset.
+# These are NOT errors or data quality issues—they are inherent limitations of
+# publicly available sources. It is critical to distinguish gaps from bugs for
+# transparency in the manuscript.
+#
+# Gap documentation includes:
+#   - Source of the gap (e.g., Karolinska Institutet, 50-year secrecy rule)
+#   - What data is affected
+#   - When the gap begins/ends
+#   - Impact on analysis
+#   - Contact information or alternative sources (if available)
+#
+# This section should be referenced when writing the Methods/Limitations section
+# of the manuscript.
 # =============================================================================
 section("11", "Known Structural Gaps & Limitations")
 

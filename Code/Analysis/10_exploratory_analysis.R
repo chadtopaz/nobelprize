@@ -1,23 +1,178 @@
 # =============================================================================
-# 10_exploratory_analysis.R
-# Exploratory analysis of demographic composition, edge-level homophily,
-# and temporal trends across the Nobel Prize multilayer network.
+# FILE: 10_exploratory_analysis.R
+# TITLE: Exploratory Analysis of Network Composition and Geographic Homophily
 #
-# This script produces a text report to identify the strongest empirical
-# patterns before committing to specific hypotheses.
+# AUTHOR: Chad M. Topaz
+# LAST UPDATED: February 2025
 #
-# Output: Data/exploratory_analysis_report.txt
+# =============================================================================
+# PURPOSE & GOALS
+# =============================================================================
+# This script performs exploratory analysis to identify the strongest empirical
+# patterns in the Nobel Prize multilayer network BEFORE committing to formal
+# hypothesis testing (which occurs in script 11 with permutation tests).
+#
+# Specific goals:
+#   1. Characterize layer-by-layer demographic composition (gender, geography)
+#   2. Compare demographic profiles across the five prizes
+#   3. Measure geographic homophily at the edge level (observed vs null expectation)
+#   4. Examine temporal trends across decades
+#   5. Compare invitation-only vs open nomination processes
+#   6. Analyze gender representation across all layers
+#   7. Examine degree centrality and its relationship with demographics
+#   8. Map subregion-to-subregion nomination flows (detect regional networks)
+#   9. Assess nomination equity: which regions send more than they receive?
+#  10. Identify top non-self nomination targets by region
+#  11. Examine homophily trends over time
+#
+# =============================================================================
+# METHODOLOGICAL DECISIONS & RATIONALE
+# =============================================================================
+# This is an EXPLORATORY script, not a hypothesis test. Goals are discovery and
+# pattern identification. Therefore:
+#
+# SHANNON ENTROPY (Effective Number of Categories):
+#   - Entropy = exp(-sum(p_i * log(p_i))) where p_i = proportion in category i
+#   - Ranges from 1 (all observations in one category) to k (uniform across k categories)
+#   - Interpretation: "effective number of continents/subregions"
+#   - Preferred over raw counts because it accounts for distribution shape
+#   - Example: 3 people (2 Europe, 1 Asia) has entropy ≈ 1.55 "continents"
+#   - Example: 3 people (1 each from 3 continents) has entropy ≈ 2.99 "continents"
+#
+# HOMOPHILY RATIO (Observed / Expected):
+#   - Observed: fraction of edges where both endpoints share same continent/country
+#   - Expected: null model rate if edges were rewired randomly within layer sizes
+#   - Ratio > 1: edges are MORE homophilic than expected by chance
+#   - Ratio < 1: edges are LESS homophilic than expected by chance
+#   - These are PRELIMINARY; formal permutation tests in script 11 test significance
+#
+# EQUITY METRIC (Return Ratio):
+#   - Sent: number of nominations a region SENDS OUT
+#   - Received: number of nominations a region RECEIVES
+#   - Return ratio = received / sent
+#   - Ratio > 1: region is a NET RECEIVER of nominations
+#   - Ratio < 1: region is a NET SENDER of nominations
+#
+# =============================================================================
+# INPUTS
+# =============================================================================
+# Intermediate files:
+#   - Data/intermediate/demographics.csv           Person attributes (Wikidata)
+#   - Data/intermediate/governing_bodies.csv       Members of prize-awarding bodies
+#   - Data/intermediate/vetting_bodies.csv         Members of expert committees
+#   - Data/intermediate/nominations.csv            Nomination archive with geographic enrichment
+#   - Data/intermediate/nomination_people_qids.csv QID matching for nomination people
+#   - Data/intermediate/laureates.csv              Nobel Prize winners
+#
+# Final network files:
+#   - Data/nodes.csv                               All persons in the network
+#   - Data/edges.csv                               All relationships
+#
+# =============================================================================
+# OUTPUTS
+# =============================================================================
+# - Data/exploratory_analysis_report.txt
+#     Plain-text report with 11 sections of exploratory analysis.
+#     Each section includes descriptive statistics, distributions, and preliminary
+#     observed/expected ratios. Use this to identify empirical patterns before
+#     running formal statistical tests (script 11).
+#
+# - Console messages: Feedback on script progress (via rpt() function)
+#
+# =============================================================================
+# DEPENDENCIES
+# =============================================================================
+# R packages: tidyverse (readr, dplyr, tidyr, stringr)
+# Utility functions: data_path(), int_path() defined locally
+# Note: All data must be pre-processed by scripts 01-08 and exist in Data/
+#
+# =============================================================================
+# REPORT STRUCTURE OVERVIEW
+# =============================================================================
+# SECTION 1: Layer-by-Layer Demographic Composition (Overall)
+#   - Govering bodies: N, % female, continents, entropy_continent, entropy_subregion
+#   - Vetting bodies: same metrics
+#   - Nominators: same metrics
+#   - Nominees: same metrics
+#   - Laureates (≤1975): same metrics
+#   - Laureates (all time): same metrics
+#   Purpose: Establish baseline demographic profiles before breaking down by prize
+#
+# SECTION 2: Layer-by-Layer Composition by Prize
+#   - For each prize: Governing body, Vetting body, Nominators, Nominees, Laureates
+#   - Same metrics as Section 1 but stratified
+#   Purpose: Identify prize-specific demographic patterns
+#
+# SECTION 3: Edge-Level Geographic Homophily
+#   - 3a. Nominator→Nominee homophily (richest data): continent, subregion, country
+#        - Observed and expected same-continent/subregion/country rates
+#        - Homophily ratio (observed/expected) for each
+#   - 3b. By prize: same analysis broken down by prize
+#   - 3c. Other edge types (QID-based): governing→vetting, govering→laureate, etc.
+#   Purpose: Quantify geographic bias in nomination patterns
+#
+# SECTION 4: Temporal Trends (by Decade)
+#   - 4a. Nominee geographic diversity by decade: effective continents/subregions
+#   - 4b. Nominator geographic diversity by decade
+#   - 4c. Laureate geographic diversity by decade
+#   - 4d. Homophily trends: how does observed/expected ratio change over time?
+#   Purpose: Detect shifts in global participation and inclusivity over 100+ years
+#
+# SECTION 5: Open vs Invitation-Only Nomination Processes
+#   - Invitation-only: Chemistry, Physics, Physiology/Medicine
+#   - Open: Literature, Peace
+#   - Compare nominee profiles and homophily ratios
+#   Purpose: Test whether process structure affects geographic bias
+#
+# SECTION 6: Gender Across Layers and Prizes
+#   - Overall % female by layer (governing, vetting, nominators, nominees, laureates)
+#   - By prize: matrix of % female across all layers and 5 prizes
+#   Purpose: Quantify gender representation (expect male bias, especially historically)
+#
+# SECTION 7: Degree Centrality and Demographics
+#   - Nominee in-degree (how many nominations) by laureate status
+#   - Nominee in-degree by birth continent
+#   Purpose: Do highly-nominated people differ demographically from less-nominated?
+#
+# SECTION 8: Subregion-to-Subregion Nomination Flow Matrix
+#   - 8a. Overall flow matrix: top 30 flows (nominator_subregion → nominee_subregion)
+#   - 8b. Self-nomination rate by subregion (fraction staying within region)
+#   - 8c. By prize: self-nomination rates for regions with ≥100 nominations in that prize
+#   Purpose: Identify regional/geographic clustering in the nomination network
+#
+# SECTION 9: Nomination Equity (Outgoing vs Incoming)
+#   - For each subregion: # sent vs # received, net balance, return ratio
+#   - By prize: same analysis for each prize separately
+#   Purpose: Identify net senders/receivers—detect geographic imbalances
+#
+# SECTION 10: Top Non-Self Nomination Targets by Subregion
+#   - When a subregion nominates OUTSIDE itself, where do nominations go?
+#   - Top 3 targets per region
+#   Purpose: Map inter-regional nomination networks
+#
+# SECTION 11: Temporal Homophily by Prize
+#   - (Content to be added if script continues beyond line 1099)
+#
 # =============================================================================
 
 library(tidyverse)
 
+# Utility functions for file path management
 data_path <- function(f) file.path("Data", f)
 int_path  <- function(f) file.path("Data", "intermediate", f)
 
-# --- Report setup ---
+# =============================================================================
+# REPORT SETUP: Initialize output file and reporting function
+# =============================================================================
+# The rpt() function outputs simultaneously to console (via message()) and to
+# a text file (via writeLines()). This allows real-time monitoring and persistent
+# record-keeping of analysis results.
+# =============================================================================
+
 report_file <- data_path("exploratory_analysis_report.txt")
 report_con  <- file(report_file, open = "wt")
 
+# rpt() - Unified print function that writes to both console and file
 rpt <- function(...) {
   msg <- paste0(...)
   message(msg)
@@ -27,6 +182,8 @@ rpt <- function(...) {
 # =============================================================================
 # LOAD ALL DATA
 # =============================================================================
+# Read all intermediate and final files into memory for analysis.
+# These have been prepared by scripts 01-08 and passed all diagnostics from script 09.
 
 demo   <- read_csv(int_path("demographics.csv"), show_col_types = FALSE)
 gov    <- read_csv(int_path("governing_bodies.csv"), show_col_types = FALSE)
@@ -57,7 +214,38 @@ prize_vet <- tribble(
 )
 
 # =============================================================================
-# HELPER: compute demographic summary for a group
+# HELPER: Compute Demographic Summary for a Group
+# =============================================================================
+# geo_summary() computes a set of demographic metrics for any dataframe,
+# enabling consistent reporting across different network layers and subgroups.
+#
+# Key metrics computed:
+#   - Gender: % female, % male, N with gender known
+#   - Continents: % Europe, Americas, Asia, Africa, Oceania + entropy (effective diversity)
+#   - Subregions: entropy (effective diversity), count, top 3 with percentages
+#
+# ENTROPY (Shannon Entropy, "Effective Number of Categories"):
+#   Formula: entropy = exp(-sum(p_i * log(p_i)))
+#   Interpretation:
+#     - entropy = 1.0 means all observations in ONE category (no diversity)
+#     - entropy = k means UNIFORM distribution across k categories (maximum diversity)
+#     - Values between 1 and k reflect partial diversity
+#   Example: 100 people (90 Europe, 10 Asia)
+#     - entropy ≈ 1.20 (mostly Europe, slight Asia presence)
+#     - Named value: ~1.2 "effective continents"
+#   Example: 100 people (20 each from 5 continents)
+#     - entropy ≈ 5.0 (perfectly balanced across all continents)
+#     - Named value: 5.0 "effective continents"
+#
+# Parameters:
+#   df:             dataframe to summarize
+#   continent_col:  column name for continent data (default: "birth_continent")
+#   subregion_col:  column name for subregion data (default: "birth_subregion")
+#   gender_col:     column name for gender data (default: "gender")
+#                   Set to NULL to skip gender computation
+#
+# Returns:
+#   List of named numeric/character values (or empty if no matching columns)
 # =============================================================================
 
 geo_summary <- function(df, continent_col = "birth_continent",
@@ -65,7 +253,8 @@ geo_summary <- function(df, continent_col = "birth_continent",
                         gender_col = "gender") {
   out <- list()
 
-  # Gender
+  # GENDER COMPOSITION
+  # Compute % female and % male (excluding NAs)
   if (!is.null(gender_col) && gender_col %in% names(df)) {
     g <- df[[gender_col]]
     g_known <- g[!is.na(g)]
@@ -77,7 +266,8 @@ geo_summary <- function(df, continent_col = "birth_continent",
     }
   }
 
-  # Continent
+  # CONTINENTAL DISTRIBUTION
+  # Compute % on each continent + Shannon entropy for geographic diversity
   if (continent_col %in% names(df)) {
     c_vals <- df[[continent_col]]
     c_known <- c_vals[!is.na(c_vals)]
@@ -90,13 +280,16 @@ geo_summary <- function(df, continent_col = "birth_continent",
       out$pct_africa <- 100 * sum(ct[names(ct) == "Africa"]) / n_c
       out$pct_oceania <- 100 * sum(ct[names(ct) == "Oceania"]) / n_c
       out$n_geo_known <- n_c
-      # Shannon entropy (effective number of continents)
+      # Shannon entropy: exp(-sum(p_i * log(p_i)))
+      # Measures effective number of continents (accounts for distribution shape)
       props <- as.numeric(ct) / n_c
       out$entropy_continent <- exp(-sum(props * log(props)))
     }
   }
 
-  # Subregion
+  # SUBREGIONAL DISTRIBUTION
+  # Compute Shannon entropy for geographic diversity at finer granularity
+  # Also compute top 3 subregions for quick pattern identification
   if (subregion_col %in% names(df)) {
     s_vals <- df[[subregion_col]]
     s_known <- s_vals[!is.na(s_vals)]
@@ -104,6 +297,7 @@ geo_summary <- function(df, continent_col = "birth_continent",
     if (n_s > 0) {
       st <- table(s_known)
       props_s <- as.numeric(st) / n_s
+      # Shannon entropy for subregions
       out$entropy_subregion <- exp(-sum(props_s * log(props_s)))
       out$n_subregions <- length(st)
       # Top 3 subregions
@@ -123,13 +317,21 @@ geo_summary <- function(df, continent_col = "birth_continent",
 # =============================================================================
 # SECTION 1: LAYER-BY-LAYER DEMOGRAPHIC COMPOSITION (OVERALL)
 # =============================================================================
+# Purpose: Establish baseline demographic profiles for each network layer.
+# Shows gender composition, geographic diversity (continents + effective entropy),
+# and identifies dominant subregions.
+#
+# This section does NOT break down by prize—that comes in Section 2.
+# Use these overall stats as reference for comparison.
+# =============================================================================
 rpt("")
 rpt(strrep("=", 78))
 rpt("  SECTION 1: LAYER-BY-LAYER DEMOGRAPHIC COMPOSITION (OVERALL)")
 rpt(strrep("=", 78))
 rpt("")
 
-# --- Governing bodies: join with demographics ---
+# GOVERNING BODIES: Join with demographics to get attributes
+# Filter to only members with demographics data (inner_join drops those without)
 gov_demo <- gov %>%
   select(-name) %>%
   inner_join(demo, by = "qid")
@@ -337,6 +539,31 @@ for (p in c("Chemistry", "Physics", "Physiology/Medicine", "Literature", "Peace"
 # =============================================================================
 # SECTION 3: EDGE-LEVEL GEOGRAPHIC HOMOPHILY
 # =============================================================================
+# Purpose: Measure geographic homophily (tendency for similar places to connect).
+#
+# DEFINITIONS:
+#   Observed homophily: fraction of edges where both endpoints share same
+#                       continent/subregion/country
+#   Expected homophily: null model assuming random edge rewiring preserving
+#                       layer sizes (computes as product of marginal proportions)
+#   Homophily ratio: observed/expected
+#                    > 1 = more homophilic than expected (geographic clustering)
+#                    < 1 = less homophilic than expected (random mixing)
+#
+# IMPORTANT: These are PRELIMINARY analyses. Script 11 performs formal permutation
+# tests to assess statistical significance. Do NOT claim significance based on
+# these ratios alone.
+#
+# METHODOLOGY: For null model, we calculate:
+#   - Distribution of each endpoint's geographic attribute (e.g., nominator_continent)
+#   - Distribution of other endpoint's attribute (e.g., nominee_continent)
+#   - Expected rate = sum(P(nominator=c) * P(nominee=c)) for each continent c
+#   - This assumes endpoints are sampled independently from their marginal distributions
+#
+# This section analyzes two types of edges:
+#   3a. Nominator→Nominee (richest data; comes directly from nominations.csv)
+#   3b. Other QID-based edges (join with nodes.csv for geography)
+# =============================================================================
 rpt("")
 rpt(strrep("=", 78))
 rpt("  SECTION 3: EDGE-LEVEL GEOGRAPHIC HOMOPHILY")
@@ -353,11 +580,14 @@ rpt("")
 
 # --- 3a. Nominator -> Nominee edges (richest data) ---
 rpt("--- NOMINATOR → NOMINEE (from nominations.csv directly) ---")
+rpt("This analysis uses the full nomination archive with geographic enrichment")
+rpt("from script 03. Edges are nominator-nominee pairs with geographic data.")
 rpt("")
 
 nom_geo <- noms %>%
   filter(!is.na(nominator_continent), !is.na(nominee_continent))
 
+# OBSERVED HOMOPHILY: Count edges where both endpoints share geographic attribute
 n_total <- nrow(nom_geo)
 n_same_continent <- sum(nom_geo$nominator_continent == nom_geo$nominee_continent)
 n_same_subregion <- sum(nom_geo$nominator_subregion == nom_geo$nominee_subregion, na.rm = TRUE)
@@ -374,10 +604,13 @@ rpt(sprintf("  Same country:   %s / %s (%.1f%%)",
             format(n_same_country, big.mark = ","), format(n_total, big.mark = ","),
             100 * n_same_country / n_total))
 
-# Null model: expected same-continent rate under random pairing
+# NULL MODEL: Expected same-continent rate under random pairing
+# Calculate marginal distributions: what % of nominators/nominees are from each continent?
+# Expected rate = sum over all continents of P(nominator from continent c) * P(nominee from continent c)
+# This assumes nominators and nominees are sampled independently from their respective distributions
 nominator_cont_dist <- table(nom_geo$nominator_continent) / n_total
 nominee_cont_dist   <- table(nom_geo$nominee_continent) / n_total
-# Expected same-continent rate = sum of products of marginal proportions
+# Only count continents present in BOTH distributions (to avoid NaN from zero products)
 shared_continents <- intersect(names(nominator_cont_dist), names(nominee_cont_dist))
 expected_same_cont <- sum(nominator_cont_dist[shared_continents] * nominee_cont_dist[shared_continents])
 rpt(sprintf("  Expected same continent (null): %.1f%%", 100 * expected_same_cont))
@@ -405,6 +638,9 @@ rpt("")
 
 # --- 3b. Nominator -> Nominee homophily BY PRIZE ---
 rpt("--- NOMINATOR → NOMINEE HOMOPHILY BY PRIZE ---")
+rpt("Breaks down the homophily analysis by prize. Useful for comparing whether")
+rpt("certain prizes have stronger geographic clustering than others.")
+rpt("Note: Physiology/Medicine prizes are stored as 'Medicine' in nominations.csv.")
 rpt("")
 
 for (p in c("Chemistry", "Physics", "Physiology/Medicine", "Literature", "Peace")) {
@@ -492,6 +728,23 @@ rpt("")
 # =============================================================================
 # SECTION 4: TEMPORAL TRENDS (BY DECADE)
 # =============================================================================
+# Purpose: Track how the geographic diversity and homophily of the Nobel Prize
+# selection network changes over time (approximately 100+ years).
+#
+# DECADE BINNING: Groups years into decades (1900s, 1910s, ..., 2020s).
+# Allows observation of long-term trends while maintaining reasonable sample sizes.
+#
+# KEY METRICS OVER TIME:
+#   - Effective continents (entropy): increasing = more geographic diversity
+#   - % Europe: highest in early decades; decreases as non-European participation grows
+#   - Homophily ratio: signals whether geographic clustering is changing
+#   - These are EXPLORATORY; formal trend tests come later
+#
+# EXPECTED PATTERN:
+#   - Early decades (1900-1950): heavily European, low entropy, high homophily
+#   - Mid decades (1950-1985): increasing diversity, rising entropy, declining homophily?
+#   - Late decades (1985+): global participation, high entropy, ???
+# =============================================================================
 rpt("")
 rpt(strrep("=", 78))
 rpt("  SECTION 4: TEMPORAL TRENDS BY DECADE")
@@ -500,6 +753,8 @@ rpt("")
 
 # --- 4a. Nomination-layer geographic diversity over time ---
 rpt("--- NOMINEE GEOGRAPHIC DIVERSITY BY DECADE ---")
+rpt("Tracks how the geographic diversity of nominees (people nominated for the prize)")
+rpt("changes over the ~100-year period of the nomination archive.")
 rpt("")
 
 nominee_by_decade <- noms %>%
@@ -513,13 +768,16 @@ decade_stats <- nominee_by_decade %>%
     n_europe = sum(nominee_continent == "Europe"),
     pct_europe = 100 * n_europe / n,
     n_continents = n_distinct(nominee_continent),
-    # Effective continents
+    # Effective continents: Shannon entropy = exp(-sum(p_i * log(p_i)))
+    # Ranges from 1 (all from one continent) to 5+ (evenly distributed)
+    # Example: 60% Europe, 20% Asia, 20% Americas → eff_cont ≈ 2.4 "continents"
     eff_cont = {
       ct <- table(nominee_continent)
       props <- as.numeric(ct) / sum(ct)
       exp(-sum(props * log(props)))
     },
     n_subregions = n_distinct(nominee_subregion),
+    # Effective subregions: same entropy calculation for UN subregions (much finer granularity)
     eff_sub = {
       st <- table(nominee_subregion)
       props <- as.numeric(st) / sum(st)
@@ -883,18 +1141,34 @@ rpt("")
 # =============================================================================
 # SECTION 8: SUBREGION-TO-SUBREGION NOMINATION FLOW MATRIX
 # =============================================================================
+# Purpose: Map out the geographic network of nominations in fine-grained detail.
+# Subregions are UN geographic regions (e.g., "Northern Europe", "Southern Asia").
+#
+# FLOW MATRIX: Shows nominator_subregion → nominee_subregion pairs.
+# This reveals:
+#   - Where do nominations come from? (nominator's location)
+#   - Where do they go? (nominee's location)
+#   - Which regional networks are strongest?
+#   - Are there asymmetries? (e.g., one region dominates sending/receiving)
+#
+# These flows are the raw material for understanding geographic clustering.
+# Sections 9-10 analyze special aspects (equity, targets).
+# =============================================================================
 rpt("")
 rpt(strrep("=", 78))
 rpt("  SECTION 8: SUBREGION-TO-SUBREGION NOMINATION FLOWS")
 rpt(strrep("=", 78))
 rpt("")
 
+# Create flow matrix: count nominations between each pair of subregions
 nom_flow <- noms %>%
   filter(!is.na(nominator_subregion), !is.na(nominee_subregion)) %>%
   count(nominator_subregion, nominee_subregion, name = "n_noms")
 
 # --- 8a. Overall flow matrix ---
 rpt("--- OVERALL FLOW MATRIX (top 30 flows) ---")
+rpt("Shows the strongest nomination flows between subregions.")
+rpt("Example: 'Northern Europe → Northern Europe' shows intra-regional nominations.")
 rpt("")
 rpt(sprintf("  %-28s → %-28s  %7s  %5s", "Nominator subregion", "Nominee subregion", "Count", "Pct"))
 rpt(sprintf("  %s", strrep("-", 78)))
@@ -972,6 +1246,26 @@ for (p in c("Chemistry", "Physics", "Physiology/Medicine", "Literature", "Peace"
 
 # =============================================================================
 # SECTION 9: NOMINATION EQUITY (BALANCE OF FLOWS)
+# =============================================================================
+# Purpose: Assess whether geographic regions have equitable roles in the
+# nomination process. Do they send as many nominations as they receive?
+#
+# KEY METRIC: Return Ratio = nominations_received / nominations_sent
+#   - Ratio > 1: region is a NET RECEIVER (gets nominated more than it nominates)
+#   - Ratio = 1: balanced (sends and receives equally)
+#   - Ratio < 1: region is a NET SENDER (nominates more than it gets nominated)
+#
+# INTERPRETATION:
+#   - High ratio (e.g., 2.5): region attracts nominations despite limited participation
+#     → likely prestigious or under-represented region gaining recognition
+#   - Low ratio (e.g., 0.4): region contributes many nominators but few nominees
+#     → likely developed region with many nominators but fewer award-winning scientists
+#   - These ratios vary by prize (shown in Section 9 analysis)
+#
+# EQUITY PERSPECTIVE:
+#   - If ratio ≠ 1 for most regions, the system may not be "fair" in allocating
+#     awards proportional to nominators
+#   - But fairness is complex: prestigious regions may deserve higher ratios
 # =============================================================================
 rpt("")
 rpt(strrep("=", 78))
