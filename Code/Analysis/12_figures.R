@@ -75,7 +75,12 @@ library(scales)
 
 # --- Path helper functions ---
 fig_path  <- function(f) file.path("Manuscript", "Figures", f)
-data_path <- function(f) file.path("Data", f)
+data_path <- function(f) {
+  p <- file.path("Data", f)
+  if (!file.exists(p)) stop("Required input file not found: ", p,
+                            "\nRun 11_formal_analysis.R first to generate results.")
+  p
+}
 
 # Create output directory for figure PDF files
 dir.create(file.path("Manuscript", "Figures"), showWarnings = FALSE, recursive = TRUE)

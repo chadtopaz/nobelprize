@@ -641,7 +641,7 @@ run_results <- with_progress({
       }
     }
     res
-  }, .options = furrr_options(seed = NULL))  # seed=NULL: don't set global seed
+  }, .options = furrr_options(seed = TRUE))  # seed=TRUE: enable L'Ecuyer-CMRG parallel-safe RNG
 })
 
 # Combine all results into single tibble
