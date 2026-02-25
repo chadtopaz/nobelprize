@@ -12,14 +12,15 @@
 #   (CSV files with permutation test outcomes, diversity metrics, equity measures)
 #   and transforms them into ggplot2 visualizations designed for the Science
 #   journal format (2-column layout, accessibility-optimized color palette,
-#   minimal ink). All five figures are generated: the network schematic, homophily
-#   heatmap, temporal paradox visualization, edge-type comparison, and nomination
-#   flow asymmetry. Each figure includes informative captions, axis labels, and
-#   annotations to guide reader interpretation.
+#   minimal ink). All five figures are generated: Fig 1 (network schematic),
+#   Fig 2 (edge-type comparison), Fig 3 (homophily heatmap), Fig 4 (temporal
+#   paradox), and Fig S1 (nomination flow asymmetry, supplementary). Each figure
+#   includes informative captions, axis labels, and annotations to guide reader
+#   interpretation.
 #
 # Methodological Decisions and Rationale:
 #   - ggplot2 provides publication-quality graphics with full customization.
-#   - patchwork allows combining subplots (e.g., Figure 3 panels A and B) while
+#   - patchwork allows combining subplots (e.g., Figure 4 panels A and B) while
 #     maintaining aligned axes and consistent theme across multi-panel figures.
 #   - Color palette designed for colorblind accessibility: uses distinct hues
 #     (green, purple, terracotta, steel blue, tan) rather than red-green contrasts.
@@ -27,12 +28,12 @@
 #     "no homophily" reference, making effect sizes immediately interpretable.
 #   - Geographic scales (country, subregion, continent) emphasized through faceting
 #     or subplot layout, as homophily strength scales with geographic granularity.
-#   - Figure 1 uses programmatically-generated complete bipartite edges (expand.grid)
+#   - Fig 1 uses programmatically-generated complete bipartite edges (expand.grid)
 #     to ensure institutional edges appear as dense meshes, visually distinct from
 #     sparse nomination edges (where homophily creates clustering).
-#   - Figure 2 heatmap row/column ordering (by homophily ratio, by self-nomination
+#   - Fig 3 heatmap row/column ordering (by homophily ratio, by self-nomination
 #     rate) highlights the strongest patterns without arbitrary alphabetic sorting.
-#   - Figure 3 dual-axis plot (left: % Europe and effective continents; right:
+#   - Fig 4 dual-axis plot (left: % Europe and effective continents; right:
 #     homophily ratio) visually demonstrates the temporal paradox.
 #
 # Inputs (all from Data/ directory, outputs of 11_formal_analysis.R):
@@ -47,12 +48,12 @@
 # has not been executed, this script will fail with descriptive file-not-found errors.
 #
 # Outputs (all in Manuscript/Figures/ as PDF):
-#   Filenames match the main manuscript figure numbering (not code generation order):
-#   - fig1_schematic.pdf: Two-panel network structure (general + 1958 Physics example)
-#   - fig2_edge_homophily.pdf: Horizontal bar chart by edge type
-#   - fig3_heatmap.pdf: Self-nomination heatmap prize × subregion with marginals
-#   - fig4_temporal.pdf: Two-panel (A: diversity trends, B: homophily trends)
-#   - fig5_flow_asymmetry.pdf: Horizontal bar chart by subregion (nomination equity, supplementary)
+#   Filenames match manuscript figure numbering:
+#   - fig1_schematic.pdf:        Fig 1  — Two-panel network structure (A: general, B: 1958 Physics)
+#   - fig2_edge_homophily.pdf:   Fig 2  — Horizontal bar chart by edge type
+#   - fig3_heatmap.pdf:          Fig 3  — Two-panel heatmap (A: prize × subregion, B: marginal bars)
+#   - fig4_temporal.pdf:         Fig 4  — Two-panel temporal (A: diversity trends, B: homophily)
+#   - figS1_flow_asymmetry.pdf:  Fig S1 — Horizontal bar chart by subregion (supplementary)
 #
 # Dependencies:
 #   - tidyverse: readr (CSV), dplyr (filtering/joining), tidyr (reshape), ggplot2
@@ -64,7 +65,7 @@
 #   - Direct labeling: Annotate values directly on plots where space permits
 #   - Accessibility: Colorblind-friendly palette; avoid red/green alone
 #   - Consistency: All figures use shared color scheme for layers/edges
-#   - Clarity: Captions and annotations explain methodology (e.g., "1000 permutations")
+#   - Clarity: Captions and annotations explain methodology (e.g., "10000 permutations")
 #
 # =============================================================================
 
@@ -94,9 +95,14 @@ layer_colors <- c(
 nom_color  <- "#c75a3a"   # Terracotta — nomination edges (where homophily is strongest)
 inst_color <- "#3a7cc7"   # Steel blue — institutional edges (comparison, no homophily)
 
+# NOTE ON EXECUTION ORDER: Figures are generated in the order 1, 3, 4, 2, S1
+# (not 1, 2, 3, 4, S1) because Fig. 3 and Fig. 4 share data objects with
+# earlier pipeline steps. Output filenames match paper numbering regardless of
+# execution order. Variable names (p_fig2, p_fig3, p_fig4) reflect execution
+# order, not paper figure numbers.
 
 # =============================================================================
-# FIGURE 1: Multilayer network schematic
+# FIGURE 1: Multilayer network schematic  [Paper Fig. 1]
 # =============================================================================
 # Two-panel schematic illustrating the structure of the Nobel Prize multilayer
 # network. Left panel shows the general structure with idealized node counts
@@ -381,7 +387,10 @@ p_physics <- ggplot() +
 
 # Combine left and right panels using patchwork
 # widths=c(1, 1.1) gives slightly more space to right panel for name labels
-p_fig1 <- wrap_elements(full = (p_generic + p_physics + plot_layout(widths = c(1, 1.1))))
+# plot_annotation adds bold (A)/(B) panel tags matching the manuscript caption
+p_fig1 <- (p_generic + p_physics + plot_layout(widths = c(1, 1.1))) +
+  plot_annotation(tag_levels = "A") &
+  theme(plot.tag = element_text(face = "bold", size = 12))
 
 # Export as PDF with publication-quality dimensions (8" wide, 4" tall)
 # Note: Figure filenames use manuscript numbering, not generation order.
@@ -391,7 +400,7 @@ message("  -> fig1_schematic.pdf (Multilayer network schematic)")
 
 
 # =============================================================================
-# FIGURE 2: Self-nomination heatmap — Prize x Subregion
+# FIGURE 3: Self-nomination heatmap — Prize x Subregion  [Paper Fig. 3]
 # =============================================================================
 # Heatmap showing the rate at which each subregion nominates within itself,
 # broken down by prize. Rows = subregions (ordered by average self-nomination rate).
@@ -400,7 +409,7 @@ message("  -> fig1_schematic.pdf (Multilayer network schematic)")
 # 80% of the time. The column marginal bars show country-level homophily ratio
 # (H = O/E), summarizing the overall homophily for that prize.
 #
-message("\n=== Figure 2: Heatmap ===")
+message("\n=== Figure 3: Heatmap ===")
 
 # Load per-(prize, subregion) self-nomination rates from results file
 self_nom <- read_csv(data_path("results_self_nomination_by_prize.csv"),
@@ -410,12 +419,22 @@ self_nom <- read_csv(data_path("results_self_nomination_by_prize.csv"),
 prize_hom <- read_csv(data_path("results_prize_homophily.csv"),
                       show_col_types = FALSE) %>%
   filter(geo_level == "country") %>%
-  select(prize, homophily_ratio) %>%
+  select(prize, homophily_ratio, ratio_ci_lo, ratio_ci_hi, p_value) %>%
   # Create abbreviated prize labels for heatmap headers (wrap long name)
-  mutate(prize_label = case_when(
-    prize == "Physiology/Medicine" ~ "Phys./Med.",
-    TRUE ~ prize
-  ))
+  mutate(
+    prize_label = case_when(
+      prize == "Physiology/Medicine" ~ "Phys./Med.",
+      TRUE ~ prize
+    ),
+    # Significance stars (Bonferroni-adjusted across 49 formal tests)
+    p_adj = pmin(1, p_value * 49),
+    sig_star = case_when(
+      p_adj < 0.001 ~ "***",
+      p_adj < 0.01  ~ "**",
+      p_adj < 0.05  ~ "*",
+      TRUE ~ ""
+    )
+  )
 
 # Order prizes by homophily ratio (left to right: low to high)
 # This clustering puts "least homophilic" prizes on left, "most homophilic" on right
@@ -492,11 +511,15 @@ p_heat <- ggplot(heatmap_data,
 
 # Marginal bar chart: country-level homophily ratio (H = O/E) per prize
 # Aligned with heatmap columns, showing the aggregate homophily for each prize
+# Includes 95% null reference interval whiskers and significance stars
 p_col_marginal <- ggplot(col_marginal, aes(x = prize_label, y = homophily_ratio)) +
   # Bar height shows homophily ratio (effect size)
   geom_col(fill = "#4d7ea8", width = 0.6) +  # Steel blue for visual consistency with Figure 1
-  # Direct label with ratio (e.g., "4.85×" showing 4.85-fold enrichment)
-  geom_text(aes(label = sprintf("%.1f×", homophily_ratio)),
+  # 95% null reference interval whiskers from permutation distribution
+  geom_errorbar(aes(ymin = ratio_ci_lo, ymax = ratio_ci_hi),
+                width = 0.25, linewidth = 0.4, color = "grey30") +
+  # Direct label with ratio and significance stars
+  geom_text(aes(label = sprintf("%.1f×%s", homophily_ratio, sig_star)),
             vjust = -0.3, size = 2.8, fontface = "bold") +
   scale_y_continuous(expand = expansion(mult = c(0, 0.3))) +
   labs(x = NULL, y = "Country\nhomophily\nratio") +
@@ -512,15 +535,18 @@ p_col_marginal <- ggplot(col_marginal, aes(x = prize_label, y = homophily_ratio)
 
 # Stack heatmap and marginal bar vertically using patchwork
 # Heights ratio (4:1.2) allocates more space to main heatmap
+# plot_annotation adds bold (A)/(B) panel tags matching the manuscript caption
 p_fig2 <- (p_heat / p_col_marginal) +
-  plot_layout(heights = c(4, 1.2))
+  plot_layout(heights = c(4, 1.2)) +
+  plot_annotation(tag_levels = "A") &
+  theme(plot.tag = element_text(face = "bold", size = 12))
 
 ggsave(fig_path("fig3_heatmap.pdf"), p_fig2, width = 7, height = 5.5, dpi = 300)
 message("  -> fig3_heatmap.pdf (Within-subregion nomination rates by prize)")
 
 
 # =============================================================================
-# FIGURE 3: Temporal paradox (two-panel)
+# FIGURE 4: Temporal paradox (two-panel)  [Paper Fig. 4]
 # =============================================================================
 # The central paradox of the paper: as the Nobel Prize became more globally
 # inclusive (% European nominees dropped from 75% to 50%), did geographic
@@ -534,7 +560,7 @@ message("  -> fig3_heatmap.pdf (Within-subregion nomination rates by prize)")
 #   - Shows that despite globalization, homophily ratio remained high (~2.0-2.5)
 #   - Shaded band: 95% CI from permutation null distribution
 #
-message("\n=== Figure 3: Temporal ===")
+message("\n=== Figure 4: Temporal ===")
 
 # Load raw nominations data to compute diversity metrics by decade
 noms <- read_csv(file.path("Data", "intermediate", "nominations.csv"),
@@ -622,14 +648,14 @@ message("  -> fig4_temporal.pdf (Globalization paradox - temporal trends)")
 
 
 # =============================================================================
-# FIGURE 4: Edge-type homophily bar chart (can be main or supplementary)
+# FIGURE 2: Edge-type homophily bar chart  [Paper Fig. 2]
 # =============================================================================
 # Horizontal bar chart showing homophily ratios for all edge types at country level.
 # Two colors: terracotta for nomination edges (where homophily is strong),
 # steel blue for institutional edges (where homophily is absent).
 # Bars sorted by homophily ratio (ascending) to show the dramatic difference.
 #
-message("\n=== Figure 4: Edge-type homophily ===")
+message("\n=== Figure 2: Edge-type homophily ===")
 
 edge_hom <- read_csv(data_path("results_edge_homophily.csv"),
                      show_col_types = FALSE) %>%
@@ -649,7 +675,15 @@ edge_hom <- read_csv(data_path("results_edge_homophily.csv"),
       TRUE ~ edge_type
     ),
     # Flag nomination vs institutional edges for color coding
-    is_nomination = str_detect(edge_type, "nominator → nominee")
+    is_nomination = str_detect(edge_type, "nominator → nominee"),
+    # Significance stars based on Bonferroni-adjusted p-values (49 formal tests)
+    p_adj = pmin(1, p_value * 49),
+    sig_star = case_when(
+      p_adj < 0.001 ~ "***",
+      p_adj < 0.01  ~ "**",
+      p_adj < 0.05  ~ "*",
+      TRUE ~ ""
+    )
   ) %>%
   # Sort by homophily ratio for visual clarity (low to high)
   arrange(homophily_ratio) %>%
@@ -660,14 +694,17 @@ edge_hom <- read_csv(data_path("results_edge_homophily.csv"),
     y_pos = if_else(is_nomination, y_pos + 1.0, as.double(y_pos))
   )
 
-# Create horizontal bar chart of homophily ratios
+# Create horizontal bar chart of homophily ratios with 95% null reference intervals
 p_fig4 <- ggplot(edge_hom, aes(x = y_pos, y = homophily_ratio, fill = is_nomination)) +
   # Bars colored by edge type (nomination vs institutional)
   geom_col(width = 0.7) +
+  # 95% null reference interval whiskers from permutation distribution
+  geom_errorbar(aes(ymin = ratio_ci_lo, ymax = ratio_ci_hi),
+                width = 0.3, linewidth = 0.5, color = "grey30") +
   # Reference line: H=1 shows "no homophily" baseline
   geom_hline(yintercept = 1, linetype = "dashed", color = "grey40", linewidth = 0.5) +
-  # Direct labels showing homophily ratio values (e.g., "4.85")
-  geom_text(aes(label = sprintf("%.2f", homophily_ratio)),
+  # Direct labels showing homophily ratio and significance stars
+  geom_text(aes(label = sprintf("%.2f%s", homophily_ratio, sig_star)),
             hjust = -0.1, size = 3.2, fontface = "bold") +
   # Flip coordinates to make horizontal bars (easier to read labels)
   coord_flip(ylim = c(0, max(edge_hom$homophily_ratio) * 1.25)) +
@@ -677,7 +714,8 @@ p_fig4 <- ggplot(edge_hom, aes(x = y_pos, y = homophily_ratio, fill = is_nominat
   scale_fill_manual(values = c("TRUE" = nom_color, "FALSE" = inst_color),
                     guide = "none") +
   labs(x = NULL,
-       y = "Homophily ratio (observed / expected same-country rate)") +
+       y = "Homophily ratio (observed / expected same-country rate)",
+       caption = "Whiskers show 95% null reference interval. ***p < 0.001, **p < 0.01, *p < 0.05 (Bonferroni-adjusted).") +
   # Annotation explaining the H=1 reference
   annotate("text", x = 0.5, y = 1.05, label = "No homophily",
            hjust = 0, size = 2.6, color = "grey40", fontface = "italic") +
@@ -686,7 +724,8 @@ p_fig4 <- ggplot(edge_hom, aes(x = y_pos, y = homophily_ratio, fill = is_nominat
     panel.grid.major.y = element_blank(),  # Remove horizontal gridlines
     panel.grid.minor = element_blank(),
     axis.text.y = element_text(size = 9),
-    plot.margin = margin(10, 25, 10, 10)  # Extra right margin for labels
+    plot.margin = margin(10, 25, 10, 10),  # Extra right margin for labels
+    plot.caption = element_text(size = 7, color = "grey40", hjust = 0)
   )
 
 ggsave(fig_path("fig2_edge_homophily.pdf"), p_fig4, width = 7, height = 4.5, dpi = 300)
@@ -694,7 +733,7 @@ message("  -> fig2_edge_homophily.pdf (Homophily ratios by edge type)")
 
 
 # =============================================================================
-# FIGURE 5: Flow asymmetry — nomination equity by subregion
+# FIGURE S1: Flow asymmetry — nomination equity by subregion  [Supplement Fig. S1]
 # =============================================================================
 # Horizontal bar chart showing the asymmetry in nomination flows between subregions.
 # Return ratio = nominations received / nominations sent. Values:
@@ -704,7 +743,7 @@ message("  -> fig2_edge_homophily.pdf (Homophily ratios by edge type)")
 #     (e.g., Latin America, Africa send nominations but receive few in return)
 # This is supplementary evidence of the homophily and geographic bias in the system.
 #
-message("\n=== Figure 5: Flow asymmetry ===")
+message("\n=== Figure S1: Flow asymmetry ===")
 
 # Load nomination equity (flow balance) by subregion
 equity <- read_csv(data_path("results_nomination_equity.csv"),
@@ -741,8 +780,8 @@ p_fig5 <- ggplot(equity, aes(x = subregion, y = return_ratio, fill = fill_color)
     plot.margin = margin(10, 20, 10, 10)
   )
 
-ggsave(fig_path("fig5_flow_asymmetry.pdf"), p_fig5, width = 7, height = 5, dpi = 300)
-message("  -> fig5_flow_asymmetry.pdf")
+ggsave(fig_path("figS1_flow_asymmetry.pdf"), p_fig5, width = 7, height = 5, dpi = 300)
+message("  -> figS1_flow_asymmetry.pdf (Supplementary Fig S1: nomination flow asymmetry)")
 
 
 # =============================================================================

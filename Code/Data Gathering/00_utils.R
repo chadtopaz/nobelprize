@@ -603,22 +603,17 @@ fetch_demographics_for_qid <- function(qid) {
        ?genderLabel ?birthCountryLabel ?nationalityLabel
        ?occupationLabel ?institutionLabel
     WHERE {
-      # Bind the specific QID to ?qid variable
       VALUES ?qid { wd:%s }
-      # Fetch English label (rdfs:label with language filter)
       OPTIONAL { ?qid rdfs:label ?name. FILTER(LANG(?name) = "en") }
-      # Fetch demographic properties (all optional so query doesn't fail if missing)
-      OPTIONAL { ?qid wdt:P569 ?birthDate. }       # Birth date (ISO 8601)
-      OPTIONAL { ?qid wdt:P570 ?deathDate. }       # Death date
-      OPTIONAL { ?qid wdt:P21 ?gender. }           # Gender (raw QID, will be labeled below)
-      OPTIONAL { ?qid wdt:P19/wdt:P17 ?birthCountry. } # Birth location -> country
-      OPTIONAL { ?qid wdt:P27 ?nationality. }      # Nationality (may be multi-valued)
-      OPTIONAL { ?qid wdt:P106 ?occupation. }      # Occupation(s)
-      OPTIONAL { ?qid wdt:P108 ?institution. }     # Affiliated institution(s)
-      # SERVICE wikibase:label: special service that translates QIDs to English labels
+      OPTIONAL { ?qid wdt:P569 ?birthDate. }
+      OPTIONAL { ?qid wdt:P570 ?deathDate. }
+      OPTIONAL { ?qid wdt:P21 ?gender. }
+      OPTIONAL { ?qid wdt:P19/wdt:P17 ?birthCountry. }
+      OPTIONAL { ?qid wdt:P27 ?nationality. }
+      OPTIONAL { ?qid wdt:P106 ?occupation. }
+      OPTIONAL { ?qid wdt:P108 ?institution. }
       SERVICE wikibase:label {
         bd:serviceParam wikibase:language "en".
-        # Translate QIDs back to English labels
         ?gender rdfs:label ?genderLabel.
         ?birthCountry rdfs:label ?birthCountryLabel.
         ?nationality rdfs:label ?nationalityLabel.
@@ -661,12 +656,8 @@ fetch_demographics_batch <- function(qids) {
        ?genderLabel ?birthCountryLabel ?nationalityLabel
        ?occupationLabel ?institutionLabel
     WHERE {
-      # VALUES clause specifies multiple QIDs to fetch in one query
-      # Example: VALUES ?qid { wd:Q7186 wd:Q2048 wd:Q1234 }
       VALUES ?qid { %s }
-      # Fetch English label (same as fetch_demographics_for_qid)
       OPTIONAL { ?qid rdfs:label ?name. FILTER(LANG(?name) = "en") }
-      # Fetch demographic properties (same as fetch_demographics_for_qid)
       OPTIONAL { ?qid wdt:P569 ?birthDate. }
       OPTIONAL { ?qid wdt:P570 ?deathDate. }
       OPTIONAL { ?qid wdt:P21 ?gender. }
@@ -674,7 +665,6 @@ fetch_demographics_batch <- function(qids) {
       OPTIONAL { ?qid wdt:P27 ?nationality. }
       OPTIONAL { ?qid wdt:P106 ?occupation. }
       OPTIONAL { ?qid wdt:P108 ?institution. }
-      # SERVICE wikibase:label: translate QIDs to English labels
       SERVICE wikibase:label {
         bd:serviceParam wikibase:language "en".
         ?gender rdfs:label ?genderLabel.

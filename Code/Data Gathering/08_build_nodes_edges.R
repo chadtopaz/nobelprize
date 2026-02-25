@@ -30,18 +30,18 @@
 #     data (qid, name only). This ensures network completeness while preserving
 #     available biographical information.
 #   - Edges: Complete bipartite graphs for institutional layers (governing → vetting
-#     per prize, vetting → nominator per year). Vetting committees select nominators;
-#     all committee members active during a given year are connected to all active
-#     nominators that year (full Cartesian product via expand.grid). This captures
-#     the institutional mandate and invitation structure.
+#     per year per prize, vetting → nominator per year per prize). For each year,
+#     all active members on one side are connected to all active members on the
+#     other side (full Cartesian product via expand.grid). This captures the
+#     ongoing institutional mandate and oversight structure year by year.
 #   - Selective edges for nomination layer (nominator → nominee): Only actual nominator/
 #     nominee pairs from the archive are included (no artificial density added).
 #   - Prize-scoped edges: All institutional and laureate edges are filtered by prize
 #     domain (e.g., governing_body → vetting only for prizes served by that governing body).
-#   - Year field: Set to the starting year of a person's service or the prize year.
-#     For institutional edges, year is the vetting member's start year (first year of
-#     institutional relationship). For nominations, year is the award year. For laureate
-#     edges, year is the award year.
+#   - Year field: For governing → vetting edges, year is the calendar year of the
+#     active overlap (one edge set per year both members serve). For vetting →
+#     nominator edges, year is the nomination year. For nomination edges, year is
+#     the award year. For laureate edges, year is the award year.
 #   - QID resolution: QIDs are used as node identifiers. Nomination archive persons
 #     are resolved to Wikidata QIDs via step 05 mapping; unresolved persons are assigned
 #     temporary "NOM:" prefix IDs to maintain network connectivity (optional: manual
@@ -404,15 +404,17 @@ message(sprintf("  Nodes: %d individuals", nrow(nodes)))
 #
 # DESIGN RATIONALE:
 #   - Complete bipartite for institutional layers (gov-vet, vet-nom):
-#     All active members in one layer connected to all active members in the
-#     other layer for the same prize/year. This captures institutional mandates.
+#     For each year, all active members in one layer connected to all active
+#     members in the other layer for the same prize. This captures ongoing
+#     institutional oversight relationships year by year.
 #   - Selective edges for nomination layer (nom-nominee):
 #     Only actual nominator-nominee pairs from archive. No artificial density added.
 #   - Prize-scoped filtering:
 #     Each edge connects individuals only within appropriate prize domain
 #     (e.g., vetting_body → nominator edges only for Chem/Phys/Med).
 #   - Year assignment:
-#     For institutional edges: year = start year of relationship (vetting member's start year)
+#     For gov → vet edges: year = calendar year of active overlap
+#     For vet → nom edges: year = nomination year
 #     For nomination edges: year = award/nomination year
 #     For laureate edges: year = award year
 #
@@ -427,21 +429,23 @@ edges <- data.frame()
 # =========================================================================
 # RATIONALE:
 #   Governing bodies provide institutional oversight of vetting committees.
-#   Each prize has one governing body and one vetting committee. Committee members
-#   are formally part of the vetting process under governing body authority.
-#   We connect all governing members active when a vetting member joins.
+#   Each prize has one governing body and one vetting committee. We model
+#   the ongoing institutional relationship by creating a complete bipartite
+#   graph for each year: every active governing member connects to every
+#   active vetting member in the same year.
 #
 # LOGIC:
-#   For each vetting committee member with startyear Y:
-#   - Find all governing body members whose service overlaps with year Y
+#   For each prize and each year Y in the range [1901, max_endyear]:
+#   - Find all governing body members active in year Y
 #     (startyear <= Y AND (endyear >= Y OR endyear is NA))
-#   - Create one edge per governing member → vetting member pair
-#   - Set year = vetting member's startyear (when relationship began)
+#   - Find all vetting body members active in year Y (same filter)
+#   - Create complete bipartite edges via expand.grid
+#   - Set year = Y
 #
 # STRUCTURE:
-#   This is a bipartite relationship: all active governors connect to all
-#   active vetters in the same year. Not complete bipartite necessarily
-#   (some may be inactive), but typically dense.
+#   Complete bipartite by year: all active governors × all active vetters.
+#   This mirrors the construction of Edge Type 2 (vetting → nominator),
+#   which also uses year-by-year expand.grid.
 #
 # SCOPE:
 #   All 5 prizes have this relationship (gov → vet for each prize).
@@ -450,60 +454,58 @@ edges <- data.frame()
 message("  Building governing → vetting edges...")
 
 if (!is.null(governing) && !is.null(vetting)) {
-  # Iterate over each prize (each row in vetting_prize_map)
+  # Determine the year range for edge construction.
+  # Start at 1901 (Nobel era); end at the latest service year across both tables,
+  # capped at 1975 to match the nomination data period.
+  max_year <- min(1975, max(
+    max(governing$endyear, na.rm = TRUE),
+    max(vetting$endyear, na.rm = TRUE)
+  ))
+
+  # Iterate over each prize
   for (i in seq_len(nrow(vetting_prize_map))) {
     prize <- vetting_prize_map$prize[i]
     vb_name <- vetting_prize_map$body[i]
-    # Look up the governing body for this prize
     gb_name <- governing_prize_map$body[governing_prize_map$prize == prize]
 
-    # Filter to committee members for this prize
+    # Filter to members for this prize
     vb <- vetting %>% filter(body == vb_name)
     gb <- governing %>% filter(body == gb_name)
 
     # Skip if either table is empty (no data for this prize)
     if (nrow(vb) == 0 || nrow(gb) == 0) next
 
-    # --- For each vetting body member, connect to active governing members ---
-    # Vetting members are not necessarily all active in same year,
-    # so we process each one individually and find governing members
-    # who were active when the vetting member started.
-    for (v_idx in seq_len(nrow(vb))) {
-      v_start <- vb$startyear[v_idx]
-      # v_end is not used for filtering (we only care about overlap start),
-      # but calculate for reference
-      v_end <- ifelse(is.na(vb$endyear[v_idx]),
-                      as.numeric(format(Sys.Date(), "%Y")),
-                      vb$endyear[v_idx])
-      v_qid <- vb$qid[v_idx]
-
-      # Skip rows with missing QID or start year
-      if (is.na(v_qid) || is.na(v_start)) next
-
-      # --- Find governing body members active at v_start ---
-      # A governing member is active at year Y if:
-      #   startyear <= Y AND (endyear >= Y OR endyear is NA)
-      # This captures members who had already started and hadn't yet left.
+    # --- Process each year: complete bipartite of active members ---
+    for (yr in 1901:max_year) {
+      # Find governing body members active in this year
       active_gb <- gb %>%
         filter(
-          !is.na(qid),                           # Must have a QID
-          startyear <= v_start,                  # Started before or when vetting member started
-          (is.na(endyear) | endyear >= v_start) # Still serving at v_start (or departed unknown)
+          !is.na(qid),
+          startyear <= yr,
+          (is.na(endyear) | endyear >= yr)
         )
 
-      # Create edges from each active governing member to this vetting member
-      if (nrow(active_gb) > 0) {
-        new_edges <- data.frame(
-          from_qid = active_gb$qid,
-          to_qid = v_qid,
-          year = v_start,                # Year = when vetting member started
-          prize = prize,
-          from_layer = "governing_body",
-          to_layer = "vetting_body",
-          stringsAsFactors = FALSE
+      # Find vetting body members active in this year
+      active_vb <- vb %>%
+        filter(
+          !is.na(qid),
+          !is.na(startyear),
+          startyear <= yr,
+          (is.na(endyear) | endyear >= yr)
         )
-        edges <- bind_rows(edges, new_edges)
-      }
+
+      if (nrow(active_gb) == 0 || nrow(active_vb) == 0) next
+
+      # Create complete bipartite edges: all active governors × all active vetters
+      new_edges <- expand.grid(
+        from_qid = active_gb$qid,
+        to_qid = active_vb$qid,
+        stringsAsFactors = FALSE
+      ) %>%
+        mutate(year = yr, prize = prize,
+               from_layer = "governing_body", to_layer = "vetting_body")
+
+      edges <- bind_rows(edges, new_edges)
     }
   }
   message(sprintf("    → %d governing → vetting edges",

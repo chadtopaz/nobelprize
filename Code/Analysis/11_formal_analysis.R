@@ -20,7 +20,7 @@
 #   tables and CSV files for downstream visualization by 12_figures.R.
 #
 # Methodological Decisions and Rationale:
-#   - Permutation tests (N_PERM = 1000 rewirings) preserve marginal distributions
+#   - Permutation tests (N_PERM = 10000 rewirings) preserve marginal distributions
 #     of geographic origins/destinations, providing a principled null model for
 #     "expected" homophily under independence of marginals (no geographic bias).
 #   - P-values computed as p = (k+1)/(N_PERM+1) where k = number of permuted
@@ -29,7 +29,7 @@
 #   - Homophily ratio H = O/E (observed / expected) is more interpretable than
 #     raw rates: H=1 means no geographic bias, H=5 means 5× more likely to
 #     nominate same-country peers than expected by chance.
-#   - Parallel execution via furrr::future_map dispatches ~80 independent jobs
+#   - Parallel execution via furrr::future_map dispatches 89 independent jobs
 #     across n_cores workers, providing ~8× speedup on typical 8-core machine.
 #   - Geographic scales analyzed in increasing order of granularity: continent
 #     (5 categories), subregion (24 categories), country (195+ categories).
@@ -57,11 +57,13 @@
 #   CSV results (Data/):
 #     - results_edge_homophily.csv: Edge-type homophily (all geo levels)
 #     - results_prize_homophily.csv: Prize-specific homophily
+#     - results_prize_homophily_harmonized.csv: Prize-specific homophily (1901-1953 only)
 #     - results_temporal_homophily.csv: Temporal trends by decade
 #     - results_prize_temporal_homophily.csv: Decade × prize combinations
 #     - results_nomination_equity.csv: Net nomination flows by subregion
 #     - results_self_nomination_by_prize.csv: Within-subregion rates per prize
 #     - results_layer_composition.csv: Demographic stats per network layer
+#     - results_sensitivity_bounds.csv: Worst-case sensitivity bounds on H
 #
 # Dependencies:
 #   - tidyverse: Data wrangling and manipulation (readr, dplyr, tidyr, etc.)
@@ -108,12 +110,12 @@ tab_path  <- function(f) file.path("Manuscript", "Tables", f)
 dir.create(file.path("Manuscript", "Tables"), showWarnings = FALSE, recursive = TRUE)
 
 # --- Permutation test configuration ---
-# N_PERM = 1000 permutation replicates provides ~0.001 granularity for p-values.
-# This balances statistical precision (smallest p-value ≈ 1/1001) with computational
-# cost. With 80 independent tests, total compute is ~80,000 permutation cycles,
-# taking ~2-5 minutes on 8 cores. Sensitivity analysis (not shown) confirms
-# results are robust to N_PERM = 500, 1000, or 5000.
-N_PERM <- 1000
+# N_PERM = 10000 permutation replicates provides ~0.0001 granularity for p-values.
+# This gives comfortable clearance above the Bonferroni-adjusted threshold
+# (alpha ≈ 0.001 for 49 formal tests). With 89 total jobs (49 formal + 38
+# exploratory + 2 duplicate), total compute is ~890,000 permutation cycles. Sensitivity analysis (not shown) confirms
+# results are robust across N_PERM = 500, 1000, 5000, and 10000.
+N_PERM <- 10000
 
 # --- Global random seed for reproducibility ---
 # Set seed before parallel execution to ensure reproducible results across runs.
@@ -204,7 +206,7 @@ message("Data loaded successfully.")
 # Arguments:
 #   from_geo: Source geographic categories (e.g., nominator countries)
 #   to_geo: Destination geographic categories (e.g., nominee countries)
-#   n_perm: Number of permutation replicates (default N_PERM=1000)
+#   n_perm: Number of permutation replicates (default N_PERM=10000)
 #   geo_level: Label for geographic granularity (e.g., "country", "continent")
 #   seed: Optional random seed for reproducibility across parallel workers
 #
@@ -226,7 +228,7 @@ homophily_permtest <- function(from_geo, to_geo, n_perm = N_PERM,
   n <- length(from_geo)
 
   # Minimum sample size check: need at least 50 edges for meaningful test.
-  # With N_PERM=1000 permutations, the smallest possible p-value is 1/1001 ≈ 0.001.
+  # With N_PERM=10000 permutations, the smallest possible p-value is 1/10001 ≈ 0.0001.
   # For n<50 edges, the permutation null distribution becomes too sparse to reliably
   # estimate p-values. We exclude such tests from main analyses; sensitivity checks
   # with n_min = 25 or n_min = 100 do not substantially change results.
@@ -285,6 +287,10 @@ homophily_permtest <- function(from_geo, to_geo, n_perm = N_PERM,
   ratio_ci_lo <- quantile(perm_ratios, 0.025)
   ratio_ci_hi <- quantile(perm_ratios, 0.975)
 
+  # Newman assortativity coefficient: r = (O - E) / (1 - E)
+  # Monotonically related to H = O/E; bounded [-1, 1]
+  assortativity <- (obs_rate - expected_rate) / (1 - expected_rate)
+
   # Return results as tibble for easy binding with other job results
   tibble(
     geo_level       = geo_level,
@@ -292,6 +298,94 @@ homophily_permtest <- function(from_geo, to_geo, n_perm = N_PERM,
     observed_rate   = obs_rate,
     expected_rate   = expected_rate,
     homophily_ratio = obs_ratio,
+    assortativity   = assortativity,
+    ratio_ci_lo     = as.numeric(ratio_ci_lo),
+    ratio_ci_hi     = as.numeric(ratio_ci_hi),
+    null_ci_lo      = as.numeric(null_ci_lo),
+    null_ci_hi      = as.numeric(null_ci_hi),
+    p_value         = p_value
+  )
+}
+
+
+# =============================================================================
+# HELPER FUNCTION: Blockwise permutation test for geographic homophily
+# =============================================================================
+# Like homophily_permtest, but shuffles destinations WITHIN blocks (e.g.,
+# prize-year combinations) rather than across the entire edge set. This
+# conditions on block structure, providing a more conservative null model
+# that tests whether homophily persists beyond compositional differences
+# across strata.
+#
+# Arguments:
+#   from_geo: Source geographic categories
+#   to_geo: Destination geographic categories
+#   block: Block labels (e.g., paste(prize, year))
+#   n_perm: Number of permutation replicates
+#   geo_level: Label for geographic granularity
+#   seed: Optional random seed
+#
+# Returns: Tibble with same columns as homophily_permtest, or NULL if
+#          insufficient data.
+
+blockwise_permtest <- function(from_geo, to_geo, block, n_perm = N_PERM,
+                                geo_level = "country", seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+
+  # Remove pairs with missing geographic information or block
+  keep <- !is.na(from_geo) & !is.na(to_geo) & !is.na(block)
+  from_geo <- from_geo[keep]
+  to_geo   <- to_geo[keep]
+  block    <- block[keep]
+  n <- length(from_geo)
+
+  if (n < 50) return(NULL)
+
+  # --- OBSERVED HOMOPHILY ---
+  observed_same <- sum(from_geo == to_geo)
+  obs_rate      <- observed_same / n
+
+  # --- EXPECTED HOMOPHILY (pooled marginals, same as standard test) ---
+  from_dist <- table(from_geo) / n
+  to_dist   <- table(to_geo) / n
+  shared    <- intersect(names(from_dist), names(to_dist))
+  expected_rate <- sum(from_dist[shared] * to_dist[shared])
+
+  # --- BLOCKWISE PERMUTATION NULL DISTRIBUTION ---
+  # Within each block, shuffle destinations independently. This preserves
+  # within-block marginal distributions while breaking within-block pairing.
+  # Pre-compute block indices once (avoids repeated which() inside loop).
+  block_idx <- split(seq_len(n), block)
+
+  # Parallelise across permutations using furrr (backend set by caller).
+  perm_stats <- future_map(seq_len(n_perm), function(i) {
+    perm_to <- to_geo
+    for (idx in block_idx) {
+      perm_to[idx] <- sample(perm_to[idx])
+    }
+    perm_rate <- sum(from_geo == perm_to) / n
+    c(rate = perm_rate, ratio = perm_rate / expected_rate)
+  }, .options = furrr_options(seed = seed))
+
+  perm_rates  <- vapply(perm_stats, `[`, numeric(1), "rate")
+  perm_ratios <- vapply(perm_stats, `[`, numeric(1), "ratio")
+
+  # --- P-VALUE AND CI ---
+  p_value <- (sum(perm_rates >= obs_rate) + 1) / (n_perm + 1)
+  null_ci_lo <- quantile(perm_rates, 0.025)
+  null_ci_hi <- quantile(perm_rates, 0.975)
+  obs_ratio <- obs_rate / expected_rate
+  ratio_ci_lo <- quantile(perm_ratios, 0.025)
+  ratio_ci_hi <- quantile(perm_ratios, 0.975)
+  assortativity <- (obs_rate - expected_rate) / (1 - expected_rate)
+
+  tibble(
+    geo_level       = geo_level,
+    n_edges         = n,
+    observed_rate   = obs_rate,
+    expected_rate   = expected_rate,
+    homophily_ratio = obs_ratio,
+    assortativity   = assortativity,
     ratio_ci_lo     = as.numeric(ratio_ci_lo),
     ratio_ci_hi     = as.numeric(ratio_ci_hi),
     null_ci_lo      = as.numeric(null_ci_lo),
@@ -308,7 +402,7 @@ homophily_permtest <- function(from_geo, to_geo, n_perm = N_PERM,
 # we collect them all into a single job list. This approach:
 #   1. Reduces scheduling overhead (one batch send to workers vs many small ones)
 #   2. Allows better load balancing across workers (furrr can reorder jobs)
-#   3. Makes progress tracking simpler (one progress bar for all ~80 jobs)
+#   3. Makes progress tracking simpler (one progress bar for all 89 jobs)
 #   4. Makes it easier to add metadata (finding type, prize, decade) to results
 #
 # Each job is a list of: from_geo vector, to_geo vector, geo_level string,
@@ -325,7 +419,7 @@ jobs <- list()  # Accumulator for all permutation test jobs
 # Arguments:
 #   from_geo, to_geo: Geographic vectors to compare
 #   geo_level: Geographic granularity label ("country", "subregion", "continent")
-#   n_perm: Number of permutation replicates (default N_PERM=1000)
+#   n_perm: Number of permutation replicates (default N_PERM=10000)
 #   ...: Named arguments become metadata (e.g., finding="edge_type", prize="Physics")
 add_job <- function(from_geo, to_geo, geo_level, n_perm = N_PERM, ...) {
   meta <- list(...)
@@ -427,6 +521,20 @@ for (p in c("Chemistry", "Physics", "Physiology/Medicine", "Literature", "Peace"
           "country", finding = "prize", prize = p)
 }
 
+# 2b. Harmonized 1901-1953 prize comparison (robustness check)
+# Because Physiology/Medicine data end in 1953 while other prizes extend to
+# 1974-1975, and because homophily changes over time, the full-period
+# prize-level ratios confound discipline with time period. This check
+# restricts all prizes to 1901-1953 to verify the ranking is preserved.
+for (p in c("Chemistry", "Physics", "Physiology/Medicine", "Literature", "Peace")) {
+  nom_p_harmonized <- nom_geo %>%
+    filter((prize == p | (p == "Physiology/Medicine" & prize == "Medicine")),
+           year <= 1953)
+
+  add_job(nom_p_harmonized$nominator_country_modern, nom_p_harmonized$nominee_country_modern,
+          "country", finding = "prize_harmonized", prize = p)
+}
+
 
 # ---- FINDING 3: Temporal trends ----
 # Analyze how geographic homophily in the Nobel Prize has evolved over time.
@@ -474,11 +582,16 @@ for (p in c("Chemistry", "Physics", "Physiology/Medicine", "Literature", "Peace"
 
 message(sprintf("  %d permutation jobs queued", length(jobs)))
 
+# Sort jobs largest-first (longest processing time first) so that big jobs
+# start immediately and small jobs fill in gaps at the end. Without this,
+# workers sit idle near the end waiting for the last large job to finish.
+job_sizes <- vapply(jobs, function(j) length(j$from_geo), integer(1))
+jobs      <- jobs[order(job_sizes, decreasing = TRUE)]
 
 # =============================================================================
 # DISPATCH ALL JOBS IN PARALLEL via furrr::future_map + progressr
 # =============================================================================
-# This section uses furrr::future_map to parallelize all ~80 permutation tests.
+# This section uses furrr::future_map to parallelize all 89 permutation tests.
 # Each job is ~1 second on one core, so total time is ~2-5 minutes on 8 cores.
 #
 # PARALLEL STRATEGY:
@@ -546,6 +659,7 @@ message(sprintf("  %d / %d jobs returned results", nrow(all_results), length(job
 
 all_edge_results    <- all_results %>% filter(finding == "edge_type")
 prize_results       <- all_results %>% filter(finding == "prize")
+prize_harmonized    <- all_results %>% filter(finding == "prize_harmonized")
 decade_perm_results <- all_results %>% filter(finding == "temporal")
 prize_decade_results <- all_results %>% filter(finding == "prize_temporal")
 
@@ -563,7 +677,7 @@ prize_decade_results <- all_results %>% filter(finding == "prize_temporal")
 #   - Obs.: Observed same-geography rate (%)
 #   - Exp.: Expected rate under independence of marginals (%)
 #   - Ratio: Homophily ratio H = O/E (the effect size)
-#   - p: P-value from permutation test (1000 permutations)
+#   - p: P-value from permutation test (10000 permutations)
 #
 message("  Generating Table 2...")
 
@@ -584,7 +698,7 @@ tab2 <- all_edge_results %>%
   arrange(geo_level, desc(homophily_ratio)) %>%
   # Select columns for table output (order matters)
   select(edge_type_clean, geo_level, n_edges, observed_rate, expected_rate,
-         homophily_ratio, ratio_ci_lo, ratio_ci_hi, null_ci_lo, null_ci_hi, p_value)
+         homophily_ratio, assortativity, ratio_ci_lo, ratio_ci_hi, null_ci_lo, null_ci_hi, p_value)
 
 # Build LaTeX table from results. Format all values appropriately:
 # - Edge type / Scale: character strings
@@ -596,12 +710,12 @@ tab2 <- all_edge_results %>%
 tex_lines <- c(
   "\\begin{table}[ht]",
   "\\centering",
-  "\\caption{Geographic homophily by edge type and geographic scale. Homophily ratio is observed same-geography rate divided by expected rate under random pairing, with 95\\% confidence intervals. $p$-values from 1{,}000 permutations.}",
+  "\\caption{Geographic homophily by edge type and geographic scale. Homophily ratio $H = O/E$; Newman's assortativity $r = (O - E)/(1 - E)$. 95\\% CI from permutation null distribution. $p$-values from 10{,}000 permutations; $p_{\\text{adj}}$ is Bonferroni-adjusted across 49 formal tests.}",
   "\\label{tab:homophily_edge_type}",
   "\\small",
-  "\\begin{tabular}{llrrrrc}",
+  "\\begin{tabular}{llrrrrrcc}",
   "\\toprule",
-  "Edge type & Scale & $N$ & Obs. & Exp. & Ratio [95\\% CI] & $p$ \\\\",
+  "Edge type & Scale & $N$ & Obs. & Exp. & Ratio [95\\% CI] & $r$ & $p$ & $p_{\\text{adj}}$ \\\\",
   "\\midrule"
 )
 
@@ -609,13 +723,15 @@ tex_lines <- c(
 for (i in seq_len(nrow(tab2))) {
   r <- tab2[i, ]
   p_str <- if (r$p_value < 0.001) "$<$0.001" else sprintf("%.3f", r$p_value)
+  p_adj <- min(1, r$p_value * 49)
+  p_adj_str <- if (p_adj < 0.001) "$<$0.001" else sprintf("%.3f", p_adj)
   ratio_ci <- sprintf("%.2f [%.2f, %.2f]", r$homophily_ratio, r$ratio_ci_lo, r$ratio_ci_hi)
   tex_lines <- c(tex_lines, sprintf(
-    "%s & %s & %s & %.1f\\%% & %.1f\\%% & %s & %s \\\\",
+    "%s & %s & %s & %.1f\\%% & %.1f\\%% & %s & %.3f & %s & %s \\\\",
     r$edge_type_clean, r$geo_level,
     format(r$n_edges, big.mark = ","),
     100 * r$observed_rate, 100 * r$expected_rate,
-    ratio_ci, p_str
+    ratio_ci, r$assortativity, p_str, p_adj_str
   ))
 }
 
@@ -686,7 +802,7 @@ diversity_decade <- noms %>%
 #   - Obs.: Observed same-continent nomination rate (%)
 #   - Exp.: Expected rate under independence of marginals (%)
 #   - Ratio: Homophily ratio H = O/E
-#   - p: P-value from 1000 permutations
+#   - p: P-value from 10000 permutations
 #
 message("  Generating Table 3...")
 
@@ -697,7 +813,7 @@ tab3 <- decade_perm_results %>%
   left_join(diversity_decade, by = "decade") %>%
   # Select and order columns for output
   select(decade, n_edges, pct_europe, eff_continents,
-         observed_rate, expected_rate, homophily_ratio, ratio_ci_lo, ratio_ci_hi, p_value) %>%
+         observed_rate, expected_rate, homophily_ratio, assortativity, ratio_ci_lo, ratio_ci_hi, p_value) %>%
   # Sort chronologically
   arrange(decade)
 
@@ -713,12 +829,12 @@ tab3 <- decade_perm_results %>%
 tex3 <- c(
   "\\begin{table}[ht]",
   "\\centering",
-  "\\caption{Temporal trends in nominee pool diversity and nomination homophily. Homophily ratio measures continent-level geographic matching relative to random expectation, with 95\\% confidence intervals. $p$-values from 1{,}000 permutations.}",
+  "\\caption{Temporal trends in nominee pool diversity and nomination homophily. Homophily ratio $H = O/E$ measures continent-level geographic matching relative to random expectation, with 95\\% CI. $r$ is Newman's assortativity. $O - E$ is the absolute excess same-continent rate in percentage points. $p$-values from 10{,}000 permutations; $p_{\\text{adj}}$ is Bonferroni-adjusted across 49 formal tests.}",
   "\\label{tab:temporal_homophily}",
   "\\small",
-  "\\begin{tabular}{lrrrrrrc}",
+  "\\begin{tabular}{lrrrrrrrrcc}",
   "\\toprule",
-  "Decade & $N$ & \\% Eur. & Eff. cont. & Obs. & Exp. & Ratio [95\\% CI] & $p$ \\\\",
+  "Decade & $N$ & \\% Eur. & Eff. cont. & Obs. & Exp. & $O - E$ & Ratio [95\\% CI] & $r$ & $p$ & $p_{\\text{adj}}$ \\\\",
   "\\midrule"
 )
 
@@ -726,13 +842,16 @@ tex3 <- c(
 for (i in seq_len(nrow(tab3))) {
   r <- tab3[i, ]
   p_str <- if (r$p_value < 0.001) "$<$0.001" else sprintf("%.3f", r$p_value)
+  p_adj <- min(1, r$p_value * 49)
+  p_adj_str <- if (p_adj < 0.001) "$<$0.001" else sprintf("%.3f", p_adj)
   ratio_ci <- sprintf("%.2f [%.2f, %.2f]", r$homophily_ratio, r$ratio_ci_lo, r$ratio_ci_hi)
+  o_minus_e <- 100 * (r$observed_rate - r$expected_rate)
   tex3 <- c(tex3, sprintf(
-    "%ds & %s & %.1f & %.2f & %.1f\\%% & %.1f\\%% & %s & %s \\\\",
+    "%ds & %s & %.1f & %.2f & %.1f\\%% & %.1f\\%% & %.1f & %s & %.3f & %s & %s \\\\",
     r$decade, format(r$n_edges, big.mark = ","),
     r$pct_europe, r$eff_continents,
     100 * r$observed_rate, 100 * r$expected_rate,
-    ratio_ci, p_str
+    o_minus_e, ratio_ci, r$assortativity, p_str, p_adj_str
   ))
 }
 
@@ -980,6 +1099,149 @@ self_nom_prize <- noms %>%
 
 
 # =============================================================================
+# SENSITIVITY BOUNDS (Worst-Case Analysis)
+# =============================================================================
+# Compute three worst-case sensitivity bounds on the primary finding
+# (country-level nominator → nominee homophily ratio). These bounds are
+# reported in the manuscript limitations section and supplement.
+#
+# Bound 1: Missing geography — assume all records with incomplete geography
+#           are cross-country (heterophilous) nominations.
+# Bound 2: Prolific nominator leave-out — recompute H after removing the
+#           top 1%, 5%, 10% most prolific nominators.
+# Bound 3: Historical country recoding — assume all same-country matches
+#           involving historically recoded countries are spurious.
+#
+message("\n=== Computing sensitivity bounds ===")
+
+# --- Bound 1: Worst-case missing geography ---
+n_total <- nrow(noms)
+n_complete <- nrow(nom_geo)
+n_missing <- n_total - n_complete
+
+# Baseline: observed same-country rate and expected rate from complete data
+obs_same_country <- sum(nom_geo$nominator_country_modern == nom_geo$nominee_country_modern)
+obs_rate_baseline <- obs_same_country / n_complete
+from_dist <- table(nom_geo$nominator_country_modern) / n_complete
+to_dist <- table(nom_geo$nominee_country_modern) / n_complete
+shared <- intersect(names(from_dist), names(to_dist))
+exp_rate_baseline <- sum(from_dist[shared] * to_dist[shared])
+H_baseline <- obs_rate_baseline / exp_rate_baseline
+
+# Worst case: all missing records are cross-country → observed same-country
+# count stays the same, but denominator increases by n_missing
+obs_rate_worstcase <- obs_same_country / (n_complete + n_missing)
+# Expected rate shifts slightly with expanded denominator; use conservative
+# approach of keeping E the same (this is actually favorable to the null,
+# so the bound is conservative)
+H_missing_worstcase <- obs_rate_worstcase / exp_rate_baseline
+
+message(sprintf("  Bound 1 (missing geography): %d/%d records complete (%.1f%%)",
+                n_complete, n_total, 100 * n_complete / n_total))
+message(sprintf("    Baseline H = %.3f, worst-case H = %.3f (%.1f%% reduction)",
+                H_baseline, H_missing_worstcase,
+                100 * (1 - H_missing_worstcase / H_baseline)))
+
+# --- Bound 2: Prolific nominator leave-out ---
+nominator_counts <- nom_geo %>%
+  count(nominator_person_id, sort = TRUE)
+n_nominators <- nrow(nominator_counts)
+
+sensitivity_leaveout <- tibble(
+  pct_removed = numeric(),
+  n_nominators_removed = numeric(),
+  n_edges_remaining = numeric(),
+  H = numeric()
+)
+
+for (pct in c(0.01, 0.05, 0.10)) {
+  n_remove <- ceiling(n_nominators * pct)
+  top_nominators <- nominator_counts$nominator_person_id[1:n_remove]
+  nom_subset <- nom_geo %>% filter(!nominator_person_id %in% top_nominators)
+  n_sub <- nrow(nom_subset)
+
+  obs_same_sub <- sum(nom_subset$nominator_country_modern == nom_subset$nominee_country_modern)
+  obs_rate_sub <- obs_same_sub / n_sub
+  from_d <- table(nom_subset$nominator_country_modern) / n_sub
+  to_d <- table(nom_subset$nominee_country_modern) / n_sub
+  sh <- intersect(names(from_d), names(to_d))
+  exp_rate_sub <- sum(from_d[sh] * to_d[sh])
+  H_sub <- obs_rate_sub / exp_rate_sub
+
+  sensitivity_leaveout <- bind_rows(sensitivity_leaveout, tibble(
+    pct_removed = pct,
+    n_nominators_removed = n_remove,
+    n_edges_remaining = n_sub,
+    H = H_sub
+  ))
+
+  message(sprintf("  Bound 2 (leave-out top %.0f%%): removed %d nominators, %d edges remain, H = %.3f",
+                  pct * 100, n_remove, n_sub, H_sub))
+}
+
+# --- Bound 3: Historical country recoding ---
+# Identify edges where the original archive country differs from the modern
+# mapped country (indicating historical recoding, e.g. Austria-Hungary → Austria)
+nom_geo_raw <- noms %>%
+  filter(!is.na(nominator_continent), !is.na(nominee_continent))
+
+same_country <- nom_geo_raw$nominator_country_modern == nom_geo_raw$nominee_country_modern
+# Compare case-insensitively: archive uses ALL CAPS, modern uses title case,
+# so a naive comparison flags every record as "recoded." We normalize to
+# lowercase before comparing to isolate true historical recodings
+# (e.g., U.S.S.R. → Russia, CZECHOSLOVAKIA → Czech Republic).
+nominator_recoded <- tolower(trimws(nom_geo_raw$nominator_country)) !=
+                     tolower(trimws(nom_geo_raw$nominator_country_modern))
+nominee_recoded <- tolower(trimws(nom_geo_raw$nominee_country)) !=
+                   tolower(trimws(nom_geo_raw$nominee_country_modern))
+# Handle NAs in raw country fields (treat as not recoded)
+nominator_recoded[is.na(nominator_recoded)] <- FALSE
+nominee_recoded[is.na(nominee_recoded)] <- FALSE
+
+n_same_country <- sum(same_country)
+n_recoded_same <- sum(same_country & (nominator_recoded | nominee_recoded))
+
+# Worst case: remove all recoded same-country matches
+obs_rate_recoded <- (obs_same_country - n_recoded_same) / n_complete
+H_recoding_worstcase <- obs_rate_recoded / exp_rate_baseline
+
+message(sprintf("  Bound 3 (historical recoding): %d of %d same-country edges recoded (%.2f%%)",
+                n_recoded_same, n_same_country, 100 * n_recoded_same / n_same_country))
+message(sprintf("    Worst-case H = %.3f (%.1f%% reduction)",
+                H_recoding_worstcase,
+                100 * (1 - H_recoding_worstcase / H_baseline)))
+
+# --- Combined worst case ---
+obs_rate_combined <- (obs_same_country - n_recoded_same) / (n_complete + n_missing)
+H_combined <- obs_rate_combined / exp_rate_baseline
+message(sprintf("  Combined worst case: H = %.3f", H_combined))
+
+# Collect all bounds into a single results table
+sensitivity_bounds <- tibble(
+  bound = c("baseline", "missing_geography", "historical_recoding",
+            "combined_worst_case",
+            paste0("leaveout_top_", sensitivity_leaveout$pct_removed * 100, "pct")),
+  H = c(H_baseline, H_missing_worstcase, H_recoding_worstcase,
+        H_combined, sensitivity_leaveout$H),
+  description = c(
+    "Primary finding (all complete records)",
+    "All missing records assumed cross-country",
+    "All historically recoded same-country matches removed",
+    "Missing geography + recoding combined",
+    paste0("Top ", sensitivity_leaveout$pct_removed * 100, "% prolific nominators removed")
+  ),
+  n_edges = c(n_complete, n_complete + n_missing, n_complete,
+              n_complete + n_missing, sensitivity_leaveout$n_edges_remaining),
+  n_same_country = c(obs_same_country, obs_same_country,
+                     obs_same_country - n_recoded_same,
+                     obs_same_country - n_recoded_same,
+                     rep(NA_real_, nrow(sensitivity_leaveout)))
+)
+
+message("  Sensitivity bounds computed.")
+
+
+# =============================================================================
 # SAVE ALL COMPUTED RESULTS AS CSV
 # =============================================================================
 # Export all computed results (permutation test outcomes, diversity metrics,
@@ -999,11 +1261,74 @@ self_nom_prize <- noms %>%
 message("\n=== Saving computed results as CSV ===")
 write_csv(all_edge_results, data_path("results_edge_homophily.csv"))
 write_csv(prize_results, data_path("results_prize_homophily.csv"))
+write_csv(prize_harmonized, data_path("results_prize_homophily_harmonized.csv"))
 write_csv(decade_perm_results, data_path("results_temporal_homophily.csv"))
 write_csv(prize_decade_results, data_path("results_prize_temporal_homophily.csv"))
 write_csv(equity, data_path("results_nomination_equity.csv"))
 write_csv(self_nom_prize, data_path("results_self_nomination_by_prize.csv"))
 write_csv(tab1, data_path("results_layer_composition.csv"))
+write_csv(sensitivity_bounds, data_path("results_sensitivity_bounds.csv"))
+
+
+# =============================================================================
+# BLOCKWISE PERMUTATION ROBUSTNESS CHECK
+# =============================================================================
+# Test whether nominator → nominee homophily persists when permutations are
+# performed WITHIN prize-year blocks rather than across the full edge set.
+# This conditions on the compositional structure of each prize-year combination,
+# providing a more conservative null model. If the pooled H ≈ 4.85 were an
+# artifact of aggregating heterogeneous prize-year blocks, the blockwise test
+# would show H closer to 1.
+#
+# We run blockwise tests at all three geographic scales for the primary
+# nominator → nominee edge type.
+#
+message("\n=== Blockwise permutation robustness check ===")
+
+# Re-enable parallel backend for blockwise tests
+plan(multisession, workers = n_cores)
+
+# Prepare nomination data with prize-year blocks
+nom_block <- noms %>%
+  filter(!is.na(nominator_continent), !is.na(nominee_continent)) %>%
+  mutate(block = paste(prize, year, sep = "_"))
+
+blockwise_results <- list()
+
+# Run blockwise permutation at each geographic scale
+for (geo in c("continent", "subregion", "country")) {
+  from_col <- paste0("nominator_", geo)
+  to_col   <- paste0("nominee_", geo)
+  # Handle column naming: "country" → "country_modern" in data
+  if (geo == "country") {
+    from_col <- "nominator_country_modern"
+    to_col   <- "nominee_country_modern"
+  }
+
+  message(sprintf("  Running blockwise test at %s level...", geo))
+  res <- blockwise_permtest(
+    from_geo  = nom_block[[from_col]],
+    to_geo    = nom_block[[to_col]],
+    block     = nom_block$block,
+    n_perm    = N_PERM,
+    geo_level = geo,
+    seed      = 2025
+  )
+  if (!is.null(res)) {
+    res$test_type <- "blockwise_prize_year"
+    blockwise_results[[length(blockwise_results) + 1]] <- res
+  }
+}
+
+blockwise_df <- bind_rows(blockwise_results)
+write_csv(blockwise_df, data_path("results_blockwise_homophily.csv"))
+
+message("  Blockwise results:")
+for (i in seq_len(nrow(blockwise_df))) {
+  r <- blockwise_df[i, ]
+  message(sprintf("    %s: H = %.2f, p = %.4f (n = %d)",
+                  r$geo_level, r$homophily_ratio, r$p_value, r$n_edges))
+}
 
 # --- Shut down parallel workers ---
 # Release computational resources; switch back to sequential (single-core) execution.
