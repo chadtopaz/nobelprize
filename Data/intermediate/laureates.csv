@@ -1,0 +1,929 @@
+qid,name,gender,year,prize,portion,motivation,affiliation
+Q102822,Jacobus Henricus van 't Hoff,male,1901,Chemistry,1,in recognition of the extraordinary services he has rendered by the discovery of the laws of chemical dynamics and osmotic pressure in solutions,Berlin University
+Q70554,Hermann Emil Fischer,male,1902,Chemistry,1,in recognition of the extraordinary services he has rendered by his work on sugar and purine syntheses,Berlin University
+Q80956,Svante August Arrhenius,male,1903,Chemistry,1,in recognition of the extraordinary services he has rendered to the advancement of chemistry by his electrolytic theory of dissociation,Stockholm University
+Q950726,Sir William Ramsay,male,1904,Chemistry,1,"in recognition of his services in the discovery of the inert gaseous elements in air, and his determination of their place in the periodic system",University College
+Q57078,Johann Friedrich Wilhelm Adolf von Baeyer,male,1905,Chemistry,1,"in recognition of his services in the advancement of organic chemistry and the chemical industry, through his work on organic dyes and hydroaromatic compounds",Munich University
+Q102804,Henri Moissan,male,1906,Chemistry,1,"in recognition of the great services rendered by him in his investigation and isolation of the element fluorine, and for the adoption in the service of science of the electric furnace called after him",Sorbonne University
+Q43917,Eduard Buchner,male,1907,Chemistry,1,for his biochemical researches and his discovery of cell-free fermentation,Landwirtschaftliche Hochschule (Agricultural College)
+Q9123,Ernest Rutherford,male,1908,Chemistry,1,"for his investigations into the disintegration of the elements, and the chemistry of radioactive substances",Victoria University
+Q12658,Wilhelm Ostwald,male,1909,Chemistry,1,in recognition of his work on catalysis and for his investigations into the fundamental principles governing chemical equilibria and rates of reaction,Leipzig University
+Q57127,Otto Wallach,male,1910,Chemistry,1,in recognition of his services to organic chemistry and the chemical industry by his pioneer work in the field of alicyclic compounds,Goettingen University
+Q7186,"Marie Curie, née Skłodowska",female,1911,Chemistry,1,"in recognition of her services to the advancement of chemistry by the discovery of the elements radium and polonium, by the isolation of radium and the study of the nature and compounds of this remarkable element",Sorbonne University
+Q104575,Paul Sabatier,male,1912,Chemistry,1/2,for his method of hydrogenating organic compounds in the presence of finely disintegrated metals whereby the progress of organic chemistry has been greatly advanced in recent years,Toulouse University
+Q104582,Victor Grignard,male,1912,Chemistry,1/2,"for the discovery of the so-called Grignard reagent, which in recent years has greatly advanced the progress of organic chemistry",Nancy University
+Q123014,Alfred Werner,male,1913,Chemistry,1,in recognition of his work on the linkage of atoms in molecules by which he has thrown new light on earlier investigations and opened up new fields of research especially in inorganic chemistry,University of Zurich
+Q189465,Theodore William Richards,male,1914,Chemistry,1,in recognition of his accurate determinations of the atomic weight of a large number of chemical elements,Harvard University
+Q77072,Richard Martin Willstätter,male,1915,Chemistry,1,"for his researches on plant pigments, especially chlorophyll",Kaiser-Wilhelm-Institut (now Max-Planck Institut) für Chemie
+Q57075,Fritz Haber,male,1918,Chemistry,1,for the synthesis of ammonia from its elements,Kaiser-Wilhelm-Institut (now Fritz-Haber-Institut) für physikalische Chemie und Electrochemie
+Q57125,Walther Hermann Nernst,male,1920,Chemistry,1,in recognition of his work in thermochemistry,Berlin University
+Q102830,Frederick Soddy,male,1921,Chemistry,1,"for his contributions to our knowledge of the chemistry of radioactive substances, and his investigations into the origin and nature of isotopes",University of Oxford
+Q102291,Francis William Aston,male,1922,Chemistry,1,"for his discovery, by means of his mass spectrograph, of isotopes, in a large number of non-radioactive elements, and for his enunciation of the whole-number rule",University of Cambridge
+Q78482,Fritz Pregl,male,1923,Chemistry,1,for his invention of the method of micro-analysis of organic substances,Graz University
+Q78481,Richard Adolf Zsigmondy,male,1925,Chemistry,1,"for his demonstration of the heterogenous nature of colloid solutions and for the methods he used, which have since become fundamental in modern colloid chemistry",Goettingen University
+Q186391,The (Theodor) Svedberg,male,1926,Chemistry,1,for his work on disperse systems,Uppsala University
+Q76610,Heinrich Otto Wieland,male,1927,Chemistry,1,for his investigations of the constitution of the bile acids and related substances,Munich University
+Q77142,Adolf Otto Reinhold Windaus,male,1928,Chemistry,1,for the services rendered through his research into the constitution of the sterols and their connection with the vitamins,Goettingen University
+Q189803,Arthur Harden,male,1929,Chemistry,1/2,for their investigations on the fermentation of sugar and fermentative enzymes,London University
+Q76613,Hans Karl August Simon von Euler-Chelpin,male,1929,Chemistry,1/2,for their investigations on the fermentation of sugar and fermentative enzymes,Stockholm University
+Q76604,Hans Fischer,male,1930,Chemistry,1,for his researches into the constitution of haemin and chlorophyll and especially for his synthesis of haemin,Technische Hochschule (Institute of Technology)
+Q76606,Carl Bosch,male,1931,Chemistry,1/2,in recognition of their contributions to the invention and development of chemical high pressure methods,University of Heidelberg
+Q76614,Friedrich Bergius,male,1931,Chemistry,1/2,in recognition of their contributions to the invention and development of chemical high pressure methods,University of Heidelberg
+Q184286,Irving Langmuir,male,1932,Chemistry,1,for his discoveries and investigations in surface chemistry,General Electric Company
+Q179777,Harold Clayton Urey,male,1934,Chemistry,1,for his discovery of heavy hydrogen,Columbia University
+Q150989,Frédéric Joliot,male,1935,Chemistry,1/2,in recognition of their synthesis of new radioactive elements,Institut du Radium
+Q7504,Irène Joliot-Curie,female,1935,Chemistry,1/2,in recognition of their synthesis of new radioactive elements,Institut du Radium
+Q103835,Petrus (Peter) Josephus Wilhelmus Debye,male,1936,Chemistry,1,for his contributions to our knowledge of molecular structure through his investigations on dipole moments and on the diffraction of X-rays and electrons in gases,Berlin University
+Q73093,Paul Karrer,male,1937,Chemistry,1/2,"for his investigations on carotenoids, flavins and vitamins A and B2",University of Zurich
+Q204600,Walter Norman Haworth,male,1937,Chemistry,1/2,for his investigations on carbohydrates and vitamin C,Birmingham University
+Q78483,Richard Kuhn,male,1938,Chemistry,1,for his work on carotenoids and vitamins,Kaiser-Wilhelm-Institut (now Max-Planck Institut) für Medizinische Forschung
+Q5327,Adolf Friedrich Johann Butenandt,male,1939,Chemistry,1/2,for his work on sex hormones,Kaiser-Wilhelm-Institut (now Max-Planck-Institut) für Biochemie
+Q122996,Leopold Ruzicka,male,1939,Chemistry,1/2,for his work on polymethylenes and higher terpenes,Eidgenössische Technische Hochschule (Swiss Federal Institute of Technology)
+Q76951,George de Hevesy,male,1943,Chemistry,1,for his work on the use of isotopes as tracers in the study of chemical processes,Stockholm University
+Q57065,Otto Hahn,male,1944,Chemistry,1,for his discovery of the fission of heavy nuclei,Kaiser-Wilhelm-Institut (now Max-Planck Institut) für Chemie
+Q157239,Artturi Ilmari Virtanen,male,1945,Chemistry,1,"for his research and inventions in agricultural and nutrition chemistry, especially for his fodder preservation method",University of Helsinki
+Q106756,James Batcheller Sumner,male,1946,Chemistry,1/2,for his discovery that enzymes can be crystallized,Cornell University
+Q106399,John Howard Northrop,male,1946,Chemistry,1/4,for their preparation of enzymes and virus proteins in a pure form,Rockefeller Institute for Medical Research
+Q105937,Wendell Meredith Stanley,male,1946,Chemistry,1/4,for their preparation of enzymes and virus proteins in a pure form,Rockefeller Institute for Medical Research
+Q49351,Sir Robert Robinson,male,1947,Chemistry,1,"for his investigations on plant products of biological importance, especially the alkaloids",University of Oxford
+Q233026,Arne Wilhelm Kaurin Tiselius,male,1948,Chemistry,1,"for his research on electrophoresis and adsorption analysis, especially for his discoveries concerning the complex nature of the serum proteins",Uppsala University
+Q110073,William Francis Giauque,male,1949,Chemistry,1,"for his contributions in the field of chemical thermodynamics, particularly concerning the behaviour of substances at extremely low temperatures",University of California
+Q76595,Kurt Alder,male,1950,Chemistry,1/2,for their discovery and development of the diene synthesis,Cologne University
+Q76616,Otto Paul Hermann Diels,male,1950,Chemistry,1/2,for their discovery and development of the diene synthesis,Kiel University
+Q19009,Edwin Mattison McMillan,male,1951,Chemistry,1/2,for their discoveries in the chemistry of the transuranium elements,University of California
+Q48973,Glenn Theodore Seaborg,male,1951,Chemistry,1/2,for their discoveries in the chemistry of the transuranium elements,University of California
+Q48977,Archer John Porter Martin,male,1952,Chemistry,1/2,for their invention of partition chromatography,National Institute for Medical Research
+Q48979,Richard Laurence Millington Synge,male,1952,Chemistry,1/2,for their invention of partition chromatography,Rowett Research Institute
+Q48956,Hermann Staudinger,male,1953,Chemistry,1,for his discoveries in the field of macromolecular chemistry,University of Freiburg
+Q48983,Linus Carl Pauling,male,1954,Chemistry,1,for his research into the nature of the chemical bond and its application to the elucidation of the structure of complex substances,California Institute of Technology (Caltech)
+Q33128,Vincent du Vigneaud,male,1955,Chemistry,1,"for his work on biochemically important sulphur compounds, especially for the first synthesis of a polypeptide hormone",Cornell University
+Q48990,Nikolay Nikolaevich Semenov,male,1956,Chemistry,1/2,for their researches into the mechanism of chemical reactions,Institute for Chemical Physics of the Academy of Sciences of the USSR
+Q48986,Sir Cyril Norman Hinshelwood,male,1956,Chemistry,1/2,for their researches into the mechanism of chemical reactions,University of Oxford
+Q157242,Lord (Alexander R.) Todd,male,1957,Chemistry,1,for his work on nucleotides and nucleotide co-enzymes,University of Cambridge
+Q151564,Frederick Sanger,male,1958,Chemistry,1,"for his work on the structure of proteins, especially that of insulin",University of Cambridge
+Q157701,Jaroslav Heyrovsky,male,1959,Chemistry,1,for his discovery and development of the polarographic methods of analysis,Polarographic Institute of the Czechoslovak Academy of Science
+Q190486,Willard Frank Libby,male,1960,Chemistry,1,"for his method to use carbon-14 for age determination in archaeology, geology, geophysics, and other branches of science",University of California
+Q49347,Melvin Calvin,male,1961,Chemistry,1,for his research on the carbon dioxide assimilation in plants,University of California
+Q232295,John Cowdery Kendrew,male,1962,Chemistry,1/2,for their studies of the structures of globular proteins,MRC Laboratory of Molecular Biology
+Q78480,Max Ferdinand Perutz,male,1962,Chemistry,1/2,for their studies of the structures of globular proteins,MRC Laboratory of Molecular Biology
+Q234145,Giulio Natta,male,1963,Chemistry,1/2,for their discoveries in the field of the chemistry and technology of high polymers,Institute of Technology
+Q76624,Karl Ziegler,male,1963,Chemistry,1/2,for their discoveries in the field of the chemistry and technology of high polymers,Max-Planck-Institut für Kohlenforschung
+Q7487,Dorothy Crowfoot Hodgkin,female,1964,Chemistry,1,for her determinations by X-ray techniques of the structures of important biochemical substances,"University of Oxford, Royal Society"
+Q232316,Robert Burns Woodward,male,1965,Chemistry,1,for his outstanding achievements in the art of organic synthesis,Harvard University
+Q233355,Robert S. Mulliken,male,1966,Chemistry,1,for his fundamental work concerning chemical bonds and the electronic structure of molecules by the molecular orbital method,University of Chicago
+Q106762,George Porter,male,1967,Chemistry,1/4,"for their studies of extremely fast chemical reactions, effected by disturbing the equilibrium by means of very short pulses of energy",Royal Institution of Great Britain
+Q76600,Manfred Eigen,male,1967,Chemistry,1/2,"for their studies of extremely fast chemical reactions, effected by disturbing the equilibrium by means of very short pulses of energy",Max-Planck-Institut für Physikalische Chemie
+Q235834,Ronald George Wreyford Norrish,male,1967,Chemistry,1/4,"for their studies of extremely fast chemical reactions, effected by disturbing the equilibrium by means of very short pulses of energy",Institute of Physical Chemistry
+Q107405,Lars Onsager,male,1968,Chemistry,1,"for the discovery of the reciprocal relations bearing his name, which are fundamental for the thermodynamics of irreversible processes",Yale University
+Q102419,Derek H. R. Barton,male,1969,Chemistry,1/2,for their contributions to the development of the concept of conformation and its application in chemistry,Imperial College
+Q157212,Odd Hassel,male,1969,Chemistry,1/2,for their contributions to the development of the concept of conformation and its application in chemistry,University of Oslo
+Q233985,Luis F. Leloir,male,1970,Chemistry,1,for his discovery of sugar nucleotides and their role in the biosynthesis of carbohydrates,Institute for Biochemical Research
+Q76602,Gerhard Herzberg,male,1971,Chemistry,1,"for his contributions to the knowledge of electronic structure and geometry of molecules, particularly free radicals",National Research Council of Canada
+Q102278,Christian B. Anfinsen,male,1972,Chemistry,1/2,"for his work on ribonuclease, especially concerning the connection between the amino acid sequence and the biologically active conformation",National Institutes of Health
+Q110952,Stanford Moore,male,1972,Chemistry,1/4,for their contribution to the understanding of the connection between chemical structure and catalytic activity of the active centre of the ribonuclease molecule,Rockefeller University
+Q156492,William H. Stein,male,1972,Chemistry,1/4,for their contribution to the understanding of the connection between chemical structure and catalytic activity of the active centre of the ribonuclease molecule,Rockefeller University
+Q44594,Ernst Otto Fischer,male,1973,Chemistry,1/2,"for their pioneering work, performed independently, on the chemistry of the organometallic, so called sandwich compounds",Technical University
+Q274128,Geoffrey Wilkinson,male,1973,Chemistry,1/2,"for their pioneering work, performed independently, on the chemistry of the organometallic, so called sandwich compounds",Imperial College
+Q176351,Paul J. Flory,male,1974,Chemistry,1,"for his fundamental achievements, both theoretical and experimental, in the physical chemistry of the macromolecules",Stanford University
+Q135154,John Warcup Cornforth,male,1975,Chemistry,1/2,for his work on the stereochemistry of enzyme-catalyzed reactions,University of Sussex
+Q83501,Vladimir Prelog,male,1975,Chemistry,1/2,for his research into the stereochemistry of organic molecules and reactions,Eidgenössische Technische Hochschule (Swiss Federal Institute of Technology)
+Q110935,William N. Lipscomb,male,1976,Chemistry,1,for his studies on the structure of boranes illuminating problems of chemical bonding,Harvard University
+Q183509,Ilya Romanovich Prigogine,male,1977,Chemistry,1,"for his contributions to non-equilibrium thermodynamics, particularly the theory of dissipative structures",Université Libre de Bruxelles
+Q207992,Peter D. Mitchell,male,1978,Chemistry,1,for his contribution to the understanding of biological energy transfer through the formulation of the chemiosmotic theory,Glynn Research Laboratories
+Q77171,Georg Wittig,male,1979,Chemistry,1/2,"for their development of the use of boron- and phosphorus-containing compounds, respectively, into important reagents in organic synthesis",University of Heidelberg
+Q102406,Herbert C. Brown,male,1979,Chemistry,1/2,"for their development of the use of boron- and phosphorus-containing compounds, respectively, into important reagents in organic synthesis",Purdue University
+Q151564,Frederick Sanger,male,1980,Chemistry,1/4,for their contributions concerning the determination of base sequences in nucleic acids,MRC Laboratory of Molecular Biology
+Q102379,Paul Berg,male,1980,Chemistry,1/2,"for his fundamental studies of the biochemistry of nucleic acids, with particular regard to recombinant-DNA",Stanford University
+Q217486,Walter Gilbert,male,1980,Chemistry,1/4,for their contributions concerning the determination of base sequences in nucleic acids,"Harvard University, Biological Laboratories"
+Q217734,Kenichi Fukui,male,1981,Chemistry,1/2,"for their theories, developed independently, concerning the course of chemical reactions",Kyoto University
+Q273279,Roald Hoffmann,male,1981,Chemistry,1/2,"for their theories, developed independently, concerning the course of chemical reactions",Cornell University
+Q190626,Aaron Klug,male,1982,Chemistry,1,for his development of crystallographic electron microscopy and his structural elucidation of biologically important nucleic acid-protein complexes,MRC Laboratory of Molecular Biology
+Q235983,Henry Taube,male,1983,Chemistry,1,"for his work on the mechanisms of electron transfer reactions, especially in metal complexes",Stanford University
+Q224153,Robert Bruce Merrifield,male,1984,Chemistry,1,for his development of methodology for chemical synthesis on a solid matrix,Rockefeller University
+Q107422,Herbert A. Hauptman,male,1985,Chemistry,1/2,for their outstanding achievements in the development of direct methods for the determination of crystal structures,The Medical Foundation of Buffalo
+Q106733,Jerome Karle,male,1985,Chemistry,1/2,for their outstanding achievements in the development of direct methods for the determination of crystal structures,US Naval Research Laboratory
+Q243196,Dudley R. Herschbach,male,1986,Chemistry,1/3,for their contributions concerning the dynamics of chemical elementary processes,Harvard University
+Q237825,John C. Polanyi,male,1986,Chemistry,1/3,for their contributions concerning the dynamics of chemical elementary processes,University of Toronto
+Q243190,Yuan T. Lee,male,1986,Chemistry,1/3,for their contributions concerning the dynamics of chemical elementary processes,University of California
+Q244998,Charles J. Pedersen,male,1987,Chemistry,1/3,for their development and use of molecules with structure-specific interactions of high selectivity,Du Pont
+Q135151,Donald J. Cram,male,1987,Chemistry,1/3,for their development and use of molecules with structure-specific interactions of high selectivity,University of California
+Q107690,Jean-Marie Lehn,male,1987,Chemistry,1/3,for their development and use of molecules with structure-specific interactions of high selectivity,Université Louis Pasteur
+Q77086,Hartmut Michel,male,1988,Chemistry,1/3,for the determination of the three-dimensional structure of a photosynthetic reaction centre,Max-Planck-Institut für Biophysik
+Q76612,Johann Deisenhofer,male,1988,Chemistry,1/3,for the determination of the three-dimensional structure of a photosynthetic reaction centre,University of Texas Southwestern Medical Center at Dallas
+Q76623,Robert Huber,male,1988,Chemistry,1/3,for the determination of the three-dimensional structure of a photosynthetic reaction centre,Max-Planck-Institut für Biochemie
+Q102266,Sidney Altman,male,1989,Chemistry,1/2,for their discovery of catalytic properties of RNA,Yale University
+Q135180,Thomas R. Cech,male,1989,Chemistry,1/2,for their discovery of catalytic properties of RNA,University of Colorado
+Q135171,Elias James Corey,male,1990,Chemistry,1,for his development of the theory and methodology of organic synthesis,Harvard University
+Q122272,Richard R. Ernst,male,1991,Chemistry,1,for his contributions to the development of the methodology of high resolution nuclear magnetic resonance (NMR) spectroscopy,Eidgenössische Technische Hochschule (Swiss Federal Institute of Technology)
+Q239067,Rudolph A. Marcus,male,1992,Chemistry,1,for his contributions to the theory of electron transfer reactions in chemical systems,California Institute of Technology (Caltech)
+Q157224,Kary B. Mullis,male,1993,Chemistry,1/2,for his invention of the polymerase chain reaction (PCR) method,NA
+Q232289,Michael Smith,male,1993,Chemistry,1/2,"for his fundamental contributions to the establishment of oligonucleotide-based, site-directed mutagenesis and its development for protein studies",University of British Columbia
+Q192603,George A. Olah,male,1994,Chemistry,1,for his contribution to carbocation chemistry,University of Southern California
+Q111190,F. Sherwood Rowland,male,1995,Chemistry,1/3,"for their work in atmospheric chemistry, particularly concerning the formation and decomposition of ozone",University of California
+Q19045,Mario J. Molina,male,1995,Chemistry,1/3,"for their work in atmospheric chemistry, particularly concerning the formation and decomposition of ozone",Massachusetts Institute of Technology (MIT)
+Q135139,Paul J. Crutzen,male,1995,Chemistry,1/3,"for their work in atmospheric chemistry, particularly concerning the formation and decomposition of ozone",Max-Planck-Institut für Chemie
+Q106746,Richard E. Smalley,male,1996,Chemistry,1/3,for their discovery of fullerenes,Rice University
+Q110930,Robert F. Curl Jr.,male,1996,Chemistry,1/3,for their discovery of fullerenes,Rice University
+Q157250,Sir Harold W. Kroto,male,1996,Chemistry,1/3,for their discovery of fullerenes,University of Sussex
+Q1687170,Jens C. Skou,male,1997,Chemistry,1/2,"for the first discovery of an ion-transporting enzyme, Na+, K+ -ATPase",Aarhus University
+Q235184,John E. Walker,male,1997,Chemistry,1/4,for their elucidation of the enzymatic mechanism underlying the synthesis of adenosine triphosphate (ATP),MRC Laboratory of Molecular Biology
+Q102395,Paul D. Boyer,male,1997,Chemistry,1/4,for their elucidation of the enzymatic mechanism underlying the synthesis of adenosine triphosphate (ATP),University of California
+Q233973,John A. Pople,male,1998,Chemistry,1/2,for his development of computational methods in quantum chemistry,Northwestern University
+Q78510,Walter Kohn,male,1998,Chemistry,1/2,for his development of the density-functional theory,University of California
+Q106624,Ahmed H. Zewail,male,1999,Chemistry,1,for his studies of the transition states of chemical reactions using femtosecond spectroscopy,California Institute of Technology (Caltech)
+Q110942,Alan G. MacDiarmid,male,2000,Chemistry,1/3,for the discovery and development of conductive polymers,University of Pennsylvania
+Q106751,Alan J. Heeger,male,2000,Chemistry,1/3,for the discovery and development of conductive polymers,University of California
+Q110916,Hideki Shirakawa,male,2000,Chemistry,1/3,for the discovery and development of conductive polymers,University of Tsukuba
+Q110925,K. Barry Sharpless,male,2001,Chemistry,1/2,for his work on chirally catalysed oxidation reactions,The Scripps Research Institute
+Q157210,Ryoji Noyori,male,2001,Chemistry,1/4,for their work on chirally catalysed hydrogenation reactions,Nagoya University
+Q110947,William S. Knowles,male,2001,Chemistry,1/4,for their work on chirally catalysed hydrogenation reactions,NA
+Q106738,John B. Fenn,male,2002,Chemistry,1/4,for their development of soft desorption ionisation methods for mass spectrometric analyses of biological macromolecules,Virginia Commonwealth University
+Q110963,Koichi Tanaka,male,2002,Chemistry,1/4,for their development of soft desorption ionisation methods for mass spectrometric analyses of biological macromolecules,Shimadzu Corp.
+Q110957,Kurt Wüthrich,male,2002,Chemistry,1/2,for his development of nuclear magnetic resonance spectroscopy for determining the three-dimensional structure of biological macromolecules in solution,Eidgenössische Technische Hochschule (Swiss Federal Institute of Technology)
+Q102250,Peter Agre,male,2003,Chemistry,1/2,for the discovery of water channels,Johns Hopkins University School of Medicine
+Q211482,Roderick MacKinnon,male,2003,Chemistry,1/2,for structural and mechanistic studies of ion channels,Rockefeller University
+Q233205,Aaron Ciechanover,male,2004,Chemistry,1/3,for the discovery of ubiquitin-mediated protein degradation,Technion - Israel Institute of Technology
+Q232302,Avram Hershko,male,2004,Chemistry,1/3,for the discovery of ubiquitin-mediated protein degradation,Technion - Israel Institute of Technology
+Q230652,Irwin Rose,male,2004,Chemistry,1/3,for the discovery of ubiquitin-mediated protein degradation,University of California
+Q202159,Richard R. Schrock,male,2005,Chemistry,1/3,for the development of the metathesis method in organic synthesis,Massachusetts Institute of Technology (MIT)
+Q202140,Robert H. Grubbs,male,2005,Chemistry,1/3,for the development of the metathesis method in organic synthesis,California Institute of Technology (Caltech)
+Q202146,Yves Chauvin,male,2005,Chemistry,1/3,for the development of the metathesis method in organic synthesis,Institut Français du Pétrole
+Q170676,Roger D. Kornberg,male,2006,Chemistry,1,for his studies of the molecular basis of eukaryotic transcription,Stanford University
+Q60066,Gerhard Ertl,male,2007,Chemistry,1,for his studies of chemical processes on solid surfaces,Fritz-Haber-Institut der Max-Planck-Gesellschaft
+Q106699,Martin Chalfie,male,2008,Chemistry,1/3,"for the discovery and development of the green fluorescent protein, GFP",Columbia University
+Q205345,Osamu Shimomura,male,2008,Chemistry,1/3,"for the discovery and development of the green fluorescent protein, GFP",Marine Biological Laboratory (MBL)
+Q200470,Roger Y. Tsien,male,2008,Chemistry,1/3,"for the discovery and development of the green fluorescent protein, GFP",University of California
+Q7426,Ada E. Yonath,female,2009,Chemistry,1/3,for studies of the structure and function of the ribosome,Weizmann Institute of Science
+Q109559,Thomas A. Steitz,male,2009,Chemistry,1/3,for studies of the structure and function of the ribosome,Yale University
+Q60061,Venkatraman Ramakrishnan,male,2009,Chemistry,1/3,for studies of the structure and function of the ribosome,MRC Laboratory of Molecular Biology
+Q105949,Akira Suzuki,male,2010,Chemistry,1/3,for palladium-catalyzed cross couplings in organic synthesis,Hokkaido University
+Q105927,Ei-ichi Negishi,male,2010,Chemistry,1/3,for palladium-catalyzed cross couplings in organic synthesis,Purdue University
+Q106471,Richard F. Heck,male,2010,Chemistry,1/3,for palladium-catalyzed cross couplings in organic synthesis,University of Delaware
+Q44111,Dan Shechtman,male,2011,Chemistry,1,for the discovery of quasicrystals,Technion - Israel Institute of Technology
+Q80907,Brian K. Kobilka,male,2012,Chemistry,1/2,for studies of G-protein-coupled receptors,Stanford University School of Medicine
+Q80910,Robert J. Lefkowitz,male,2012,Chemistry,1/2,for studies of G-protein-coupled receptors,Howard Hughes Medical Institute
+Q4790366,Arieh Warshel,male,2013,Chemistry,1/3,for the development of multiscale models for complex chemical systems,University of Southern California
+Q903471,Martin Karplus,male,2013,Chemistry,1/3,for the development of multiscale models for complex chemical systems,Université de Strasbourg
+Q6832227,Michael Levitt,male,2013,Chemistry,1/3,for the development of multiscale models for complex chemical systems,Stanford University School of Medicine
+Q1351105,Eric Betzig,male,2014,Chemistry,1/3,for the development of super-resolved fluorescence microscopy,"Janelia Research Campus, Howard Hughes Medical Institute"
+Q91410,Stefan W. Hell,male,2014,Chemistry,1/3,for the development of super-resolved fluorescence microscopy,Max Planck Institute for Biophysical Chemistry
+Q1387059,William E. Moerner,male,2014,Chemistry,1/3,for the development of super-resolved fluorescence microscopy,Stanford University
+Q15118973,Aziz Sancar,male,2015,Chemistry,1/3,for mechanistic studies of DNA repair,University of North Carolina
+Q7151888,Paul Modrich,male,2015,Chemistry,1/3,for mechanistic studies of DNA repair,Howard Hughes Medical Institute
+Q1886068,Tomas Lindahl,male,2015,Chemistry,1/3,for mechanistic studies of DNA repair,Francis Crick Institute
+Q3259614,Bernard L. Feringa,male,2016,Chemistry,1/3,for the design and synthesis of molecular machines,University of Groningen
+Q3169751,Jean-Pierre Sauvage,male,2016,Chemistry,1/3,for the design and synthesis of molecular machines,University of Strasbourg
+Q376243,Sir J. Fraser Stoddart,male,2016,Chemistry,1/3,for the design and synthesis of molecular machines,Northwestern University
+Q41585344,Jacques Dubochet,male,2017,Chemistry,1/3,for developing cryo-electron microscopy for the high-resolution structure determination of biomolecules in solution,University of Lausanne
+Q28833112,Joachim Frank,male,2017,Chemistry,1/3,for developing cryo-electron microscopy for the high-resolution structure determination of biomolecules in solution,Columbia University
+Q1678456,Richard Henderson,male,2017,Chemistry,1/3,for developing cryo-electron microscopy for the high-resolution structure determination of biomolecules in solution,MRC Laboratory of Molecular Biology
+Q4273363,Frances H. Arnold,female,2018,Chemistry,1/2,for the directed evolution of enzymes,California Institute of Technology (Caltech)
+Q56868017,George P. Smith,male,2018,Chemistry,1/4,for the phage display of peptides and antibodies,University of Missouri
+Q1545000,Sir Gregory P. Winter,male,2018,Chemistry,1/4,for the phage display of peptides and antibodies,MRC Laboratory of Molecular Biology
+Q4701206,Akira Yoshino,male,2019,Chemistry,1/3,for the development of lithium-ion batteries,Asahi Kasei Corporation
+Q906529,John B. Goodenough,male,2019,Chemistry,1/3,for the development of lithium-ion batteries,University of Texas
+Q285062,M. Stanley Whittingham,male,2019,Chemistry,1/3,for the development of lithium-ion batteries,"Binghamton University, State University of New York"
+Q17280087,Emmanuelle Charpentier,female,2020,Chemistry,1/2,for the development of a method for genome editing,Max Planck Unit for the Science of Pathogens
+Q56068,Jennifer A. Doudna,female,2020,Chemistry,1/2,for the development of a method for genome editing,University of California
+Q105572,Benjamin List,male,2021,Chemistry,1/2,for the development of asymmetric organocatalysis,Max-Planck-Institut für Kohlenforschung
+Q5237001,David W.C. MacMillan,male,2021,Chemistry,1/2,for the development of asymmetric organocatalysis,Princeton University
+Q7442,Carolyn R. Bertozzi,female,2022,Chemistry,1/3,for the development of click chemistry and bioorthogonal chemistry,Stanford University
+Q110925,K. Barry Sharpless,male,2022,Chemistry,1/3,for the development of click chemistry and bioorthogonal chemistry,Scripps Research
+Q6914509,Morten Meldal,male,2022,Chemistry,1/3,for the development of click chemistry and bioorthogonal chemistry,University of Copenhagen
+Q1547368,Aleksey Yekimov ,male,2023,Chemistry,1/3,for the discovery and synthesis of quantum dots,Nanocrystals Technology Inc.
+Q194646,Louis E. Brus,male,2023,Chemistry,1/3,for the discovery and synthesis of quantum dots,Columbia University
+Q15433043,Moungi G. Bawendi,male,2023,Chemistry,1/3,for the discovery and synthesis of quantum dots,Massachusetts Institute of Technology (MIT)
+Q3814528,David Baker,male,2024,Chemistry,1/2,for computational protein design,University of Washington
+Q3022141,Demis Hassabis,male,2024,Chemistry,1/4,for protein structure prediction,Google DeepMind
+Q89620738,John Jumper,male,2024,Chemistry,1/4,for protein structure prediction,Google DeepMind
+Q743252,Omar M. Yaghi,male,2025,Chemistry,1/3,for the development of metal–organic frameworks,University of California
+Q23073819,Richard Robson,male,2025,Chemistry,1/3,for the development of metal–organic frameworks,University of Melbourne
+Q11401680,Susumu Kitagawa,male,2025,Chemistry,1/3,for the development of metal–organic frameworks,Kyoto University
+Q42247,Sully Prudhomme,male,1901,Literature,1,"in special recognition of his poetic composition, which gives evidence of lofty idealism, artistic perfection and a rare combination of the qualities of both heart and intellect",NA
+Q25351,Christian Matthias Theodor Mommsen,male,1902,Literature,1,"the greatest living master of the art of historical writing, with special reference to his monumental work, <I>A history of Rome</I>",NA
+Q46405,Bjørnstjerne Martinus Bjørnson,male,1903,Literature,1,"as a tribute to his noble, magnificent and versatile poetry, which has always been distinguished by both the freshness of its inspiration and the rare purity of its spirit",NA
+Q42596,Frédéric Mistral,male,1904,Literature,1/2,"in recognition of the fresh originality and true inspiration of his poetic production, which faithfully reflects the natural scenery and native spirit of his people, and, in addition, his significant work as a Proven&ccedil;al philologist",NA
+Q127349,José Echegaray y Eizaguirre,male,1904,Literature,1/2,"in recognition of the numerous and brilliant compositions which, in an individual and original manner, have revived the great traditions of the Spanish drama",NA
+Q41502,Henryk Sienkiewicz,male,1905,Literature,1,because of his outstanding merits as an epic writer,NA
+Q43440,Giosuè Carducci,male,1906,Literature,1,"not only in consideration of his deep learning and critical research, but above all as a tribute to the creative energy, freshness of style, and lyrical force which characterize his poetic masterpieces",NA
+Q34743,Rudyard Kipling,male,1907,Literature,1,"in consideration of the power of observation, originality of imagination, virility of ideas and remarkable talent for narration which characterize the creations of this world-famous author",NA
+Q47695,Rudolf Christoph Eucken,male,1908,Literature,1,"in recognition of his earnest search for truth, his penetrating power of thought, his wide range of vision, and the warmth and strength in presentation with which in his numerous works he has vindicated and developed an idealistic philosophy of life",NA
+Q44519,Selma Ottilia Lovisa Lagerlöf,female,1909,Literature,1,"in appreciation of the lofty idealism, vivid imagination and spiritual perception that characterize her writings",NA
+Q76487,Paul Johann Ludwig Heyse,male,1910,Literature,1,"as a tribute to the consummate artistry, permeated with idealism, which he has demonstrated during his long productive career as a lyric poet, dramatist, novelist and writer of world-renowned short stories",NA
+Q49747,Count Maurice (Mooris) Polidore Marie Bernhard Maeterlinck,male,1911,Literature,1,"in appreciation of his many-sided literary activities, and especially of his dramatic works, which are distinguished by a wealth of imagination and by a poetic fancy, which reveals, sometimes in the guise of a fairy tale, a deep inspiration, while in a mysterious way they appeal to the readers' own feelings and stimulate their imaginations",NA
+Q43523,Gerhart Johann Robert Hauptmann,male,1912,Literature,1,"primarily in recognition of his fruitful, varied and outstanding production in the realm of dramatic art",NA
+Q7241,Rabindranath Tagore,male,1913,Literature,1,"because of his profoundly sensitive, fresh and beautiful verse, by which, with consummate skill, he has made his poetic thought, expressed in his own English words, a part of the literature of the West",NA
+Q47162,Romain Rolland,male,1915,Literature,1,as a tribute to the lofty idealism of his literary production and to the sympathy and love of truth with which he has described different types of human beings,NA
+Q129173,Carl Gustaf Verner von Heidenstam,male,1916,Literature,1,in recognition of his significance as the leading representative of a new era in our literature,NA
+Q225554,Henrik Pontoppidan,male,1917,Literature,1/2,for his authentic descriptions of present-day life in Denmark,NA
+Q131487,Karl Adolph Gjellerup,male,1917,Literature,1/2,"for his varied and rich poetry, which is inspired by lofty ideals",NA
+Q226525,Carl Friedrich Georg Spitteler,male,1919,Literature,1,"in special appreciation of his epic, <I>Olympian Spring</I>",NA
+Q40826,Knut Pedersen Hamsun,male,1920,Literature,1,"for his monumental work, <I>Growth of the Soil</I>",NA
+Q42443,Anatole France,male,1921,Literature,1,"in recognition of his brilliant literary achievements, characterized as they are by a nobility of style, a profound human sympathy, grace, and a true Gallic temperament",NA
+Q83184,Jacinto Benavente,male,1922,Literature,1,for the happy manner in which he has continued the illustrious traditions of the Spanish drama,NA
+Q40213,William Butler Yeats,male,1923,Literature,1,"for his always inspired poetry, which in a highly artistic form gives expression to the spirit of a whole nation",NA
+Q121180,Władysław Stanisław Reymont,male,1924,Literature,1,"for his great national epic, <I>The Peasants</I>",NA
+Q19185,George Bernard Shaw,male,1925,Literature,1,"for his work which is marked by both idealism and humanity, its stimulating satire often being infused with a singular poetic beauty",NA
+Q7728,Grazia Deledda,female,1926,Literature,1,for her idealistically inspired writings which with plastic clarity picture the life on her native island and with depth and sympathy deal with human problems in general,NA
+Q42156,Henri Bergson,male,1927,Literature,1,in recognition of his rich and vitalizing ideas and the brilliant skill with which they have been presented,NA
+Q80889,Sigrid Undset,female,1928,Literature,1,principally for her powerful descriptions of Northern life during the Middle Ages,NA
+Q37030,Thomas Mann,male,1929,Literature,1,"principally for his great novel, <I>Buddenbrooks</I>, which has won steadily increased recognition as one of the classic works of contemporary literature",NA
+Q123469,Sinclair Lewis,male,1930,Literature,1,"for his vigorous and graphic art of description and his ability to create, with wit and humour, new types of characters",NA
+Q134641,Erik Axel Karlfeldt,male,1931,Literature,1,The poetry of Erik Axel Karlfeldt,NA
+Q82248,John Galsworthy,male,1932,Literature,1,for his distinguished art of narration which takes its highest form in <I>The Forsyte Saga</I>,NA
+Q46602,Ivan Alekseyevich Bunin,male,1933,Literature,1,for the strict artistry with which he has carried on the classical Russian traditions in prose writing,NA
+Q1403,Luigi Pirandello,male,1934,Literature,1,for his bold and ingenious revival of dramatic and scenic art,NA
+Q93157,Eugene Gladstone O'Neill,male,1936,Literature,1,"for the power, honesty and deep-felt emotions of his dramatic works, which embody an original concept of tragedy",NA
+Q129155,Roger Martin du Gard,male,1937,Literature,1,for the artistic power and truth with which he has depicted human conflict as well as some fundamental aspects of contemporary life in his novel-cycle <I>Les Thibault</I>,NA
+Q80900,Pearl Buck,female,1938,Literature,1,for her rich and truly epic descriptions of peasant life in China and for her biographical masterpieces,NA
+Q132723,Frans Eemil Sillanpää,male,1939,Literature,1,for his deep understanding of his country's peasantry and the exquisite art with which he has portrayed their way of life and their relationship with Nature,NA
+Q159552,Johannes Vilhelm Jensen,male,1944,Literature,1,"for the rare strength and fertility of his poetic imagination with which is combined an intellectual curiosity of wide scope and a bold, freshly creative style",NA
+Q80871,Gabriela Mistral,female,1945,Literature,1,"for her lyric poetry which, inspired by powerful emotions, has made her name a symbol of the idealistic aspirations of the entire Latin American world",NA
+Q25973,Hermann Hesse,male,1946,Literature,1,"for his inspired writings which, while growing in boldness and penetration, exemplify the classical humanitarian ideals and high qualities of style",NA
+Q47484,André Paul Guillaume Gide,male,1947,Literature,1,"for his comprehensive and artistically significant writings, in which human problems and conditions have been presented with a fearless love of truth and keen psychological insight",NA
+Q37767,Thomas Stearns Eliot,male,1948,Literature,1,"for his outstanding, pioneer contribution to present-day poetry",NA
+Q38392,William Faulkner,male,1949,Literature,1,for his powerful and artistically unique contribution to the modern American novel,NA
+Q33760,Earl (Bertrand Arthur William) Russell,male,1950,Literature,1,in recognition of his varied and significant writings in which he champions humanitarian ideals and freedom of thought,NA
+Q93137,Pär Fabian Lagerkvist,male,1951,Literature,1,for the artistic vigour and true independence of mind with which he endeavours in his poetry to find answers to the eternal questions confronting mankind,NA
+Q81685,François Mauriac,male,1952,Literature,1,for the deep spiritual insight and the artistic intensity with which he has in his novels penetrated the drama of human life,NA
+Q8016,Sir Winston Leonard Spencer Churchill,male,1953,Literature,1,for his mastery of historical and biographical description as well as for brilliant oratory in defending exalted human values,NA
+Q23434,Ernest Miller Hemingway,male,1954,Literature,1,"for his mastery of the art of narrative, most recently demonstrated in <I>The Old Man and the Sea,</I> and for the influence that he has exerted on contemporary style",NA
+Q80321,Halldór Kiljan Laxness,male,1955,Literature,1,for his vivid epic power which has renewed the great narrative art of Iceland,NA
+Q131318,Juan Ramón Jiménez,male,1956,Literature,1,"for his lyrical poetry, which in Spanish language constitutes an example of high spirit and artistical purity",NA
+Q34670,Albert Camus,male,1957,Literature,1,"for his important literary production, which with clear-sighted earnestness illuminates the problems of the human conscience in our times",NA
+Q41223,Boris Leonidovich Pasternak,male,1958,Literature,1,for his important achievement both in contemporary lyrical poetry and in the field of the great Russian epic tradition,NA
+Q83038,Salvatore Quasimodo,male,1959,Literature,1,"for his lyrical poetry, which with classical fire expresses the tragic experience of life in our own times",NA
+Q132684,Saint-John Perse,male,1960,Literature,1,for the soaring flight and the evocative imagery of his poetry which in a visionary fashion reflects the conditions of our time,NA
+Q47561,Ivo Andrić,male,1961,Literature,1,for the epic force with which he has traced themes and depicted human destinies drawn from the history of his country,NA
+Q39212,John Steinbeck,male,1962,Literature,1,"for his realistic and imaginative writings, combining as they do sympathetic humour and keen social perception",NA
+Q165823,Giorgos Seferis,male,1963,Literature,1,"for his eminent lyrical writing, inspired by a deep feeling for the Hellenic world of culture",NA
+Q9364,Jean-Paul Sartre,male,1964,Literature,1,"for his work which, rich in ideas and filled with the spirit of freedom and the quest for truth, has exerted a far-reaching influence on our age",NA
+Q42398,Mikhail Aleksandrovich Sholokhov,male,1965,Literature,1,"for the artistic power and integrity with which, in his epic of the Don, he has given expression to a historic phase in the life of the Russian people",NA
+Q57074,Nelly Sachs,female,1966,Literature,1/2,"for her outstanding lyrical and dramatic writing, which interprets Israel's destiny with touching strength",NA
+Q133042,Shmuel Yosef Agnon,male,1966,Literature,1/2,for his profoundly characteristic narrative art with motifs from the life of the Jewish people,NA
+Q75603,Miguel Angel Asturias,male,1967,Literature,1,"for his vivid literary achievement, deep-rooted in the national traits and traditions of Indian peoples of Latin America",NA
+Q43736,Yasunari Kawabata,male,1968,Literature,1,"for his narrative mastery, which with great sensibility expresses the essence of the Japanese mind",NA
+Q37327,Samuel Beckett,male,1969,Literature,1,"for his writing, which - in new forms for the novel and drama - in the destitution of modern man acquires its elevation",NA
+Q34474,Aleksandr Isayevich Solzhenitsyn,male,1970,Literature,1,for the ethical force with which he has pursued the indispensable traditions of Russian literature,NA
+Q34189,Pablo Neruda,male,1971,Literature,1,for a poetry that with the action of an elemental force brings alive a continent's destiny and dreams,NA
+Q42747,Heinrich Böll,male,1972,Literature,1,for his writing which through its combination of a broad perspective on his time and a sensitive skill in characterization has contributed to a renewal of German literature,NA
+Q129187,Patrick White,male,1973,Literature,1,for an epic and psychological narrative art which has introduced a new continent into literature,NA
+Q131326,Eyvind Johnson,male,1974,Literature,1/2,"for a narrative art, far-seeing in lands and ages, in the service of freedom",NA
+Q132695,Harry Martinson,male,1974,Literature,1/2,for writings that catch the dewdrop and reflect the cosmos,NA
+Q83174,Eugenio Montale,male,1975,Literature,1,"for his distinctive poetry which, with great artistic sensitivity, has interpreted human values under the sign of an outlook on life with no illusions",NA
+Q83059,Saul Bellow,male,1976,Literature,1,for the human understanding and subtle analysis of contemporary culture that are combined in his work,NA
+Q134644,Vicente Aleixandre,male,1977,Literature,1,"for a creative poetic writing which illuminates man's condition in the cosmos and in present-day society, at the same time representing the great renewal of the traditions of Spanish poetry between the wars",NA
+Q75612,Isaac Bashevis Singer,male,1978,Literature,1,"for his impassioned narrative art which, with roots in a Polish-Jewish cultural tradition, brings universal human conditions to life",NA
+Q160478,Odysseus Elytis,male,1979,Literature,1,"for his poetry, which, against the background of Greek tradition, depicts with sensuous strength and intellectual clear-sightedness modern man's struggle for freedom and creativeness",NA
+Q45970,Czesław Miłosz,male,1980,Literature,1,who with uncompromising clear-sightedness voices man's exposed condition in a world of severe conflicts,NA
+Q80064,Elias Canetti,male,1981,Literature,1,"for writings marked by a broad outlook, a wealth of ideas and artistic power",NA
+Q5878,Gabriel García Márquez,male,1982,Literature,1,"for his novels and short stories, in which the fantastic and the realistic are combined in a richly composed world of imagination, reflecting a continent's life and conflicts",NA
+Q44183,William Golding,male,1983,Literature,1,"for his novels which, with the perspicuity of realistic narrative art and the diversity and universality of myth, illuminate the human condition in the world of today",NA
+Q102483,Jaroslav Seifert,male,1984,Literature,1,"for his poetry which endowed with freshness, sensuality and rich inventiveness provides a liberating image of the indomitable spirit and versatility of man",NA
+Q131549,Claude Simon,male,1985,Literature,1,who in his novel combines the poet's and the painter's creativeness with a deepened awareness of time in the depiction of the human condition,NA
+Q41488,Wole Soyinka,male,1986,Literature,1,who in a wide cultural perspective and with poetic overtones fashions the drama of existence,NA
+Q862,Joseph Brodsky,male,1987,Literature,1,"for an all-embracing authorship, imbued with clarity of thought and poetic intensity",NA
+Q7176,Naguib Mahfouz,male,1988,Literature,1,"who, through works rich in nuance - now clear-sightedly realistic, now evocatively ambiguous - has formed an Arabian narrative art that applies to all mankind",NA
+Q132589,Camilo José Cela,male,1989,Literature,1,"for a rich and intensive prose, which with restrained compassion forms a challenging vision of man's vulnerability",NA
+Q46739,Octavio Paz,male,1990,Literature,1,"for impassioned writing with wide horizons, characterized by sensuous intelligence and humanistic integrity",NA
+Q47619,Nadine Gordimer,female,1991,Literature,1,who through her magnificent epic writing has - in the words of Alfred Nobel - been of very great benefit to humanity,NA
+Q132701,Derek Walcott,male,1992,Literature,1,"for a poetic oeuvre of great luminosity, sustained by a historical vision, the outcome of a multicultural commitment",NA
+Q72334,Toni Morrison,female,1993,Literature,1,"who in novels characterized by visionary force and poetic import, gives life to an essential aspect of American reality",NA
+Q80095,Kenzaburo Oe,male,1994,Literature,1,"who with poetic force creates an imagined world, where life and myth condense to form a disconcerting picture of the human predicament today",NA
+Q93356,Seamus Heaney,male,1995,Literature,1,"for works of lyrical beauty and ethical depth, which exalt everyday miracles and the living past",NA
+Q42552,Wisława Szymborska,female,1996,Literature,1,for poetry that with ironic precision allows the historical and biological context to come to light in fragments of human reality,NA
+Q765,Dario Fo,male,1997,Literature,1,who emulates the jesters of the Middle Ages in scourging authority and upholding the dignity of the downtrodden,NA
+Q37060,José Saramago,male,1998,Literature,1,"who with parables sustained by imagination, compassion and irony continually enables us once again to apprehend an elusory reality",NA
+Q6538,Günter Grass,male,1999,Literature,1,whose frolicsome black fables portray the forgotten face of history,NA
+Q18143,Gao Xingjian,male,2000,Literature,1,"for an œuvre of universal validity, bitter insights and linguistic ingenuity, which has opened new paths for the Chinese novel and drama",NA
+Q44593,Sir Vidiadhar Surajprasad Naipaul,male,2001,Literature,1,for having united perceptive narrative and incorruptible scrutiny in works that compel us to see the presence of suppressed histories,NA
+Q47755,Imre Kertész,male,2002,Literature,1,for writing that upholds the fragile experience of the individual against the barbaric arbitrariness of history,NA
+Q43293,John M. Coetzee,male,2003,Literature,1,who in innumerable guises portrays the surprising involvement of the outsider,NA
+Q47243,Elfriede Jelinek,female,2004,Literature,1,for her musical flow of voices and counter-voices in novels and plays that with extraordinary linguistic zeal reveal the absurdity of society's clich&eacute;s and their subjugating power,NA
+Q41042,Harold Pinter,male,2005,Literature,1,who in his plays uncovers the precipice under everyday prattle and forces entry into oppression's closed rooms,NA
+Q241248,Orhan Pamuk,male,2006,Literature,1,who in the quest for the melancholic soul of his native city has discovered new symbols for the clash and interlacing of cultures,NA
+Q40874,Doris Lessing,female,2007,Literature,1,"that epicist of the female experience, who with scepticism, fire and visionary power has subjected a divided civilisation to scrutiny",NA
+Q7884119,Jean-Marie Gustave Le Clézio,male,2008,Literature,1,"author of new departures, poetic adventure and sensual ecstasy, explorer of a humanity beyond and below the reigning civilization",NA
+Q38049,Herta Müller,female,2009,Literature,1,"who, with the concentration of poetry and the frankness of prose, depicts the landscape of the dispossessed",NA
+Q39803,Mario Vargas Llosa,male,2010,Literature,1,"for his cartography of structures of power and his trenchant images of the individual's resistance, revolt, and defeat",NA
+Q42122,Tomas Tranströmer,male,2011,Literature,1,"because, through his condensed, translucent images, he gives us fresh access to reality",NA
+Q8998,Mo Yan,male,2012,Literature,1,"who with hallucinatory realism merges folk tales, history and the contemporary",NA
+Q234819,Alice Munro,female,2013,Literature,1,master of the contemporary short story,NA
+Q222944,Patrick Modiano,male,2014,Literature,1,"for the art of memory with which he has evoked the most ungraspable human destinies and
+uncovered the life-world of the occupation",NA
+Q274334,Svetlana Alexievich,female,2015,Literature,1,"for her polyphonic writings, a monument to suffering and courage in our time",NA
+Q392,Bob Dylan,male,2016,Literature,1,for having created new poetic expressions within the great American song tradition,NA
+Q272855,Kazuo Ishiguro,male,2017,Literature,1,"who, in novels of great emotional force, has uncovered the abyss beneath our illusory sense of connection with the world",NA
+Q254032,Olga Tokarczuk,female,2018,Literature,1,for a narrative imagination that with encyclopedic passion represents the crossing of boundaries as a form of life,NA
+Q44107,Peter Handke,male,2019,Literature,1,for an influential work that with linguistic ingenuity has explored the periphery and the specificity of human experience,NA
+Q2344210,Louise Glück,female,2020,Literature,1,for her unmistakable poetic voice that with austere beauty makes individual existence universal,NA
+Q317877,Abdulrazak Gurnah,male,2021,Literature,1,for his uncompromising and compassionate penetration of the effects of colonialism and the fate of the refugee in the gulf between cultures and continents,NA
+Q1153825,Annie Ernaux,female,2022,Literature,1,"for the courage and clinical acuity with which she uncovers the roots, estrangements and  collective restraints of personal memory",NA
+Q443868,Jon Fosse,male,2023,Literature,1,for his innovative plays and prose which give voice to the unsayable,NA
+Q5646626,Han Kang,female,2024,Literature,1,for her intense poetic prose that confronts historical traumas and exposes the fragility of human life,NA
+Q512062,László Krasznahorkai,male,2025,Literature,1,"for his compelling and visionary oeuvre that, in the midst of apocalyptic terror, reaffirms the power of art",NA
+Q180409,Frédéric Passy,male,1901,Peace,1/2,"for his lifelong work for international peace conferences, diplomacy and arbitration",NA
+Q12091,Jean Henry Dunant,male,1901,Peace,1/2,for his humanitarian efforts to help wounded soldiers and create international understanding,NA
+Q179458,Charles Albert Gobat,male,1902,Peace,1/2,for his eminently practical administration of the Inter-Parliamentary Union,NA
+Q122368,Élie Ducommun,male,1902,Peace,1/2,for his untiring and skilful directorship of the Bern Peace Bureau,NA
+Q189841,William Randal Cremer,male,1903,Peace,1,for his longstanding and devoted effort in favour of the ideas of peace and arbitration,NA
+Q115095,NA,NA,1904,Peace,1,for its striving in public law to develop peaceful ties between nations and to make the laws of war more humane,NA
+Q18456,"Baroness Bertha Sophie Felicita von Suttner, née Countess Kinsky von Chinic und Tettau",female,1905,Peace,1,for her audacity to oppose the horrors of war,NA
+Q33866,Theodore Roosevelt Jr.,male,1906,Peace,1,"for his role in bringing to an end the bloody war recently waged between two of the world's great powers, Japan and Russia",NA
+Q12086,Ernesto Teodoro Moneta,male,1907,Peace,1/2,"for his work in the press and in peace meetings, both public and private, for an understanding between France and Italy",NA
+Q230814,Louis Renault,male,1907,Peace,1/2,for his decisive influence upon the conduct and outcome of the Hague and Geneva Conferences,Sorbonne University
+Q191016,Fredrik Bajer,male,1908,Peace,1/2,"for their long time work for the cause of peace as politicians, peace society leaders, orators and authors",NA
+Q192618,Klas Pontus Arnoldson,male,1908,Peace,1/2,"for their long time work for the cause of peace as politicians, peace society leaders, orators and authors",NA
+Q202049,Auguste Marie François Beernaert,male,1909,Peace,1/2,for their prominent position in the international movement for peace and arbitration,NA
+Q238731,"Paul Henri Benjamin Balluet d'Estournelles de Constant, Baron de Constant de Rebecque",male,1909,Peace,1/2,for their prominent position in the international movement for peace and arbitration,NA
+Q252420,NA,NA,1910,Peace,1,"for acting as a link between the peace societies of the various countries, and helping them to organize the world rallies of the international peace movement",NA
+Q78488,Alfred Hermann Fried,male,1911,Peace,1/2,"for his effort to expose and fight what he considers to be the main cause of war, namely, the anarchy in international relations",NA
+Q216872,Tobias Michael Carel Asser,male,1911,Peace,1/2,"for his role as co-founder of the Institut de droit international, initiator of the Conferences on International Private Law (Conférences de Droit international privé) at the Hague, and pioneer in the field of international legal relations",NA
+Q220619,Elihu Root,male,1912,Peace,1,for bringing about better understanding between the countries of North and South America and initiating important arbitration agreements between the United States and other countries,NA
+Q190894,Henri La Fontaine,male,1913,Peace,1,for his unparalleled contribution to the organization of peaceful internationalism,NA
+Q5987345,NA,NA,1917,Peace,1,for the efforts to take care of wounded soldiers and prisoners of war and their families,NA
+Q34296,Thomas Woodrow Wilson,male,1919,Peace,1,for his role as founder of the League of Nations,NA
+Q217706,Léon Victor Auguste Bourgeois,male,1920,Peace,1,for his longstanding contribution to the cause of peace and justice and his prominent role in the establishment of the League of Nations,NA
+Q206446,Christian Lous Lange,male,1921,Peace,1/2,for their lifelong contributions to the cause of peace and organized internationalism,NA
+Q53620,Karl Hjalmar Branting,male,1921,Peace,1/2,for their lifelong contributions to the cause of peace and organized internationalism,NA
+Q72292,Fridtjof Nansen,male,1922,Peace,1,"for his leading role in the repatriation of prisoners of war, in international relief work and as the League of Nations' High Commissioner for refugees",NA
+Q184565,Charles Gates Dawes,male,1925,Peace,1/2,for his crucial role in bringing about the Dawes Plan,NA
+Q188999,Sir Austen Chamberlain,male,1925,Peace,1/2,for his crucial role in bringing about the Locarno Treaty,NA
+Q179888,Aristide Briand,male,1926,Peace,1/2,for their crucial role in bringing about the Locarno Treaty,NA
+Q103955,Gustav Stresemann,male,1926,Peace,1/2,for their crucial role in bringing about the Locarno Treaty,NA
+Q273607,Ferdinand Buisson,male,1927,Peace,1/2,for their contribution to the emergence in France and Germany of a public opinion which favours peaceful international cooperation,NA
+Q76696,Ludwig Quidde,male,1927,Peace,1/2,for their contribution to the emergence in France and Germany of a public opinion which favours peaceful international cooperation,NA
+Q193009,Frank Billings Kellogg,male,1929,Peace,1,for his crucial role in bringing about the Briand-Kellogg Pact,NA
+Q159723,Lars Olof Jonathan (Nathan) Söderblom,male,1930,Peace,1,for promoting Christian unity and helping create 'that new attitude of mind which is necessary if peace between nations is to become reality',NA
+Q180989,Jane Addams,female,1931,Peace,1/2,for their assiduous effort to revive the ideal of peace and to rekindle the spirit of peace in their own nation and in the whole of mankind,NA
+Q271517,Nicholas Murray Butler,male,1931,Peace,1/2,for their assiduous effort to revive the ideal of peace and to rekindle the spirit of peace in their own nation and in the whole of mankind,Columbia University
+Q272224,Sir Norman Angell (Ralph Lane),male,1933,Peace,1,for having exposed by his pen the illusion of war and presented a convincing plea for international cooperation and peace,NA
+Q208665,Arthur Henderson,male,1934,Peace,1,for his untiring struggle and his courageous efforts as Chairman of the League of Nations Disarmament Conference 1931-34,NA
+Q76358,Carl von Ossietzky,male,1935,Peace,1,for his burning love for freedom of thought and expression and his valuable contribution to the cause of peace,NA
+Q193672,Carlos Saavedra Lamas,male,1936,Peace,1,"for his role as father of the Argentine Antiwar Pact of 1933, which he also used as a means to mediate peace between Paraguay and Bolivia in 1935",NA
+Q12702,"Edgar Algernon Robert Gascoyne-Cecil, 1st Viscount Cecil of Chelwood",male,1937,Peace,1,"for his tireless effort in support of the League of Nations, disarmament and peace",NA
+Q743558,NA,NA,1938,Peace,1,for having carried on the work of Fridtjof Nansen to the benefit of refugees across Europe,NA
+Q5987345,NA,NA,1944,Peace,1,for the great work it has performed during the war on behalf of humanity,NA
+Q202979,Cordell Hull,male,1945,Peace,1,for his indefatigable work for international understanding and his pivotal role in establishing the United Nations,NA
+Q215139,Emily Greene Balch,female,1946,Peace,1/2,for her lifelong work for the cause of peace,NA
+Q159726,John Raleigh Mott,male,1946,Peace,1/2,for his contribution to the creation of a peace-promoting religious brotherhood across national boundaries,NA
+Q464677,NA,NA,1947,Peace,1/2,"for their pioneering work in the international peace movement and compassionate effort to relieve human suffering, thereby promoting the fraternity between nations",NA
+Q677499,NA,NA,1947,Peace,1/2,"for their pioneering work in the international peace movement and compassionate effort to relieve human suffering, thereby promoting the fraternity between nations",NA
+Q315143,"John Boyd Orr, Baron Boyd-Orr of Brechin Mearn",male,1949,Peace,1,"for his lifelong effort to conquer hunger and want, thereby helping to remove a major cause of military conflict and war",NA
+Q213500,Ralph Bunche,male,1950,Peace,1,for his work as mediator in Palestine in 1948-1949,Harvard University
+Q155415,Léon Jouhaux,male,1951,Peace,1,for having devoted his life to the fight against war through the promotion of social justice and brotherhood among men and nations,NA
+Q49325,Albert Schweitzer,male,1952,Peace,1,"for his altruism, reverence for life, and tireless humanitarian work which has helped making the idea of brotherhood between men and nations a living one",NA
+Q151414,George Catlett Marshall,male,1953,Peace,1,for proposing and supervising the plan for the economic recovery of Europe,NA
+Q132551,NA,NA,1954,Peace,1,for its efforts to heal the wounds of war by providing help and protection to refugees all over the world,NA
+Q128604,Lester Bowles Pearson,male,1957,Peace,1,for his crucial contribution to the deployment of a United Nations Emergency Force in the wake of the Suez Crisis,NA
+Q158850,Georges Pire,male,1958,Peace,1,for his efforts to help refugees to leave their camps and return to a life of freedom and dignity,NA
+Q211856,Philip J. Noel-Baker,male,1959,Peace,1,for his longstanding contribution to the cause of disarmament and peace,NA
+Q212955,Albert John Lutuli,male,1960,Peace,1,for his non-violent struggle against apartheid,NA
+Q1267,Dag Hjalmar Agne Carl Hammarskjöld,male,1961,Peace,1,"for developing the UN into an effective and constructive international organization, capable of giving life to the principles and aims expressed in the UN Charter",NA
+Q48983,Linus Carl Pauling,male,1962,Peace,1,for his fight against the nuclear arms race between East and West,California Institute of Technology (Caltech)
+Q5987345,NA,NA,1963,Peace,1/2,for promoting the principles of the Geneva Convention and cooperation with the UN,NA
+Q1069175,NA,NA,1963,Peace,1/2,for promoting the principles of the Geneva Convention and cooperation with the UN,NA
+Q8027,Martin Luther King Jr.,male,1964,Peace,1,for his non-violent struggle for civil rights for the Afro-American population,NA
+Q740308,NA,NA,1965,Peace,1,for its effort to enhance solidarity between nations and reduce the difference between rich and poor states,NA
+Q232873,René Cassin,male,1968,Peace,1,for his struggle to ensure the rights of man as stipulated in the UN Declaration,NA
+Q54129,NA,NA,1969,Peace,1,for creating international legislation insuring certain norms for working conditions in every country,NA
+Q154824,Norman Ernest Borlaug,male,1970,Peace,1,for having given a well-founded hope - the green revolution,NA
+Q2514,Willy Brandt,male,1971,Peace,1,for paving the way for a meaningful dialogue between East and West,NA
+Q66107,Henry Alfred Kissinger,male,1973,Peace,1/2,for jointly having negotiated a cease fire in Vietnam in 1973,NA
+Q233969,Le Duc Tho ,male,1973,Peace,1/2,for jointly having negotiated a cease fire in Vietnam in 1973,NA
+Q179871,Eisaku Satō,male,1974,Peace,1/2,for his contribution to stabilize conditions in the Pacific rim area and for signing the Nuclear Non-Proliferation Treaty,NA
+Q244395,Seán MacBride,male,1974,Peace,1/2,for his efforts to secure and develop human rights throughout the world,NA
+Q997,Andrei Dmitrievich Sakharov,male,1975,Peace,1,"for his struggle for human rights in the Soviet Union, for disarmament and cooperation between all nations",NA
+Q157690,Elizabeth Williams,female,1976,Peace,1/2,for the courageous efforts in founding a movement to put an end to the violent conflict in Northern Ireland,NA
+Q157655,Mairead Corrigan,female,1976,Peace,1/2,for the courageous efforts in founding a movement to put an end to the violent conflict in Northern Ireland,NA
+Q42970,NA,NA,1977,Peace,1,for worldwide respect for human rights,NA
+Q130873,Menachem Begin,male,1978,Peace,1/2,for jointly having negotiated peace between Egypt and Israel in 1978,NA
+Q42013,Mohamed Anwar al-Sadat,male,1978,Peace,1/2,for jointly having negotiated peace between Egypt and Israel in 1978,NA
+Q30547,Mother Teresa,female,1979,Peace,1,for her work for bringing help to suffering humanity,NA
+Q206505,Adolfo Pérez Esquivel,male,1980,Peace,1,"for being a source of inspiration to repressed people, especially in Latin America",NA
+Q132551,NA,NA,1981,Peace,1,for promoting the fundamental rights of refugees,NA
+Q203843,Alfonso García Robles,male,1982,Peace,1/2,for their work for disarmament and nuclear and weapon-free zones,NA
+Q152437,Alva Myrdal,female,1982,Peace,1/2,for their work for disarmament and nuclear and weapon-free zones,NA
+Q444,Lech Wałęsa,male,1983,Peace,1,for non-violent struggle for free trade unions and human rights in Poland,NA
+Q43033,Desmond Mpilo Tutu,male,1984,Peace,1,for his role as a unifying leader figure in the non-violent campaign to resolve the problem of apartheid in South Africa,NA
+Q245385,NA,NA,1985,Peace,1,for spreading authoritative information and by creating awareness of the catastrophic consequences of nuclear war,NA
+Q18391,Elie Wiesel,male,1986,Peace,1,"for being a messenger to mankind: his message is one of peace, atonement and dignity",NA
+Q49344,Oscar Arias Sánchez,male,1987,Peace,1,for his work for lasting peace in Central America,NA
+Q219575,NA,NA,1988,Peace,1,for preventing armed clashes and creating conditions for negotiations,NA
+Q17293,The 14th Dalai Lama (Tenzin Gyatso),male,1989,Peace,1,for advocating peaceful solutions based upon tolerance and mutual respect in order to preserve the historical and cultural heritage of his people,NA
+Q30487,Mikhail Sergeyevich Gorbachev,male,1990,Peace,1,for the leading role he played in the radical changes in East-West relations,NA
+Q36740,Aung San Suu Kyi,female,1991,Peace,1,for her non-violent struggle for democracy and human rights,NA
+Q188620,Rigoberta Menchú Tum,female,1992,Peace,1,for her struggle for social justice and ethno-cultural reconciliation based on respect for the rights of indigenous peoples,NA
+Q151813,Frederik Willem de Klerk,male,1993,Peace,1/2,"for their work for the peaceful termination of the apartheid regime, and for laying the foundations for a new democratic South Africa",NA
+Q8023,Nelson Rolihlahla Mandela,male,1993,Peace,1/2,"for their work for the peaceful termination of the apartheid regime, and for laying the foundations for a new democratic South Africa",NA
+Q57410,Shimon Peres,male,1994,Peace,1/3,for their efforts to create peace in the Middle East,NA
+Q34211,Yasser Arafat,male,1994,Peace,1/3,for their efforts to create peace in the Middle East,NA
+Q34060,Yitzhak Rabin,male,1994,Peace,1/3,for their efforts to create peace in the Middle East,NA
+Q219982,Joseph Rotblat,male,1995,Peace,1/2,"for their efforts to diminish the part played by nuclear arms in international politics and, in the longer run, to eliminate such arms",NA
+Q381282,NA,NA,1995,Peace,1/2,"for their efforts to diminish the part played by nuclear arms in international politics and, in the longer run, to eliminate such arms",NA
+Q234001,Carlos Filipe Ximenes Belo,male,1996,Peace,1/2,for their work towards a just and peaceful solution to the conflict in East Timor,NA
+Q11665,José Ramos-Horta,male,1996,Peace,1/2,for their work towards a just and peaceful solution to the conflict in East Timor,NA
+Q211239,Jody Williams,female,1997,Peace,1/2,for their work for the banning and clearing of anti-personnel mines,NA
+Q325523,NA,NA,1997,Peace,1/2,for their work for the banning and clearing of anti-personnel mines,NA
+Q192556,David Trimble,male,1998,Peace,1/2,for their efforts to find a peaceful solution to the conflict in Northern Ireland,NA
+Q193630,John Hume,male,1998,Peace,1/2,for their efforts to find a peaceful solution to the conflict in Northern Ireland,NA
+Q49330,NA,NA,1999,Peace,1,in recognition of the organisation's pioneering humanitarian work on several continents,NA
+Q45785,Kim Dae-jung,male,2000,Peace,1,"for his work for democracy and human rights in South Korea and in East Asia in general, and for peace and reconciliation with North Korea in particular",NA
+Q1254,Kofi Atta Annan,male,2001,Peace,1/2,for their work for a better organized and more peaceful world,NA
+Q1065,NA,NA,2001,Peace,1/2,for their work for a better organized and more peaceful world,NA
+Q23685,James Earl Carter,male,2002,Peace,1,"for his decades of untiring effort to find peaceful solutions to international conflicts, to advance democracy and human rights, and to promote economic and social development",NA
+Q131152,Shirin Ebadi,female,2003,Peace,1,for her efforts for democracy and human rights. She has focused especially on the struggle for the rights of women and children,NA
+Q46795,Wangari Muta Maathai,female,2004,Peace,1,"for her contribution to sustainable development, democracy and peace",NA
+Q133308,Mohamed ElBaradei,male,2005,Peace,1/2,for their efforts to prevent nuclear energy from being used for military purposes and to ensure that nuclear energy for peaceful purposes is used in the safest possible way,NA
+Q41984,NA,NA,2005,Peace,1/2,for their efforts to prevent nuclear energy from being used for military purposes and to ensure that nuclear energy for peaceful purposes is used in the safest possible way,NA
+Q43969,Muhammad Yunus,male,2006,Peace,1/2,for their efforts to create economic and social development from below,NA
+Q188567,NA,NA,2006,Peace,1/2,for their efforts to create economic and social development from below,NA
+Q19673,Albert Arnold (Al) Gore  Jr.,male,2007,Peace,1/2,"for their efforts to build up and disseminate greater knowledge about man-made climate change, and to lay the foundations for the measures that are needed to counteract such change",NA
+Q171183,NA,NA,2007,Peace,1/2,"for their efforts to build up and disseminate greater knowledge about man-made climate change, and to lay the foundations for the measures that are needed to counteract such change",NA
+Q29230,Martti Ahtisaari,male,2008,Peace,1,"for his important efforts, on several continents and over more than three decades, to resolve international conflicts",NA
+Q76,Barack Hussein Obama,male,2009,Peace,1,for his extraordinary efforts to strengthen international diplomacy and cooperation between peoples,NA
+Q41617,Liu Xiaobo,male,2010,Peace,1,for his long and non-violent struggle for fundamental human rights in China,NA
+Q43179,Ellen Johnson Sirleaf,female,2011,Peace,1/3,for their non-violent struggle for the safety of women and for women's rights to full participation in peace-building work,NA
+Q107037,Leymah Gbowee,female,2011,Peace,1/3,for their non-violent struggle for the safety of women and for women's rights to full participation in peace-building work,NA
+Q104622,Tawakkol Karman,female,2011,Peace,1/3,for their non-violent struggle for the safety of women and for women's rights to full participation in peace-building work,NA
+Q458,NA,NA,2012,Peace,1,"for over six decades contributed to the advancement of peace and reconciliation, democracy and human rights in Europe",NA
+Q842490,NA,NA,2013,Peace,1,for its extensive efforts to eliminate chemical weapons,NA
+Q3442375,Kailash Satyarthi,male,2014,Peace,1/2,for their struggle against the suppression of children and young people and for the right of all children to education,NA
+Q32732,Malala Yousafzai,female,2014,Peace,1/2,for their struggle against the suppression of children and young people and for the right of all children to education,NA
+Q21078159,NA,NA,2015,Peace,1,for its decisive contribution to the building of a pluralistic democracy in Tunisia in the wake of the Jasmine Revolution of 2011,NA
+Q57311,Juan Manuel Santos,male,2016,Peace,1,for his resolute efforts to bring the country's more than 50-year-long civil war to an end,NA
+Q547940,NA,NA,2017,Peace,1,for its work to draw attention to the catastrophic humanitarian consequences of any use of nuclear weapons and for its ground-breaking efforts to achieve a treaty-based prohibition of such weapons,NA
+Q1187542,Denis Mukwege,male,2018,Peace,1/2,for their efforts to end the use of sexual violence as a weapon of war and armed conflict,NA
+Q22007112,Nadia Murad Basee Taha,female,2018,Peace,1/2,for their efforts to end the use of sexual violence as a weapon of war and armed conflict,NA
+Q50365049,Abiy Ahmed Ali,male,2019,Peace,1,"for his efforts to achieve peace and international cooperation, and in particular for his decisive initiative to resolve the border conflict with neighbouring Eritrea",NA
+Q204344,NA,NA,2020,Peace,1,"for its efforts to combat hunger, for its contribution to bettering conditions for peace in conflict-affected areas and for acting as a driving force in efforts to prevent the use of hunger as a weapon of war and conflict",NA
+Q1823418,Dmitry Andreyevich Muratov,male,2021,Peace,1/2,"for their efforts to safeguard freedom of expression, which is a precondition for democracy and lasting peace",NA
+Q6761526,Maria Ressa,female,2021,Peace,1/2,"for their efforts to safeguard freedom of expression, which is a precondition for democracy and lasting peace",NA
+Q118263,Ales Bialiatski ,male,2022,Peace,1/3,"The Peace Prize laureates represent civil society in their home countries. They have for many years promoted the right to criticise power and protect the fundamental rights of citizens. They have made an outstanding effort to document war crimes, human right abuses and the abuse of power. Together they demonstrate the significance of civil society for peace and democracy.",NA
+Q114452906,NA,NA,2022,Peace,1/3,"The Peace Prize laureates represent civil society in their home countries. They have for many years promoted the right to criticise power and protect the fundamental rights of citizens. They have made an outstanding effort to document war crimes, human right abuses and the abuse of power. Together they demonstrate the significance of civil society for peace and democracy.",NA
+Q851563,NA,NA,2022,Peace,1/3,"The Peace Prize laureates represent civil society in their home countries. They have for many years promoted the right to criticise power and protect the fundamental rights of citizens. They have made an outstanding effort to document war crimes, human right abuses and the abuse of power. Together they demonstrate the significance of civil society for peace and democracy.",NA
+Q4967771,Narges Mohammadi,female,2023,Peace,1,for her fight against the oppression of women in Iran and her fight to promote human rights and freedom for all,NA
+Q1989908,NA,NA,2024,Peace,1,for its efforts to achieve a world free of nuclear weapons and for demonstrating through witness testimony that nuclear weapons must never be used again,NA
+Q439564,Maria Corina Machado,female,2025,Peace,1,for her tireless work promoting democratic rights for the people of Venezuela and for her struggle to achieve a just and peaceful transition from dictatorship to democracy,NA
+Q35149,Wilhelm Conrad Röntgen,male,1901,Physics,1,in recognition of the extraordinary services he has rendered by the discovery of the remarkable rays subsequently named after him,Munich University
+Q41688,Hendrik Antoon Lorentz,male,1902,Physics,1/2,in recognition of the extraordinary service they rendered by their researches into the influence of magnetism upon radiation phenomena,Leiden University
+Q79000,Pieter Zeeman,male,1902,Physics,1/2,in recognition of the extraordinary service they rendered by their researches into the influence of magnetism upon radiation phenomena,Amsterdam University
+Q41269,Antoine Henri Becquerel,male,1903,Physics,1/2,in recognition of the extraordinary services he has rendered by his discovery of spontaneous radioactivity,École Polytechnique
+Q7186,"Marie Curie, née Skłodowska",female,1903,Physics,1/4,in recognition of the extraordinary services they have rendered by their joint researches on the radiation phenomena discovered by Professor Henri Becquerel,NA
+Q37463,Pierre Curie,male,1903,Physics,1/4,in recognition of the extraordinary services they have rendered by their joint researches on the radiation phenomena discovered by Professor Henri Becquerel,École municipale de physique et de chimie industrielles (Municipal School of Industrial Physics and Chemistry)
+Q83297,Lord Rayleigh (John William Strutt),male,1904,Physics,1,for his investigations of the densities of the most important gases and for his discovery of argon in connection with these studies,Royal Institution of Great Britain
+Q57063,Philipp Eduard Anton von Lenard,male,1905,Physics,1,for his work on cathode rays,Kiel University
+Q47285,Joseph John Thomson,male,1906,Physics,1,in recognition of the great merits of his theoretical and experimental investigations on the conduction of electricity by gases,University of Cambridge
+Q127234,Albert Abraham Michelson,male,1907,Physics,1,for his optical precision instruments and the spectroscopic and metrological investigations carried out with their aid,University of Chicago
+Q133232,Gabriel Lippmann,male,1908,Physics,1,for his method of reproducing colours photographically based on the phenomenon of interference,Sorbonne University
+Q36488,Guglielmo Marconi,male,1909,Physics,1/2,in recognition of their contributions to the development of wireless telegraphy,Marconi Wireless Telegraph Co. Ltd.
+Q57077,Karl Ferdinand Braun,male,1909,Physics,1/2,in recognition of their contributions to the development of wireless telegraphy,Strasbourg University
+Q131721,Johannes Diderik van der Waals,male,1910,Physics,1,for his work on the equation of state for gases and liquids,Amsterdam University
+Q57068,Wilhelm Wien,male,1911,Physics,1,for his discoveries regarding the laws governing the radiation of heat,Würzburg University
+Q160518,Nils Gustaf Dalén,male,1912,Physics,1,for his invention of automatic regulators for use in conjunction with gas accumulators for illuminating lighthouses and buoys,Swedish Gas-Accumulator Co.
+Q62891,Heike Kamerlingh Onnes,male,1913,Physics,1,"for his investigations on the properties of matter at low temperatures which led, inter alia, to the production of liquid helium",Leiden University
+Q57067,Max von Laue,male,1914,Physics,1,for his discovery of the diffraction of X-rays by crystals,Frankfurt-on-the-Main University
+Q133747,Sir William Henry Bragg,male,1915,Physics,1/2,for their services in the analysis of crystal structure by means of X-rays,University College
+Q131729,William Lawrence Bragg,male,1915,Physics,1/2,for their services in the analysis of crystal structure by means of X-rays,Victoria University
+Q160522,Charles Glover Barkla,male,1917,Physics,1,for his discovery of the characteristic R&ouml;ntgen radiation of the elements,Edinburgh University
+Q9021,Max Karl Ernst Ludwig Planck,male,1918,Physics,1,in recognition of the services he rendered to the advancement of Physics by his discovery of energy quanta,Berlin University
+Q57092,Johannes Stark,male,1919,Physics,1,for his discovery of the Doppler effect in canal rays and the splitting of spectral lines in electric fields,Greifswald University
+Q123026,Charles Edouard Guillaume,male,1920,Physics,1,in recognition of the service he has rendered to precision measurements in Physics by his discovery of anomalies in nickel steel alloys,Bureau International des Poids et Mesures (International Bureau of Weights and Measures)
+Q937,Albert Einstein,male,1921,Physics,1,"for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect",Kaiser-Wilhelm-Institut (now Max-Planck-Institut) für Physik
+Q7085,Niels Henrik David Bohr,male,1922,Physics,1,for his services in the investigation of the structure of atoms and of the radiation emanating from them,Copenhagen University
+Q130975,Robert Andrews Millikan,male,1923,Physics,1,for his work on the elementary charge of electricity and on the photoelectric effect,California Institute of Technology (Caltech)
+Q170741,Karl Manne Georg Siegbahn,male,1924,Physics,1,for his discoveries and research in the field of X-ray spectroscopy,Uppsala University
+Q57070,Gustav Ludwig Hertz,male,1925,Physics,1/2,for their discovery of the laws governing the impact of an electron upon an atom,Halle University
+Q57066,James Franck,male,1925,Physics,1/2,for their discovery of the laws governing the impact of an electron upon an atom,Goettingen University
+Q134085,Jean Baptiste Perrin,male,1926,Physics,1,"for his work on the discontinuous structure of matter, and especially for his discovery of sedimentation equilibrium",Sorbonne University
+Q127944,Arthur Holly Compton,male,1927,Physics,1/2,for his discovery of the effect named after him,University of Chicago
+Q162900,Charles Thomson Rees Wilson,male,1927,Physics,1/2,for his method of making the paths of electrically charged particles visible by condensation of vapour,University of Cambridge
+Q169330,Owen Willans Richardson,male,1928,Physics,1,for his work on the thermionic phenomenon and especially for the discovery of the law named after him,London University
+Q83331,Prince Louis-Victor Pierre Raymond de Broglie,male,1929,Physics,1,for his discovery of the wave nature of electrons,"Sorbonne University, Institut Henri Poincaré"
+Q60429,Sir Chandrasekhara Venkata Raman,male,1930,Physics,1,for his work on the scattering of light and for the discovery of the effect named after him,Calcutta University
+Q40904,Werner Karl Heisenberg,male,1932,Physics,1,"for the creation of quantum mechanics, the application of which has, inter alia, led to the discovery of the allotropic forms of hydrogen",Leipzig University
+Q9130,Erwin Schrödinger,male,1933,Physics,1/2,for the discovery of new productive forms of atomic theory,Berlin University
+Q47480,Paul Adrien Maurice Dirac,male,1933,Physics,1/2,for the discovery of new productive forms of atomic theory,University of Cambridge
+Q80884,James Chadwick,male,1935,Physics,1,for the discovery of the neutron,Liverpool University
+Q169366,Carl David Anderson,male,1936,Physics,1/2,for his discovery of the positron,California Institute of Technology (Caltech)
+Q78520,Victor Franz Hess,male,1936,Physics,1/2,for his discovery of cosmic radiation,Innsbruck University
+Q133222,Clinton Joseph Davisson,male,1937,Physics,1/2,for their experimental discovery of the diffraction of electrons by crystals,Bell Telephone Laboratories
+Q133846,George Paget Thomson,male,1937,Physics,1/2,for their experimental discovery of the diffraction of electrons by crystals,London University
+Q8753,Enrico Fermi,male,1938,Physics,1,"for his demonstrations of the existence of new radioactive elements produced by neutron irradiation, and for his related discovery of nuclear reactions brought about by slow neutrons",Rome University
+Q169577,Ernest Orlando Lawrence,male,1939,Physics,1,"for the invention and development of the cyclotron and for results obtained with it, especially with regard to artificial radioactive elements",University of California
+Q57072,Otto Stern,male,1943,Physics,1,for his contribution to the development of the molecular ray method and his discovery of the magnetic moment of the proton,Carnegie Institute of Technology
+Q165969,Isidor Isaac Rabi,male,1944,Physics,1,for his resonance method for recording the magnetic properties of atomic nuclei,Columbia University
+Q65989,Wolfgang Pauli,male,1945,Physics,1,"for the discovery of the Exclusion Principle, also called the Pauli Principle",Princeton University
+Q172118,Percy Williams Bridgman,male,1946,Physics,1,"for the invention of an apparatus to produce extremely high pressures, and for the discoveries he made therewith in the field of high pressure physics",Harvard University
+Q153194,Sir Edward Victor Appleton,male,1947,Physics,1,for his investigations of the physics of the upper atmosphere especially for the discovery of the so-called Appleton layer,Department of Scientific and Industrial Research
+Q184499,Patrick Maynard Stuart Blackett,male,1948,Physics,1,"for his development of the Wilson cloud chamber method, and his discoveries therewith in the fields of nuclear physics and cosmic radiation",Victoria University
+Q155777,Hideki Yukawa,male,1949,Physics,1,for his prediction of the existence of mesons on the basis of theoretical work on nuclear forces,Columbia University
+Q178103,Cecil Frank Powell,male,1950,Physics,1,for his development of the photographic method of studying nuclear processes and his discoveries regarding mesons made with this method,Bristol University
+Q183631,Ernest Thomas Sinton Walton,male,1951,Physics,1/2,for their pioneer work on the transmutation of atomic nuclei by artificially accelerated atomic particles,Trinity College
+Q62897,Sir John Douglas Cockcroft,male,1951,Physics,1/2,for their pioneer work on the transmutation of atomic nuclei by artificially accelerated atomic particles,Atomic Energy Research Establishment
+Q183270,Edward Mills Purcell,male,1952,Physics,1/2,for their development of new methods for nuclear magnetic precision measurements and discoveries in connection therewith,Harvard University
+Q123022,Felix Bloch,male,1952,Physics,1/2,for their development of new methods for nuclear magnetic precision measurements and discoveries in connection therewith,Stanford University
+Q188293,Frits Zernike,male,1953,Physics,1,"for his demonstration of the phase contrast method, especially for his invention of the phase contrast microscope",Groningen University
+Q58978,Max Born,male,1954,Physics,1/2,"for his fundamental research in quantum mechanics, especially for his statistical interpretation of the wavefunction",Edinburgh University
+Q76474,Walther Bothe,male,1954,Physics,1/2,for the coincidence method and his discoveries made therewith,University of Heidelberg
+Q184571,Polykarp Kusch,male,1955,Physics,1/2,for his precision determination of the magnetic moment of the electron,Columbia University
+Q186497,Willis Eugene Lamb,male,1955,Physics,1/2,for his discoveries concerning the fine structure of the hydrogen spectrum,Stanford University
+Q949,John Bardeen,male,1956,Physics,1/3,for their researches on semiconductors and their discovery of the transistor effect,University of Illinois
+Q184577,Walter Houser Brattain,male,1956,Physics,1/3,for their researches on semiconductors and their discovery of the transistor effect,Bell Telephone Laboratories
+Q163415,William Bradford Shockley,male,1956,Physics,1/3,for their researches on semiconductors and their discovery of the transistor effect,"Semiconductor Laboratory of Beckman Instruments, Inc."
+Q181369,Chen Ning Yang,male,1957,Physics,1/2,for their penetrating investigation of the so-called parity laws which has led to important discoveries regarding the elementary particles,Institute for Advanced Study
+Q183679,Tsung-Dao (T.D.) Lee,male,1957,Physics,1/2,for their penetrating investigation of the so-called parity laws which has led to important discoveries regarding the elementary particles,Columbia University
+Q155759,Igor Yevgenyevich Tamm,male,1958,Physics,1/3,for the discovery and the interpretation of the Cherenkov effect,Lomonosov Moscow State University
+Q192703,Il´ja Mikhailovich Frank,male,1958,Physics,1/3,for the discovery and the interpretation of the Cherenkov effect,Lomonosov Moscow State University
+Q76970,Pavel Alekseyevich Cherenkov,male,1958,Physics,1/3,for the discovery and the interpretation of the Cherenkov effect,P.N. Lebedev Physical Institute
+Q173028,Emilio Gino Segrè,male,1959,Physics,1/2,for their discovery of the antiproton,University of California
+Q183655,Owen Chamberlain,male,1959,Physics,1/2,for their discovery of the antiproton,University of California
+Q80905,Donald Arthur Glaser,male,1960,Physics,1,for the invention of the bubble chamber,University of California
+Q130113,Robert Hofstadter,male,1961,Physics,1/2,for his pioneering studies of electron scattering in atomic nuclei and for his thereby achieved discoveries concerning the structure of the nucleons,Stanford University
+Q44286,Rudolf Ludwig Mössbauer,male,1961,Physics,1/2,for his researches concerning the resonance absorption of gamma radiation and his discovery in this connection of the effect which bears his name,Technical University
+Q133267,Lev Davidovich Landau,male,1962,Physics,1,"for his pioneering theories for condensed matter, especially liquid helium",Academy of Sciences
+Q155790,Eugene Paul Wigner,male,1963,Physics,1/2,"for his contributions to the theory of the atomic nucleus and the elementary particles, particularly through the discovery and application of fundamental symmetry principles",Princeton University
+Q76797,J. Hans D. Jensen,male,1963,Physics,1/4,for their discoveries concerning nuclear shell structure,University of Heidelberg
+Q57100,Maria Goeppert Mayer,female,1963,Physics,1/4,for their discoveries concerning nuclear shell structure,University of California
+Q83552,Aleksandr Mikhailovich Prokhorov,male,1964,Physics,1/4,"for fundamental work in the field of quantum electronics, which has led to the construction of oscillators and amplifiers based on the maser-laser principle",P.N. Lebedev Physical Institute
+Q184566,Charles Hard Townes,male,1964,Physics,1/2,"for fundamental work in the field of quantum electronics, which has led to the construction of oscillators and amplifiers based on the maser-laser principle",Massachusetts Institute of Technology (MIT)
+Q83557,Nicolay Gennadiyevich Basov,male,1964,Physics,1/4,"for fundamental work in the field of quantum electronics, which has led to the construction of oscillators and amplifiers based on the maser-laser principle",P.N. Lebedev Physical Institute
+Q186465,Julian Schwinger,male,1965,Physics,1/3,"for their fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles",Harvard University
+Q39246,Richard P. Feynman,male,1965,Physics,1/3,"for their fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles",California Institute of Technology (Caltech)
+Q184563,Sin-Itiro Tomonaga,male,1965,Physics,1/3,"for their fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles",Tokyo University of Education
+Q71023,Alfred Kastler,male,1966,Physics,1,for the discovery and development of optical methods for studying Hertzian resonances in atoms,École Normale Supérieure
+Q155794,Hans Albrecht Bethe,male,1967,Physics,1,"for his contributions to the theory of nuclear reactions, especially his discoveries concerning the energy production in stars",Cornell University
+Q178344,Luis Walter Alvarez,male,1968,Physics,1,"for his decisive contributions to elementary particle physics, in particular the discovery of a large number of resonance states, made possible through his development of the technique of using hydrogen bubble chamber and data analysis",University of California
+Q172840,Murray Gell-Mann,male,1969,Physics,1,for his contributions and discoveries concerning the classification of elementary particles and their interactions,California Institute of Technology (Caltech)
+Q54945,Hannes Olof Gösta Alfvén,male,1970,Physics,1/2,for fundamental work and discoveries in magnetohydro-dynamics with fruitful applications in different parts of plasma physics,Royal Institute of Technology
+Q155781,Louis Eugène Félix Néel,male,1970,Physics,1/2,for fundamental work and discoveries concerning antiferromagnetism and ferrimagnetism which have led to important applications in solid state physics,University of Grenoble
+Q155786,Dennis Gabor,male,1971,Physics,1,for his invention and development of the holographic method,Imperial College
+Q949,John Bardeen,male,1972,Physics,1/3,"for their jointly developed theory of superconductivity, usually called the BCS-theory",University of Illinois
+Q153201,John Robert Schrieffer,male,1972,Physics,1/3,"for their jointly developed theory of superconductivity, usually called the BCS-theory",University of Pennsylvania
+Q82563,Leon Neil Cooper,male,1972,Physics,1/3,"for their jointly developed theory of superconductivity, usually called the BCS-theory",Brown University
+Q181363,Brian David Josephson,male,1973,Physics,1/2,"for his theoretical predictions of the properties of a supercurrent through a tunnel barrier, in particular those phenomena which are generally known as the Josephson effects",University of Cambridge
+Q192688,Ivar Giaever,male,1973,Physics,1/4,"for their experimental discoveries regarding tunneling phenomena in semiconductors and superconductors, respectively",General Electric Company
+Q179852,Leo Esaki,male,1973,Physics,1/4,"for their experimental discoveries regarding tunneling phenomena in semiconductors and superconductors, respectively",IBM Thomas J. Watson Research Center
+Q189990,Antony Hewish,male,1974,Physics,1/2,"for their pioneering research in radio astrophysics: Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars",University of Cambridge
+Q190766,Sir Martin Ryle,male,1974,Physics,1/2,"for their pioneering research in radio astrophysics: Ryle for his observations and inventions, in particular of the aperture synthesis technique, and Hewish for his decisive role in the discovery of pulsars",University of Cambridge
+Q103854,Aage Niels Bohr,male,1975,Physics,1/3,for the discovery of the connection between collective motion and particle motion in atomic nuclei and the development of the theory of the structure of the atomic nucleus based on this connection,Niels Bohr Institute
+Q107423,Ben Roy Mottelson,male,1975,Physics,1/3,for the discovery of the connection between collective motion and particle motion in atomic nuclei and the development of the theory of the structure of the atomic nucleus based on this connection,Nordita
+Q190745,Leo James Rainwater,male,1975,Physics,1/3,for the discovery of the connection between collective motion and particle motion in atomic nuclei and the development of the theory of the structure of the atomic nucleus based on this connection,Columbia University
+Q192106,Burton Richter,male,1976,Physics,1/2,for their pioneering work in the discovery of a heavy elementary particle of a new kind,Stanford Linear Accelerator Center
+Q192715,Samuel Chao Chung Ting,male,1976,Physics,1/2,for their pioneering work in the discovery of a heavy elementary particle of a new kind,Massachusetts Institute of Technology (MIT)
+Q193655,John Hasbrouck Van Vleck,male,1977,Physics,1/3,for their fundamental theoretical investigations of the electronic structure of magnetic and disordered systems,Harvard University
+Q190770,Philip Warren Anderson,male,1977,Physics,1/3,for their fundamental theoretical investigations of the electronic structure of magnetic and disordered systems,Bell Telephone Laboratories
+Q189485,Sir Nevill Francis Mott,male,1977,Physics,1/3,for their fundamental theoretical investigations of the electronic structure of magnetic and disordered systems,University of Cambridge
+Q172877,Arno Allan Penzias,male,1978,Physics,1/4,for their discovery of cosmic microwave background radiation,Bell Laboratories
+Q172844,Pyotr Leonidovich Kapitsa,male,1978,Physics,1/2,for his basic inventions and discoveries in the area of low-temperature physics,Academy of Sciences
+Q171034,Robert Woodrow Wilson,male,1978,Physics,1/4,for their discovery of cosmic microwave background radiation,Bell Laboratories
+Q28189,Abdus Salam,male,1979,Physics,1/3,"for their contributions to the theory of the unified weak and electromagnetic interaction between elementary particles, including, inter alia, the prediction of the weak neutral current",International Centre for Theoretical Physics
+Q107420,Sheldon Lee Glashow,male,1979,Physics,1/3,"for their contributions to the theory of the unified weak and electromagnetic interaction between elementary particles, including, inter alia, the prediction of the weak neutral current","Harvard University, Lyman Laboratory"
+Q179282,Steven Weinberg,male,1979,Physics,1/3,"for their contributions to the theory of the unified weak and electromagnetic interaction between elementary particles, including, inter alia, the prediction of the weak neutral current",Harvard University
+Q193496,James Watson Cronin,male,1980,Physics,1/2,for the discovery of violations of fundamental symmetry principles in the decay of neutral K-mesons,University of Chicago
+Q206499,Val Logsdon Fitch,male,1980,Physics,1/2,for the discovery of violations of fundamental symmetry principles in the decay of neutral K-mesons,Princeton University
+Q190503,Arthur Leonard Schawlow,male,1981,Physics,1/4,for their contribution to the development of laser spectroscopy,Stanford University
+Q192712,Kai M. Siegbahn,male,1981,Physics,1/2,for his contribution to the development of high-resolution electron spectroscopy,Uppsala University
+Q189987,Nicolaas Bloembergen,male,1981,Physics,1/4,for their contribution to the development of laser spectroscopy,Harvard University
+Q193503,Kenneth G. Wilson,male,1982,Physics,1,for his theory for critical phenomena in connection with phase transitions,Cornell University
+Q148109,Subrahmanyan Chandrasekhar,male,1983,Physics,1/2,for his theoretical studies of the physical processes of importance to the structure and evolution of the stars,University of Chicago
+Q46120,William Alfred Fowler,male,1983,Physics,1/2,for his theoretical and experimental studies of the nuclear reactions of importance in the formation of the chemical elements in the universe,California Institute of Technology (Caltech)
+Q187199,Carlo Rubbia,male,1984,Physics,1/2,"for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction",CERN
+Q104779,Simon van der Meer,male,1984,Physics,1/2,"for their decisive contributions to the large project, which led to the discovery of the field particles W and Z, communicators of weak interaction",CERN
+Q71024,Klaus von Klitzing,male,1985,Physics,1,for the discovery of the quantized Hall effect,Max-Planck-Institut für Festkörperforschung
+Q71022,Ernst Ruska,male,1986,Physics,1/2,"for his fundamental work in electron optics, and for the design of the first electron microscope",Fritz-Haber-Institut der Max-Planck-Gesellschaft
+Q76766,Gerd Binnig,male,1986,Physics,1/4,for their design of the scanning tunneling microscope,IBM Zurich Research Laboratory
+Q123029,Heinrich Rohrer,male,1986,Physics,1/4,for their design of the scanning tunneling microscope,IBM Zurich Research Laboratory
+Q76687,J. Georg Bednorz,male,1987,Physics,1/2,for their important break-through in the discovery of superconductivity in ceramic materials,IBM Zurich Research Laboratory
+Q122298,K. Alexander Müller,male,1987,Physics,1/2,for their important break-through in the discovery of superconductivity in ceramic materials,IBM Zurich Research Laboratory
+Q153210,Jack Steinberger,male,1988,Physics,1/3,for the neutrino beam method and the demonstration of the doublet structure of the leptons through the discovery of the muon neutrino,CERN
+Q192695,Leon M. Lederman,male,1988,Physics,1/3,for the neutrino beam method and the demonstration of the doublet structure of the leptons through the discovery of the muon neutrino,Fermi National Accelerator Laboratory
+Q189741,Melvin Schwartz,male,1988,Physics,1/3,for the neutrino beam method and the demonstration of the doublet structure of the leptons through the discovery of the muon neutrino,"Digital Pathways, Inc."
+Q70532,Hans G. Dehmelt,male,1989,Physics,1/4,for the development of the ion trap technique,University of Washington
+Q107419,Norman F. Ramsey,male,1989,Physics,1/2,for the invention of the separated oscillatory fields method and its use in the hydrogen maser and other atomic clocks,Harvard University
+Q57227,Wolfgang Paul,male,1989,Physics,1/4,for the development of the ion trap technique,University of Bonn
+Q190495,Henry W. Kendall,male,1990,Physics,1/3,"for their pioneering investigations concerning deep inelastic scattering of electrons on protons and bound neutrons, which have been of essential importance for the development of the quark model in particle physics",Massachusetts Institute of Technology (MIT)
+Q187822,Jerome I. Friedman,male,1990,Physics,1/3,"for their pioneering investigations concerning deep inelastic scattering of electrons on protons and bound neutrons, which have been of essential importance for the development of the quark model in particle physics",Massachusetts Institute of Technology (MIT)
+Q201470,Richard E. Taylor,male,1990,Physics,1/3,"for their pioneering investigations concerning deep inelastic scattering of electrons on protons and bound neutrons, which have been of essential importance for the development of the quark model in particle physics",Stanford University
+Q187224,Pierre-Gilles de Gennes,male,1991,Physics,1,"for discovering that methods developed for studying order phenomena in simple systems can be generalized to more complex forms of matter, in particular to liquid crystals and polymers",Collège de France
+Q153178,Georges Charpak,male,1992,Physics,1,"for his invention and development of particle detectors, in particular the multiwire proportional chamber",École Supérieure de Physique et Chimie
+Q192685,Joseph H. Taylor Jr.,male,1993,Physics,1/2,"for the discovery of a new type of pulsar, a discovery that has opened up new possibilities for the study of gravitation",Princeton University
+Q156286,Russell A. Hulse,male,1993,Physics,1/2,"for the discovery of a new type of pulsar, a discovery that has opened up new possibilities for the study of gravitation",Princeton University
+Q192689,Bertram N. Brockhouse,male,1994,Physics,1/2,for the development of neutron spectroscopy,McMaster University
+Q201506,Clifford G. Shull,male,1994,Physics,1/2,for the development of the neutron diffraction technique,Massachusetts Institute of Technology (MIT)
+Q191922,Frederick Reines,male,1995,Physics,1/2,for the detection of the neutrino,University of California
+Q107416,Martin L. Perl,male,1995,Physics,1/2,for the discovery of the tau lepton,Stanford University
+Q201853,David M. Lee,male,1996,Physics,1/3,for their discovery of superfluidity in helium-3,Cornell University
+Q206405,Douglas D. Osheroff,male,1996,Physics,1/3,for their discovery of superfluidity in helium-3,Stanford University
+Q192708,Robert C. Richardson,male,1996,Physics,1/3,for their discovery of superfluidity in helium-3,Cornell University
+Q190697,Claude Cohen-Tannoudji,male,1997,Physics,1/3,for development of methods to cool and trap atoms with laser light,Collège de France
+Q172466,Steven Chu,male,1997,Physics,1/3,for development of methods to cool and trap atoms with laser light,Stanford University
+Q190756,William D. Phillips,male,1997,Physics,1/3,for development of methods to cool and trap atoms with laser light,National Institute of Standards and Technology
+Q202138,Daniel C. Tsui,male,1998,Physics,1/3,for their discovery of a new form of quantum fluid with fractionally charged excitations,Princeton University
+Q71015,Horst L. Störmer,male,1998,Physics,1/3,for their discovery of a new form of quantum fluid with fractionally charged excitations,Columbia University
+Q189997,Robert B. Laughlin,male,1998,Physics,1/3,for their discovery of a new form of quantum fluid with fractionally charged excitations,Stanford University
+Q184592,Gerardus 't Hooft,male,1999,Physics,1/2,for elucidating the quantum structure of electroweak interactions in physics,Utrecht University
+Q202149,Martinus J.G. Veltman,male,1999,Physics,1/2,for elucidating the quantum structure of electroweak interactions in physics,NA
+Q71016,Herbert Kroemer,male,2000,Physics,1/4,for developing semiconductor heterostructures used in high-speed- and opto-electronics,University of California
+Q182031,Jack S. Kilby,male,2000,Physics,1/2,for his part in the invention of the integrated circuit,Texas Instruments
+Q183279,Zhores I. Alferov,male,2000,Physics,1/4,for developing semiconductor heterostructures used in high-speed- and opto-electronics,A.F. Ioffe Physico-Technical Institute
+Q206379,Carl E. Wieman,male,2001,Physics,1/3,"for the achievement of Bose-Einstein condensation in dilute gases of alkali atoms, and for early fundamental studies of the properties of the condensates","University of Colorado, JILA"
+Q205954,Eric A. Cornell,male,2001,Physics,1/3,"for the achievement of Bose-Einstein condensation in dilute gases of alkali atoms, and for early fundamental studies of the properties of the condensates","University of Colorado, JILA"
+Q76462,Wolfgang Ketterle,male,2001,Physics,1/3,"for the achievement of Bose-Einstein condensation in dilute gases of alkali atoms, and for early fundamental studies of the properties of the condensates",Massachusetts Institute of Technology (MIT)
+Q155773,Masatoshi Koshiba,male,2002,Physics,1/4,"for pioneering contributions to astrophysics, in particular for the detection of cosmic neutrinos",University of Tokyo
+Q175519,Raymond Davis Jr.,male,2002,Physics,1/4,"for pioneering contributions to astrophysics, in particular for the detection of cosmic neutrinos",University of Pennsylvania
+Q186481,Riccardo Giacconi,male,2002,Physics,1/2,"for pioneering contributions to astrophysics, which have led to the discovery of cosmic X-ray sources",Associated Universities Inc.
+Q188128,Alexei Alexeyevich Abrikosov,male,2003,Physics,1/3,for pioneering contributions to the theory of superconductors and superfluids,Argonne National Laboratory
+Q192718,Anthony J. Leggett,male,2003,Physics,1/3,for pioneering contributions to the theory of superconductors and superfluids,University of Illinois
+Q104668,Vitaly Lazarevich Ginzburg,male,2003,Physics,1/3,for pioneering contributions to the theory of superconductors and superfluids,P.N. Lebedev Physical Institute
+Q40262,David J. Gross,male,2004,Physics,1/3,for the discovery of asymptotic freedom in the theory of the strong interaction,"University of California, Kavli Institute for Theoretical Physics"
+Q107450,Frank Wilczek,male,2004,Physics,1/3,for the discovery of asymptotic freedom in the theory of the strong interaction,Massachusetts Institute of Technology (MIT)
+Q107407,H. David Politzer,male,2004,Physics,1/3,for the discovery of asymptotic freedom in the theory of the strong interaction,California Institute of Technology (Caltech)
+Q206390,John L. Hall,male,2005,Physics,1/4,"for their contributions to the development of laser-based precision spectroscopy, including the optical frequency comb technique","University of Colorado, JILA"
+Q64188,Roy J. Glauber,male,2005,Physics,1/2,for his contribution to the quantum theory of optical coherence,Harvard University
+Q71013,Theodor W. Hänsch,male,2005,Physics,1/4,"for their contributions to the development of laser-based precision spectroscopy, including the optical frequency comb technique",Max Planck Institute of Quantum Optics
+Q179572,George F. Smoot,male,2006,Physics,1/2,for their discovery of the blackbody form and anisotropy of the cosmic microwave background radiation,University of California
+Q104651,John C. Mather,male,2006,Physics,1/2,for their discovery of the blackbody form and anisotropy of the cosmic microwave background radiation,NASA Goddard Space Flight Center
+Q153219,Albert Fert,male,2007,Physics,1/2,for the discovery of Giant Magnetoresistance,Universit&eacute; Paris-Sud
+Q57120,Peter Grünberg,male,2007,Physics,1/2,for the discovery of Giant Magnetoresistance,Forschungszentrum J&uuml;lich
+Q202164,Makoto Kobayashi,male,2008,Physics,1/4,for the discovery of the origin of the broken symmetry which predicts the existence of at least three families of quarks in nature,High Energy Accelerator Research Organization (KEK)
+Q202168,Toshihide Maskawa,male,2008,Physics,1/4,for the discovery of the origin of the broken symmetry which predicts the existence of at least three families of quarks in nature,Kyoto Sangyo University
+Q188120,Yoichiro Nambu,male,2008,Physics,1/2,for the discovery of the mechanism of spontaneous broken symmetry in subatomic physics,"Enrico Fermi Institute, University of Chicago"
+Q16389,Charles Kuen Kao,male,2009,Physics,1/2,for groundbreaking achievements concerning the transmission of light in fibers for optical communication,Standard Telecommunication Laboratories
+Q76373,George E. Smith,male,2009,Physics,1/4,for the invention of an imaging semiconductor circuit - the CCD sensor,Bell Laboratories
+Q73058,Willard S. Boyle,male,2009,Physics,1/4,for the invention of an imaging semiconductor circuit - the CCD sensor,Bell Laboratories
+Q104104,Andre Geim,male,2010,Physics,1/2,for groundbreaking experiments regarding the two-dimensional material graphene,University of Manchester
+Q106494,Konstantin Novoselov,male,2010,Physics,1/2,for groundbreaking experiments regarding the two-dimensional material graphene,University of Manchester
+Q106454,Adam G. Riess,male,2011,Physics,1/4,for the discovery of the accelerating expansion of the Universe through observations of distant supernovae,Johns Hopkins University
+Q201452,Brian P. Schmidt,male,2011,Physics,1/4,for the discovery of the accelerating expansion of the Universe through observations of distant supernovae,Australian National University
+Q106949,Saul Perlmutter,male,2011,Physics,1/2,for the discovery of the accelerating expansion of the Universe through observations of distant supernovae,Lawrence Berkeley National Laboratory
+Q61045,David J. Wineland,male,2012,Physics,1/2,for ground-breaking experimental methods that enable measuring and manipulation of individual quantum systems,National Institute of Standards and Technology
+Q109588,Serge Haroche,male,2012,Physics,1/2,for ground-breaking experimental methods that enable measuring and manipulation of individual quantum systems,Collège de France
+Q151746,François Englert,male,2013,Physics,1/2,"for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider",Université Libre de Bruxelles
+Q192112,Peter W. Higgs,male,2013,Physics,1/2,"for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider",University of Edinburgh
+Q11443689,Hiroshi Amano,male,2014,Physics,1/3,for the invention of efficient blue light-emitting diodes which has enabled bright and energy-saving white light sources,Nagoya University
+Q1673706,Isamu Akasaki,male,2014,Physics,1/3,for the invention of efficient blue light-emitting diodes which has enabled bright and energy-saving white light sources,Meijo University
+Q730065,Shuji Nakamura,male,2014,Physics,1/3,for the invention of efficient blue light-emitting diodes which has enabled bright and energy-saving white light sources,University of California
+Q710597,Arthur B. McDonald,male,2015,Physics,1/2,"for the discovery of neutrino oscillations, which shows that neutrinos have mass",Queen's University
+Q11538917,Takaaki Kajita,male,2015,Physics,1/2,"for the discovery of neutrino oscillations, which shows that neutrinos have mass",University of Tokyo
+Q726394,David J. Thouless,male,2016,Physics,1/2,for theoretical discoveries of topological phase transitions and topological phases of matter,University of Washington
+Q1002250,F. Duncan M. Haldane,male,2016,Physics,1/4,for theoretical discoveries of topological phase transitions and topological phases of matter,Princeton University
+Q1700920,J. Michael Kosterlitz,male,2016,Physics,1/4,for theoretical discoveries of topological phase transitions and topological phases of matter,Brown University
+Q15900993,Barry C. Barish,male,2017,Physics,1/4,for decisive contributions to the LIGO detector and the observation of gravitational waves,LIGO/VIRGO Collaboration
+Q323320,Kip S. Thorne,male,2017,Physics,1/4,for decisive contributions to the LIGO detector and the observation of gravitational waves,LIGO/VIRGO Collaboration
+Q2128461,Rainer Weiss,male,2017,Physics,1/2,for decisive contributions to the LIGO detector and the observation of gravitational waves,LIGO/VIRGO Collaboration
+Q708472,Arthur Ashkin,male,2018,Physics,1/2,for the optical tweezers and their application to biological systems,Bell Laboratories
+Q56855591,Donna Strickland,female,2018,Physics,1/4,"for their method of generating high-intensity, ultra-short optical pulses",University of Waterloo
+Q556543,Gérard Mourou,male,2018,Physics,1/4,"for their method of generating high-intensity, ultra-short optical pulses",École Polytechnique
+Q124013,Didier Queloz,male,2019,Physics,1/4,for the discovery of an exoplanet orbiting a solar-type star,University of Geneva
+Q728331,James Peebles,male,2019,Physics,1/2,for theoretical discoveries in physical cosmology,Princeton University
+Q123975,Michel Mayor,male,2019,Physics,1/4,for the discovery of an exoplanet orbiting a solar-type star,University of Geneva
+Q493956,Andrea Ghez,female,2020,Physics,1/4,for the discovery of a supermassive compact object at the centre of our galaxy,University of California
+Q65807,Reinhard Genzel,male,2020,Physics,1/4,for the discovery of a supermassive compact object at the centre of our galaxy,Max Planck Institute for Extraterrestrial Physics
+Q193803,Roger Penrose,male,2020,Physics,1/2,for the discovery that black hole formation is a robust prediction of the general theory of relativity,University of Oxford
+Q1235614,Giorgio Parisi,male,2021,Physics,1/2,for the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales,Sapienza University of Rome
+Q109370,Klaus Hasselmann,male,2021,Physics,1/4,"for the physical modelling of Earth’s climate, quantifying variability and reliably predicting global warming",Max Planck Institute for Meteorology
+Q3675789,Syukuro Manabe,male,2021,Physics,1/4,"for the physical modelling of Earth’s climate, quantifying variability and reliably predicting global warming",Princeton University
+Q364997,Alain Aspect,male,2022,Physics,1/3,"for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science",Institut d’Optique Graduate School – Université Paris-Saclay
+Q78610,Anton Zeilinger,male,2022,Physics,1/3,"for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science",University of Vienna
+Q1365270,John F. Clauser,male,2022,Physics,1/3,"for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science",J.F. Clauser & Assoc.
+Q565544,Anne L’Huillier,female,2023,Physics,1/3,for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter,Lund University
+Q86970,Ferenc Krausz,male,2023,Physics,1/3,for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter,Max Planck Institute of Quantum Optics
+Q122921025,Pierre Agostini,male,2023,Physics,1/3,for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter,The Ohio State University
+Q92894,Geoffrey Hinton,male,2024,Physics,1/2,for foundational discoveries and inventions that enable machine learning with artificial neural networks,University of Toronto
+Q391237,John J. Hopfield,male,2024,Physics,1/2,for foundational discoveries and inventions that enable machine learning with artificial neural networks,Princeton University
+Q555849,John Clarke,male,2025,Physics,1/3,for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit,University of California
+Q28976188,John M. Martinis,male,2025,Physics,1/3,for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit,University of California
+Q26703310,Michel H. Devoret,male,2025,Physics,1/3,for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit,Yale University
+Q76425,Emil Adolf von Behring,male,1901,Physiology/Medicine,1,"for his work on serum therapy, especially its application against diphtheria, by which he has opened a new road in the domain of medical science and thereby placed in the hands of the physician a victorious weapon against illness and deaths",Marburg University
+Q102034,Ronald Ross,male,1902,Physiology/Medicine,1,"for his work on malaria, by which he has shown how it enters the organism and thereby has laid the foundation for successful research on this disease and methods of combating it",University College
+Q182964,Niels Ryberg Finsen,male,1903,Physiology/Medicine,1,"in recognition of his contribution to the treatment of diseases, especially lupus vulgaris, with concentrated light radiation, whereby he has opened a new avenue for medical science",Finsen Medical Light Institute
+Q42985,Ivan Petrovich Pavlov,male,1904,Physiology/Medicine,1,"in recognition of his work on the physiology of digestion, through which knowledge on vital aspects of the subject has been transformed and enlarged",Military Medical Academy
+Q37193,Robert Koch,male,1905,Physiology/Medicine,1,for his investigations and discoveries in relation to tuberculosis,Institute for Infectious Diseases
+Q150630,Camillo Golgi,male,1906,Physiology/Medicine,1/2,in recognition of their work on the structure of the nervous system,Pavia University
+Q150526,Santiago Ramón y Cajal,male,1906,Physiology/Medicine,1/2,in recognition of their work on the structure of the nervous system,Madrid University
+Q189006,Charles Louis Alphonse Laveran,male,1907,Physiology/Medicine,1,in recognition of his work on the role played by protozoa in causing diseases,Institut Pasteur
+Q172254,Ilya Ilyich Mechnikov,male,1908,Physiology/Medicine,1/2,in recognition of their work on immunity,Institut Pasteur
+Q57089,Paul Ehrlich,male,1908,Physiology/Medicine,1/2,in recognition of their work on immunity,Goettingen University
+Q115478,Emil Theodor Kocher,male,1909,Physiology/Medicine,1,"for his work on the physiology, pathology and surgery of the thyroid gland",Berne University
+Q57128,Albrecht Kossel,male,1910,Physiology/Medicine,1,"in recognition of the contributions to our knowledge of cell chemistry made through his work on proteins, including the nucleic substances",University of Heidelberg
+Q192651,Allvar Gullstrand,male,1911,Physiology/Medicine,1,for his work on the dioptrics of the eye,Uppsala University
+Q185777,Alexis Carrel,male,1912,Physiology/Medicine,1,in recognition of his work on vascular suture and the transplantation of blood vessels and organs,Rockefeller Institute for Medical Research
+Q214851,Charles Robert Richet,male,1913,Physiology/Medicine,1,in recognition of his work on anaphylaxis,Sorbonne University
+Q78478,Robert Bárány,male,1914,Physiology/Medicine,1,for his work on the physiology and pathology of the vestibular apparatus,Vienna University
+Q211787,Jules Bordet,male,1919,Physiology/Medicine,1,for his discoveries relating to immunity,Brussels University
+Q152187,Schack August Steenberg Krogh,male,1920,Physiology/Medicine,1,for his discovery of the capillary motor regulating mechanism,Copenhagen University
+Q155375,Archibald Vivian Hill,male,1922,Physiology/Medicine,1/2,for his discovery relating to the production of heat in the muscle,London University
+Q57132,Otto Fritz Meyerhof,male,1922,Physiology/Medicine,1/2,for his discovery of the fixed relationship between the consumption of oxygen and the metabolism of lactic acid in the muscle,Kiel University
+Q180350,Frederick Grant Banting,male,1923,Physiology/Medicine,1/2,for the discovery of insulin,University of Toronto
+Q232024,John James Rickard Macleod,male,1923,Physiology/Medicine,1/2,for the discovery of insulin,University of Toronto
+Q189488,Willem Einthoven,male,1924,Physiology/Medicine,1,for his discovery of the mechanism of the electrocardiogram,Leiden University
+Q216324,Johannes Andreas Grib Fibiger,male,1926,Physiology/Medicine,1,for his discovery of the Spiroptera carcinoma,Copenhagen University
+Q78479,Julius Wagner-Jauregg,male,1927,Physiology/Medicine,1,for his discovery of the therapeutic value of malaria inoculation in the treatment of dementia paralytica,Vienna University
+Q233965,Charles Jules Henri Nicolle,male,1928,Physiology/Medicine,1,for his work on typhus,Institut Pasteur
+Q107609,Christiaan Eijkman,male,1929,Physiology/Medicine,1/2,for his discovery of the antineuritic vitamin,Utrecht University
+Q233976,Sir Frederick Gowland Hopkins,male,1929,Physiology/Medicine,1/2,for his discovery of the growth-stimulating vitamins,University of Cambridge
+Q84405,Karl Landsteiner,male,1930,Physiology/Medicine,1,for his discovery of human blood groups,Rockefeller Institute for Medical Research
+Q76464,Otto Heinrich Warburg,male,1931,Physiology/Medicine,1,for his discovery of the nature and mode of action of the respiratory enzyme,Kaiser-Wilhelm-Institut (now Max-Planck-Institut) für Biologie
+Q231292,Edgar Douglas Adrian,male,1932,Physiology/Medicine,1/2,for their discoveries regarding the functions of neurons,University of Cambridge
+Q213504,Sir Charles Scott Sherrington,male,1932,Physiology/Medicine,1/2,for their discoveries regarding the functions of neurons,University of Oxford
+Q177681,Thomas Hunt Morgan,male,1933,Physiology/Medicine,1,for his discoveries concerning the role played by the chromosome in heredity,California Institute of Technology (Caltech)
+Q273238,George Hoyt Whipple,male,1934,Physiology/Medicine,1/3,for their discoveries concerning liver therapy in cases of anaemia,University of Rochester
+Q245000,George Richards Minot,male,1934,Physiology/Medicine,1/3,for their discoveries concerning liver therapy in cases of anaemia,Harvard University
+Q80323,William Parry Murphy,male,1934,Physiology/Medicine,1/3,for their discoveries concerning liver therapy in cases of anaemia,Harvard University
+Q57568,Hans Spemann,male,1935,Physiology/Medicine,1,for his discovery of the organizer effect in embryonic development,University of Freiburg im Breisgau
+Q77173,Otto Loewi,male,1936,Physiology/Medicine,1/2,for their discoveries relating to chemical transmission of nerve impulses,Graz University
+Q72194,Sir Henry Hallett Dale,male,1936,Physiology/Medicine,1/2,for their discoveries relating to chemical transmission of nerve impulses,National Institute for Medical Research
+Q180468,Albert von Szent-Györgyi Nagyrápolt,male,1937,Physiology/Medicine,1,"for his discoveries in connection with the biological combustion processes, with special reference to vitamin C and the catalysis of fumaric acid",Szeged University
+Q156482,Corneille Jean François Heymans,male,1938,Physiology/Medicine,1,for the discovery of the role played by the sinus and aortic mechanisms in the regulation of respiration,Ghent University
+Q57192,Gerhard Domagk,male,1939,Physiology/Medicine,1,for the discovery of the antibacterial effects of prontosil,Munster University
+Q230612,Edward Adelbert Doisy,male,1943,Physiology/Medicine,1/2,for his discovery of the chemical nature of vitamin K,Saint Louis University
+Q190501,Henrik Carl Peter Dam,male,1943,Physiology/Medicine,1/2,for his discovery of vitamin K,Polytechnic Institute
+Q273201,Herbert Spencer Gasser,male,1944,Physiology/Medicine,1/2,for their discoveries relating to the highly differentiated functions of single nerve fibres,Rockefeller Institute for Medical Research
+Q243532,Joseph Erlanger,male,1944,Physiology/Medicine,1/2,for their discoveries relating to the highly differentiated functions of single nerve fibres,Washington University
+Q58054,Ernst Boris Chain,male,1945,Physiology/Medicine,1/3,for the discovery of penicillin and its curative effect in various infectious diseases,University of Oxford
+Q37064,Sir Alexander Fleming,male,1945,Physiology/Medicine,1/3,for the discovery of penicillin and its curative effect in various infectious diseases,London University
+Q137106,Sir Howard Walter Florey,male,1945,Physiology/Medicine,1/3,for the discovery of penicillin and its curative effect in various infectious diseases,University of Oxford
+Q83598,Hermann Joseph Muller,male,1946,Physiology/Medicine,1,for the discovery of the production of mutations by means of X-ray irradiation,Indiana University
+Q237160,Bernardo Alberto Houssay,male,1947,Physiology/Medicine,1/2,for his discovery of the part played by the hormone of the anterior pituitary lobe in the metabolism of sugar,Instituto de Biologia y Medicina Experimental (Institute for Biology and Experimental Medicine)
+Q78501,Carl Ferdinand Cori,male,1947,Physiology/Medicine,1/4,for their discovery of the course of the catalytic conversion of glycogen,Washington University
+Q204733,"Gerty Theresa Cori, née Radnitz",female,1947,Physiology/Medicine,1/4,for their discovery of the course of the catalytic conversion of glycogen,Washington University
+Q115475,Paul Hermann Müller,male,1948,Physiology/Medicine,1,for his discovery of the high efficiency of DDT as a contact poison against several arthropods,Laboratorium der Farben-Fabriken J.R. Geigy A.G. (Laboratory of the J.R. Geigy Dye-Factory Co.)
+Q273219,António Caetano de Abreu Freire Egas Moniz,male,1949,Physiology/Medicine,1/2,for his discovery of the therapeutic value of leucotomy in certain psychoses,University of Lisbon
+Q115470,Walter Rudolf Hess,male,1949,Physiology/Medicine,1/2,for his discovery of the functional organization of the interbrain as a coordinator of the activities of the internal organs,University of Zurich
+Q110101,Edward Calvin Kendall,male,1950,Physiology/Medicine,1/3,"for their discoveries relating to the hormones of the adrenal cortex, their structure and biological effects",Mayo Clinic
+Q235651,Philip Showalter Hench,male,1950,Physiology/Medicine,1/3,"for their discoveries relating to the hormones of the adrenal cortex, their structure and biological effects",Mayo Clinic
+Q115490,Tadeus Reichstein,male,1950,Physiology/Medicine,1/3,"for their discoveries relating to the hormones of the adrenal cortex, their structure and biological effects",Basel University
+Q46928,Max Theiler,male,1951,Physiology/Medicine,1,for his discoveries concerning yellow fever and how to combat it,"Laboratories of the Division of Medicine and Public Health, Rockefeller Foundation"
+Q232308,Selman Abraham Waksman,male,1952,Physiology/Medicine,1,"for his discovery of streptomycin, the first antibiotic effective against tuberculosis",Rutgers University
+Q77104,Fritz Albert Lipmann,male,1953,Physiology/Medicine,1/2,for his discovery of co-enzyme A and its importance for intermediary metabolism,Harvard Medical School
+Q57191,Hans Adolf Krebs,male,1953,Physiology/Medicine,1/2,for his discovery of the citric acid cycle,Sheffield University
+Q309885,Frederick Chapman Robbins,male,1954,Physiology/Medicine,1/3,for their discovery of the ability of poliomyelitis viruses to grow in cultures of various types of tissue,Western Reserve University
+Q312961,John Franklin Enders,male,1954,Physiology/Medicine,1/3,for their discovery of the ability of poliomyelitis viruses to grow in cultures of various types of tissue,Harvard Medical School
+Q310131,Thomas Huckle Weller,male,1954,Physiology/Medicine,1/3,for their discovery of the ability of poliomyelitis viruses to grow in cultures of various types of tissue,"Research Division of Infectious Diseases, Children's Medical Center"
+Q156480,Axel Hugo Theodor Theorell,male,1955,Physiology/Medicine,1,for his discoveries concerning the nature and mode of action of oxidation enzymes,"Karolinska Institutet, Nobel Medical Institute"
+Q271757,André Frédéric Cournand,male,1956,Physiology/Medicine,1/3,for their discoveries concerning heart catheterization and pathological changes in the circulatory system,"Columbia University Division, Cardio-Pulmonary Laboratory, Bellevue Hospital"
+Q312963,Dickinson W. Richards,male,1956,Physiology/Medicine,1/3,for their discoveries concerning heart catheterization and pathological changes in the circulatory system,Columbia University
+Q77152,Werner Forssmann,male,1956,Physiology/Medicine,1/3,for their discoveries concerning heart catheterization and pathological changes in the circulatory system,Mainz University
+Q115448,Daniel Bovet,male,1957,Physiology/Medicine,1,"for his discoveries relating to synthetic compounds that inhibit the action of certain body substances, and especially their action on the vascular system and the skeletal muscles",Istituto Superiore di Sanità (Chief Institute of Public Health)
+Q237499,Edward Lawrie Tatum,male,1958,Physiology/Medicine,1/4,for their discovery that genes act by regulating definite chemical events,Rockefeller Institute for Medical Research
+Q238739,George Wells Beadle,male,1958,Physiology/Medicine,1/4,for their discovery that genes act by regulating definite chemical events,California Institute of Technology (Caltech)
+Q218823,Joshua Lederberg,male,1958,Physiology/Medicine,1/2,for his discoveries concerning genetic recombination and the organization of the genetic material of bacteria,University of Wisconsin
+Q295678,Arthur Kornberg,male,1959,Physiology/Medicine,1/2,for their discovery of the mechanisms in the biological synthesis of ribonucleic acid and deoxyribonucleic acid,Stanford University
+Q233957,Severo Ochoa,male,1959,Physiology/Medicine,1/2,for their discovery of the mechanisms in the biological synthesis of ribonucleic acid and deoxyribonucleic acid,"New York University, College of Medicine"
+Q214209,Peter Brian Medawar,male,1960,Physiology/Medicine,1/2,for discovery of acquired immunological tolerance,University College
+Q193550,Sir Frank Macfarlane Burnet,male,1960,Physiology/Medicine,1/2,for discovery of acquired immunological tolerance,Walter and Eliza Hall Institute for Medical Research
+Q238716,Georg von Békésy,male,1961,Physiology/Medicine,1,for his discoveries of the physical mechanism of stimulation within the cochlea,Harvard University
+Q123280,Francis Harry Compton Crick,male,1962,Physiology/Medicine,1/3,for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material,MRC Laboratory of Molecular Biology
+Q83333,James Dewey Watson,male,1962,Physiology/Medicine,1/3,for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material,Harvard University
+Q184659,Maurice Hugh Frederick Wilkins,male,1962,Physiology/Medicine,1/3,for their discoveries concerning the molecular structure of nucleic acids and its significance for information transfer in living material,London University
+Q193650,Alan Lloyd Hodgkin,male,1963,Physiology/Medicine,1/3,for their discoveries concerning the ionic mechanisms involved in excitation and inhibition in the peripheral and central portions of the nerve cell membrane,University of Cambridge
+Q104607,Andrew Fielding Huxley,male,1963,Physiology/Medicine,1/3,for their discoveries concerning the ionic mechanisms involved in excitation and inhibition in the peripheral and central portions of the nerve cell membrane,University College
+Q273223,Sir John Carew Eccles,male,1963,Physiology/Medicine,1/3,for their discoveries concerning the ionic mechanisms involved in excitation and inhibition in the peripheral and central portions of the nerve cell membrane,Australian National University
+Q44597,Feodor Lynen,male,1964,Physiology/Medicine,1/2,for their discoveries concerning the mechanism and regulation of the cholesterol and fatty acid metabolism,Max-Planck-Institut für Zellchemie
+Q35698,Konrad Bloch,male,1964,Physiology/Medicine,1/2,for their discoveries concerning the mechanism and regulation of the cholesterol and fatty acid metabolism,Harvard University
+Q223309,André Lwoff,male,1965,Physiology/Medicine,1/3,for their discoveries concerning genetic control of enzyme and virus synthesis,Institut Pasteur
+Q218311,François Jacob,male,1965,Physiology/Medicine,1/3,for their discoveries concerning genetic control of enzyme and virus synthesis,Institut Pasteur
+Q231402,Jacques Monod,male,1965,Physiology/Medicine,1/3,for their discoveries concerning genetic control of enzyme and virus synthesis,Institut Pasteur
+Q155371,Charles Brenton Huggins,male,1966,Physiology/Medicine,1/2,for his discoveries concerning hormonal treatment of prostatic cancer,"University of Chicago, Ben May Laboratory for Cancer Research"
+Q298707,Peyton Rous,male,1966,Physiology/Medicine,1/2,for his discovery of tumour-inducing viruses,Rockefeller University
+Q295724,George Wald,male,1967,Physiology/Medicine,1/3,for their discoveries concerning the primary physiological and chemical visual processes in the eye,Harvard University
+Q309879,Haldan Keffer Hartline,male,1967,Physiology/Medicine,1/3,for their discoveries concerning the primary physiological and chemical visual processes in the eye,Rockefeller University
+Q217722,Ragnar Granit,male,1967,Physiology/Medicine,1/3,for their discoveries concerning the primary physiological and chemical visual processes in the eye,Karolinska Institutet
+Q107462,Har Gobind Khorana,male,1968,Physiology/Medicine,1/3,for their interpretation of the genetic code and its function in protein synthesis,University of Wisconsin
+Q110060,Marshall W. Nirenberg,male,1968,Physiology/Medicine,1/3,for their interpretation of the genetic code and its function in protein synthesis,National Institutes of Health
+Q108891,Robert W. Holley,male,1968,Physiology/Medicine,1/3,for their interpretation of the genetic code and its function in protein synthesis,Cornell University
+Q271703,Alfred D. Hershey,male,1969,Physiology/Medicine,1/3,for their discoveries concerning the replication mechanism and the genetic structure of viruses,Carnegie Institution of Washington
+Q76807,Max Delbrück,male,1969,Physiology/Medicine,1/3,for their discoveries concerning the replication mechanism and the genetic structure of viruses,California Institute of Technology (Caltech)
+Q205667,Salvador E. Luria,male,1969,Physiology/Medicine,1/3,for their discoveries concerning the replication mechanism and the genetic structure of viruses,Massachusetts Institute of Technology (MIT)
+Q110106,Julius Axelrod,male,1970,Physiology/Medicine,1/3,"for their discoveries concerning the humoral transmitters in the nerve terminals and the mechanism for their storage, release and inactivation",National Institutes of Health
+Q4517,Sir Bernard Katz,male,1970,Physiology/Medicine,1/3,"for their discoveries concerning the humoral transmitters in the nerve terminals and the mechanism for their storage, release and inactivation",University College
+Q237142,Ulf von Euler,male,1970,Physiology/Medicine,1/3,"for their discoveries concerning the humoral transmitters in the nerve terminals and the mechanism for their storage, release and inactivation",Karolinska Institutet
+Q68118,"Earl W. Sutherland, Jr.",male,1971,Physiology/Medicine,1,for his discoveries concerning the mechanisms of the action of hormones,Vanderbilt University
+Q271766,Gerald M. Edelman,male,1972,Physiology/Medicine,1/2,for their discoveries concerning the chemical structure of antibodies,Rockefeller University
+Q295700,Rodney R. Porter,male,1972,Physiology/Medicine,1/2,for their discoveries concerning the chemical structure of antibodies,University of Oxford
+Q60060,Karl von Frisch,male,1973,Physiology/Medicine,1/3,for their discoveries concerning organization and elicitation of individual and social behaviour patterns,Zoologisches Institut der Universität München
+Q78496,Konrad Lorenz,male,1973,Physiology/Medicine,1/3,for their discoveries concerning organization and elicitation of individual and social behaviour patterns,"Konrad-Lorenz-Institut der Österreichischen Akademie der Wissen­schaften, Forschungsstelle für Ethologie"
+Q153890,Nikolaas Tinbergen,male,1973,Physiology/Medicine,1/3,for their discoveries concerning organization and elicitation of individual and social behaviour patterns,University of Oxford
+Q233943,Albert Claude,male,1974,Physiology/Medicine,1/3,for their discoveries concerning the structural and functional organization of the cell,Université Catholique de Louvain
+Q234590,Christian de Duve,male,1974,Physiology/Medicine,1/3,for their discoveries concerning the structural and functional organization of the cell,Rockefeller University
+Q219718,George E. Palade,male,1974,Physiology/Medicine,1/3,for their discoveries concerning the structural and functional organization of the cell,"Yale University, School of Medicine"
+Q234949,David Baltimore,male,1975,Physiology/Medicine,1/3,for their discoveries concerning the interaction between tumour viruses and the genetic material of the cell,Massachusetts Institute of Technology (MIT)
+Q243536,Howard Martin Temin,male,1975,Physiology/Medicine,1/3,for their discoveries concerning the interaction between tumour viruses and the genetic material of the cell,University of Wisconsin
+Q109553,Renato Dulbecco,male,1975,Physiology/Medicine,1/3,for their discoveries concerning the interaction between tumour viruses and the genetic material of the cell,Imperial Cancer Research Fund Laboratory
+Q105830,Baruch S. Blumberg,male,1976,Physiology/Medicine,1/2,for their discoveries concerning new mechanisms for the origin and dissemination of infectious diseases,The Institute for Cancer Research
+Q108576,D. Carleton Gajdusek,male,1976,Physiology/Medicine,1/2,for their discoveries concerning new mechanisms for the origin and dissemination of infectious diseases,National Institutes of Health
+Q141147,Andrew V. Schally,male,1977,Physiology/Medicine,1/4,for their discoveries concerning the peptide hormone production of the brain,Veterans Administration Hospital
+Q242169,Roger Guillemin,male,1977,Physiology/Medicine,1/4,for their discoveries concerning the peptide hormone production of the brain,The Salk Institute
+Q107402,Rosalyn Yalow,female,1977,Physiology/Medicine,1/2,for the development of radioimmunoassays of peptide hormones,Veterans Administration Hospital
+Q295706,Daniel Nathans,male,1978,Physiology/Medicine,1/3,for the discovery of restriction enzymes and their application to problems of molecular genetics,Johns Hopkins University School of Medicine
+Q108896,Hamilton O. Smith,male,1978,Physiology/Medicine,1/3,for the discovery of restriction enzymes and their application to problems of molecular genetics,Johns Hopkins University School of Medicine
+Q115495,Werner Arber,male,1978,Physiology/Medicine,1/3,for the discovery of restriction enzymes and their application to problems of molecular genetics,Biozentrum der Universität
+Q223542,Allan M. Cormack,male,1979,Physiology/Medicine,1/2,for the development of computer assisted tomography,Tufts University
+Q273769,Godfrey N. Hounsfield,male,1979,Physiology/Medicine,1/2,for the development of computer assisted tomography,"Central Research Laboratories, EMI"
+Q234701,Baruj Benacerraf,male,1980,Physiology/Medicine,1/3,for their discoveries concerning genetically determined structures on the cell surface that regulate immunological reactions,Harvard Medical School
+Q295666,George D. Snell,male,1980,Physiology/Medicine,1/3,for their discoveries concerning genetically determined structures on the cell surface that regulate immunological reactions,Jackson Laboratory
+Q152760,Jean Dausset,male,1980,Physiology/Medicine,1/3,for their discoveries concerning genetically determined structures on the cell surface that regulate immunological reactions,"Université de Paris, Laboratoire Immuno-Hématologie"
+Q295644,David H. Hubel,male,1981,Physiology/Medicine,1/4,for their discoveries concerning information processing in the visual system,Harvard Medical School
+Q232305,Roger W. Sperry,male,1981,Physiology/Medicine,1/2,for his discoveries concerning the functional specialization of the cerebral hemispheres,California Institute of Technology (Caltech)
+Q271421,Torsten N. Wiesel,male,1981,Physiology/Medicine,1/4,for their discoveries concerning information processing in the visual system,Harvard Medical School
+Q295768,Bengt I. Samuelsson,male,1982,Physiology/Medicine,1/3,for their discoveries concerning prostaglandins and related biologically active substances,Karolinska Institutet
+Q309971,John R. Vane,male,1982,Physiology/Medicine,1/3,for their discoveries concerning prostaglandins and related biologically active substances,The Wellcome Research Laboratories
+Q295696,Sune K. Bergström,male,1982,Physiology/Medicine,1/3,for their discoveries concerning prostaglandins and related biologically active substances,Karolinska Institutet
+Q199654,Barbara McClintock,female,1983,Physiology/Medicine,1,for her discovery of mobile genetic elements,Cold Spring Harbor Laboratory
+Q155525,César Milstein,male,1984,Physiology/Medicine,1/3,for theories concerning the specificity in development and control of the immune system and the discovery of the principle for production of monoclonal antibodies,MRC Laboratory of Molecular Biology
+Q77160,Georges J.F. Köhler,male,1984,Physiology/Medicine,1/3,for theories concerning the specificity in development and control of the immune system and the discovery of the principle for production of monoclonal antibodies,Basel Institute for Immunology
+Q309876,Niels K. Jerne,male,1984,Physiology/Medicine,1/3,for theories concerning the specificity in development and control of the immune system and the discovery of the principle for production of monoclonal antibodies,Basel Institute for Immunology
+Q271424,Joseph L. Goldstein,male,1985,Physiology/Medicine,1/2,for their discoveries concerning the regulation of cholesterol metabolism,University of Texas Southwestern Medical Center at Dallas
+Q295684,Michael S. Brown,male,1985,Physiology/Medicine,1/2,for their discoveries concerning the regulation of cholesterol metabolism,University of Texas Southwestern Medical Center at Dallas
+Q185007,Rita Levi-Montalcini,female,1986,Physiology/Medicine,1/2,for their discoveries of growth factors,Institute of Cell Biology of the C.N.R.
+Q232299,Stanley Cohen,male,1986,Physiology/Medicine,1/2,for their discoveries of growth factors,Vanderbilt University School of Medicine
+Q108602,Susumu Tonegawa,male,1987,Physiology/Medicine,1,for his discovery of the genetic principle for generation of antibody diversity,Massachusetts Institute of Technology (MIT)
+Q310487,George H. Hitchings,male,1988,Physiology/Medicine,1/3,for their discoveries of important principles for drug treatment,Wellcome Research Laboratories
+Q35703,Gertrude B. Elion,female,1988,Physiology/Medicine,1/3,for their discoveries of important principles for drug treatment,Wellcome Research Laboratories
+Q110974,Sir James W. Black,male,1988,Physiology/Medicine,1/3,for their discoveries of important principles for drug treatment,"London University, King's College Hospital Medical School"
+Q295691,Harold E. Varmus,male,1989,Physiology/Medicine,1/2,for their discovery of the cellular origin of retroviral oncogenes,University of California School of Medicine
+Q311358,J. Michael Bishop,male,1989,Physiology/Medicine,1/2,for their discovery of the cellular origin of retroviral oncogenes,University of California School of Medicine
+Q310485,E. Donnall Thomas,male,1990,Physiology/Medicine,1/2,for their discoveries concerning organ and cell transplantation in the treatment of human disease,Fred Hutchinson Cancer Research Center
+Q192282,Joseph E. Murray,male,1990,Physiology/Medicine,1/2,for their discoveries concerning organ and cell transplantation in the treatment of human disease,Brigham and Women's Hospital
+Q77081,Bert Sakmann,male,1991,Physiology/Medicine,1/2,for their discoveries concerning the function of single ion channels in cells,Max-Planck-Institut für medizinische Forschung
+Q77126,Erwin Neher,male,1991,Physiology/Medicine,1/2,for their discoveries concerning the function of single ion channels in cells,Max-Planck-Institut für Biophysikalische Chemie
+Q109726,Edmond H. Fischer,male,1992,Physiology/Medicine,1/2,for their discoveries concerning reversible protein phosphorylation as a biological regulatory mechanism,University of Washington
+Q109731,Edwin G. Krebs,male,1992,Physiology/Medicine,1/2,for their discoveries concerning reversible protein phosphorylation as a biological regulatory mechanism,University of Washington
+Q312977,Phillip A. Sharp,male,1993,Physiology/Medicine,1/2,for their discoveries of split genes,"Massachusetts Institute of Technology (MIT), Center for Cancer Research"
+Q309816,Richard J. Roberts,male,1993,Physiology/Medicine,1/2,for their discoveries of split genes,New England Biolabs
+Q296423,Alfred G. Gilman,male,1994,Physiology/Medicine,1/2,for their discovery of G-proteins and the role of these proteins in signal transduction in cells,University of Texas Southwestern Medical Center at Dallas
+Q60031,Martin Rodbell,male,1994,Physiology/Medicine,1/2,for their discovery of G-proteins and the role of these proteins in signal transduction in cells,National Institute of Environmental Health Sciences
+Q77174,Christiane Nüsslein-Volhard,female,1995,Physiology/Medicine,1/3,for their discoveries concerning the genetic control of early embryonic development,Max-Planck-Institut für Entwicklungsbiologie
+Q274123,Edward B. Lewis,male,1995,Physiology/Medicine,1/3,for their discoveries concerning the genetic control of early embryonic development,California Institute of Technology (Caltech)
+Q301438,Eric F. Wieschaus,male,1995,Physiology/Medicine,1/3,for their discoveries concerning the genetic control of early embryonic development,Princeton University
+Q309814,Peter C. Doherty,male,1996,Physiology/Medicine,1/2,for their discoveries concerning the specificity of the cell mediated immune defence,St. Jude Children's Research Hospital
+Q116064,Rolf M. Zinkernagel,male,1996,Physiology/Medicine,1/2,for their discoveries concerning the specificity of the cell mediated immune defence,"University of Zurich, Institute of Experimental Immunology"
+Q155380,Stanley B. Prusiner,male,1997,Physiology/Medicine,1,for his discovery of Prions - a new biological principle of infection,University of California School of Medicine
+Q295999,Ferid Murad,male,1998,Physiology/Medicine,1/3,for their discoveries concerning nitric oxide as a signalling molecule in the cardiovascular system,University of Texas Medical School at Houston
+Q309820,Louis J. Ignarro,male,1998,Physiology/Medicine,1/3,for their discoveries concerning nitric oxide as a signalling molecule in the cardiovascular system,University of California School of Medicine
+Q108880,Robert F. Furchgott,male,1998,Physiology/Medicine,1/3,for their discoveries concerning nitric oxide as a signalling molecule in the cardiovascular system,SUNY Health Science Center
+Q60108,Günter Blobel,male,1999,Physiology/Medicine,1,for the discovery that proteins have intrinsic signals that govern their transport and localization in the cell,Rockefeller University
+Q298045,Arvid Carlsson,male,2000,Physiology/Medicine,1/3,for their discoveries concerning signal transduction in the nervous system,Göteborg University
+Q155529,Eric R. Kandel,male,2000,Physiology/Medicine,1/3,for their discoveries concerning signal transduction in the nervous system,Columbia University
+Q309979,Paul Greengard,male,2000,Physiology/Medicine,1/3,for their discoveries concerning signal transduction in the nervous system,Rockefeller University
+Q295869,Leland H. Hartwell,male,2001,Physiology/Medicine,1/3,for their discoveries of key regulators of the cell cycle,Fred Hutchinson Cancer Research Center
+Q219716,Sir Paul M. Nurse,male,2001,Physiology/Medicine,1/3,for their discoveries of key regulators of the cell cycle,Imperial Cancer Research Fund
+Q309977,Tim Hunt,male,2001,Physiology/Medicine,1/3,for their discoveries of key regulators of the cell cycle,Imperial Cancer Research Fund
+Q295659,H. Robert Horvitz,male,2002,Physiology/Medicine,1/3,for their discoveries concerning genetic regulation of organ development and programmed cell death,Massachusetts Institute of Technology (MIT)
+Q271532,John E. Sulston,male,2002,Physiology/Medicine,1/3,for their discoveries concerning genetic regulation of organ development and programmed cell death,The Wellcome Trust Sanger Institute
+Q234463,Sydney Brenner,male,2002,Physiology/Medicine,1/3,for their discoveries concerning genetic regulation of organ development and programmed cell death,The Molecular Sciences Institute
+Q106547,Paul C. Lauterbur,male,2003,Physiology/Medicine,1/2,for their discoveries concerning magnetic resonance imaging,University of Illinois
+Q243601,Sir Peter Mansfield,male,2003,Physiology/Medicine,1/2,for their discoveries concerning magnetic resonance imaging,"University of Nottingham, School of Physics and Astronomy"
+Q200136,Linda B. Buck,female,2004,Physiology/Medicine,1/2,for their discoveries of odorant receptors and the organization of the olfactory system,Fred Hutchinson Cancer Research Center
+Q211940,Richard Axel,male,2004,Physiology/Medicine,1/2,for their discoveries of odorant receptors and the organization of the olfactory system,Columbia University
+Q202136,Barry J. Marshall,male,2005,Physiology/Medicine,1/2,for their discovery of the bacterium <i>Helicobacter pylori</i> and its role in gastritis and peptic ulcer disease,"NHMRC Helicobacter pylori Research Laboratory, QEII Medical Centre"
+Q208670,J. Robin Warren,male,2005,Physiology/Medicine,1/2,for their discovery of the bacterium <i>Helicobacter pylori</i> and its role in gastritis and peptic ulcer disease,NA
+Q202152,Andrew Z. Fire,male,2006,Physiology/Medicine,1/2,for their discovery of RNA interference - gene silencing by double-stranded RNA,Stanford University School of Medicine
+Q206455,Craig C. Mello,male,2006,Physiology/Medicine,1/2,for their discovery of RNA interference - gene silencing by double-stranded RNA,University of Massachusetts Medical School
+Q215574,Mario R. Capecchi,male,2007,Physiology/Medicine,1/3,for their discoveries of principles for introducing specific gene modifications in mice by the use of embryonic stem cells,University of Utah
+Q216318,Oliver Smithies,male,2007,Physiology/Medicine,1/3,for their discoveries of principles for introducing specific gene modifications in mice by the use of embryonic stem cells,University of North Carolina
+Q207719,Sir Martin J. Evans,male,2007,Physiology/Medicine,1/3,for their discoveries of principles for introducing specific gene modifications in mice by the use of embryonic stem cells,Cardiff University
+Q103844,Françoise Barré-Sinoussi,female,2008,Physiology/Medicine,1/4,for their discovery of human immunodeficiency virus,"Regulation of Retroviral Infections Unit, Virology Department, Institut Pasteur"
+Q75847,Harald zur Hausen,male,2008,Physiology/Medicine,1/2,for his discovery of human papilloma viruses causing cervical cancer,German Cancer Research Center
+Q103598,Luc Montagnier,male,2008,Physiology/Medicine,1/4,for their discovery of human immunodeficiency virus,World Foundation for AIDS Research and Prevention
+Q26322,Carol W. Greider,female,2009,Physiology/Medicine,1/3,for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase,Johns Hopkins University School of Medicine
+Q26321,Elizabeth H. Blackburn,female,2009,Physiology/Medicine,1/3,for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase,University of California
+Q104600,Jack W. Szostak,male,2009,Physiology/Medicine,1/3,for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase,Harvard Medical School
+Q104913,Robert G. Edwards,male,2010,Physiology/Medicine,1,for the development of in vitro fertilization,University of Cambridge
+Q104592,Bruce A. Beutler,male,2011,Physiology/Medicine,1/4,for their discoveries concerning the activation of innate immunity,University of Texas Southwestern Medical Center at Dallas
+Q105605,Jules A. Hoffmann,male,2011,Physiology/Medicine,1/4,for their discoveries concerning the activation of innate immunity,University of Strasbourg
+Q105494,Ralph M. Steinman,male,2011,Physiology/Medicine,1/2,for his discovery of the dendritic cell and its role in adaptive immunity,Rockefeller University
+Q80917,Shinya Yamanaka,male,2012,Physiology/Medicine,1/2,for the discovery that mature cells can be reprogrammed to become pluripotent,Kyoto University
+Q81218,Sir John B. Gurdon,male,2012,Physiology/Medicine,1/2,for the discovery that mature cells can be reprogrammed to become pluripotent,Gurdon Institute
+Q444270,James E. Rothman,male,2013,Physiology/Medicine,1/3,"for their discoveries of machinery regulating vesicle traffic, a major transport system in our cells",Yale University
+Q740638,Randy W. Schekman,male,2013,Physiology/Medicine,1/3,"for their discoveries of machinery regulating vesicle traffic, a major transport system in our cells",University of California
+Q97270,Thomas C. Südhof,male,2013,Physiology/Medicine,1/3,"for their discoveries of machinery regulating vesicle traffic, a major transport system in our cells",Stanford University
+Q5341373,Edvard I. Moser,male,2014,Physiology/Medicine,1/4,for their discoveries of cells that constitute a positioning system in the brain,Norwegian University of Science and Technology (NTNU)
+Q1701279,John O'Keefe,male,2014,Physiology/Medicine,1/2,for their discoveries of cells that constitute a positioning system in the brain,University College
+Q6796222,May-Britt Moser,female,2014,Physiology/Medicine,1/4,for their discoveries of cells that constitute a positioning system in the brain,Norwegian University of Science and Technology (NTNU)
+Q21061207,Satoshi Ōmura,male,2015,Physiology/Medicine,1/4,for their discoveries concerning a novel therapy against infections caused by roundworm parasites,Kitasato University
+Q462843,Tu Youyou,female,2015,Physiology/Medicine,1/2,for her discoveries concerning a novel therapy against Malaria,China Academy of Traditional Chinese Medicine
+Q21061212,William C. Campbell,male,2015,Physiology/Medicine,1/4,for their discoveries concerning a novel therapy against infections caused by roundworm parasites,Drew University
+Q8056214,Yoshinori Ohsumi,male,2016,Physiology/Medicine,1,for his discoveries of mechanisms for autophagy,Tokyo Institute of Technology
+Q1686435,Jeffrey C. Hall,male,2017,Physiology/Medicine,1/3,for their discoveries of molecular mechanisms controlling the circadian rhythm,University of Maine
+Q1297741,Michael Rosbash,male,2017,Physiology/Medicine,1/3,for their discoveries of molecular mechanisms controlling the circadian rhythm,Brandeis University
+Q1929672,Michael W. Young,male,2017,Physiology/Medicine,1/3,for their discoveries of molecular mechanisms controlling the circadian rhythm,Rockefeller University
+Q6140731,James P. Allison,male,2018,Physiology/Medicine,1/2,for their discovery of cancer therapy by inhibition of negative immune regulation,Parker Institute for Cancer Immunotherapy
+Q2395341,Tasuku Honjo,male,2018,Physiology/Medicine,1/2,for their discovery of cancer therapy by inhibition of negative immune regulation,Kyoto University
+Q1545025,Gregg L. Semenza,male,2019,Physiology/Medicine,1/3,for their discoveries of how cells sense and adapt to oxygen availability,Johns Hopkins University
+Q2075967,Sir Peter J. Ratcliffe,male,2019,Physiology/Medicine,1/3,for their discoveries of how cells sense and adapt to oxygen availability,University of Oxford
+Q1603351,William G. Kaelin Jr,male,2019,Physiology/Medicine,1/3,for their discoveries of how cells sense and adapt to oxygen availability,Harvard Medical School
+Q22669757,Charles M. Rice,male,2020,Physiology/Medicine,1/3,for the discovery of Hepatitis C virus,Rockefeller University
+Q5677307,Harvey J. Alter,male,2020,Physiology/Medicine,1/3,for the discovery of Hepatitis C virus,National Institutes of Health
+Q1927895,Michael Houghton,male,2020,Physiology/Medicine,1/3,for the discovery of Hepatitis C virus,University of Alberta
+Q60322501,Ardem Patapoutian,male,2021,Physiology/Medicine,1/2,for their discoveries of receptors for temperature and touch,Scripps Research
+Q1174906,David Julius,male,2021,Physiology/Medicine,1/2,for their discoveries of receptors for temperature and touch,University of California
+Q170342,Svante Pääbo,male,2022,Physiology/Medicine,1,for his discoveries concerning the genomes of extinct hominins and human evolution,Max Planck Institute for Evolutionary Anthropology
+Q88608402,Drew Weissman,male,2023,Physiology/Medicine,1/2,for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19,"Penn Institute for RNA Innovations, University of Pennsylvania"
+Q88608397,Katalin Karikó,female,2023,Physiology/Medicine,1/2,for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19,Szeged University
+Q504021,Gary Ruvkun,male,2024,Physiology/Medicine,1/2,for the discovery of microRNA and its role in post-transcriptional gene regulation,Massachusetts General Hospital
+Q983858,Victor Ambros,male,2024,Physiology/Medicine,1/2,for the discovery of microRNA and its role in post-transcriptional gene regulation,UMass Chan Medical School
+Q28212107,Frederick J. Ramsdell,male,2025,Physiology/Medicine,1/3,for their discoveries concerning peripheral immune tolerance,Sonoma Biotherapeutics
+Q136445350,Mary E. Brunkow,female,2025,Physiology/Medicine,1/3,for their discoveries concerning peripheral immune tolerance,Institute for Systems Biology
+Q17502433,Shimon Sakaguchi,male,2025,Physiology/Medicine,1/3,for their discoveries concerning peripheral immune tolerance,The University of Osaka

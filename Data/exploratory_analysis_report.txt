@@ -1,0 +1,574 @@
+
+==============================================================================
+  SECTION 1: LAYER-BY-LAYER DEMOGRAPHIC COMPOSITION (OVERALL)
+==============================================================================
+
+--- GOVERNING BODIES (all, joined with demographics) ---
+  N = 6935 members (with demographics)
+  Gender known: 6934 | Female: 9.3% | Male: 90.7%
+  Geo known: 5298 | Europe: 97.6% | Americas: 1.7% | Asia: 0.5%
+  Effective continents: 1.14 | Effective subregions: 1.65
+  Top subregions: Northern Europe (88.7%), Western Europe (6.9%), Northern America (1.6%)
+
+--- VETTING BODIES (all, joined with demographics) ---
+  N = 252 members (with demographics)
+  Gender known: 252 | Female: 11.1% | Male: 88.9%
+  Geo known: 187 | Europe: 98.9% | Americas: 1.1% | Asia: 0.0%
+  Effective continents: 1.06 | Effective subregions: 1.23
+  Top subregions: Northern Europe (96.3%), Western Europe (1.6%), Eastern Europe (1.1%)
+
+--- NOMINATORS (unique individuals from nominations.csv) ---
+  N = 11650 unique nominators
+  Gender known: 7948 | Female: 2.3% | Male: 97.7%
+  Geo known: 11419 | Europe: 71.3% | Americas: 22.0% | Asia: 4.9%
+  Effective continents: 2.24 | Effective subregions: 6.30
+  Top subregions: Western Europe (35.9%), Northern Europe (19.0%), Northern America (18.7%)
+
+--- NOMINEES (unique individuals from nominations.csv) ---
+  N = 4006 unique nominees
+  Gender known: 3596 | Female: 4.7% | Male: 95.3%
+  Geo known: 3643 | Europe: 65.7% | Americas: 28.9% | Asia: 3.9%
+  Effective continents: 2.30 | Effective subregions: 5.80
+  Top subregions: Western Europe (34.8%), Northern America (25.9%), Northern Europe (18.3%)
+
+--- LAUREATES (1901-1975, joined with demographics) ---
+  N = 452 laureate-prize records
+  Gender known: 440 | Female: 3.4% | Male: 96.6%
+  Geo known: 440 | Europe: 70.2% | Americas: 23.2% | Asia: 3.9%
+  Effective continents: 2.29 | Effective subregions: 5.97
+  Top subregions: Western Europe (31.1%), Northern Europe (23.2%), Northern America (21.8%)
+
+--- LAUREATES (all time 1901-2025, joined with demographics) ---
+  N = 927 laureate-prize records
+  Gender known: 893 | Female: 7.2% | Male: 92.8%
+  Geo known: 892 | Europe: 55.0% | Americas: 31.5% | Asia: 8.9%
+  Effective continents: 2.94 | Effective subregions: 7.15
+  Top subregions: Northern America (29.3%), Western Europe (23.1%), Northern Europe (18.6%)
+
+
+==============================================================================
+  SECTION 2: LAYER-BY-LAYER COMPOSITION BY PRIZE
+==============================================================================
+
+=== CHEMISTRY ===
+
+  Governing (RSAS): N=2312 | Female=4.4% | Europe=94.0% | EffCont=1.31 | EffSub=2.75
+  Vetting (Nobel Committee for Chemistry): N=50 | Female=6.0% | Europe=100.0% | EffCont=1.00 | EffSub=1.32
+  Nominators: N=1921 | Female=1.7% | Europe=68.8% | EffCont=2.36 | EffSub=5.68
+  Nominees: N=763 | Female=2.0% | Europe=64.4% | EffCont=2.21 | EffSub=4.59
+  Laureates (≤1975): N=88 | Female=3.4% | Europe=75.0% | EffCont=1.98 | EffSub=4.82
+
+=== PHYSICS ===
+
+  Governing (RSAS): N=2312 | Female=4.4% | Europe=94.0% | EffCont=1.31 | EffSub=2.75
+  Vetting (Nobel Committee for Physics): N=51 | Female=5.9% | Europe=100.0% | EffCont=1.00 | EffSub=1.34
+  Nominators: N=1611 | Female=1.0% | Europe=67.5% | EffCont=2.24 | EffSub=5.13
+  Nominees: N=689 | Female=2.0% | Europe=57.3% | EffCont=2.28 | EffSub=4.37
+  Laureates (≤1975): N=104 | Female=1.9% | Europe=69.2% | EffCont=2.35 | EffSub=5.64
+
+=== PHYSIOLOGY/MEDICINE ===
+
+  Governing (Karolinska Institutet): N=140 | Female=0.7% | Europe=100.0% | EffCont=1.00 | EffSub=1.30
+  Vetting (Nobel Committee for Physiology/Medicine): N=59 | Female=5.1% | Europe=95.0% | EffCont=1.22 | EffSub=1.42
+  Nominators: N=3360 | Female=0.7% | Europe=73.6% | EffCont=2.17 | EffSub=5.86
+  Nominees: N=953 | Female=1.5% | Europe=66.9% | EffCont=2.22 | EffSub=4.85
+  Laureates (≤1975): N=116 | Female=0.9% | Europe=63.8% | EffCont=2.45 | EffSub=5.79
+
+=== LITERATURE ===
+
+  Governing (Swedish Academy): N=202 | Female=8.9% | Europe=99.0% | EffCont=1.06 | EffSub=1.06
+  Vetting (Nobel Committee for Literature): N=35 | Female=17.1% | Europe=100.0% | EffCont=1.00 | EffSub=1.00
+  Nominators: N=2104 | Female=3.9% | Europe=76.7% | EffCont=2.00 | EffSub=5.93
+  Nominees: N=879 | Female=8.6% | Europe=76.9% | EffCont=2.08 | EffSub=6.85
+  Laureates (≤1975): N=72 | Female=8.3% | Europe=79.2% | EffCont=1.97 | EffSub=6.54
+
+=== PEACE ===
+
+  Governing (Storting): N=4281 | Female=12.3% | Europe=99.5% | EffCont=1.04 | EffSub=1.06
+  Vetting (Norwegian Nobel Committee): N=57 | Female=22.8% | Europe=100.0% | EffCont=1.00 | EffSub=1.00
+  Nominators: N=2959 | Female=3.3% | Europe=68.9% | EffCont=2.36 | EffSub=6.84
+  Nominees: N=943 | Female=8.6% | Europe=63.6% | EffCont=2.51 | EffSub=6.96
+  Laureates (≤1975): N=72 | Female=5.0% | Europe=66.7% | EffCont=2.25 | EffSub=4.55
+
+
+==============================================================================
+  SECTION 3: EDGE-LEVEL GEOGRAPHIC HOMOPHILY
+==============================================================================
+
+For each edge type, we measure the fraction of edges where both endpoints
+share the same continent or subregion. We compare to a null model: the
+expected match rate if edges were rewired randomly preserving layer sizes.
+
+--- NOMINATOR → NOMINEE (from nominations.csv directly) ---
+
+  Total edges with geo for both endpoints: 25,844
+  Same continent: 20,497 / 25,844 (79.3%)
+  Same subregion: 15,701 / 25,844 (60.8%)
+  Same country:   12,091 / 25,844 (46.8%)
+  Expected same continent (null): 58.0%
+  Homophily ratio (observed/expected): 1.37
+  Expected same subregion (null): 24.9%
+  Homophily ratio (observed/expected): 2.44
+  Expected same country (null): 9.6%
+  Homophily ratio (observed/expected): 4.85
+
+--- NOMINATOR → NOMINEE HOMOPHILY BY PRIZE ---
+
+  Chemistry (N=5,010):
+    Same continent: 76.4% (expected 55.5%, ratio 1.38)
+    Same country:   47.2% (expected 13.3%, ratio 3.55)
+  Physics (N=5,485):
+    Same continent: 71.8% (expected 52.2%, ratio 1.38)
+    Same country:   44.5% (expected 14.8%, ratio 3.01)
+  Physiology/Medicine (N=6,247):
+    Same continent: 83.0% (expected 58.8%, ratio 1.41)
+    Same country:   55.2% (expected 10.7%, ratio 5.16)
+  Literature (N=3,444):
+    Same continent: 86.8% (expected 72.1%, ratio 1.20)
+    Same country:   50.2% (expected 5.9%, ratio 8.58)
+  Peace (N=5,658):
+    Same continent: 80.6% (expected 58.6%, ratio 1.37)
+    Same country:   37.3% (expected 7.1%, ratio 5.26)
+
+--- OTHER EDGE TYPES (QID-based, joined with nodes.csv) ---
+
+  governing_body → vetting_body (N=20,083):
+    Same continent: 95.2% (expected 95.2%, ratio 1.00)
+    Same country:   72.4% (expected 37.3%, ratio 1.94)
+  governing_body → laureate (N=96,506):
+    Same continent: 50.6% (expected 50.3%, ratio 1.01)
+    Same country:   4.4% (expected 4.2%, ratio 1.06)
+  nominator → nominee (N=8,119):
+    Same continent: 74.0% (expected 62.7%, ratio 1.18)
+    Same country:   32.1% (expected 8.4%, ratio 3.82)
+  vetting_body → nominator (N=25,811):
+    Same continent: 78.4% (expected 78.4%, ratio 1.00)
+    Same country:   5.5% (expected 5.4%, ratio 1.01)
+  vetting_body → laureate (N=529):
+    Same continent: 48.6% (expected 48.6%, ratio 1.00)
+    Same country:   1.7% (expected 1.7%, ratio 1.00)
+
+
+==============================================================================
+  SECTION 4: TEMPORAL TRENDS BY DECADE
+==============================================================================
+
+--- NOMINEE GEOGRAPHIC DIVERSITY BY DECADE ---
+
+  1900s: N=2,877 | Europe=94.2% | EffCont=1.28 | EffSub=3.66 | Subregions=12
+  1910s: N=2,664 | Europe=89.4% | EffCont=1.45 | EffSub=3.60 | Subregions=13
+  1920s: N=3,206 | Europe=81.2% | EffCont=1.75 | EffSub=3.99 | Subregions=11
+  1930s: N=4,249 | Europe=70.8% | EffCont=2.08 | EffSub=5.31 | Subregions=14
+  1940s: N=2,160 | Europe=57.4% | EffCont=2.21 | EffSub=5.05 | Subregions=14
+  1950s: N=3,281 | Europe=54.5% | EffCont=2.25 | EffSub=4.50 | Subregions=14
+  1960s: N=4,557 | Europe=55.1% | EffCont=2.40 | EffSub=5.12 | Subregions=15
+  1970s: N=3,452 | Europe=55.7% | EffCont=2.52 | EffSub=6.43 | Subregions=16
+
+--- NOMINATOR GEOGRAPHIC DIVERSITY BY DECADE ---
+
+  1900s: N=2,858 | Europe=94.2% | EffCont=1.29 | EffSub=3.95
+  1910s: N=2,659 | Europe=91.7% | EffCont=1.38 | EffSub=3.87
+  1920s: N=3,241 | Europe=87.1% | EffCont=1.57 | EffSub=4.10
+  1930s: N=4,285 | Europe=78.2% | EffCont=1.98 | EffSub=5.61
+  1940s: N=2,176 | Europe=63.7% | EffCont=2.22 | EffSub=5.21
+  1950s: N=3,703 | Europe=69.2% | EffCont=2.19 | EffSub=5.30
+  1960s: N=4,911 | Europe=69.2% | EffCont=2.21 | EffSub=5.29
+  1970s: N=3,397 | Europe=63.6% | EffCont=2.59 | EffSub=6.60
+
+--- LAUREATE GEOGRAPHIC DIVERSITY BY DECADE ---
+
+  1900s: N=56 | Europe=92.9% | Female=5.4% | EffCont=1.39
+  1910s: N=38 | Europe=86.8% | Female=2.6% | EffCont=1.67
+  1920s: N=54 | Europe=88.9% | Female=3.7% | EffCont=1.49
+  1930s: N=55 | Europe=70.9% | Female=5.5% | EffCont=1.96
+  1940s: N=40 | Europe=55.0% | Female=7.5% | EffCont=2.41
+  1950s: N=71 | Europe=62.0% | Female=0.0% | EffCont=2.44
+  1960s: N=73 | Europe=52.1% | Female=4.1% | EffCont=3.15
+  1970s: N=88 | Europe=58.0% | Female=4.5% | EffCont=2.61
+  1980s: N=84 | Europe=46.4% | Female=4.8% | EffCont=2.87
+  1990s: N=84 | Europe=35.7% | Female=8.3% | EffCont=3.22
+  2000s: N=98 | Europe=32.7% | Female=10.2% | EffCont=3.77
+  2010s: N=97 | Europe=37.1% | Female=12.4% | EffCont=3.47
+  2020s: N=54 | Europe=50.0% | Female=22.2% | EffCont=2.91
+
+--- NOMINATION HOMOPHILY TRENDS BY DECADE ---
+
+  1900s: N=2,825 | SameCont=95.6% (exp=89.0%, ratio=1.07) | SameCty=46.3%
+  1910s: N=2,634 | SameCont=92.8% (exp=82.6%, ratio=1.12) | SameCty=50.4%
+  1920s: N=3,193 | SameCont=88.1% (exp=72.5%, ratio=1.21) | SameCty=52.6%
+  1930s: N=4,206 | SameCont=82.1% (exp=59.6%, ratio=1.38) | SameCty=48.8%
+  1940s: N=2,151 | SameCont=76.7% (exp=49.7%, ratio=1.54) | SameCty=50.2%
+  1950s: N=3,178 | SameCont=70.6% (exp=48.7%, ratio=1.45) | SameCty=45.5%
+  1960s: N=4,417 | SameCont=69.4% (exp=48.2%, ratio=1.44) | SameCty=44.5%
+  1970s: N=3,240 | SameCont=65.6% (exp=45.7%, ratio=1.43) | SameCty=38.1%
+
+
+==============================================================================
+  SECTION 5: OPEN vs INVITATION-ONLY NOMINATION PROCESSES
+==============================================================================
+
+Invitation-only: Chemistry, Physics, Physiology/Medicine
+Open (anyone eligible can nominate): Literature, Peace
+
+--- INVITATION-ONLY PRIZES (nominees) ---
+  N = 10,730 nomination records
+  Europe: 61.8% | Americas: 36.0% | Asia: 1.8%
+  Effective continents: 2.13 | Effective subregions: 4.21
+  Top subregions: Northern America (35.4%), Western Europe (35.0%), Northern Europe (19.4%)
+
+--- OPEN-NOMINATION PRIZES (nominees) ---
+  N = 9,435 nomination records
+  Europe: 75.2% | Americas: 20.9% | Asia: 2.6%
+  Effective continents: 2.02 | Effective subregions: 5.86
+  Top subregions: Western Europe (38.0%), Northern Europe (21.3%), Northern America (15.5%)
+
+--- HOMOPHILY: INVITATION vs OPEN ---
+  Invitation-only (N=10,495):
+    Same continent: 74.0% (expected 53.7%, ratio 1.38)
+    Same country:   45.8%
+  Open (N=9,102):
+    Same continent: 82.9% (expected 63.3%, ratio 1.31)
+    Same country:   42.2%
+
+
+==============================================================================
+  SECTION 6: GENDER ACROSS LAYERS AND PRIZES
+==============================================================================
+
+--- GENDER BY LAYER (OVERALL % FEMALE) ---
+
+  Governing bodies: 9.3% female (645 / 6934 known)
+  Vetting bodies:   11.1% female (28 / 252 known)
+  Nominators:       2.3% female (186 / 7948 known)
+  Nominees:         4.7% female (169 / 3596 known)
+  Laureates (≤1975): 3.4% female (15 / 440 known)
+
+--- GENDER BY LAYER BY PRIZE (% FEMALE) ---
+
+  Prize                     Governing    Vetting      Nominators   Nominees     Laureates   
+  Chemistry                 4.4%         6.0%         1.7%         2.0%         3.4%        
+  Physics                   4.4%         5.9%         1.0%         2.0%         1.9%        
+  Physiology/Medicine       0.7%         5.1%         0.7%         1.5%         0.9%        
+  Literature                8.9%         17.1%        3.9%         8.6%         8.3%        
+  Peace                     12.3%        22.8%        3.3%         8.6%         5.0%        
+
+
+==============================================================================
+  SECTION 7: CENTRALITY AND DEMOGRAPHICS
+==============================================================================
+
+--- NOMINEE IN-DEGREE BY LAUREATE STATUS ---
+
+  Laureate=FALSE: N=2247 | Mean degree=6.3 | Median=2 | Max=164
+  Laureate=TRUE: N=447 | Mean degree=18.7 | Median=12 | Max=127
+
+--- NOMINEE IN-DEGREE BY CONTINENT ---
+
+  Europe      : N=1902 | Mean degree=8.7 | Median=3
+  Americas    : N=535 | Mean degree=8.5 | Median=3
+  Africa      : N=24 | Mean degree=8.4 | Median=3
+  Asia        : N=114 | Mean degree=7.2 | Median=3
+  Oceania     : N=28 | Mean degree=4.6 | Median=2
+
+
+==============================================================================
+  SECTION 8: SUBREGION-TO-SUBREGION NOMINATION FLOWS
+==============================================================================
+
+--- OVERALL FLOW MATRIX (top 30 flows) ---
+
+  Nominator subregion          → Nominee subregion               Count    Pct
+  ------------------------------------------------------------------------------
+  Western Europe               → Western Europe                  6,931  26.8%
+  Northern America             → Northern America                3,406  13.2%
+  Northern Europe              → Northern Europe                 3,062  11.8%
+  Northern Europe              → Western Europe                  1,538   6.0%
+  Western Europe               → Northern America                1,434   5.5%
+  Northern Europe              → Northern America                1,034   4.0%
+  Western Europe               → Northern Europe                   928   3.6%
+  Southern Europe              → Southern Europe                   907   3.5%
+  Eastern Europe               → Eastern Europe                    760   2.9%
+  Eastern Europe               → Western Europe                    444   1.7%
+  Northern America             → Northern Europe                   431   1.7%
+  Northern America             → Western Europe                    370   1.4%
+  Southern Europe              → Western Europe                    351   1.4%
+  Western Europe               → Eastern Europe                    296   1.1%
+  Southern Europe              → Northern America                  243   0.9%
+  Northern Europe              → Southern Europe                   241   0.9%
+  Northern Europe              → Eastern Europe                    240   0.9%
+  Western Europe               → Southern Europe                   234   0.9%
+  Eastern Asia                 → Eastern Asia                      181   0.7%
+  Eastern Europe               → Northern America                  176   0.7%
+  South America                → South America                     168   0.7%
+  Eastern Europe               → Northern Europe                   143   0.6%
+  Southern Europe              → Northern Europe                   123   0.5%
+  Western Europe               → South America                     118   0.5%
+  Northern Europe              → South America                     110   0.4%
+  Southern Asia                → Southern Asia                     106   0.4%
+  Northern America             → Eastern Europe                     99   0.4%
+  Eastern Asia                 → Northern America                   87   0.3%
+  South America                → Northern America                   79   0.3%
+  Northern America             → Southern Europe                    77   0.3%
+
+--- SELF-NOMINATION RATE BY SUBREGION ---
+(Fraction of nominations from a subregion that go to nominees in the same subregion)
+
+  Subregion                       Total     Self    Rate
+  -------------------------------------------------------
+  Northern America                4,539    3,406   75.0%
+  Western Europe                 10,087    6,931   68.7%
+  Southern Europe                 1,692      907   53.6%
+  Eastern Asia                      348      181   52.0%
+  Southern Asia                     209      106   50.7%
+  Eastern Europe                  1,566      760   48.5%
+  Northern Europe                 6,371    3,062   48.1%
+  South America                     353      168   47.6%
+  Caribbean                          61       28   45.9%
+  Sub-Saharan Africa                 66       22   33.3%
+  Central America                    52       17   32.7%
+  South-Eastern Asia                 34       11   32.4%
+  Australia and New Zealand         167       53   31.7%
+  Northern Africa                    94       21   22.3%
+  Western Asia                      205       28   13.7%
+
+--- SELF-NOMINATION RATE BY SUBREGION × PRIZE ---
+(Top subregions only: those with ≥100 nominations in that prize)
+
+  === Chemistry ===
+    Northern America           N=  986  self=76.5%
+    Western Europe             N=2,152  self=67.7%
+    Eastern Europe             N=  282  self=49.6%
+    Northern Europe            N=1,120  self=43.2%
+    Southern Europe            N=  162  self=30.9%
+
+  === Physics ===
+    Northern America           N=1,313  self=76.8%
+    Western Europe             N=2,221  self=56.5%
+    Northern Europe            N=1,202  self=47.5%
+    Eastern Europe             N=  332  self=41.3%
+    Southern Europe            N=  237  self=24.9%
+
+  === Physiology/Medicine ===
+    Northern America           N=1,071  self=81.4%
+    Eastern Asia               N=  120  self=80.8%
+    Western Europe             N=2,838  self=75.3%
+    Northern Europe            N=  796  self=54.4%
+    Southern Europe            N=  537  self=54.0%
+    Eastern Europe             N=  599  self=49.2%
+
+  === Literature ===
+    Southern Europe            N=  343  self=92.7%
+    Eastern Europe             N=  147  self=85.7%
+    Western Europe             N=  882  self=72.2%
+    Northern Europe            N=1,549  self=55.1%
+    Northern America           N=  347  self=44.4%
+
+  === Peace ===
+    Northern America           N=  822  self=75.1%
+    Western Europe             N=1,994  self=72.6%
+    South America              N=  129  self=55.8%
+    Southern Europe            N=  413  self=46.0%
+    Northern Europe            N=1,704  self=42.3%
+    Eastern Europe             N=  206  self=30.1%
+
+
+==============================================================================
+  SECTION 9: NOMINATION EQUITY (OUTGOING vs INCOMING)
+==============================================================================
+
+For each subregion: how many nominations does it SEND vs RECEIVE?
+Return ratio > 1 means region receives more than it sends.
+
+  Subregion                        Sent  Received      Net   Ratio
+  -----------------------------------------------------------------
+  Northern America                4,714    6,802    2,088   1.44
+  South America                     403      535      132   1.33
+  Caribbean                          65       67        2   1.03
+  Central Asia                        0        1        1   1.00
+  Western Europe                 10,578   10,127     -451   0.96
+  Sub-Saharan Africa                 66       63       -3   0.95
+  Eastern Europe                  1,591    1,477     -114   0.93
+  Southern Asia                     225      203      -22   0.90
+  South-Eastern Asia                 37       33       -4   0.89
+  Southern Europe                 1,807    1,584     -223   0.88
+  Central America                    59       49      -10   0.83
+  Eastern Asia                      364      267      -97   0.73
+  Northern Europe                 6,834    4,974   -1,860   0.73
+  Australia and New Zealand         171      106      -65   0.62
+  Northern Africa                    97       56      -41   0.58
+  Western Asia                      219      102     -117   0.47
+
+--- NOMINATION EQUITY BY PRIZE (subregions with ≥50 nominations sent or received) ---
+
+  === Chemistry ===
+    Northern America           sent=  992  recv=1,570  net= +578  ratio=1.58
+    South America              sent=   53  recv=   53  net=   +0  ratio=1.00
+    Western Europe             sent=2,159  recv=2,016  net= -143  ratio=0.93
+    Northern Europe            sent=1,129  recv=  978  net= -151  ratio=0.87
+    Eastern Europe             sent=  283  recv=  232  net=  -51  ratio=0.82
+    Eastern Asia               sent=   83  recv=   54  net=  -29  ratio=0.65
+    Southern Europe            sent=  164  recv=   92  net=  -72  ratio=0.56
+    Australia and New Zealand  sent=   60  recv=   22  net=  -38  ratio=0.37
+
+  === Physics ===
+    Northern America           sent=1,314  recv=2,230  net= +916  ratio=1.70
+    Eastern Europe             sent=  334  recv=  310  net=  -24  ratio=0.93
+    Northern Europe            sent=1,211  recv=1,100  net= -111  ratio=0.91
+    Western Europe             sent=2,230  recv=1,739  net= -491  ratio=0.78
+    Southern Europe            sent=  238  recv=  169  net=  -69  ratio=0.71
+    Eastern Asia               sent=   72  recv=   50  net=  -22  ratio=0.69
+
+  === Physiology/Medicine ===
+    Northern America           sent=1,073  recv=1,539  net= +466  ratio=1.43
+    Northern Europe            sent=  803  recv=  884  net=  +81  ratio=1.10
+    Western Europe             sent=2,861  recv=2,785  net=  -76  ratio=0.97
+    Eastern Asia               sent=  120  recv=  109  net=  -11  ratio=0.91
+    Northern Africa            sent=   53  recv=   37  net=  -16  ratio=0.70
+    Southern Europe            sent=  539  recv=  376  net= -163  ratio=0.70
+    Eastern Europe             sent=  600  recv=  390  net= -210  ratio=0.65
+    South America              sent=  101  recv=   64  net=  -37  ratio=0.63
+    Western Asia               sent=   72  recv=   18  net=  -54  ratio=0.25
+
+  === Literature ===
+    Eastern Europe             sent=  159  recv=  327  net= +168  ratio=2.06
+    South America              sent=  107  recv=  156  net=  +49  ratio=1.46
+    Southern Europe            sent=  430  recv=  593  net= +163  ratio=1.38
+    Western Europe             sent=1,262  recv=1,095  net= -167  ratio=0.87
+    Northern America           sent=  491  recv=  292  net= -199  ratio=0.59
+    Northern Europe            sent=1,872  recv=  937  net= -935  ratio=0.50
+
+  === Peace ===
+    South America              sent=  133  recv=  258  net= +125  ratio=1.94
+    Northern America           sent=  844  recv=1,171  net= +327  ratio=1.39
+    Southern Asia              sent=   91  recv=  111  net=  +20  ratio=1.22
+    Western Europe             sent=2,066  recv=2,492  net= +426  ratio=1.21
+    Eastern Europe             sent=  215  recv=  218  net=   +3  ratio=1.01
+    Southern Europe            sent=  436  recv=  354  net=  -82  ratio=0.81
+    Northern Europe            sent=1,819  recv=1,075  net= -744  ratio=0.59
+    Eastern Asia               sent=   70  recv=   28  net=  -42  ratio=0.40
+
+
+==============================================================================
+  SECTION 10: TOP NON-SELF NOMINATION TARGETS
+==============================================================================
+
+When a subregion nominates OUTSIDE itself, where do nominations go?
+
+  Australia and New Zealand (N=114 cross-regional nominations):
+      → Northern Europe               56  (49.1%)
+      → Northern America              33  (28.9%)
+      → Southern Europe               10  ( 8.8%)
+  Caribbean (N=33 cross-regional nominations):
+      → South America                 15  (45.5%)
+      → Northern America              10  (30.3%)
+      → Southern Europe                4  (12.1%)
+  Central America (N=35 cross-regional nominations):
+      → Northern America               8  (22.9%)
+      → Western Europe                 8  (22.9%)
+      → Caribbean                      6  (17.1%)
+  Eastern Asia (N=167 cross-regional nominations):
+      → Northern America              87  (52.1%)
+      → Western Europe                38  (22.8%)
+      → Northern Europe               30  (18.0%)
+  Eastern Europe (N=806 cross-regional nominations):
+      → Western Europe               444  (55.1%)
+      → Northern America             176  (21.8%)
+      → Northern Europe              143  (17.7%)
+  Northern Africa (N=73 cross-regional nominations):
+      → Western Europe                52  (71.2%)
+      → Northern America              10  (13.7%)
+      → Northern Europe                7  ( 9.6%)
+  Northern America (N=1,133 cross-regional nominations):
+      → Northern Europe              431  (38.0%)
+      → Western Europe               370  (32.7%)
+      → Eastern Europe                99  ( 8.7%)
+  Northern Europe (N=3,309 cross-regional nominations):
+      → Western Europe             1,538  (46.5%)
+      → Northern America           1,034  (31.2%)
+      → Southern Europe              241  ( 7.3%)
+  South America (N=185 cross-regional nominations):
+      → Northern America              79  (42.7%)
+      → Western Europe                53  (28.6%)
+      → Southern Europe               24  (13.0%)
+  South-Eastern Asia (N=23 cross-regional nominations):
+      → Northern America               9  (39.1%)
+      → Western Europe                 7  (30.4%)
+      → Northern Europe                2  ( 8.7%)
+  Southern Asia (N=103 cross-regional nominations):
+      → Northern America              42  (40.8%)
+      → Western Europe                30  (29.1%)
+      → Northern Europe               21  (20.4%)
+  Southern Europe (N=785 cross-regional nominations):
+      → Western Europe               351  (44.7%)
+      → Northern America             243  (31.0%)
+      → Northern Europe              123  (15.7%)
+  Sub-Saharan Africa (N=44 cross-regional nominations):
+      → Western Europe                17  (38.6%)
+      → Northern Europe               11  (25.0%)
+      → Northern America              10  (22.7%)
+  Western Asia (N=177 cross-regional nominations):
+      → Western Europe                67  (37.9%)
+      → Northern America              66  (37.3%)
+      → Northern Europe               30  (16.9%)
+  Western Europe (N=3,156 cross-regional nominations):
+      → Northern America           1,434  (45.4%)
+      → Northern Europe              928  (29.4%)
+      → Eastern Europe               296  ( 9.4%)
+
+
+==============================================================================
+  SECTION 11: TEMPORAL HOMOPHILY TRENDS BY PRIZE
+==============================================================================
+
+  === Chemistry ===
+    1900s: N=  276 | SameCty=42.0% | SameCont=93.1% (exp=88.6%, ratio=1.05)
+    1910s: N=  271 | SameCty=48.3% | SameCont=87.5% (exp=81.8%, ratio=1.07)
+    1920s: N=  418 | SameCty=53.6% | SameCont=94.5% (exp=83.7%, ratio=1.13)
+    1930s: N=  468 | SameCty=53.4% | SameCont=92.3% (exp=83.1%, ratio=1.11)
+    1940s: N=  439 | SameCty=50.6% | SameCont=79.7% (exp=51.1%, ratio=1.56)
+    1950s: N=  857 | SameCty=43.5% | SameCont=72.7% (exp=54.1%, ratio=1.34)
+    1960s: N=1,394 | SameCty=48.7% | SameCont=69.1% (exp=48.7%, ratio=1.42)
+    1970s: N=  887 | SameCty=41.9% | SameCont=64.3% (exp=41.9%, ratio=1.53)
+
+  === Physics ===
+    1900s: N=  349 | SameCty=45.6% | SameCont=93.1% (exp=87.6%, ratio=1.06)
+    1910s: N=  443 | SameCty=57.6% | SameCont=93.7% (exp=82.4%, ratio=1.14)
+    1920s: N=  487 | SameCty=49.9% | SameCont=84.6% (exp=73.1%, ratio=1.16)
+    1930s: N=  617 | SameCty=33.5% | SameCont=68.9% (exp=56.9%, ratio=1.21)
+    1940s: N=  388 | SameCty=52.3% | SameCont=75.8% (exp=48.4%, ratio=1.57)
+    1950s: N=  826 | SameCty=47.8% | SameCont=69.7% (exp=46.6%, ratio=1.50)
+    1960s: N=1,448 | SameCty=41.7% | SameCont=61.5% (exp=45.1%, ratio=1.37)
+    1970s: N=  927 | SameCty=40.5% | SameCont=64.7% (exp=47.5%, ratio=1.36)
+
+  === Physiology/Medicine ===
+    1900s: N=  919 | SameCty=49.3% | SameCont=93.1% (exp=87.9%, ratio=1.06)
+    1910s: N=  951 | SameCty=54.3% | SameCont=90.6% (exp=80.1%, ratio=1.13)
+    1920s: N=1,283 | SameCty=60.1% | SameCont=87.8% (exp=65.8%, ratio=1.33)
+    1930s: N=1,618 | SameCty=58.8% | SameCont=80.7% (exp=49.0%, ratio=1.64)
+    1940s: N=  798 | SameCty=55.1% | SameCont=71.6% (exp=45.8%, ratio=1.56)
+    1950s: N=  678 | SameCty=46.5% | SameCont=68.1% (exp=47.0%, ratio=1.45)
+
+  === Literature ===
+    1900s: N=  419 | SameCty=66.3% | SameCont=98.8% (exp=90.2%, ratio=1.10)
+    1910s: N=  313 | SameCty=61.0% | SameCont=98.1% (exp=92.0%, ratio=1.07)
+    1920s: N=  319 | SameCty=50.5% | SameCont=97.5% (exp=92.2%, ratio=1.06)
+    1930s: N=  492 | SameCty=54.5% | SameCont=89.8% (exp=81.5%, ratio=1.10)
+    1940s: N=  307 | SameCty=43.3% | SameCont=87.0% (exp=74.3%, ratio=1.17)
+    1950s: N=  228 | SameCty=54.4% | SameCont=86.0% (exp=69.2%, ratio=1.24)
+    1960s: N=  651 | SameCty=45.2% | SameCont=80.3% (exp=64.6%, ratio=1.24)
+    1970s: N=  715 | SameCty=39.2% | SameCont=74.3% (exp=52.2%, ratio=1.42)
+
+  === Peace ===
+    1900s: N=  862 | SameCty=34.9% | SameCont=98.4% (exp=90.1%, ratio=1.09)
+    1910s: N=  656 | SameCty=35.8% | SameCont=95.0% (exp=82.6%, ratio=1.15)
+    1920s: N=  686 | SameCty=41.0% | SameCont=82.8% (exp=70.4%, ratio=1.18)
+    1930s: N=1,011 | SameCty=37.2% | SameCont=84.2% (exp=62.9%, ratio=1.34)
+    1940s: N=  219 | SameCty=37.0% | SameCont=76.3% (exp=51.5%, ratio=1.48)
+    1950s: N=  589 | SameCty=40.6% | SameCont=65.9% (exp=42.6%, ratio=1.55)
+    1960s: N=  924 | SameCty=41.9% | SameCont=74.7% (exp=45.0%, ratio=1.66)
+    1970s: N=  711 | SameCty=29.3% | SameCont=59.5% (exp=42.4%, ratio=1.40)
+
+
+==============================================================================
+  END OF EXPLORATORY ANALYSIS
+==============================================================================

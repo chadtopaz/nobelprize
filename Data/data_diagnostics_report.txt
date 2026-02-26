@@ -1,0 +1,537 @@
+NOBEL PRIZE MULTILAYER NETWORK — DATA DIAGNOSTICS REPORT
+Generated: 2026-02-25 15:50:57
+Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
+
+
+==============================================================================
+  SECTION 1: FILE INVENTORY & BASIC COUNTS
+==============================================================================
+
+  --- Intermediate files (Data/intermediate/) ---
+  [PASS] governing_bodies.csv                   6935 rows × 5 cols  (310,590 bytes, 2026-02-23 17:36)
+  [PASS] vetting_bodies.csv                      269 rows × 5 cols  (17,605 bytes, 2026-02-23 08:30)
+  [PASS] nominations.csv                       27958 rows × 21 cols  (6,612,652 bytes, 2026-02-23 18:17)
+  [PASS] laureates.csv                           927 rows × 8 cols  (159,430 bytes, 2026-02-23 09:06)
+  [PASS] demographics.csv                      10206 rows × 13 cols  (1,607,649 bytes, 2026-02-23 18:17)
+  [PASS] nomination_people.csv                 14474 rows × 2 cols  (316,122 bytes, 2026-02-23 17:29)
+  [PASS] nomination_people_qids.csv            14474 rows × 8 cols  (721,473 bytes, 2026-02-23 17:30)
+
+  --- Wikidata matching caches (Data/intermediate/) ---
+  [PASS] wikidata_phase1_candidates.rds            4570 items  (68,297 bytes, 2026-02-23 17:27)
+  [PASS] wikidata_birth_year_cache.rds             3774 items  (27,883 bytes, 2026-02-23 17:30)
+  [PASS] wikidata_no_birthyear_cache.rds           9835 items  (48,893 bytes, 2026-02-23 17:30)
+
+  --- Final output files (Data/) ---
+  [PASS] nodes.csv                              8134 rows × 13 cols  (1,326,176 bytes)
+  [PASS] edges.csv                            514111 rows × 6 cols  (29,712,874 bytes)
+
+==============================================================================
+  SECTION 2: GOVERNING BODIES (SCRIPT 01)
+==============================================================================
+
+  --- Record counts by body ---
+    Storting                        4281 records
+    RSAS                            2312 records
+    Swedish Academy                  202 records
+    Karolinska Institutet            140 records
+    TOTAL                           6935 records
+  --- Year coverage by body ---
+    Karolinska Institutet:
+      startyear: 1884 – 1969  (missing: 0)
+      endyear:   1905 – 1970  (missing: 0)
+    RSAS:
+      startyear: 1739 – 2025  (missing: 0)
+      endyear:   1731 – 2026  (missing: 441)
+    Storting:
+      startyear: 1814 – 2025  (missing: 0)
+      endyear:   1814 – 2025  (missing: 181)
+    Swedish Academy:
+      startyear: 1786 – 2023  (missing: 0)
+      endyear:   1786 – 2024  (missing: 17)
+  --- QID completeness ---
+  [PASS] Karolinska Institutet          140 / 140 (100.0%)
+  [PASS] RSAS                           2312 / 2312 (100.0%)
+  [PASS] Storting                       4281 / 4281 (100.0%)
+  [PASS] Swedish Academy                202 / 202 (100.0%)
+  --- Karolinska coverage gap ---
+  [WARNING] Karolinska max endyear = 1970. Post-1970 data MISSING (structural gap).
+  [INFO] The Nobel Assembly roster is not publicly available post-1970.
+  [INFO] Contact: nobelforum@nobelprizemedicine.org
+  --- RSAS endyear imputation ---
+    RSAS members: 2312 total, 441 still missing endyear (19.1%)
+  [INFO] endyear for RSAS members was imputed from Wikidata death_year in script 06.
+  [INFO] 441 RSAS members have no endyear (likely still living or death_year unknown).
+  --- Temporal anomalies ---
+  [WARNING] 3 records have startyear > endyear:
+      Q8755 | RSAS | 1747 > 1746
+      Q28840252 | RSAS | 1753 > 1731
+      Q16649656 | RSAS | 1941 > 1927
+  [PASS] All year values within plausible range (1700–2026).
+  --- Duplicate QIDs within same body ---
+  [INFO] 583 QIDs appear multiple times in same body (may indicate multiple terms).
+  --- Cross-check: governing QIDs in demographics ---
+  [PASS] All 6133 governing QIDs found in demographics.
+
+==============================================================================
+  SECTION 3: VETTING BODIES (SCRIPT 02)
+==============================================================================
+
+  --- Record counts by committee ---
+    Nobel Committee for Physiology/Medicine                  72 members
+    Norwegian Nobel Committee                                61 members
+    Nobel Committee for Physics                              51 members
+    Nobel Committee for Chemistry                            50 members
+    Nobel Committee for Literature                           35 members
+    TOTAL                                                   269 members
+  --- Year coverage by committee ---
+    Nobel Committee for Chemistry:
+      startyear: 1900 – 2021  (missing: 0)
+      endyear:   1905 – 2020  (missing: 12)
+    Nobel Committee for Literature:
+      startyear: 1900 – 2019  (missing: 0)
+      endyear:   1903 – 2021  (missing: 0)
+    Nobel Committee for Physics:
+      startyear: 1900 – 2016  (missing: 0)
+      endyear:   1903 – 2015  (missing: 7)
+    Nobel Committee for Physiology/Medicine:
+      startyear: 1900 – 2025  (missing: 0)
+      endyear:   1910 – 2022  (missing: 24)
+    Norwegian Nobel Committee:
+      startyear: 1901 – 2024  (missing: 0)
+      endyear:   1904 – 2029  (missing: 0)
+  --- QID completeness ---
+  [PASS] Nobel Committee for Chemistry                           50 / 50 (100.0%)
+  [PASS] Nobel Committee for Literature                          35 / 35 (100.0%)
+  [PASS] Nobel Committee for Physics                             51 / 51 (100.0%)
+  [WARNING] Nobel Committee for Physiology/Medicine                 59 / 72 (81.9%)
+  [PASS] Norwegian Nobel Committee                               57 / 61 (93.4%)
+  --- Known incompleteness flags ---
+  [WARNING] Medicine committee (72 members): Swedish Wikipedia states 'Listan är ofullständig' (list is incomplete).
+  [INFO] Literature committee (35 members): Extracted from svenskaakademien.se Nuxt.js SPA (fragile source).
+  --- Cross-check: vetting QIDs in demographics ---
+  [PASS] All 235 vetting QIDs found in demographics.
+  --- Cross-check: vetting members in parent governing body ---
+  [INFO] Nobel Committee for Chemistry: 42 / 45 members found in RSAS (3 not found — may be structural).
+  [INFO] Nobel Committee for Physics: 44 / 50 members found in RSAS (6 not found — may be structural).
+  [INFO] Nobel Committee for Physiology/Medicine: 23 / 52 members found in Karolinska Institutet (29 not found — may be structural).
+
+==============================================================================
+  SECTION 4: NOMINATIONS (SCRIPT 03)
+==============================================================================
+
+  --- Overview ---
+    Total records:        27,958
+    Unique nomination IDs: 22600
+    Unique nominees:       4006
+    Unique nominators:     11650
+  --- Records by prize ---
+    Physiology/Medicine       6,321 records
+    Peace                     6,138 records
+    Physics                   5,692 records
+    Chemistry                 5,094 records
+    Literature                4,713 records
+  --- Year coverage by prize ---
+    Chemistry                 1901 – 1974  (74 distinct years)  [expected max: 1975 — OK]
+    Literature                1901 – 1974  (74 distinct years)  [expected max: 1975 — OK]
+    Peace                     1901 – 1975  (71 distinct years)  [expected max: 1975 — OK]
+    Physics                   1901 – 1974  (74 distinct years)  [expected max: 1975 — OK]
+    Physiology/Medicine       1901 – 1953  (53 distinct years)  [expected max: 1953 — OK]
+  [WARNING] Physiology/Medicine nominations end at 1953 (Karolinska has not released 1954–1974).
+  --- Missing data ---
+  [PASS] All records have nominee_person_id.
+  [INFO] 780 records missing nominator_person_id (anonymous/unlisted nominators).
+  --- Self-nominations ---
+  [INFO] 2 self-nominations (nominee = nominator).
+  --- Multi-nominee and multi-nominator nominations ---
+    Nominations with multiple nominees:   3681 / 22600 (16.3%)
+    Nominations with multiple nominators: 245 / 22600 (1.1%)
+  --- Top 10 most-nominated nominees ---
+     1. Ramón Menéndez Pidal              (ID: 6178)  185 nominations
+     2. World Esperanto Association (Universala Esperanto Asocio) (ID: 14778)  182 nominations
+     3. Gaston Ramon                        (ID: 7545)  155 nominations
+     4. The Permanent International Peace Bureau (ID: 9173)  137 nominations
+     5. Charles S Sherrington               (ID: 8493)  131 nominations
+     6. Murray Gell-Mann                    (ID: 11043)  129 nominations
+     7. Christopher Kelk Ingold             (ID: 4461)  117 nominations
+     8. Georg Wittig                        (ID: 10657)  116 nominations
+     9. Emile P Roux                        (ID: 7930)  115 nominations
+    10. Jules Bordet                        (ID: 1172)  115 nominations
+  --- Top 10 most-active nominators ---
+     1. N.N.                                (ID: NA)  186 nominations
+     2. Karl Johann Freudenberg             (ID: 3212)  94 nominations
+     3. Hans Wehberg                        (ID: 10043)  87 nominations
+     4. Glenn Theodore Seaborg              (ID: 8323)  85 nominations
+     5. James Franck                        (ID: 3167)  84 nominations
+     6. Leopold Ruzicka                     (ID: 7994)  80 nominations
+     7. Hans K von Euler-Chelpin            (ID: 9751)  60 nominations
+     8. Max K Planck                        (ID: 7283)  58 nominations
+     9. Harold Clayton Urey                 (ID: 9461)  51 nominations
+    10. Knut Hjalmar Leonard Hammarskjöld  (ID: 3845)  51 nominations
+  --- Contextual field completeness (from detail pages) ---
+    nominee_university       : 12626 / 27958 (45.2%)
+    nominee_city             : 20115 / 27958 (71.9%)
+    nominee_country          : 26466 / 27958 (94.7%)
+    nominee_profession       : 20577 / 27958 (73.6%)
+    nominator_university     : 11773 / 27958 (42.1%)
+    nominator_city           : 21926 / 27958 (78.4%)
+    nominator_country        : 27302 / 27958 (97.7%)
+    nominator_profession     : 21478 / 27958 (76.8%)
+  --- Top 10 nominee countries ---
+     1. UNITED STATES                        6661
+     2. GERMANY                              3833
+     3. FRANCE                               3243
+     4. UNITED KINGDOM                       2696
+     5. SWITZERLAND                          1206
+     6. ITALY                                977
+     7. SWEDEN                               969
+     8. AUSTRIA                              667
+     9. NETHERLANDS                          638
+    10. DENMARK                              612
+
+==============================================================================
+  SECTION 5: NOMINATION PEOPLE QID MATCHING (SCRIPT 05)
+==============================================================================
+
+  --- Bio scraping completeness ---
+    Total people:     14474
+    With name:        14469 (100.0%)
+    With birth_year:  4571 (31.6%)
+    With death_year:  4202 (29.0%)
+    With gender:      10388 (71.8%)
+  --- QID match method breakdown ---
+    no_data                         9904  (68.4%)
+    wikidata_name_birthyear         3951  (27.3%)
+    unmatched                        619  (4.3%)
+    Of 4570 matchable (have name + birth_year): 3951 matched (86.5%)
+  [PASS] 27.3% of nomination people matched to Wikidata QIDs.
+  --- Multi-match analysis ---
+    People with multiple QID candidates (multi_match_count > 1): 44
+      2 QID candidates: 43 people
+      3 QID candidates: 1 people
+  [INFO] 44 multi-match cases used the API's top-ranked candidate. Manual review recommended for count >= 3.
+  --- Duplicate QIDs (multiple person_ids → same QID) ---
+  [INFO] 47 QIDs map to multiple person_ids (94 person_ids total).
+    (Common causes: transliteration variants, same person with different nobelprize.org IDs)
+      Q10325390 (2x): Marcos Almir Madeira / Marcos Almir Madeira
+      Q113667 (2x): Konstantin Economo / Constantin von Economo
+      Q11902439 (2x): William Rose / William Rose
+      Q1264 (2x): Situ U Thant / U Thant
+      Q1282594 (2x): Irvine Page / Irvine Heinly Page
+  --- Nomination people ↔ nominations cross-check ---
+  [PASS] All person_ids in nominations.csv are present in nomination_people_qids.csv.
+  --- Gender distribution (from nobelprize.org) ---
+    M          10054  (69.5%)
+    unknown     4086  (28.2%)
+    F            334  (2.3%)
+  --- Birth year anomalies ---
+  [WARNING] 1 people have birth_year > death_year.
+  --- Cross-check: matched QIDs in demographics ---
+  [PASS] All 3951 matched nomination QIDs found in demographics.
+
+==============================================================================
+  SECTION 6: LAUREATES (SCRIPT 04)
+==============================================================================
+
+  --- Overview ---
+    Total laureate-prize records: 927
+    Unique individuals (by QID):  919
+    Year range: 1901 – 2025
+  --- Records by prize ---
+    Physiology/Medicine       232
+    Physics                   230
+    Chemistry                 200
+    Peace                     143
+    Literature                122
+  --- Records by decade ---
+    1900s:  57
+    1910s:  40
+    1920s:  54
+    1930s:  56
+    1940s:  43
+    1950s:  72
+    1960s:  77
+    1970s:  89
+    1980s:  87
+    1990s:  87
+    2000s: 103
+    2010s: 101
+    2020s:  61
+  --- QID completeness ---
+  [PASS] All 927 laureate records have QIDs (100%).
+  --- Gender breakdown ---
+    female      64
+    male       827
+    unknown     28
+  --- Multi-prize winners ---
+  [INFO] 7 individuals won multiple prizes:
+      NA: Peace 1917, Peace 1944, Peace 1963
+      K. Barry Sharpless: Chemistry 2001, Chemistry 2022
+      NA: Peace 1954, Peace 1981
+      Frederick Sanger: Chemistry 1958, Chemistry 1980
+      Linus Carl Pauling: Chemistry 1954, Peace 1962
+      Marie Curie, née Skłodowska: Chemistry 1911, Physics 1903
+      John Bardeen: Physics 1956, Physics 1972
+  --- Cross-check: laureate QIDs in nodes.csv ---
+  [PASS] All 919 laureate QIDs found in nodes.csv.
+  --- Cross-check: laureates with governing→laureate edges ---
+  [WARNING] 267 laureates have no governing→laureate edge (may be Peace laureates routed through vetting).
+  [INFO]   Of these, 139 are Peace laureates (expected — Peace uses vetting→laureate).
+  [WARNING]   128 non-Peace laureates missing governing→laureate edges (unexpected).
+      Earl W. Sutherland, Jr. (Physiology/Medicine, 1971)
+      Gerald M. Edelman (Physiology/Medicine, 1972)
+      Rodney R. Porter (Physiology/Medicine, 1972)
+      Karl von Frisch (Physiology/Medicine, 1973)
+      Konrad Lorenz (Physiology/Medicine, 1973)
+
+==============================================================================
+  SECTION 7: DEMOGRAPHICS (SCRIPT 06)
+==============================================================================
+
+  --- Overview ---
+    Total records: 10206
+    Unique QIDs:   10206
+  [PASS] One row per QID (no duplicates).
+  --- Field completeness ---
+    name            10179 / 10206  (99.7%)
+    gender          10170 / 10206  (99.6%)
+    birth_country    8462 / 10206  (82.9%)
+    nationality      9893 / 10206  (96.9%)
+    birth_year      10170 / 10206  (99.6%)
+    death_year       8604 / 10206  (84.3%)
+    occupation       9980 / 10206  (97.8%)
+    institution      4585 / 10206  (44.9%)
+  --- Gender distribution ---
+    male             9358  (91.7%)
+    female            812  (8.0%)
+    unknown            36  (0.4%)
+  --- Birth year distribution (by decade) ---
+    1660s:    3
+    1670s:    7
+    1680s:   18
+    1690s:   29
+    1700s:   50
+    1710s:   46
+    1720s:   49
+    1730s:   48
+    1740s:   58
+    1750s:   93
+    1760s:  129
+    1770s:  202
+    1780s:  235
+    1790s:  222
+    1800s:  221
+    1810s:  222
+    1820s:  238
+    1830s:  299
+    1840s:  407
+    1850s:  518
+    1860s:  600
+    1870s:  573
+    1880s:  664
+    1890s:  686
+    1900s:  854
+    1910s:  834
+    1920s:  859
+    1930s:  501
+    1940s:  516
+    1950s:  334
+    1960s:  306
+    1970s:  179
+    1980s:  105
+    1990s:   52
+    2000s:   13
+  --- Birth country (top 20) ---
+    Norway                         2675
+    Sweden                         1200
+    United States                   802
+    Germany                         655
+    France                          486
+    United Kingdom                  455
+    Italy                           179
+    Poland                          169
+    Denmark                         163
+    Austria                         134
+    Switzerland                     124
+    Finland                         112
+    Netherlands                     104
+    Russia                           92
+    Belgium                          81
+    Spain                            80
+    Japan                            78
+    Ukraine                          62
+    Czech Republic                   58
+    Canada                           57
+  --- Temporal anomalies ---
+  [PASS] No birth_year > death_year anomalies.
+  [WARNING] 57 records have implausible birth/death years.
+  --- Multi-valued fields ---
+    nationality     1142 records have multiple values (semicolon-delimited)
+    occupation      7247 records have multiple values (semicolon-delimited)
+    institution     2064 records have multiple values (semicolon-delimited)
+
+==============================================================================
+  SECTION 8: GEOGRAPHIC STANDARDIZATION (SCRIPT 07)
+==============================================================================
+
+  --- Demographics — birth country mapping coverage ---
+  [PASS] Birth country mapped: 8462 / 8462 (100.0%)
+  [PASS] All non-NA birth_country values mapped successfully.
+  --- Demographics — distribution by continent and subregion ---
+    Europe       : 7129
+    Americas     : 975
+    Asia         : 245
+    Africa       : 60
+    Oceania      : 53
+
+    Northern Europe           : 4688
+    Western Europe            : 1599
+    Northern America          : 861
+    Eastern Europe            : 528
+    Southern Europe           : 314
+    Eastern Asia              : 114
+    South America             : 87
+    Southern Asia             : 59
+    Australia and New Zealand : 53
+    Western Asia              : 53
+    Sub-Saharan Africa        : 39
+    Northern Africa           : 21
+    South-Eastern Asia        : 18
+    Central America           : 15
+    Caribbean                 : 12
+    Central Asia              : 1
+  --- Nominations — country mapping coverage ---
+  [PASS] Nominee country mapped: 26446 / 26466 (99.9%)
+  [PASS] Nominator country mapped: 27230 / 27302 (99.7%)
+
+==============================================================================
+  SECTION 9: NETWORK STRUCTURE (SCRIPT 08)
+==============================================================================
+
+  --- Overview ---
+    Nodes: 8,134
+    Edges: 514,111
+  --- Edge type distribution ---
+    governing_body            → vetting_body    252,476  (49.1%)
+    governing_body            → laureate        146,761  (28.5%)
+    vetting_body              → nominator        87,492  (17.0%)
+    nominator                 → nominee          26,654  (5.2%)
+    vetting_body              → laureate            728  (0.1%)
+  --- Edge count by prize ---
+    Physics                   199,934
+    Chemistry                 167,210
+    Physiology/Medicine        71,229
+    Peace                      62,994
+    Literature                 12,744
+  --- Year range of edges ---
+    Min year: 1901
+    Max year: 2025
+  --- NOM: prefix IDs (unresolved nomination people) ---
+    NOM: prefix IDs in edges: 78,325 / 1,028,222 (7.6%)
+  [PASS] Only 7.6% of edge endpoints use NOM: IDs.
+    Edges with at least one NOM: ID: 75,207 / 514,111 (14.6%)
+  --- Self-loops ---
+  [WARNING] 1374 self-loops found (from_qid == to_qid).
+  --- Duplicate edges ---
+  [PASS] No duplicate edges.
+  --- Degree distribution (edges per node) ---
+    Among QID-resolved edges:
+      Nodes involved: 6157
+      Mean degree:    142.6
+      Median degree:  28
+      Max degree:     14978  (Q6238013)
+      Min degree:     1
+  --- Isolate nodes (in nodes.csv but no edges) ---
+    Isolate nodes: 1131 / 8134 (13.9%)
+  [INFO] 1131 nodes have no edges (may be nomination people with QIDs but no NOM: edges resolved).
+  --- Prize-year coverage: governing→laureate edges ---
+  [WARNING] 55 prize-years have laureates but no governing→laureate edges:
+      Physiology/Medicine 1971
+      Physiology/Medicine 1972
+      Physiology/Medicine 1973
+      Physiology/Medicine 1974
+      Physiology/Medicine 1975
+      Physiology/Medicine 1976
+      Physiology/Medicine 1977
+      Physiology/Medicine 1978
+      Physiology/Medicine 1979
+      Physiology/Medicine 1980
+      ... and 45 more
+
+==============================================================================
+  SECTION 10: CROSS-LAYER CONSISTENCY
+==============================================================================
+
+  --- Laureates who are also nominees ---
+  [INFO] 447 laureates appear as nominees (with resolved QIDs).
+  --- Laureates who are governing body members ---
+  [INFO] 105 laureates are also governing body members.
+      Hermann Emil Fischer (Chemistry 1902) — member of: RSAS
+      Svante August Arrhenius (Chemistry 1903) — member of: RSAS
+      Sir William Ramsay (Chemistry 1904) — member of: RSAS
+      Johann Friedrich Wilhelm Adolf von Baeyer (Chemistry 1905) — member of: RSAS
+      Ernest Rutherford (Chemistry 1908) — member of: RSAS
+  --- Laureates who are vetting body members ---
+  [INFO] 15 laureates are also vetting body members.
+  --- People in multiple governing bodies ---
+  [INFO] 113 people appear in multiple governing bodies.
+  --- Edge QIDs not in nodes.csv ---
+  [PASS] All real QIDs in edges are present in nodes.csv.
+  --- NOM: IDs with no nomination_people_qids entry ---
+  [PASS] All 10511 NOM: IDs in edges have entries in nomination_people_qids.csv.
+
+==============================================================================
+  SECTION 11: KNOWN STRUCTURAL GAPS & LIMITATIONS
+==============================================================================
+
+  The following are KNOWN data limitations inherent to available sources.
+  These are NOT bugs — they should be documented in the manuscript.
+
+  1. KAROLINSKA INSTITUTET (GOVERNING BODY FOR PHYSIOLOGY/MEDICINE)
+     Coverage: 1881–1970 only. Post-1970 Nobel Assembly roster is not
+     publicly available. Wikidata has no P39/P463 records for Q3375124.
+     Impact: All Physiology/Medicine governing body data missing after 1970.
+     Records: 140 members, max endyear = 1970
+
+  2. NOMINATION ARCHIVE 50-YEAR SECRECY RULE
+     Physics/Chemistry/Literature: available through 1974 (or 1975).
+     Peace: available through 1975.
+     Physiology/Medicine: available through 1953 ONLY.
+     Karolinska has not released 1954–1974 data (likely related to
+     the 1977 Swedish transparency law and creation of the Nobel Assembly).
+
+  3. NOBEL COMMITTEE FOR PHYSIOLOGY/MEDICINE (VETTING BODY)
+     Source: Swedish Wikipedia page explicitly states
+     'Listan är ofullständig' (the list is incomplete).
+     Records: 72 members
+
+  4. NOBEL COMMITTEE FOR LITERATURE (VETTING BODY)
+     Source: svenskaakademien.se Nuxt.js SPA (rebuilt ~2024).
+     Extraction parses __NUXT_DATA__ payload — fragile to redesigns.
+     Records: 35 members with Nobel Committee service years
+
+  5. NOMINATION PEOPLE QID MATCHING
+     Total nomination archive people: 14474
+     Matched to Wikidata QIDs: 3951 (27.3%)
+     Missing birth year (unmatchable): 9904 (68.4%)
+     Impact: Most nominator→nominee edges use temporary NOM: prefix IDs
+     instead of Wikidata QIDs, limiting cross-layer entity resolution.
+
+  6. RSAS ENDYEAR IMPUTATION
+     RSAS members' endyear is imputed from Wikidata death_year (script 06).
+     Still missing after imputation: 441 / 2312 (19.1%)
+     These are likely living members whose actual departure date is unknown.
+
+  7. STORTING TERM CONSOLIDATION
+     Norwegian Parliament members may serve non-consecutive terms.
+     Script 01 consolidates consecutive terms but gaps between terms
+     are preserved. Verify that endyear reflects actual departure.
+
+==============================================================================
+  SECTION : SUMMARY SCORECARD
+==============================================================================
+
+  Total checks performed: 50
+  Passed:                 39
+  Warnings:               11
+
+Report saved to: Data/data_diagnostics_report.txt
