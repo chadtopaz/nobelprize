@@ -253,7 +253,7 @@ p_generic <- ggplot() +
   geom_segment(data = generic_edges %>% filter(!is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),
                arrow = arrow(length = unit(0.04, "cm"), type = "closed"),
-               color = "grey65", linewidth = 0.15, alpha = 0.3) +
+               color = "grey45", linewidth = 0.18, alpha = 0.45) +
   # Nomination edges — bold and colored in terracotta
   # Visually emphasizes selective homophilic structure
   geom_segment(data = generic_edges %>% filter(is_nom_edge),
@@ -367,7 +367,7 @@ p_physics <- ggplot() +
   geom_segment(data = phys_edges %>% filter(!is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),
                arrow = arrow(length = unit(0.04, "cm"), type = "closed"),
-               color = "grey55", linewidth = 0.15, alpha = 0.25) +
+               color = "grey45", linewidth = 0.18, alpha = 0.45) +
   # Nomination edges — bold terracotta
   geom_segment(data = phys_edges %>% filter(is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),

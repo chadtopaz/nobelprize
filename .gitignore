@@ -9,3 +9,4 @@
 
 # OS artifacts
 .DS_Store
+.Rproj.user
