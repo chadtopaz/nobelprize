@@ -252,13 +252,11 @@ p_generic <- ggplot() +
   # Drawn first so they appear behind nomination edges
   geom_segment(data = generic_edges %>% filter(!is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),
-               arrow = arrow(length = unit(0.04, "cm"), type = "closed"),
-               color = "grey45", linewidth = 0.18, alpha = 0.45) +
+               color = "grey30", linewidth = 0.3, alpha = 0.6) +
   # Nomination edges — bold and colored in terracotta
   # Visually emphasizes selective homophilic structure
   geom_segment(data = generic_edges %>% filter(is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),
-               arrow = arrow(length = unit(0.09, "cm"), type = "closed"),
                color = nom_color, linewidth = 0.55, alpha = 0.85) +
   # Nodes drawn ON TOP of edges (z-ordering)
   geom_point(data = generic_nodes,
@@ -366,12 +364,10 @@ p_physics <- ggplot() +
   # Institutional edges — thin and pale
   geom_segment(data = phys_edges %>% filter(!is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),
-               arrow = arrow(length = unit(0.04, "cm"), type = "closed"),
-               color = "grey45", linewidth = 0.18, alpha = 0.45) +
+               color = "grey30", linewidth = 0.3, alpha = 0.6) +
   # Nomination edges — bold terracotta
   geom_segment(data = phys_edges %>% filter(is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),
-               arrow = arrow(length = unit(0.09, "cm"), type = "closed"),
                color = nom_color, linewidth = 0.5, alpha = 0.8) +
   # Nodes
   geom_point(data = phys_nodes,
