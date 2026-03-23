@@ -1,0 +1,14 @@
+label,n_edges,n_nodes,r,geo_scale,quantity
+Full network (all edges),328721,5130,0.19449854561706822,country,assortativity_r
+Nomination edges only,8119,2746,0.2585041502786711,country,assortativity_r
+Institutional edges only,320602,3819,0.1854274603480979,country,assortativity_r
+governing_body->laureate,96506,1825,0.0027569973483565955,country,assortativity_r
+governing_body->vetting_body,197756,1915,0.4277252497171238,country,assortativity_r
+nominator->nominee,8119,2746,0.2585041502786711,country,assortativity_r
+vetting_body->laureate,529,159,0,country,assortativity_r
+vetting_body->nominator,25811,1237,7.779878239349606e-4,country,assortativity_r
+Full network (all edges),328721,5130,0.034167450944681925,continent,assortativity_r
+Nomination edges only,8119,2746,0.3031880960047274,continent,assortativity_r
+Institutional edges only,320602,3819,0.019012211173178674,continent,assortativity_r
+Layer contrast (H_nom - H_inst),328721,NA,2.3681594461291597,country,layer_contrast_delta
+Layer contrast p-value,328721,NA,9.999000099990002e-5,country,layer_contrast_pvalue

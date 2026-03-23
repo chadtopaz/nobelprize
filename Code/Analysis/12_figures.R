@@ -361,14 +361,14 @@ p_physics <- ggplot() +
   geom_rect(data = band_data_r,
             aes(xmin = xmin, xmax = xmax, ymin = ymin, ymax = ymax, fill = layer),
             alpha = 0.15, color = NA) +
-  # Institutional edges — thin and pale
+  # Institutional edges — very thin and pale to reduce clutter
   geom_segment(data = phys_edges %>% filter(!is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),
-               color = "grey30", linewidth = 0.3, alpha = 0.6) +
-  # Nomination edges — bold terracotta
+               color = "grey70", linewidth = 0.2, alpha = 0.35) +
+  # Nomination edges — bold terracotta to stand out
   geom_segment(data = phys_edges %>% filter(is_nom_edge),
                aes(x = from_x, y = from_y, xend = to_x, yend = to_y),
-               color = nom_color, linewidth = 0.5, alpha = 0.8) +
+               color = nom_color, linewidth = 0.7, alpha = 0.9) +
   # Nodes
   geom_point(data = phys_nodes,
              aes(x = x, y = y, color = layer),
@@ -482,9 +482,10 @@ p_heat <- ggplot(heatmap_data,
                  aes(x = prize_label, y = nominator_subregion, fill = self_rate)) +
   # Tile geom with white gridlines separating cells
   geom_tile(color = "white", linewidth = 0.8) +
-  # Text labels showing percentage (white text on dark cells, dark text on light)
-  geom_text(aes(label = sprintf("%.0f%%", 100 * self_rate)),
-            size = 3.0,
+  # Text labels showing percentage and sample size (white text on dark cells, dark text on light)
+  geom_text(aes(label = sprintf("%.0f%%\n(n=%d)", 100 * self_rate, n_out)),
+            size = 2.3,
+            lineheight = 0.85,
             color = ifelse(heatmap_data$self_rate > 0.65, "white", "grey20")) +
   # Color scale: light grey (low) → teal (mid) → dark blue (high)
   # Designed for colorblind accessibility (replaces red-yellow-orange gradient)
@@ -590,32 +591,27 @@ temporal <- read_csv(data_path("results_temporal_homophily.csv"),
                      show_col_types = FALSE)
 fig3_cont <- temporal %>% filter(geo_level == "continent")  # Use continent-level for stability
 
-# PANEL A: Diversity trends (% Europe and effective continents over time)
+# PANEL A: % European nominees over time
 p3a <- ggplot(diversity_decade, aes(x = decade)) +
-  # Primary axis: % European nominees (solid line, steel blue)
   geom_line(aes(y = pct_europe), color = inst_color, linewidth = 1) +
   geom_point(aes(y = pct_europe), color = inst_color, size = 2) +
-  # Secondary axis: Effective continents (dashed line, terracotta)
-  # Scaled by 25 to fit on same y-axis as % Europe
-  geom_line(aes(y = eff_continents * 25), color = nom_color, linewidth = 1,
-            linetype = "dashed") +
-  geom_point(aes(y = eff_continents * 25), color = nom_color, size = 2, shape = 17) +
-  # Dual-axis design: left = % Europe, right = effective continents (after dividing by 25)
-  scale_y_continuous(
-    name = "% European nominees",
-    limits = c(0, 100),
-    sec.axis = sec_axis(~ . / 25, name = "Effective no. continents")
-  ) +
+  scale_y_continuous(name = "% European nominees", limits = c(0, 100)) +
   scale_x_continuous(breaks = seq(1900, 1970, 10),
                      labels = paste0(seq(1900, 1970, 10), "s")) +
   labs(x = NULL) +
   theme_minimal(base_size = 10) +
-  theme(
-    panel.grid.minor = element_blank(),
-    # Color-code axis labels to match their line colors
-    axis.title.y.left = element_text(color = inst_color),
-    axis.title.y.right = element_text(color = nom_color)
-  )
+  theme(panel.grid.minor = element_blank())
+
+# PANEL B: Effective number of continents over time
+p3a2 <- ggplot(diversity_decade, aes(x = decade)) +
+  geom_line(aes(y = eff_continents), color = nom_color, linewidth = 1) +
+  geom_point(aes(y = eff_continents), color = nom_color, size = 2, shape = 17) +
+  scale_y_continuous(name = "Effective no.\ncontinents", limits = c(1, 3)) +
+  scale_x_continuous(breaks = seq(1900, 1970, 10),
+                     labels = paste0(seq(1900, 1970, 10), "s")) +
+  labs(x = NULL) +
+  theme_minimal(base_size = 10) +
+  theme(panel.grid.minor = element_blank())
 
 # PANEL B: Homophily ratio over time with permutation null CI
 p3b <- ggplot(fig3_cont, aes(x = decade)) +
@@ -637,14 +633,14 @@ p3b <- ggplot(fig3_cont, aes(x = decade)) +
   theme_minimal(base_size = 10) +
   theme(panel.grid.minor = element_blank())
 
-# Combine panels A and B vertically with patchwork
-p_fig3 <- (p3a / p3b) +
-  plot_layout(heights = c(1, 1)) +
-  # Add panel labels (A, B) using plot_annotation
+# Combine panels A, B, and C vertically with patchwork
+p_fig3 <- (p3a / p3a2 / p3b) +
+  plot_layout(heights = c(1, 1, 1.2)) +
+  # Add panel labels (A, B, C) using plot_annotation
   plot_annotation(tag_levels = "A") &
   theme(plot.tag = element_text(face = "bold", size = 12))
 
-ggsave(fig_path("fig4_temporal.pdf"), p_fig3, width = 6.5, height = 7, dpi = 300)
+ggsave(fig_path("fig4_temporal.pdf"), p_fig3, width = 6.5, height = 9, dpi = 300)
 message("  -> fig4_temporal.pdf (Globalization paradox - temporal trends)")
 
 

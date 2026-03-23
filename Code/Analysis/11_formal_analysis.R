@@ -1330,6 +1330,134 @@ for (i in seq_len(nrow(blockwise_df))) {
                   r$geo_level, r$homophily_ratio, r$p_value, r$n_edges))
 }
 
+# =============================================================================
+# CLUSTERED (NOMINATOR-LEVEL) PERMUTATION ROBUSTNESS CHECK
+# =============================================================================
+# The standard permutation test shuffles individual edge destinations, implicitly
+# treating edges as independent. But a single nominator may contribute many edges,
+# all sharing the same geography. This violates independence and could inflate
+# significance. The clustered permutation test shuffles geography labels across
+# nominators rather than edges: each nominator keeps their set of nominees, but
+# receives a randomly reassigned geography. This preserves within-nominator
+# correlation structure, providing a valid test under dependence.
+#
+# Concretely: if nominator A (from France) nominated 10 people, and nominator B
+# (from Germany) nominated 3, a single permutation might swap their labels so
+# that all 10 of A's edges now read "Germany" and all 3 of B's read "France."
+# The nominee geographies are untouched.
+#
+message("\n=== Clustered (nominator-level) permutation robustness check ===")
+
+plan(multisession, workers = n_cores)
+
+# Prepare nomination data: need nominator_person_id to define clusters
+nom_clust <- noms %>%
+  filter(!is.na(nominator_continent), !is.na(nominee_continent),
+         !is.na(nominator_person_id))
+
+clustered_permtest <- function(from_geo, to_geo, cluster_id,
+                                n_perm = N_PERM, geo_level = "country",
+                                seed = NULL) {
+  if (!is.null(seed)) set.seed(seed)
+
+  keep <- !is.na(from_geo) & !is.na(to_geo) & !is.na(cluster_id)
+  from_geo   <- from_geo[keep]
+  to_geo     <- to_geo[keep]
+  cluster_id <- cluster_id[keep]
+  n <- length(from_geo)
+
+  if (n < 50) return(NULL)
+
+  # Observed
+  obs_rate      <- sum(from_geo == to_geo) / n
+  from_dist     <- table(from_geo) / n
+  to_dist       <- table(to_geo) / n
+  shared        <- intersect(names(from_dist), names(to_dist))
+  expected_rate <- sum(from_dist[shared] * to_dist[shared])
+  obs_ratio     <- obs_rate / expected_rate
+
+  # Build cluster structure: each unique nominator → their row indices and
+  # their geography label (assumed constant within nominator)
+  unique_clusters <- unique(cluster_id)
+  cluster_geo     <- vapply(unique_clusters, function(cid) {
+    from_geo[match(cid, cluster_id)]
+  }, character(1))
+  cluster_rows <- lapply(unique_clusters, function(cid) which(cluster_id == cid))
+
+  # Permutation loop: shuffle geography labels across nominators
+  perm_stats <- future_map(seq_len(n_perm), function(i) {
+    shuffled_geo <- sample(cluster_geo)
+    perm_from    <- from_geo  # copy
+    for (j in seq_along(cluster_rows)) {
+      perm_from[cluster_rows[[j]]] <- shuffled_geo[j]
+    }
+    perm_rate <- sum(perm_from == to_geo) / n
+    c(rate = perm_rate, ratio = perm_rate / expected_rate)
+  }, .options = furrr_options(seed = seed))
+
+  perm_rates  <- vapply(perm_stats, `[`, numeric(1), "rate")
+  perm_ratios <- vapply(perm_stats, `[`, numeric(1), "ratio")
+
+  p_value     <- (sum(perm_rates >= obs_rate) + 1) / (n_perm + 1)
+  null_ci_lo  <- quantile(perm_rates, 0.025)
+  null_ci_hi  <- quantile(perm_rates, 0.975)
+  ratio_ci_lo <- quantile(perm_ratios, 0.025)
+  ratio_ci_hi <- quantile(perm_ratios, 0.975)
+  assortativity <- (obs_rate - expected_rate) / (1 - expected_rate)
+
+  tibble(
+    geo_level       = geo_level,
+    n_edges         = n,
+    n_clusters      = length(unique_clusters),
+    observed_rate   = obs_rate,
+    expected_rate   = expected_rate,
+    homophily_ratio = obs_ratio,
+    assortativity   = assortativity,
+    ratio_ci_lo     = as.numeric(ratio_ci_lo),
+    ratio_ci_hi     = as.numeric(ratio_ci_hi),
+    null_ci_lo      = as.numeric(null_ci_lo),
+    null_ci_hi      = as.numeric(null_ci_hi),
+    p_value         = p_value
+  )
+}
+
+clustered_results <- list()
+
+for (geo in c("continent", "subregion", "country")) {
+  from_col <- paste0("nominator_", geo)
+  to_col   <- paste0("nominee_", geo)
+  if (geo == "country") {
+    from_col <- "nominator_country_modern"
+    to_col   <- "nominee_country_modern"
+  }
+
+  message(sprintf("  Running clustered test at %s level...", geo))
+  res <- clustered_permtest(
+    from_geo   = nom_clust[[from_col]],
+    to_geo     = nom_clust[[to_col]],
+    cluster_id = nom_clust$nominator_person_id,
+    n_perm     = N_PERM,
+    geo_level  = geo,
+    seed       = 2026
+  )
+  if (!is.null(res)) {
+    res$test_type <- "clustered_nominator"
+    clustered_results[[length(clustered_results) + 1]] <- res
+  }
+}
+
+clustered_df <- bind_rows(clustered_results)
+write_csv(clustered_df, data_path("results_clustered_homophily.csv"))
+
+message("  Clustered permutation results:")
+for (i in seq_len(nrow(clustered_df))) {
+  r <- clustered_df[i, ]
+  message(sprintf("    %s: H = %.2f, null 95%% RI [%.2f, %.2f], p = %.4f (n_edges = %d, n_clusters = %d)",
+                  r$geo_level, r$homophily_ratio, r$ratio_ci_lo, r$ratio_ci_hi,
+                  r$p_value, r$n_edges, r$n_clusters))
+}
+
+
 # --- Shut down parallel workers ---
 # Release computational resources; switch back to sequential (single-core) execution.
 plan(sequential)
