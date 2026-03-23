@@ -1,0 +1,10 @@
+statistic,value
+n_repeat_nominators,4257
+mean_same_frac,0.4749904523811131
+median_same_frac,0.5
+pct_fully_same,30.32652102419544
+pct_fully_cross,34.34343434343434
+scand_mean_same_frac,0.22219006777581143
+scand_n,568
+non_scand_mean_same_frac,0.5139144476253019
+non_scand_n,3689

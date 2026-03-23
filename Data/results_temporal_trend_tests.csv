@@ -1,0 +1,11 @@
+model,statistic,value
+continent_linear,slope_per_decade,0.059298630958319484
+continent_linear,t_statistic,3.8667834179832203
+continent_quadratic,R_squared,0.8900519705892522
+continent_pre1940,slope_per_decade,0.11929586946574303
+continent_pre1940,t_statistic,7.837983371465767
+continent_post1940,slope_per_decade,-0.03372850560969818
+continent_post1940,t_statistic,-2.2784545074057063
+country_linear,slope_per_decade,-0.24002262890941406
+country_linear,R_squared,0.4454637192187996
+OminusE_linear,slope_pp_per_decade,2.0430819354352105

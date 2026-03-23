@@ -1,0 +1,14 @@
+statistic,value
+n_laureates,531
+n_non_laureates,3396
+mean_same_frac_laureates,0.36960086229657835
+mean_same_frac_non_laureates,0.5265847326295248
+diff_non_minus_lau,0.15698387033294642
+permutation_p_value,9.999000099990002e-5
+logit_coef_same_frac,-1.067631078698929
+logit_se_same_frac,0.1379802523476299
+logit_z_same_frac,-7.737564329199227
+logit_odds_ratio_same_frac,0.3438220408080683
+logit_coef_log_noms,0.8207353549009831
+logit_se_log_noms,0.04149074917463508
+logit_z_log_noms,19.78116498804343
