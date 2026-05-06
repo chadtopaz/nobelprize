@@ -58,7 +58,8 @@
 #      - Scope: ~1000 records (committee members across all prizes)
 #   3. Data/intermediate/nominations.csv
 #      - Columns: year, prize, nominator_person_id, nominee_person_id, ...
-#      - Scope: ~30,000 records (Chemistry, Physics, Physiology/Medicine)
+#      - Scope: ~30,000 records (all five prizes: Chemistry, Physics,
+#        Physiology/Medicine, Literature, Peace)
 #   4. Data/intermediate/laureates.csv
 #      - Columns: year, prize, qid, name
 #      - Scope: ~800 records (all prize categories and years)
@@ -680,9 +681,9 @@ if (!is.null(nominations) && !is.null(vetting)) {
   #   count as one edge).
   #
   # COVERAGE:
-  #   Only Chemistry, Physics, Physiology/Medicine (have archive data).
-  #   Other prizes (Literature, Peace) have no nomination layer
-  #   (edges jump from governing/vetting directly to laureate).
+  #   All five prizes have archive data: Chemistry, Physics,
+  #   Physiology/Medicine, Literature, and Peace. Phys/Med records
+  #   extend only through 1953; the other four extend through 1975.
   #
   nom_edges <- nominations %>%
     # Keep only complete nomination records

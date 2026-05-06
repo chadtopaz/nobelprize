@@ -474,7 +474,14 @@ edges_geo <- edges %>%
 
 # Loop through each unique institutional edge type and test for homophily
 # Only test if sample size >= 100 edges (ensures statistical power)
+# NOTE: We explicitly skip "nominator → nominee" here. That edge type is
+# tested twice elsewhere: (1) lines 444-452 above use the full nominations.csv
+# data (N ~ 25,844), and (2) block 1c below tests the QID-matched birth-country
+# subset (N ~ 8,119, labeled "nominator → nominee (QID)"). Without this skip,
+# the QID subset would also be emitted unlabeled here, yielding a duplicate
+# row in results_edge_homophily.csv.
 for (et in unique(edges_geo$edge_type)) {
+  if (et == "nominator → nominee") next  # see note above
   e_sub <- edges_geo %>% filter(edge_type == et)
   if (nrow(e_sub) < 100) next  # Skip if insufficient data
 

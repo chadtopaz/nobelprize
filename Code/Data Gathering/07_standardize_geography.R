@@ -51,7 +51,7 @@
 #      - Columns: year, prize, nominator_person_id, nominator_country, nominee_person_id,
 #                 nominee_country, ...
 #      - Source: nobelprize.org nomination archive
-#      - Scope: ~30,000 nomination records (Chemistry, Physics, Physiology/Medicine only)
+#      - Scope: ~30,000 nomination records (all five prizes)
 #
 # OUTPUTS:
 #   1. Data/intermediate/demographics.csv (in place, enriched)

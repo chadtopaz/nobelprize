@@ -32,7 +32,7 @@
 #   - RSAS: https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_ledam%C3%B6ter_av_Kungliga_Vetenskapsakademien
 #   - Swedish Academy: Wikidata SPARQL endpoint (query targeting P39=Swedish Academy member)
 #   - Storting: Wikidata SPARQL endpoint (query targeting P39=Storting member, Q9045502)
-#   - Karolinska: Data/KI profs.xlsx (Sheet2, manually compiled from Project Runeberg)
+#   - Karolinska: Data/intermediate/KI profs.xlsx (Sheet2, manually compiled from Project Runeberg)
 #   - 00_utils.R (utility functions: wikipedia_urls_to_qids, query_wikidata_safe, data_path)
 #
 # OUTPUTS:
@@ -350,7 +350,7 @@ message(sprintf("  Storting: %d member-term records found", nrow(storting)))
 
 # =============================================================================
 # 4. Karolinska Institutet (Nobel Assembly for Physiology/Medicine)
-#    Source: Data/KI profs.xlsx (manually compiled from Project Runeberg)
+#    Source: Data/intermediate/KI profs.xlsx (manually compiled from Project Runeberg)
 #
 #    HISTORICAL CONTEXT:
 #    The Nobel Prize in Physiology or Medicine is awarded by the Nobel Assembly
@@ -361,7 +361,7 @@ message(sprintf("  Storting: %d member-term records found", nrow(storting)))
 #    digitized statskalender (official faculty records) from Project Runeberg.
 #
 #    DATA SOURCE AND STRUCTURE:
-#    The Excel file (Data/KI profs.xlsx, Sheet2) contains:
+#    The Excel file (Data/intermediate/KI profs.xlsx, Sheet2) contains:
 #      - 1021 rows: unique professor records
 #      - 35 columns: qid, link, title, dob, dod, then per-edition columns
 #        (one per statskalender edition 1881–1970), followed by "note" columns,
@@ -388,7 +388,7 @@ message(sprintf("  Storting: %d member-term records found", nrow(storting)))
 # =============================================================================
 message("=== Gathering Karolinska Institutet members ===")
 
-ki_xlsx <- file.path("Data", "KI profs.xlsx")
+ki_xlsx <- file.path("Data", "intermediate", "KI profs.xlsx")
 if (file.exists(ki_xlsx)) {
   # Load Sheet2 (the main data sheet with confirmed professors)
   ki_raw <- read_excel(ki_xlsx, sheet = "Sheet2")
