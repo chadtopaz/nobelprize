@@ -7,14 +7,14 @@
 #
 # Purpose and Goals:
 #   This script generates all publication-quality figures for the manuscript
-#   "Geographic Homophily in the Nobel Prize Selection Network" submitted to
-#   Science. It reads pre-computed statistical results from 11_formal_analysis.R
+#   "The Geography of Nobel Prize Nomination, 1901-1975" (Quantitative Science
+#   Studies). It reads pre-computed statistical results from 11_formal_analysis.R
 #   (CSV files with permutation test outcomes, diversity metrics, equity measures)
-#   and transforms them into ggplot2 visualizations designed for the Science
-#   journal format (2-column layout, accessibility-optimized color palette,
-#   minimal ink). All five figures are generated: Fig 1 (network schematic),
+#   and transforms them into ggplot2 visualizations (accessibility-optimized
+#   color palette, minimal ink). All five figures are generated: Fig 1 (network schematic),
 #   Fig 2 (edge-type comparison), Fig 3 (homophily heatmap), Fig 4 (temporal
-#   paradox), and Fig S1 (nomination flow asymmetry, supplementary). Each figure
+#   paradox), and figS1_flow_asymmetry.pdf (retained for reference; the revised
+#   manuscript reports flow asymmetry as a table, §5.7, via 17_flow_asymmetry.R). Each figure
 #   includes informative captions, axis labels, and annotations to guide reader
 #   interpretation.
 #
@@ -53,7 +53,8 @@
 #   - fig2_edge_homophily.pdf:   Fig 2  — Horizontal bar chart by edge type
 #   - fig3_heatmap.pdf:          Fig 3  — Two-panel heatmap (A: prize × subregion, B: marginal bars)
 #   - fig4_temporal.pdf:         Fig 4  — Two-panel temporal (A: diversity trends, B: homophily)
-#   - figS1_flow_asymmetry.pdf:  Fig S1 — Horizontal bar chart by subregion (supplementary)
+#   - figS1_flow_asymmetry.pdf:  Horizontal bar chart by subregion (reference only;
+#                                 not part of the revised manuscript)
 #
 # Dependencies:
 #   - tidyverse: readr (CSV), dplyr (filtering/joining), tidyr (reshape), ggplot2

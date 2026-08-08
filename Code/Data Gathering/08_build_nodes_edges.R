@@ -71,14 +71,14 @@
 #      - Scope: ~5000 records (mapping of nobelprize.org person_id to Wikidata QID)
 #
 # OUTPUTS:
-#   1. Data/Output/nodes.csv
+#   1. Data/nodes.csv
 #      - Columns: qid, name, gender, birth_year, death_year, occupation, institution,
 #                 birth_country, nationality, [geographic fields], [any other demographic columns]
-#      - Scope: unique individuals (typically ~2500-3000 nodes including unmapped persons)
+#      - Scope: unique entity-resolved individuals (8,134 nodes in the shipped file)
 #      - Structure: one row per unique QID or NOM: ID; QIDs take priority in deduplication
-#   2. Data/Output/edges.csv
+#   2. Data/edges.csv
 #      - Columns: from_qid, to_qid, year, prize, from_layer, to_layer
-#      - Scope: all directed relationships (typically ~30,000-50,000 edges)
+#      - Scope: all directed relationships (514,111 edges in the shipped file)
 #      - Structure: one row per edge; edges are deduplicated before output
 #      - Edge types (5 total):
 #        * governing_body → vetting_body: institutional oversight (all prizes)
@@ -97,8 +97,6 @@
 #   - Complete bipartite assumption: Vetting → nominator edges assume all active committee
 #     members knew/invited all active nominators in a year. In practice, committees may
 #     have solicited nominations from specific nominators; this detail is not captured.
-#   - Sparse nomination data: Nominations archive only covers Chemistry, Physics, and
-#     Physiology/Medicine (other prizes have no nomination layer, edges jump gov → nominee).
 #   - Temporal edge collapse: Multiple institutional roles by same person in same year are
 #     collapsed to one edge (distinct() deduplication). Temporal granularity below the year
 #     level is not preserved.
@@ -866,7 +864,7 @@ if (!is.null(laureates) && !is.null(vetting)) {
 #   - Remove duplicate edges (may occur if same pair appears in multiple data sources)
 #   - Sort by prize, year, edge type for readability
 #   - Generate summaries by edge type and prize
-#   - Output to Data/Output/ directory
+#   - Output to Data/ directory
 #
 # =============================================================================
 message("\n=== Finalizing ===\n")

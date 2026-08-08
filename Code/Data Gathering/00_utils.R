@@ -5,8 +5,8 @@
 #
 # AUTHOR: Chad M. Topaz
 # LAST UPDATED: February 2025
-# PROJECT: "Geographic Homophily in the Nobel Prize Selection Network"
-#          (Submitted to Science)
+# PROJECT: "The Geography of Nobel Prize Nomination, 1901-1975"
+#          (Quantitative Science Studies)
 #
 # =============================================================================
 # PURPOSE AND GOALS
@@ -153,7 +153,7 @@ library(readxl)   # reading Excel files (.xlsx)
 # RATIONALE: One core reserved for OS/I/O; cap at 12 to avoid excessive
 # overhead on machines with many cores. Configured as multisession (vs.
 # multicore) for compatibility across Windows, macOS, Linux.
-N_WORKERS <- min(parallel::detectCores() - 1, 12)
+N_WORKERS <- max(1, min(parallel::detectCores() - 1, 12), na.rm = TRUE)
 plan(multisession, workers = N_WORKERS)
 message(sprintf("Parallel backend: multisession with %d workers", N_WORKERS))
 
@@ -977,8 +977,9 @@ scrape_swedish_wiki_list <- function(page_title, sections = c("Tidigare ledamöt
 #' - Centralizes intermediate data in one place, separate from final outputs
 #' - Allows easy cleanup (delete entire intermediate/ directory without
 #'   losing final results)
-#' - Simplifies re-running scripts from scratch (delete intermediate/, then
-#'   rerun all 01_*.R, 02_*.R, etc.)
+#' - Simplifies re-running scripts from scratch. CAUTION: Data/intermediate/
+#'   contains one hand-curated, non-regenerable input ("KI profs.xlsx"); do not
+#'   delete it when clearing intermediate files.
 #' - Automatic directory creation avoids errors if directory doesn't exist
 #'
 #' USAGE:

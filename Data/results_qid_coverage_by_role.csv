@@ -1,0 +1,4 @@
+role,n,n_matched,match_rate
+nominator only,10468,1191,0.114
+nominee only,2824,1746,0.618
+both,1182,1014,0.858

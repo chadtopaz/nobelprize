@@ -1,0 +1,17 @@
+subregion,n,n_matched,match_rate
+Western Europe,4916,1323,0.269
+Northern America,2843,986,0.347
+Northern Europe,2640,823,0.312
+Southern Europe,1227,249,0.203
+Eastern Europe,1024,217,0.212
+South America,365,75,0.205
+Eastern Asia,305,52,0.17
+Southern Asia,184,38,0.207
+Western Asia,151,27,0.179
+Australia and New Zealand,132,37,0.28
+Northern Africa,67,5,0.075
+Central America,62,10,0.161
+Caribbean,56,11,0.196
+Sub-Saharan Africa,55,12,0.218
+South-Eastern Asia,44,13,0.295
+Central Asia,1,1,1

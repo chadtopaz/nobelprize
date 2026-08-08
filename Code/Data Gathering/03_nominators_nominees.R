@@ -88,7 +88,8 @@
 # ================================================================================
 # Primary Output: nominations.csv (written to data_path("nominations.csv"))
 #
-# Schema (14 columns):
+# Schema (15 columns as written; script 07 later appends six standardized-
+# geography columns in place):
 #   1. nomination_id (character): Unique identifier from nobelprize.org
 #   2. year (numeric): Year of nomination
 #   3. prize (character): Standardized prize name ("Physics", "Chemistry",
@@ -111,7 +112,7 @@
 # Row Count: One row per nominator-nominee pair (Cartesian product when nominations
 #           have multiple nominees and/or multiple nominators). For 1901-1975 physics,
 #           chemistry, literature, and peace, plus 1901-1953 physiology/medicine,
-#           typically 2000-4000+ rows depending on nomination density.
+#           27,958 rows in the shipped dataset.
 #
 # DEPENDENCIES
 # ================================================================================

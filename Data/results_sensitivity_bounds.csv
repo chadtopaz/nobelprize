@@ -1,6 +1,7 @@
 bound,H,description,n_edges,n_same_country
 baseline,4.8482081369578705,Primary finding (all complete records),25844,12091
 missing_geography,4.481618538219444,All missing records assumed cross-country,27958,12091
+missing_geography_dedup,4.700873831002447,All missing unique edges assumed cross-country (deduplicated-edge level),26654,12091
 historical_recoding,4.674986243386967,All historically recoded same-country matches removed,25844,11659
 combined_worst_case,4.321494544462865,Missing geography + recoding combined,27958,11659
 leaveout_top_1pct,5.1328213208157125,Top 1% prolific nominators removed,21815,NA

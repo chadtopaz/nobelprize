@@ -39,7 +39,7 @@
 #   - FILE: Data/governing_bodies.csv
 #   - COLUMNS: qid (Wikidata ID), name, body (institution name), startyear, endyear (numeric, NA allowed)
 #   - FORMAT: CSV, one row per person-body combination
-#   - COUNTS: ~1500 total records across four bodies (expected)
+#   - COUNTS: roughly 2,000 person-body records across four bodies in the shipped file
 #
 # DEPENDENCIES:
 #   - Library: rvest (HTML parsing), dplyr (data manipulation), stringr (regex), readxl (Excel)
@@ -47,8 +47,8 @@
 #
 # KNOWN LIMITATIONS AND DATA QUALITY NOTES:
 #   - KI post-1970 gap: Nobel Assembly membership post-1970 unavailable online. Current data
-#     covers 1881–1970 only (~140 confirmed professors). To extend: contact Nobel Office
-#     (nobelforum@nobelprizemedicine.org, +46(0)8-52487800) or consult KI annual reports.
+#     covers 1881–1970 only (~140 confirmed professors). To extend, consult the
+#     Nobel Office or KI annual reports and faculty handbooks.
 #   - RSAS endyear: Populated from death_year in script 05 (demographic query). Until then,
 #     all RSAS members show endyear=NA, indicating lifetime appointment status.
 #   - Storting consolidation: Term merging assumes gaps of ≤1 year are interruptions within
@@ -380,11 +380,8 @@ message(sprintf("  Storting: %d member-term records found", nrow(storting)))
 #      - Wikidata lacks P39/P463 records for Q3375124
 #      - Karolinska Institutet's website does not publish historical member rosters
 #      - Project Runeberg's statskalender digitization stops around 1972
-#    To extend this dataset, contact the Nobel Office directly:
-#      Email: nobelforum@nobelprizemedicine.org
-#      Phone: +46 (0)8 5248 7800
-#    Alternatively, consult KI annual reports and faculty handbooks for
-#    appointment and retirement records (1970–present).
+#    To extend this dataset, consult the Nobel Office or KI annual reports
+#    and faculty handbooks for appointment and retirement records (1970–present).
 # =============================================================================
 message("=== Gathering Karolinska Institutet members ===")
 

@@ -404,8 +404,8 @@ ki <- gb %>% filter(body == "Karolinska Institutet")
 ki_max <- max(ki$endyear, na.rm = TRUE)
 if (ki_max < 1975) {
   check_warn(sprintf("Karolinska max endyear = %d. Post-%d data MISSING (structural gap).", ki_max, ki_max))
-  check_info("The Nobel Assembly roster is not publicly available post-1970.")
-  check_info("Contact: nobelforum@nobelprizemedicine.org")
+  check_info("Digitized state calendars documenting the KI professoriate end circa 1972;")
+  check_info("the Nobel Assembly created in 1977 also has no public roster.")
 } else {
   check_pass(sprintf("Karolinska coverage extends to %d", ki_max))
 }

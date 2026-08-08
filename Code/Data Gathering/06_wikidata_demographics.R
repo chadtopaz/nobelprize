@@ -74,7 +74,7 @@
 # DEPENDENCIES:
 #   - tidyverse (dplyr, readr): Data manipulation
 #   - httr2: HTTP requests to Wikidata SPARQL endpoint
-#   - utils.R: Helper functions (data_path(), fetch_demographics_batch(),
+#   - 00_utils.R: Helper functions (data_path(), fetch_demographics_batch(),
 #     fetch_demographics_for_qid(), collapse_demographics())
 #
 # KNOWN LIMITATIONS:

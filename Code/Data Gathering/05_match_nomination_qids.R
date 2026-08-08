@@ -72,7 +72,7 @@
 #       name, first+last, and last-only approaches; captures organizational names.
 #
 # INPUTS:
-#   - nominations.csv (from 03_nominations.R): Nobel Prize nomination archive;
+#   - nominations.csv (from 03_nominators_nominees.R): Nobel Prize nomination archive;
 #     columns include nominee_person_id, nominee_name, nominator_person_id,
 #     nominator_name. Contains both nominators and nominees.
 #   - nobelprize.org website: Person detail pages for bio scraping
