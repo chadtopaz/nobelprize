@@ -13,8 +13,8 @@
 #   and transforms them into ggplot2 visualizations (accessibility-optimized
 #   color palette, minimal ink). All five figures are generated: Fig 1 (network schematic),
 #   Fig 2 (edge-type comparison), Fig 3 (homophily heatmap), Fig 4 (temporal
-#   paradox), and figS1_flow_asymmetry.pdf (retained for reference; the revised
-#   manuscript reports flow asymmetry as a table, §5.7, via 17_flow_asymmetry.R). Each figure
+#   paradox), and figS1_flow_asymmetry.pdf (supplementary Fig. S1: return-ratio
+#   bar chart; the fuller flow-asymmetry analysis is 17_flow_asymmetry.R / §5.7). Each figure
 #   includes informative captions, axis labels, and annotations to guide reader
 #   interpretation.
 #
@@ -53,8 +53,7 @@
 #   - fig2_edge_homophily.pdf:   Fig 2  — Horizontal bar chart by edge type
 #   - fig3_heatmap.pdf:          Fig 3  — Two-panel heatmap (A: prize × subregion, B: marginal bars)
 #   - fig4_temporal.pdf:         Fig 4  — Two-panel temporal (A: diversity trends, B: homophily)
-#   - figS1_flow_asymmetry.pdf:  Horizontal bar chart by subregion (reference only;
-#                                 not part of the revised manuscript)
+#   - figS1_flow_asymmetry.pdf:  Fig S1 — horizontal bar chart by subregion (supplement)
 #
 # Dependencies:
 #   - tidyverse: readr (CSV), dplyr (filtering/joining), tidyr (reshape), ggplot2
