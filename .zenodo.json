@@ -1,0 +1,9 @@
+{
+  "title": "Replication Data for: The Geography of Nobel Prize Nomination, 1901-1975",
+  "description": "Replication package (code and data) for Topaz et al., \"The Geography of Nobel Prize Nomination, 1901-1975\" (Quantitative Science Studies). Multilayer network of the Nobel Prize selection process, 1901-1975, with permutation, gravity, conditional-logit, representativeness, and flow-asymmetry analyses.",
+  "license": "CC-BY-NC-ND-4.0",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Topaz, Chad M."}
+  ]
+}

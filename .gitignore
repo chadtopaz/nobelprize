@@ -2,6 +2,7 @@
 # Ignore everything else
 *
 !.gitignore
+!.zenodo.json
 !README.md
 !LICENSE
 !Code/
