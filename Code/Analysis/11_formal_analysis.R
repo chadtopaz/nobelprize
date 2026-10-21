@@ -1110,9 +1110,9 @@ self_nom_prize <- noms %>%
 
 
 # =============================================================================
-# SENSITIVITY BOUNDS (Worst-Case Analysis)
+# SENSITIVITY SCENARIOS (Fixed-Expectation Analysis)
 # =============================================================================
-# Compute three worst-case sensitivity bounds on the primary finding
+# Compute the existing adverse sensitivity scenarios on the primary finding
 # (country-level nominator → nominee homophily ratio). These bounds are
 # reported in the manuscript limitations section and supplement.
 #
@@ -1142,9 +1142,8 @@ H_baseline <- obs_rate_baseline / exp_rate_baseline
 # Worst case: all missing records are cross-country → observed same-country
 # count stays the same, but denominator increases by n_missing
 obs_rate_worstcase <- obs_same_country / (n_complete + n_missing)
-# Expected rate shifts slightly with expanded denominator; use conservative
-# approach of keeping E the same (this is actually favorable to the null,
-# so the bound is conservative)
+# Hold the complete-record expected rate fixed. This is an adverse scenario,
+# not an optimized worst-case bound over possible missing geographies.
 H_missing_worstcase <- obs_rate_worstcase / exp_rate_baseline
 
 message(sprintf("  Bound 1 (missing geography): %d/%d records complete (%.1f%%)",
@@ -1153,20 +1152,8 @@ message(sprintf("    Baseline H = %.3f, worst-case H = %.3f (%.1f%% reduction)",
                 H_baseline, H_missing_worstcase,
                 100 * (1 - H_missing_worstcase / H_baseline)))
 
-# --- Bound 1b: Missing geography at the deduplicated edge level ---
-# The raw-record scenario above effectively re-weights near-duplicate records
-# that the network's edge deduplication removes (every record that deduplicates
-# away falls in the missing-geography subset). The scenario directly comparable
-# to the deduplicated-edge analytic baseline instead treats each missing-
-# geography UNIQUE edge as one cross-country nomination: denominator = unique
-# nomination edges in edges.csv; same-country count and E held fixed.
-n_dedup_edges <- edges %>%
-  filter(from_layer == "nominator", to_layer == "nominee") %>%
-  nrow()
-obs_rate_missing_dedup <- obs_same_country / n_dedup_edges
-H_missing_dedup <- obs_rate_missing_dedup / exp_rate_baseline
-message(sprintf("  Bound 1b (missing geography, deduplicated edges): n = %d, H = %.3f",
-                n_dedup_edges, H_missing_dedup))
+# The mixed-denominator deduplicated stress test was withdrawn.
+# Only the existing record-level scenarios below are retained.
 
 # --- Bound 2: Prolific nominator leave-out ---
 nominator_counts <- nom_geo %>%
@@ -1244,22 +1231,21 @@ message(sprintf("  Combined worst case: H = %.3f", H_combined))
 
 # Collect all bounds into a single results table
 sensitivity_bounds <- tibble(
-  bound = c("baseline", "missing_geography", "missing_geography_dedup",
+  bound = c("baseline", "missing_geography",
             "historical_recoding", "combined_worst_case",
             paste0("leaveout_top_", sensitivity_leaveout$pct_removed * 100, "pct")),
-  H = c(H_baseline, H_missing_worstcase, H_missing_dedup,
+  H = c(H_baseline, H_missing_worstcase,
         H_recoding_worstcase, H_combined, sensitivity_leaveout$H),
   description = c(
     "Primary finding (all complete records)",
     "All missing records assumed cross-country",
-    "All missing unique edges assumed cross-country (deduplicated-edge level)",
     "All historically recoded same-country matches removed",
     "Missing geography + recoding combined",
     paste0("Top ", sensitivity_leaveout$pct_removed * 100, "% prolific nominators removed")
   ),
-  n_edges = c(n_complete, n_complete + n_missing, n_dedup_edges, n_complete,
+  n_edges = c(n_complete, n_complete + n_missing, n_complete,
               n_complete + n_missing, sensitivity_leaveout$n_edges_remaining),
-  n_same_country = c(obs_same_country, obs_same_country, obs_same_country,
+  n_same_country = c(obs_same_country, obs_same_country,
                      obs_same_country - n_recoded_same,
                      obs_same_country - n_recoded_same,
                      rep(NA_real_, nrow(sensitivity_leaveout)))

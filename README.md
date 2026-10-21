@@ -2,13 +2,13 @@
 
 Replication package for:
 
-> Topaz, C. M., Kurongonayini, A., Ptak, B., Fluehr, A., Mendible, A., Roca, R., Rodríguez, N., Schwartz, R., Xian, L., & Higdon, J. "The Geography of Nobel Prize Nomination, 1901–1975." In revision at *Quantitative Science Studies*.
+> Topaz, C. M., Kurongonayini, A., Ptak, B., Fluehr, A., Mendible, A., Roca, R., Rodríguez, N., Xian, L., Schwartz, R., & Higdon, J. (in press). The geography of Nobel Prize nomination, 1901–1975. *Quantitative Science Studies*.
 
 ## Overview
 
 This repository provides the data and code used in the manuscript. We construct a multilayer network of the Nobel Prize selection process across Physics, Chemistry, Physiology or Medicine, Literature, and Peace, and quantify geographic homophily at the nomination stage of the selection pipeline. The analytic window is 1901–1975 for nominations, with Physiology/Medicine truncated at 1953 because its governing body has not released later records. Institutional-layer rosters extend further where the historical record permits.
 
-The pipeline gathers data from the Nobel Prize Nomination Archive, Wikidata, Swedish Wikipedia, and the digitized Swedish state calendar; resolves individuals to Wikidata QIDs; constructs a node–edge representation of the multilayer network; and runs the statistical analyses reported in the paper: permutation-based homophily ratio estimation (pooled and blockwise within prize-years), Newman assortativity, layer-contrast tests, decade-by-decade temporal trend tests, fixed-margin adverse stress tests, a gravity-style Poisson (PPML) model of dyadic nomination flows with sender- and receiver-country×prize×decade fixed effects, an edge-level conditional logit with a nominee-prominence control, representativeness diagnostics and an inverse-probability-weighted re-estimate for the Wikidata-matched subset, cross-region flow asymmetry with cluster-bootstrap intervals, and laureate-prediction regressions.
+The pipeline gathers data from the Nobel Prize Nomination Archive, Wikidata, Swedish Wikipedia, and the digitized Swedish state calendar; resolves individuals to Wikidata QIDs; constructs a node–edge representation of the multilayer network; and runs the statistical analyses reported in the paper: permutation-based homophily ratio estimation (pooled and blockwise within prize-years), Newman assortativity, layer-contrast tests, decade-by-decade temporal trend tests, fixed-margin adverse stress tests, a gravity-style Poisson (PPML) model of dyadic nomination flows with sender- and receiver-country×prize×decade fixed effects, an edge-level conditional logit with a nominee-prominence control, representativeness diagnostics and an inverse-probability-weighted re-estimate for the Wikidata-matched subset, cross-region flow asymmetry with cluster-bootstrap intervals, and a descriptive laureate-association analysis on the subset of nominees with unambiguous Wikidata links.
 
 ## What this package contains
 
@@ -51,6 +51,10 @@ The manuscript text and supplementary materials are not included here; they live
 ├── LICENSE
 └── README.md
 ```
+
+## Version 2.1 (October 2026): corrected laureate-association analysis
+
+Version 2.1 corrects two errors identified in a September 2026 audit of the replication package, during review; the corrections were completed in October 2026, after the paper was accepted and before publication. See `CHANGELOG.md` for the full before/after account. (1) The secondary laureate-association analysis (`14_supplementary_analyses.R`, helper `Code/Analysis/helpers/laureate_matched_subset.R`) previously coded nominees without a Wikidata link as non-laureates and counted an award in any prize category as a win. It now uses only nominees whose archive identifier has exactly one Wikidata match, defines the outcome as an award in the *nominated* prize through 2025, and excludes nomination records after a nominee's first award in that prize. Its sample flow, exclusions, and the before/after audit are written to `Data/results_laureate_*.csv`. (2) One stress-test row (`missing_geography_dedup`, H = 4.70) in `results_sensitivity_bounds.csv` divided a record-level numerator by an edge-level denominator and has been withdrawn (`11_formal_analysis.R`). All other scripts, data files, and result tables are unchanged from version 2.0. The primary analyses use the 25,844 expanded nominator–nominee records with complete geography; these records are not deduplicated into the network's 26,654 nomination edges.
 
 ## Reproduction instructions
 
@@ -117,7 +121,10 @@ Permutation tests use 10,000 iterations and are parallelized via the `furrr` pac
 | `results_qid_*.csv` | QID-subset coverage, propensity, movers, and IPW re-estimate |
 | `results_flow_return_ratios_*.csv` | Cross-region return ratios with bootstrap CIs and direction tests |
 | `results_flow_matrix_*.csv` | Directed O−E flow matrices with permutation bands |
-| `results_laureate_prediction.csv` | Logistic regression results for laureate prediction |
+| `results_laureate_prediction.csv` | Laureate association on the unambiguously linked nominee subset: comparison of mean same-country shares, permutation p-value, and the single pooled logistic regression |
+| `results_laureate_prediction_by_prize.csv` | Descriptive counts, mean same-country shares, and differences by prize (no separate regressions) |
+| `results_laureate_analysis_sample.csv`, `results_laureate_sample_flow.csv`, `results_laureate_record_exclusions.csv`, `results_laureate_linkage_used.csv` | Analysis sample, sample flow, excluded records, and linkage used for the laureate association |
+| `results_laureate_outcome_audit.csv`, `results_laureate_outcome_changes.csv` | Audit of the v2.1 outcome correction relative to the v2.0 pooled coding |
 | `results_multilayer_quantities.csv` | Supra-adjacency assortativity coefficients |
 | `results_nomination_equity.csv` | Early flow tabulation (superseded by `results_flow_return_ratios_*.csv`) |
 
@@ -125,7 +132,7 @@ Permutation tests use 10,000 iterations and are parallelized via the `furrr` pac
 
 If you use this data or code, please cite the paper:
 
-> Topaz, C. M., Kurongonayini, A., Ptak, B., Fluehr, A., Mendible, A., Roca, R., Rodríguez, N., Schwartz, R., Xian, L., & Higdon, J. "The Geography of Nobel Prize Nomination, 1901–1975." In revision at *Quantitative Science Studies*.
+> Topaz, C. M., Kurongonayini, A., Ptak, B., Fluehr, A., Mendible, A., Roca, R., Rodríguez, N., Xian, L., Schwartz, R., & Higdon, J. (in press). The geography of Nobel Prize nomination, 1901–1975. *Quantitative Science Studies*.
 
 ## Contact
 

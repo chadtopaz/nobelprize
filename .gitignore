@@ -5,6 +5,7 @@
 !.zenodo.json
 !README.md
 !LICENSE
+!CHANGELOG.md
 !Code/
 !Code/**
 !Data/
@@ -13,3 +14,11 @@
 # OS artifacts
 .DS_Store
 .Rproj.user
+
+# One-off correction scaffolding (not part of the replication package; see CHANGELOG.md)
+Code/Review/
+Data/curation/
+Data/correctness_baseline_2026-09-18/
+Data/correctness_runs/
+Data/results_correctness_*.csv
+Data/CORRECTNESS_RERUN_SUMMARY.md

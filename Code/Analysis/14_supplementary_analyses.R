@@ -9,12 +9,12 @@
 # Purpose:
 #   Three additional analyses strengthening the core findings:
 #
-#   1. LAUREATE PREDICTION: Tests whether same-country nominations are more or
-#      less likely to identify eventual laureates. If geographic homophily
-#      reflects informational advantage (nominators knowing compatriots' work
-#      better), same-country nominations should be better predictors of laureate
-#      status. We test this at the nominee level with a logistic regression
-#      controlling for total nomination volume.
+#   1. LAUREATE ASSOCIATION: Restricted to nominees with an existing QID
+#      and exactly one matching candidate under the documented procedure.
+#      Outcome: award in the nominated prize through 2025. Exclude records
+#      after the first same-prize award; retain award-year nominations.
+#      This is a selected-subset association, not a causal or population claim.
+#      No manual crosswalk is required or claimed.
 #
 #   2. NOMINATOR HETEROGENEITY: Characterizes individual variation in nominator
 #      homophily rates. Tests whether nominator country size, Scandinavian
@@ -34,8 +34,15 @@
 #
 # Outputs:
 #   Data/:
-#     - results_laureate_prediction.csv: Nominee-level laureate prediction
-#     - results_laureate_prediction_by_prize.csv: Same, by prize
+#     - results_laureate_prediction.csv: Laureate-association comparison and
+#       logistic regression on the unambiguously linked nominee subset
+#     - results_laureate_prediction_by_prize.csv: Descriptive counts, mean
+#       same-country shares, and differences by prize (no separate regressions)
+#     - results_laureate_analysis_sample.csv, results_laureate_sample_flow.csv,
+#       results_laureate_record_exclusions.csv, results_laureate_linkage_used.csv:
+#       analysis sample, sample flow, excluded records, linkage used
+#     - results_laureate_outcome_audit.csv, results_laureate_outcome_changes.csv:
+#       audit of the v2.1 outcome correction relative to the pooled coding
 #     - results_nominator_heterogeneity.csv: Per-nominator homophily summary
 #     - results_nominator_heterogeneity_by_country.csv: By nominator country
 #     - results_temporal_trend_tests.csv: Regression coefficients for trends
@@ -75,12 +82,11 @@ pid_to_qid <- qid_map %>%
   deframe()
 
 # =============================================================================
-# ANALYSIS 1: LAUREATE PREDICTION
+# ANALYSIS 1: LAUREATE ASSOCIATION IN THE UNAMBIGUOUSLY LINKED SUBSET
 # =============================================================================
 
-message("\n=== Analysis 1: Laureate Prediction ===")
-
-# Prepare nomination-level data
+# Preserve the original shared geography-complete records for analyses 2/3.
+# Only the helper's separate laureate sample is restricted by identity/timing.
 nom_data <- nominations %>%
   filter(
     !is.na(nominator_country_modern), nominator_country_modern != "NA",
@@ -89,142 +95,15 @@ nom_data <- nominations %>%
   ) %>%
   mutate(
     same_country = as.integer(nominator_country_modern == nominee_country_modern),
-    nominee_qid  = pid_to_qid[as.character(nominee_person_id)],
-    is_laureate  = as.integer(nominee_qid %in% laureate_qids)
+    nominee_qid = unname(pid_to_qid[as.character(nominee_person_id)])
   )
 
-message(sprintf("  %d nominations with complete geography", nrow(nom_data)))
-
-# --- Nominee-level aggregation ---
-nominee_level <- nom_data %>%
-  group_by(nominee_person_id, prize) %>%
-  summarise(
-    nominee_qid        = first(nominee_qid),
-    total_nominations  = n(),
-    same_country_noms  = sum(same_country),
-    cross_country_noms = total_nominations - same_country_noms,
-    same_country_frac  = same_country_noms / total_nominations,
-    is_laureate        = first(is_laureate),
-    .groups = "drop"
-  )
-
-# --- Overall comparison ---
-overall_comparison <- nominee_level %>%
-  group_by(is_laureate) %>%
-  summarise(
-    n_nominees         = n(),
-    mean_same_frac     = mean(same_country_frac),
-    median_same_frac   = median(same_country_frac),
-    sd_same_frac       = sd(same_country_frac),
-    .groups = "drop"
-  )
-
-message("Overall comparison:")
-print(overall_comparison)
-
-# --- Permutation test for difference in means ---
-laureate_fracs     <- nominee_level %>% filter(is_laureate == 1) %>% pull(same_country_frac)
-non_laureate_fracs <- nominee_level %>% filter(is_laureate == 0) %>% pull(same_country_frac)
-observed_diff      <- mean(non_laureate_fracs) - mean(laureate_fracs)
-
-N_PERM <- 10000
-all_fracs <- c(laureate_fracs, non_laureate_fracs)
-n_lau     <- length(laureate_fracs)
-n_total   <- length(all_fracs)
-
-perm_diffs <- replicate(N_PERM, {
-  perm <- sample(all_fracs)
-  mean(perm[(n_lau + 1):n_total]) - mean(perm[1:n_lau])
-})
-p_value <- (sum(perm_diffs >= observed_diff) + 1) / (N_PERM + 1)
-message(sprintf("  Observed diff: %.4f, p = %.4f", observed_diff, p_value))
-
-# --- Logistic regression controlling for total nominations ---
-logit_data <- nominee_level %>%
-  mutate(log_total_noms = log(total_nominations))
-
-logit_model <- glm(
-  is_laureate ~ same_country_frac + log_total_noms,
-  data   = logit_data,
-  family = binomial(link = "logit")
-)
-
-logit_summary <- summary(logit_model)
-message("\nLogistic regression: is_laureate ~ same_country_frac + log(total_noms)")
-print(logit_summary$coefficients)
-
-# Extract key results
-logit_coefs <- as.data.frame(logit_summary$coefficients)
-logit_coefs$term <- rownames(logit_coefs)
-logit_coefs$odds_ratio <- exp(logit_coefs$Estimate)
-
-# --- By prize ---
-by_prize <- nominee_level %>%
-  group_by(prize, is_laureate) %>%
-  summarise(
-    n          = n(),
-    mean_frac  = mean(same_country_frac),
-    .groups    = "drop"
-  ) %>%
-  pivot_wider(
-    names_from  = is_laureate,
-    values_from = c(n, mean_frac),
-    names_sep   = "_"
-  ) %>%
-  mutate(diff = mean_frac_0 - mean_frac_1)
-
-message("\nBy prize:")
-print(by_prize)
-
-# --- By nomination count bucket ---
-by_bucket <- nominee_level %>%
-  mutate(bucket = case_when(
-    total_nominations == 1          ~ "1",
-    total_nominations <= 5          ~ "2-5",
-    total_nominations <= 20         ~ "6-20",
-    TRUE                            ~ "21+"
-  )) %>%
-  group_by(bucket, is_laureate) %>%
-  summarise(
-    n         = n(),
-    mean_frac = mean(same_country_frac),
-    .groups   = "drop"
-  ) %>%
-  pivot_wider(
-    names_from  = is_laureate,
-    values_from = c(n, mean_frac),
-    names_sep   = "_"
-  ) %>%
-  mutate(diff = mean_frac_0 - mean_frac_1)
-
-# --- Save results ---
-laureate_pred_results <- tibble(
-  statistic = c(
-    "n_laureates", "n_non_laureates",
-    "mean_same_frac_laureates", "mean_same_frac_non_laureates",
-    "diff_non_minus_lau", "permutation_p_value",
-    "logit_coef_same_frac", "logit_se_same_frac", "logit_z_same_frac",
-    "logit_odds_ratio_same_frac",
-    "logit_coef_log_noms", "logit_se_log_noms", "logit_z_log_noms"
-  ),
-  value = c(
-    length(laureate_fracs), length(non_laureate_fracs),
-    mean(laureate_fracs), mean(non_laureate_fracs),
-    observed_diff, p_value,
-    logit_coefs$Estimate[logit_coefs$term == "same_country_frac"],
-    logit_coefs$`Std. Error`[logit_coefs$term == "same_country_frac"],
-    logit_coefs$`z value`[logit_coefs$term == "same_country_frac"],
-    logit_coefs$odds_ratio[logit_coefs$term == "same_country_frac"],
-    logit_coefs$Estimate[logit_coefs$term == "log_total_noms"],
-    logit_coefs$`Std. Error`[logit_coefs$term == "log_total_noms"],
-    logit_coefs$`z value`[logit_coefs$term == "log_total_noms"]
-  )
-)
-
-write_csv(laureate_pred_results, data_path("results_laureate_prediction.csv"))
-write_csv(by_prize, data_path("results_laureate_prediction_by_prize.csv"))
-message("  Saved results_laureate_prediction.csv")
-message("  Saved results_laureate_prediction_by_prize.csv")
+source("Code/Analysis/helpers/laureate_matched_subset.R")
+laureate_outputs <- run_matched_laureate_analysis(nominations, qid_map, laureates)
+for (output_name in names(laureate_outputs)) {
+  write_csv(laureate_outputs[[output_name]], data_path(output_name))
+}
+message("Saved the restricted laureate comparison and its sample/exclusion audit.")
 
 # =============================================================================
 # ANALYSIS 2: NOMINATOR HETEROGENEITY
@@ -434,6 +313,7 @@ message("\n=== All supplementary analyses complete ===")
 message("Output files:")
 message("  Data/results_laureate_prediction.csv")
 message("  Data/results_laureate_prediction_by_prize.csv")
+message("  Data/results_laureate_*.csv (analysis sample, sample flow, exclusions, linkage, outcome audit)")
 message("  Data/results_nominator_heterogeneity.csv")
 message("  Data/results_nominator_heterogeneity_by_country.csv")
 message("  Data/results_temporal_trend_tests.csv")

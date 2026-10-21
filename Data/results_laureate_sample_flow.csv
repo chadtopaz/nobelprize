@@ -1,0 +1,7 @@
+stage,n_records,n_nominee_prize_groups
+all_input_records,27958,4227
+complete_geography,25844,3927
+nominee_archive_id_available,25844,3927
+existing_qid_available,22022,2866
+existing_unique_qid_match,21768,2825
+before_or_in_first_same_prize_award_year,21285,2817

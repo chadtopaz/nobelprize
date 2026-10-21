@@ -1,0 +1,2626 @@
+nominee_person_id,nominee_qid,multi_match_count,match_method,linkage_name,retained_nomination_records
+511,Q80956,1,wikidata_name_birthyear,Svante Arrhenius,33
+802,Q41269,1,wikidata_name_birthyear,Henri Becquerel,10
+1568,Q353818,1,wikidata_name_birthyear,William Campbell,2
+5373,Q57063,1,wikidata_name_birthyear,Philipp E.A. v. Lenard,13
+8006,Q35149,1,wikidata_name_birthyear,Wilhelm Röntgen,21
+5533,Q133232,1,wikidata_name_birthyear,Gabriel Lippmann,23
+5901,Q36488,1,wikidata_name_birthyear,Guglielmo Marconi,13
+6750,Q156749,1,wikidata_name_birthyear,Adolf Nordenskiöld,1
+11503,Q5607510,1,wikidata_name_birthyear,Grenville Clark,37
+9249,Q122701,1,wikidata_name_birthyear,"William Thomson, Lord Kelvin",7
+9528,Q131721,1,wikidata_name_birthyear,Johannes van der Waals,9
+10386,Q79000,1,wikidata_name_birthyear,Pieter Zeeman,3
+2051,Q7186,1,wikidata_name_birthyear,Marie Curie,5
+2053,Q37463,1,wikidata_name_birthyear,Pierre Curie,8
+8852,Q83297,1,wikidata_name_birthyear,"John Strutt, Lord Rayleigh",20
+877,Q55711481,1,wikidata_name_birthyear,René Benoit,11
+1722,Q2093279,1,wikidata_name_birthyear,Pierre Chappuis,3
+3710,Q123026,1,wikidata_name_birthyear,Charles Guillaume,11
+4221,Q60428,1,wikidata_name_birthyear,Wilhelm Hittorf,3
+4801,Q918672,1,wikidata_name_birthyear,John Kerr,3
+5636,Q41688,1,wikidata_name_birthyear,Hendrik Lorentz,9
+1133,Q84296,1,wikidata_name_birthyear,Ludwig Boltzmann,5
+5299,Q294572,1,wikidata_name_birthyear,Gustave Le Bon,1
+276,Q76359,1,wikidata_name_birthyear,Ernst Abbe,8
+4958,Q61090,1,wikidata_name_birthyear,Friedrich Kohlrausch,9
+1289,Q274251,1,wikidata_name_birthyear,Edouard Branly,3
+2412,Q277579,1,wikidata_name_birthyear,James Dewar,8
+6861,Q909150,1,wikidata_name_birthyear,Karol Olszewski,6
+2773,Q75153,1,wikidata_name_birthyear,Julius Elster,13
+3380,Q73170,1,wikidata_name_birthyear,Hans Geitel,13
+3972,Q154345,1,wikidata_name_birthyear,Oliver Heaviside,7
+8273,Q711452,1,wikidata_name_birthyear,Arthur Schuster,4
+7313,Q81082,1,wikidata_name_birthyear,Henri Poincaré,51
+6266,Q127234,1,wikidata_name_birthyear,Albert Michelson,4
+1084,Q1377436,1,wikidata_name_birthyear,René Blondlot,1
+1298,Q57077,1,wikidata_name_birthyear,Ferdinand Braun,5
+5320,Q471369,1,wikidata_name_birthyear,Petr Lebedev,2
+4746,Q68556,1,wikidata_name_birthyear,Heinrich Kayser,3
+7738,Q742634,1,wikidata_name_birthyear,Augusto Righi,40
+9776,Q113090,1,wikidata_name_birthyear,Julius von Hann,3
+2031,Q189552,1,wikidata_name_birthyear,William Crookes,11
+2583,Q314172,1,wikidata_name_birthyear,Pierre Duhem,2
+5627,Q9123,1,wikidata_name_birthyear,Ernest Lord Rutherford,24
+3776,Q15446442,1,wikidata_name_birthyear,Ernst Hagen,1
+7945,Q61810,1,wikidata_name_birthyear,Heinrich Rubens,3
+7283,Q9021,1,wikidata_name_birthyear,Max Planck,68
+10170,Q57068,1,wikidata_name_birthyear,Wilhelm Wien,6
+397,Q2468760,1,wikidata_name_birthyear,Emile Amagat,9
+2252,Q364270,1,wikidata_name_birthyear,Gustaf de Laval,2
+7371,Q442681,1,wikidata_name_birthyear,Valdemar Poulsen,21
+10322,Q1396131,1,wikidata_name_birthyear,Wilbur Wright,9
+2912,Q22401,1,wikidata_name_birthyear,Henri Farman,8
+9696,Q537074,1,wikidata_name_birthyear,Gabriel Voisin,8
+10319,Q494455,1,wikidata_name_birthyear,Orville Wright,9
+3795,Q312288,1,wikidata_name_birthyear,George Hale,32
+7384,Q470590,1,wikidata_name_birthyear,John Poynting,5
+4701,Q62891,1,wikidata_name_birthyear,Heike Kamerlingh Onnes,23
+291,Q324919,1,wikidata_name_birthyear,Henri Abraham,2
+5223,Q25320,1,wikidata_name_birthyear,Paul Langevin,25
+10454,Q722373,1,wikidata_name_birthyear,Knut Ångström,1
+2728,Q937,1,wikidata_name_birthyear,Albert Einstein,47
+3717,Q192651,1,wikidata_name_birthyear,Allvar Gullstrand,6
+5694,Q66885,1,wikidata_name_birthyear,Otto Lummer,2
+2878,Q323260,1,wikidata_name_birthyear,Loránd Eötvös,8
+2889,Q319289,1,wikidata_name_birthyear,Charles Fabry,12
+3522,Q61433,1,wikidata_name_birthyear,Eugen Goldstein,3
+5763,Q93996,1,wikidata_name_birthyear,Ernst Mach Jr,6
+6650,Q57125,1,wikidata_name_birthyear,Walther Nernst,64
+2114,Q160518,1,wikidata_name_birthyear,Nils Dalén,1
+3768,Q3435328,1,wikidata_name_birthyear,Robert Hadfield,4
+2394,Q520771,1,wikidata_name_birthyear,Henri Deslandres,4
+1544,Q1634453,1,wikidata_name_birthyear,Hugh Callendar,3
+9816,Q61864,1,wikidata_name_birthyear,Carl von Linde,4
+7136,Q134085,1,wikidata_name_birthyear,Jean Perrin,47
+8915,Q186391,1,wikidata_name_birthyear,Theodor Svedberg,13
+3153,Q20048041,1,wikidata_name_birthyear,Hermann Frahm,1
+8584,Q75523,1,wikidata_name_birthyear,Adolf Slaby,1
+9893,Q75780,1,wikidata_name_birthyear,Ferdinand von Zeppelin,1
+1276,Q133747,1,wikidata_name_birthyear,William Henry Bragg,5
+9807,Q57067,1,wikidata_name_birthyear,Max von Laue,2
+7011,Q57805,1,wikidata_name_birthyear,Friedrich Paschen,45
+3580,Q563225,1,wikidata_name_birthyear,Georges Gouy,8
+4930,Q447886,1,wikidata_name_birthyear,Martin Knudsen,13
+5302,Q121926,1,wikidata_name_birthyear,Henry Le Châtelier,32
+8735,Q57092,1,wikidata_name_birthyear,Johannes Stark,11
+10300,Q550926,1,wikidata_name_birthyear,Robert Wood,39
+8873,Q858532,1,wikidata_name_birthyear,Carl Störmer,7
+1038,Q461624,1,wikidata_name_birthyear,Kristian Birkeland,13
+11051,Q131729,1,wikidata_name_birthyear,William Lawrence Bragg,2
+2142,Q1064506,1,wikidata_name_birthyear,Charles Darwin,1
+6456,Q310759,1,wikidata_name_birthyear,Henry Moseley,2
+2688,Q8743,1,wikidata_name_birthyear,Thomas Edison,1
+1989,Q405699,1,wikidata_name_birthyear,Aimé Cotton,26
+10065,Q299841,1,wikidata_name_birthyear,Pierre Weiss,23
+2574,Q2833632,1,wikidata_name_birthyear,Alexandre Dufour,1
+2966,Q644679,1,wikidata_name_birthyear,Gustav Ferrié,3
+2325,Q103835,1,wikidata_name_birthyear,Petrus Debye,47
+7972,Q57564,1,wikidata_name_birthyear,Carl Runge,2
+5229,Q184286,1,wikidata_name_birthyear,Irving Langmuir,15
+6292,Q130975,1,wikidata_name_birthyear,Robert Millikan,17
+7077,Q3310578,1,wikidata_name_birthyear,Peder Pedersen,16
+1118,Q7085,1,wikidata_name_birthyear,Niels Bohr,22
+7996,Q311567,1,wikidata_name_birthyear,Johannes Rydberg,1
+8661,Q77078,1,wikidata_name_birthyear,Arnold Sommerfeld,84
+7128,Q1354932,1,wikidata_name_birthyear,Alfred Pérot,1
+8091,Q5444916,1,wikidata_name_birthyear,Fernando Sanford,3
+1336,Q172118,1,wikidata_name_birthyear,Percy Bridgman,42
+308,Q312806,1,wikidata_name_birthyear,Walter Adams,1
+729,Q5039871,1,wikidata_name_birthyear,Carl Barus,2
+5691,Q4272245,1,wikidata_name_birthyear,Auguste Lumière,6
+3374,Q73016,1,wikidata_name_birthyear,Ernst Gehrcke,4
+546,Q102291,1,wikidata_name_birthyear,Francis Aston,4
+1934,Q674299,1,wikidata_name_birthyear,William Coolidge,3
+3587,Q66183,1,wikidata_name_birthyear,Leo Graetz,2
+1046,Q164389,1,wikidata_name_birthyear,Vilhelm Bjerknes,26
+3167,Q57066,1,wikidata_name_birthyear,James Franck,7
+3294,Q92430,1,wikidata_name_birthyear,Wolfgang Gaede,10
+2903,Q213667,1,wikidata_name_birthyear,Kasimir Fajans,7
+8646,Q102830,1,wikidata_name_birthyear,Frederick Soddy,5
+4110,Q57070,1,wikidata_name_birthyear,Gustav Hertz,1
+7710,Q169330,1,wikidata_name_birthyear,Owen Richardson,8
+7702,Q726779,1,wikidata_name_birthyear,Jules Richard,1
+2200,Q83331,1,wikidata_name_birthyear,Prince Louis-Victor de Broglie,15
+2198,Q18443,1,wikidata_name_birthyear,Maurice de Broglie,6
+1918,Q127944,1,wikidata_name_birthyear,Arthur Compton,15
+3398,Q61745,1,wikidata_name_birthyear,Walter Gerlach,30
+8779,Q57072,1,wikidata_name_birthyear,Otto Stern,79
+8833,Q2285020,1,wikidata_name_birthyear,Siegmund Strauss,1
+4956,Q99083,1,wikidata_name_birthyear,Werner Kohlhörster,1
+6283,Q328239,1,wikidata_name_birthyear,Dayton Miller,1
+7550,Q78096,1,wikidata_name_birthyear,Carl Ramsauer,2
+4708,Q78926,1,wikidata_name_birthyear,Victor Kaplan,1
+897,Q949231,1,wikidata_name_birthyear,Tor Bergeron,9
+1044,Q524217,1,wikidata_name_birthyear,Jacob Bjerknes,10
+8650,Q11973807,1,wikidata_name_birthyear,Halvor Solberg,8
+8240,Q9130,1,wikidata_name_birthyear,Erwin Schrödinger,41
+4018,Q40904,1,wikidata_name_birthyear,Werner Karl Heisenberg,19
+7388,Q76683,1,wikidata_name_birthyear,Ludwig Prandtl,4
+6094,Q77736,1,wikidata_name_birthyear,Alexander Meissner,2
+2170,Q133222,1,wikidata_name_birthyear,Clinton Davisson,44
+3400,Q496877,1,wikidata_name_birthyear,Lester Halbert Germer,27
+2447,Q47480,1,wikidata_name_birthyear,Paul Adrien Maurice Dirac,3
+9978,Q65466,1,wikidata_name_birthyear,Emil Warburg,1
+1522,Q1070973,1,wikidata_name_birthyear,Jean Cabannes,4
+7540,Q60429,1,wikidata_name_birthyear,Chandrasekhara Raman,12
+4165,Q41585,1,wikidata_name_birthyear,David Hilbert,6
+7482,Q196287,1,wikidata_name_birthyear,Michael Pupin,2
+1186,Q58978,1,wikidata_name_birthyear,Max Born,34
+1255,Q520866,1,wikidata_name_birthyear,Ira Bowen,6
+7981,Q273159,1,wikidata_name_birthyear,Henry Norris Russell,3
+5203,Q634318,1,wikidata_name_birthyear,Grigoriy Landsberg,1
+8041,Q377898,1,wikidata_name_birthyear,Meghnad Saha,7
+1830,Q537061,1,wikidata_name_birthyear,Georges Claude,3
+9242,Q133846,1,wikidata_name_birthyear,George Paget Thomson,8
+4127,Q78520,1,wikidata_name_birthyear,Victor Hess,4
+2680,Q215022,1,wikidata_name_birthyear,Arthur Eddington,6
+4294,Q451062,1,wikidata_name_birthyear,Kotaro Honda,3
+7223,Q210719,1,wikidata_name_birthyear,Auguste Piccard,2
+7042,Q65989,1,wikidata_name_birthyear,Wolfgang Pauli,23
+9222,Q27497176,1,wikidata_name_birthyear,René Thiry,1
+4615,Q7504,1,wikidata_name_birthyear,Irène Joliot-Curie,18
+1697,Q80884,1,wikidata_name_birthyear,James Chadwick,20
+4613,Q150989,1,wikidata_name_birthyear,Frédéric Joliot,15
+1209,Q76474,1,wikidata_name_birthyear,Walther Bothe,15
+1331,Q5443808,1,wikidata_name_birthyear,Ferdinand Brickwedde,1
+6524,Q16558789,1,wikidata_name_birthyear,George Murphy,1
+9461,Q179777,1,wikidata_name_birthyear,Harold Clayton Urey,2
+9579,Q6491774,1,wikidata_name_birthyear,Lars Vegard,1
+9503,Q3762980,1,wikidata_name_birthyear,Giancarlo Vallauri,4
+469,Q153194,1,wikidata_name_birthyear,Edward Appleton,15
+2955,Q8753,1,wikidata_name_birthyear,Enrico Fermi,34
+2708,Q113715,1,wikidata_name_birthyear,Felix Ehrenhaft,1
+2445,Q216036,1,wikidata_name_birthyear,Hugo Dingler,1
+3375,Q57189,1,wikidata_name_birthyear,Hans Geiger,3
+3575,Q560839,1,wikidata_name_birthyear,Samuel Abraham Goudsmit,69
+2230,Q761883,1,wikidata_name_birthyear,Wander de Haas,16
+6060,Q3809176,1,wikidata_name_birthyear,John McLennan,1
+10446,Q115462,1,wikidata_name_birthyear,Fritz Zwicky,1
+6816,Q498246,1,wikidata_name_birthyear,Giuseppe Paolo Stanislao Occhialini,32
+1835,Q3219629,1,wikidata_name_birthyear,Jacob Clay,2
+1855,Q62897,1,wikidata_name_birthyear,John Douglas Cockcroft,15
+9967,Q183631,1,wikidata_name_birthyear,Ernest Thomas Sinton Walton,8
+5605,Q4723060,1,wikidata_name_birthyear,Alfred Loomis,7
+3787,Q57065,1,wikidata_name_birthyear,Otto Hahn,37
+6097,Q56189,1,wikidata_name_birthyear,Lise Meitner,49
+4281,Q2221508,1,wikidata_name_birthyear,Gilles Holst,2
+9019,Q699541,1,wikidata_name_birthyear,Geoffrey Ingram Taylor,21
+9048,Q9036,1,wikidata_name_birthyear,Nikola Tesla,1
+5290,Q169577,1,wikidata_name_birthyear,Ernest Lawrence,15
+7617,Q91391,1,wikidata_name_birthyear,Erich Regener,1
+7513,Q165969,1,wikidata_name_birthyear,Isidor Rabi,20
+8160,Q124236,1,wikidata_name_birthyear,Paul Scherrer,2
+4366,Q719033,1,wikidata_name_birthyear,Albert Hull,1
+4154,Q157701,1,wikidata_name_birthyear,Jaroslav Heyrovský,67
+10359,Q155777,1,wikidata_name_birthyear,Hideki Yukawa,22
+1710,Q10664,1,wikidata_name_birthyear,Arthur Neville Chamberlain,10
+1213,Q3130711,1,wikidata_name_birthyear,Henri Bouasse,1
+3418,Q110073,1,wikidata_name_birthyear,William Giauque,15
+4758,Q1356820,1,wikidata_name_birthyear,Willem Keesom,7
+561,Q552004,1,wikidata_name_birthyear,Pierre Auger,7
+8826,Q60859,1,wikidata_name_birthyear,Fritz Strassmann,3
+6623,Q1356799,1,wikidata_name_birthyear,Seth Neddermeyer,20
+2235,Q76951,1,wikidata_name_birthyear,George de Hevesy,30
+971,Q155794,1,wikidata_name_birthyear,Hans Albrecht Bethe,55
+4806,Q1240491,1,wikidata_name_birthyear,Donald William Kerst,23
+6024,Q9074221,1,wikidata_name_birthyear,Santiago Mayolo,1
+3319,Q59478,1,wikidata_name_birthyear,George Gamow,4
+10397,Q188293,1,wikidata_name_birthyear,Frits Zernike,13
+2518,Q3438016,1,wikidata_name_birthyear,Hendrik Dorgelo,1
+7097,Q387008,1,wikidata_name_birthyear,Frans Penning,1
+5725,Q433773,1,wikidata_name_birthyear,Bernard Lyot,21
+3236,Q93479,1,wikidata_name_birthyear,Otto Robert Frisch,14
+2369,Q710025,1,wikidata_name_birthyear,Arthur Dempster,2
+4706,Q172844,1,wikidata_name_birthyear,Pyotr Leonidovich Kapitsa,46
+6873,Q132537,1,wikidata_name_birthyear,Robert Oppenheimer,4
+8542,Q72386,1,wikidata_name_birthyear,Francis Simon,6
+3732,Q2934948,1,wikidata_name_birthyear,Camille Gutton,1
+6095,Q61686,1,wikidata_name_birthyear,Walther Meissner,7
+1150,Q84790,1,wikidata_name_birthyear,Karl-Friedrich Bonhoeffer,5
+1853,Q104985,1,wikidata_name_birthyear,Klaus Clusius,52
+9429,Q315439,1,wikidata_name_birthyear,George Eugene Uhlenbeck,69
+9230,Q93002,1,wikidata_name_birthyear,Llewellyn Thomas,1
+9584,Q1151055,1,wikidata_name_birthyear,Vladimir Iosifovich Veksler,10
+6062,Q19009,1,wikidata_name_birthyear,Edwin Mattison McMillan,11
+8412,Q1385071,1,wikidata_name_birthyear,Robert Serber,1
+8576,Q2623088,1,wikidata_name_birthyear,Dimitrij Skobelzyn,1
+7898,Q993725,1,wikidata_name_birthyear,Bruno Benedetto Rossi,47
+1081,Q123022,1,wikidata_name_birthyear,Felix Bloch,17
+9524,Q805673,1,wikidata_name_birthyear,Balthasar van der Pol,4
+8146,Q107174965,1,wikidata_name_birthyear,Helmut Scheffers,1
+8148,Q1682125,1,wikidata_name_birthyear,Marcel Schein,5
+7311,Q85706,1,wikidata_name_birthyear,Robert Wichard Pohl,5
+4554,Q319212,1,wikidata_name_birthyear,Karl Jansky,1
+2690,Q209283,1,wikidata_name_birthyear,Bengt Edlén,13
+3667,Q89492,1,wikidata_name_birthyear,Walter Grotrian,1
+1481,Q299595,1,wikidata_name_birthyear,Vannevar Bush,1
+4577,Q379999,1,wikidata_name_birthyear,Harold Jeffreys,3
+6692,Q429114,1,wikidata_name_birthyear,Alfred Nier,1
+7361,Q21165046,1,wikidata_name_birthyear,Albert Portevin,6
+7379,Q178103,1,wikidata_name_birthyear,Cecil Frank Powell,22
+8835,Q6110126,1,wikidata_name_birthyear,Jabez Curry Street,9
+8957,Q153238,1,wikidata_name_birthyear,Leo Szilard,2
+5265,Q283146,1,wikidata_name_birthyear,César Lattes,7
+3332,Q15869599,1,wikidata_name_birthyear,Eugène Gardner,1
+7484,Q183270,1,wikidata_name_birthyear,Edward Purcell,10
+5024,Q451225,1,wikidata_name_birthyear,Hendrik Kramers,6
+9409,Q1921901,1,wikidata_name_birthyear,Marle Tuve,1
+1318,Q1545341,1,wikidata_name_birthyear,Gregory Breit,8
+3772,Q1809188,1,wikidata_name_birthyear,Lawrence Hafstad,1
+9721,Q238716,1,wikidata_name_birthyear,Georg von Békésy,6
+5997,Q101378,1,wikidata_name_birthyear,Joseph Mattauch,3
+4997,Q77542,1,wikidata_name_birthyear,Walther Kossel,8
+1070,Q87524,1,wikidata_name_birthyear,Marietta Blau,5
+9970,Q90352,1,wikidata_name_birthyear,Hertha Wambacher,1
+588,Q712375,1,wikidata_name_birthyear,Horace Welcome Babcock,3
+7597,Q380212,1,wikidata_name_birthyear,Grote Reber,3
+395,Q178344,1,wikidata_name_birthyear,Luis Walter Alvarez,26
+983,Q325611,1,wikidata_name_birthyear,Homi Bhabha,5
+4636,Q61761,1,wikidata_name_birthyear,Ernst Pascual Jordan,12
+6562,Q91375,1,wikidata_name_birthyear,Erwin Wilhelm Müller,41
+6971,Q707116,1,wikidata_name_birthyear,Wolfgang Kurt Hermann Panofsky,11
+8294,Q186465,1,wikidata_name_birthyear,Julian Schwinger,28
+9311,Q184563,1,wikidata_name_birthyear,Sin-Itiro Tomonaga,15
+9551,Q193655,1,wikidata_name_birthyear,John Hasbrouck Van Vleck,28
+7666,Q7349244,1,wikidata_name_birthyear,Robert Retherford,8
+8924,Q8009315,1,wikidata_name_birthyear,William Francis Swann,3
+10464,Q753513,1,wikidata_name_birthyear,Samuel Jackson Barnett,10
+10469,Q1508871,1,wikidata_name_birthyear,Georges Destriau,2
+6467,Q189485,1,wikidata_name_birthyear,Nevill Francis Mott,14
+10474,Q155781,1,wikidata_name_birthyear,Louis Néel,95
+10476,Q107405,1,wikidata_name_birthyear,Lars Onsager,89
+10481,Q184571,1,wikidata_name_birthyear,Polykarp Kusch,3
+10485,Q15407113,1,wikidata_name_birthyear,Bernard Peters,1
+10529,Q43027,1,wikidata_name_birthyear,Edwin Hubble,3
+5398,Q554018,1,wikidata_name_birthyear,Louis Leprince-Ringuet,9
+5458,Q190486,1,wikidata_name_birthyear,Willard Frank Libby,34
+10538,Q173028,1,wikidata_name_birthyear,Emilio Gino Segrè,32
+10181,Q155790,1,wikidata_name_birthyear,Eugene Wigner,24
+10541,Q949,1,wikidata_name_birthyear,John Bardeen,8
+10542,Q184577,1,wikidata_name_birthyear,Walter Houser Brattain,8
+10546,Q116879,1,wikidata_name_birthyear,Robert Jemison Van de Graaff,3
+10550,Q65350,1,wikidata_name_birthyear,Carl Friedrich von Weizsäcker,4
+368,Q54945,1,wikidata_name_birthyear,Hannes Alfvén,49
+10475,Q3173040,1,wikidata_name_birthyear,Jean Laval,1
+10573,Q12998,1,wikidata_name_birthyear,Georges Lemaître,2
+3511,Q611352,1,wikidata_name_birthyear,Maurice Goldhaber,5
+10785,Q133267,1,wikidata_name_birthyear,Lev Davidovich Landau,16
+5597,Q57938,1,wikidata_name_birthyear,Fritz London,5
+10583,Q183509,1,wikidata_name_birthyear,Ilya Romanovich Prigogine,18
+10704,Q163415,1,wikidata_name_birthyear,William Shockley,6
+10587,Q6372022,1,wikidata_name_birthyear,Karl Lark-Horowitz,1
+10588,Q22106855,1,wikidata_name_birthyear,James Baker,1
+16197,Q380134,1,wikidata_name_birthyear,Edwin Herbert Land,6
+10590,Q5344148,1,wikidata_name_birthyear,Edward Linfoot,1
+1342,Q364062,1,wikidata_name_birthyear,Léon Brillouin,8
+10622,Q57100,1,wikidata_name_birthyear,Maria Goeppert-Mayer,27
+13176,Q5543978,1,wikidata_name_birthyear,George Dixon Rochester,18
+10539,Q76797,1,wikidata_name_birthyear,Johannes Hans Daniel Jensen,29
+10636,Q69894,1,wikidata_name_birthyear,Bodo von Borries,2
+7977,Q71022,1,wikidata_name_birthyear,Ernst August Friedrich Ruska,21
+10637,Q64241,1,wikidata_name_birthyear,Max Knoll,6
+10639,Q437534,1,wikidata_name_birthyear,Hendrik Christoffel van de Hulst,30
+10641,Q309861,1,wikidata_name_birthyear,Jan Hendrik Oort,28
+10675,Q705255,1,wikidata_name_birthyear,Jan Hendrick de Boer,1
+10677,Q45789,1,wikidata_name_birthyear,Satyendra Nath Bose,10
+10680,Q711256,1,wikidata_name_birthyear,Sydney Chapman,8
+10683,Q39246,1,wikidata_name_birthyear,Richard Phillips Feynman,47
+10684,Q354863,1,wikidata_name_birthyear,Lee de Forest,1
+10685,Q7487,1,wikidata_name_birthyear,Dorothy Crowfoot Hodgkin,31
+4727,Q71023,1,wikidata_name_birthyear,Alfred Kastler,48
+10687,Q727443,1,wikidata_name_birthyear,Mark Laurence Oliphant,1
+3559,Q1133570,1,wikidata_name_birthyear,Cornelis Jacobus Gorter,29
+4491,Q5621160,1,wikidata_name_birthyear,Gustaf Ising,1
+10703,Q709562,1,wikidata_name_birthyear,Rolf Wideröe,1
+10707,Q13641673,1,wikidata_name_birthyear,Gerald Pearson,1
+10549,Q112961,1,wikidata_name_birthyear,Otto Haxel,2
+10710,Q90530,1,wikidata_name_birthyear,Hans Suess,2
+10746,Q3460851,1,wikidata_name_birthyear,Brebis Bleaney,5
+10748,Q148109,1,wikidata_name_birthyear,Subramanyan Chandrasekhar,13
+10754,Q60293,1,wikidata_name_birthyear,Carl-Gustaf Arvid Rossby,1
+10768,Q16011051,1,wikidata_name_birthyear,Ernest Wollan,3
+10769,Q201506,1,wikidata_name_birthyear,Clifford Shull,5
+11408,Q5132897,1,wikidata_name_birthyear,Clifford Butler,14
+10870,Q183655,1,wikidata_name_birthyear,Owen Chamberlain,7
+13847,Q181369,1,wikidata_name_birthyear,Chen Ning Yang,1
+10775,Q183679,1,wikidata_name_birthyear,Tsung-Dao Lee,1
+10781,Q155759,1,wikidata_name_birthyear,Igor Yevgenyevich Tamm,3
+10956,Q192703,1,wikidata_name_birthyear,Ilya Frank,2
+10783,Q324968,1,wikidata_name_birthyear,Sergey Vavilov,2
+10788,Q86645,1,wikidata_name_birthyear,Hans Busch,3
+10790,Q3845552,1,wikidata_name_birthyear,Marcello Conversi,12
+10791,Q3733982,1,wikidata_name_birthyear,Ettore Pancini,8
+10792,Q430002,1,wikidata_name_birthyear,Oreste Piccioni,8
+10794,Q1366645,1,wikidata_name_birthyear,Gersh Budker,1
+10795,Q722947,1,wikidata_name_birthyear,"Clyde Lorrain Cowan, Jr",17
+10796,Q191922,1,wikidata_name_birthyear,Frederick Reines,19
+10843,Q1688195,1,wikidata_name_birthyear,Jesse Beams,2
+10846,Q1975294,1,wikidata_name_birthyear,Seymour Benzer,1
+10851,Q16930280,1,wikidata_name_birthyear,Heinz Neuber,1
+7533,Q91538,1,wikidata_name_birthyear,Boris Rajewsky,1
+10706,Q184566,1,wikidata_name_birthyear,Charles Hard Townes,70
+10067,Q441154,1,wikidata_name_birthyear,Victor Frederick Weisskopf,21
+10859,Q450317,1,wikidata_name_birthyear,Chien-Shiung Wu,19
+10860,Q964110,1,wikidata_name_birthyear,Yevgeny Konstantinovich Zavoisky,46
+13182,Q543206,1,wikidata_name_birthyear,Harold Delos Babcock,1
+10862,Q310765,1,wikidata_name_birthyear,David Bohm,1
+10863,Q1176136,1,wikidata_name_birthyear,David Pines,2
+10494,Q2261240,1,wikidata_name_birthyear,William Hume-Rothery,3
+10871,Q1103623,1,wikidata_name_birthyear,Clyde Wiegand,1
+10872,Q2428329,1,wikidata_name_birthyear,Thomas Ypsilantis,1
+10465,Q77920,1,wikidata_name_birthyear,Alfred Landé,2
+10876,Q28189,1,wikidata_name_birthyear,Abdus Salam,41
+10875,Q130113,1,wikidata_name_birthyear,Robert Hofstadter,13
+929,Q168362,1,wikidata_name_birthyear,John Desmond Bernal,3
+10921,Q454925,1,wikidata_name_birthyear,Nikolai Nikolaevic Bogoljubov,42
+10925,Q80905,1,wikidata_name_birthyear,Donald Glaser,13
+10932,Q331067,1,wikidata_name_birthyear,Abram Joffé,1
+10570,Q1382109,1,wikidata_name_birthyear,Nicholas Kemmer,5
+10586,Q1065189,1,wikidata_name_birthyear,Charles Kittel,1
+10939,Q60347,1,wikidata_name_birthyear,Walter Hans Schottky,16
+10530,Q62722,1,wikidata_name_birthyear,Albrecht Otto Johannes Unsöld,1
+10831,Q96376,1,wikidata_name_birthyear,Carl Wilhelm Wagner,20
+10946,Q178577,1,wikidata_name_birthyear,Norbert Wiener,1
+10947,Q92760,1,wikidata_name_birthyear,Claude Shannon,4
+10953,Q977036,1,wikidata_name_birthyear,Frederick Charles Frank,3
+10954,Q5488995,1,wikidata_name_birthyear,Frank Bowden,1
+10955,Q2848084,1,wikidata_name_birthyear,André Lallemand,9
+11024,Q271963,1,wikidata_name_birthyear,James Van Allen,28
+11028,Q487491,1,wikidata_name_birthyear,Anatole Abragam,10
+11029,Q2622608,1,wikidata_name_birthyear,Albert Overhauser,3
+11030,Q327633,1,wikidata_name_birthyear,Jean Brossel,5
+11042,Q330492,1,wikidata_name_birthyear,Abraham Pais,4
+11043,Q172840,1,wikidata_name_birthyear,Murray Gell-Mann,124
+13302,Q974332,1,wikidata_name_birthyear,Kazuhiko Nishijima,11
+7146,Q78480,1,wikidata_name_birthyear,Max Ferdinand Perutz,17
+10997,Q232295,1,wikidata_name_birthyear,John Cowdery Kendrew,13
+11052,Q83557,1,wikidata_name_birthyear,Nicolay Gennadijevitj Basov,8
+11055,Q189987,1,wikidata_name_birthyear,Nicolaas Bloembergen,9
+11387,Q551288,1,wikidata_name_birthyear,Louis Gray,1
+4021,Q60287,1,wikidata_name_birthyear,Walter Heinrich Heitler,37
+11391,Q44286,1,wikidata_name_birthyear,Rudolf Ludwig Mössbauer,13
+11404,Q103854,1,wikidata_name_birthyear,Aage Niels Bohr,72
+11405,Q107423,1,wikidata_name_birthyear,Ben Roy Mottelson,68
+11409,Q82563,1,wikidata_name_birthyear,Leon Neil Cooper,40
+11410,Q153201,1,wikidata_name_birthyear,John Robert Schrieffer,39
+11412,Q18054530,1,wikidata_name_birthyear,Tadao Nakano,2
+11414,Q10315498,1,wikidata_name_birthyear,Ladislaus Laszlo Marton,1
+11415,Q1048660,1,wikidata_name_birthyear,Egon Orowan,6
+7317,Q163087,1,wikidata_name_birthyear,Michael Polanyi,12
+11413,Q983364,1,wikidata_name_birthyear,Frederick Seitz,1
+13071,Q426749,1,wikidata_name_birthyear,Nikolay Vasilyevich Belov,2
+10755,Q7942980,1,wikidata_name_birthyear,Marian Danysz,17
+13119,Q75951,1,wikidata_name_birthyear,Reinhold Rüdenberg,1
+13131,Q63096496,1,wikidata_name_birthyear,Robert Doll,2
+10630,Q938606,1,wikidata_name_birthyear,Francis Bitter,1
+13135,Q1708214,1,wikidata_name_birthyear,Joseph Weber,9
+13136,Q315399,1,wikidata_name_birthyear,Theodore Maiman,2
+13137,Q120216,1,wikidata_name_birthyear,Ali Javan,2
+13138,Q76807,1,wikidata_name_birthyear,Max Delbrück,1
+13140,Q765203,1,wikidata_name_birthyear,William Martin Fairbank,8
+13142,Q2544315,1,wikidata_name_birthyear,Walter Friedrich,1
+10957,Q192695,1,wikidata_name_birthyear,Leon Max Lederman,13
+13161,Q325496,1,wikidata_name_birthyear,Milton Stanley Livingston,7
+13154,Q190503,1,wikidata_name_birthyear,Arthur Leonard Schawlow,5
+13171,Q190766,1,wikidata_name_birthyear,Martin Ryle,45
+13172,Q319234,1,wikidata_name_birthyear,Alfred Charles Bernard Lovell,22
+10566,Q90578,1,wikidata_name_birthyear,Herbert Fröhlich,3
+11016,Q27468065,1,wikidata_name_birthyear,Adriano Gozzini,4
+13180,Q189741,1,wikidata_name_birthyear,Melvin Schwartz,14
+13123,Q153210,1,wikidata_name_birthyear,Jack Steinberger,9
+13274,Q386726,1,wikidata_name_birthyear,Scott Ellsworth Forbush,2
+13281,Q1377224,1,wikidata_name_birthyear,Philip Burton Moon,1
+398,Q559815,1,wikidata_name_birthyear,Edoardo Amaldi,4
+10756,Q465488,1,wikidata_name_birthyear,Leopold Infeld,1
+13296,Q153717,1,wikidata_name_birthyear,Freeman John Dyson,5
+13304,Q1361292,1,wikidata_name_birthyear,Keith Edward Bullen,1
+13326,Q235712,1,wikidata_name_birthyear,Margaret Burbidge,1
+13324,Q363930,1,wikidata_name_birthyear,Geoffrey Ronald Burbidge,1
+10700,Q46120,1,wikidata_name_birthyear,William Fowler,8
+13325,Q183397,1,wikidata_name_birthyear,Fred Hoyle,4
+13839,Q2369848,1,wikidata_name_birthyear,Susumu Okubo,1
+10765,Q202631,1,wikidata_name_birthyear,John Archibald Wheeler,10
+13854,Q471965,1,wikidata_name_birthyear,Yuval Néeman,8
+10758,Q6185474,1,wikidata_name_birthyear,Jerzy Pniewski,15
+13880,Q1932238,1,wikidata_name_birthyear,Robert Hanbury Brown,8
+13881,Q2150778,1,wikidata_name_birthyear,Richard Twiss,5
+13883,Q60891,1,wikidata_name_birthyear,Martin Schwarzchild,1
+4375,Q61201,1,wikidata_name_birthyear,Friedrich Hund,4
+4401,Q61314,1,wikidata_name_birthyear,Erich Hückel,32
+13887,Q382535,1,wikidata_name_birthyear,Nicholas Constantine Christofilos,3
+14181,Q192689,1,wikidata_name_birthyear,Bertram Neville Brockhouse,10
+10526,Q1432117,1,wikidata_name_birthyear,Horace Richard Crane,5
+3289,Q155786,1,wikidata_name_birthyear,Dennis Gabor,34
+13350,Q823872,1,wikidata_name_birthyear,Bernd Theodor Matthias,19
+10784,Q553176,1,wikidata_name_birthyear,Vladimir Aleksandrovich Fock,6
+14232,Q206499,1,wikidata_name_birthyear,Val Logsdon Fitch,35
+14233,Q193496,1,wikidata_name_birthyear,James Watson Cronin,27
+14242,Q980676,1,wikidata_name_birthyear,Jacques Friedel,2
+14244,Q912921,1,wikidata_name_birthyear,Alfred Brian Pippard,3
+14245,Q1176634,1,wikidata_name_birthyear,David Shoenberg,3
+14261,Q934337,1,wikidata_name_birthyear,Robert Benjamin Leighton,1
+15088,Q2357968,1,wikidata_name_birthyear,Stuart Thomas Butler,1
+14426,Q522090,1,wikidata_name_birthyear,Raimond Bernard René Castaing,2
+10548,Q1586143,1,wikidata_name_birthyear,Harrie Stewart Wilson Massey,7
+14474,Q2093193,1,wikidata_name_birthyear,James Stanley Hey,1
+13272,Q61735,1,wikidata_name_birthyear,Rudolf Ernst Peierls,10
+14487,Q453557,1,wikidata_name_birthyear,Bruno Pontecorvo,1
+14488,Q1291942,1,wikidata_name_birthyear,Edward Condon,1
+14753,Q2172960,1,wikidata_name_birthyear,Rudolf Hilsch,1
+14501,Q7343970,1,wikidata_name_birthyear,Robert Edward Bell,1
+10761,Q504473,1,wikidata_name_birthyear,Robert Henry Dicke,7
+13836,Q1495568,1,wikidata_name_birthyear,Gaston Dupouy,2
+5921,Q85914,1,wikidata_name_birthyear,Herman Francis Mark,17
+8589,Q711519,1,wikidata_name_birthyear,John Clark Slater,42
+13976,Q699541,1,wikidata_name_birthyear,Geoffrey Ingram Taylor,13
+14250,Q5770687,1,wikidata_name_birthyear,Hiroomi Umezawa,3
+14558,Q60093,1,wikidata_name_birthyear,Konrad Zuse,1
+14559,Q95315,1,wikidata_name_birthyear,Gerhard Borrmann,1
+14560,Q65204,1,wikidata_name_birthyear,Paul Peter Ewald,6
+10770,Q909260,1,wikidata_name_birthyear,Ivar Waller,8
+14724,Q723033,1,wikidata_name_birthyear,Georgy Nikolayevich Flerov,7
+15389,Q710883,1,wikidata_name_birthyear,John Battiscombe Gunn,1
+5510,Q44386219,1,wikidata_name_birthyear,Jens Lindhard,1
+15373,Q15968324,1,wikidata_name_birthyear,Reginald Charles Rainey,1
+15384,Q350305,1,wikidata_name_birthyear,Nicola Cabibbo,1
+13267,Q503360,1,wikidata_name_birthyear,Eugene Newman Parker,1
+14183,Q1472237,1,wikidata_name_birthyear,Peter Alden Franken,2
+15410,Q284088,1,wikidata_name_birthyear,Juris Upatnieks,1
+15412,Q1136035,1,wikidata_name_birthyear,Feza Gürsey,1
+15413,Q3839279,1,wikidata_name_birthyear,Luigi Arialdo Radicati di Bròzolo,1
+15454,Q1389378,1,wikidata_name_birthyear,Ryogo Kubo,6
+14662,Q6733,1,wikidata_name_birthyear,Edward Teller,2
+15474,Q6030002,1,wikidata_name_birthyear,William Houlder Zachariasen,1
+15486,Q468345,1,wikidata_name_birthyear,Albert Ghiorso,1
+15490,Q189990,1,wikidata_name_birthyear,Antony Hewish,8
+4889,Q251524,1,wikidata_name_birthyear,Oskar Benjamin Klein,16
+5064,Q65574,1,wikidata_name_birthyear,Ralph de Laer Kronig,2
+15492,Q5040589,1,wikidata_name_birthyear,Carl Nordling,2
+15795,Q192712,1,wikidata_name_birthyear,Kai Manne Börje Siegbahn,21
+15494,Q172877,1,wikidata_name_birthyear,Arno Allan Penzias,5
+15501,Q63791003,1,wikidata_name_birthyear,Pierre Connes,2
+15504,Q1391854,1,wikidata_name_birthyear,Shoichi Sakata,1
+13852,Q136822597,1,wikidata_name_birthyear,Charles Brian Anthony McCusker,1
+15791,Q1666814,1,wikidata_name_birthyear,Albert Victor Crewe,1
+14565,Q188120,1,wikidata_name_birthyear,Yoichiro Nambu,1
+15433,Q68510,1,wikidata_name_birthyear,Max Steenbeck,1
+15453,Q2736027,1,wikidata_name_birthyear,John Wheatley,1
+15475,Q188128,1,wikidata_name_birthyear,Alexei Alexeyevich Abrikosov,3
+15391,Q712042,1,wikidata_name_birthyear,Arthur Strong Wightman,1
+16000,Q57384,1,wikidata_name_birthyear,Wernher von Braun,1
+15062,Q78503,1,wikidata_name_birthyear,Hermann Oberth,2
+16020,Q2897997,1,wikidata_name_birthyear,Bernard Gregory,1
+16021,Q2667591,1,wikidata_name_birthyear,Charles Peyrou,1
+16031,Q7117151,1,wikidata_name_birthyear,Paul Buford Price,1
+11003,Q164396,1,wikidata_name_birthyear,Viktor Amazaspovich Ambartsumian,3
+15431,Q434113,1,wikidata_name_birthyear,Bengt Strömgren,2
+16043,Q547240,1,wikidata_name_birthyear,Maarten Schmidt,1
+14198,Q366471,1,wikidata_name_birthyear,Yakov Borisovich Zeldovich,2
+16283,Q1038902,1,wikidata_name_birthyear,Willi Dansgaard,1
+15614,Q4531582,1,wikidata_name_birthyear,Nikolay Markovich Emanuel,5
+16299,Q511395,1,wikidata_name_birthyear,Chushiro Hayashi,1
+7570,Q1249138,1,wikidata_name_birthyear,Franco Dino Rasetti,2
+16335,Q28189,1,wikidata_name_birthyear,Mohammad Abdus Salam,5
+13978,Q6231627,1,wikidata_name_birthyear,Alan Walsh,11
+15993,Q1522269,1,wikidata_name_birthyear,Gian Carlo Wick,1
+16350,Q104668,1,wikidata_name_birthyear,Vitaly Lazarevich Ginzburg,1
+10575,Q2093554,1,wikidata_name_birthyear,Pierre Jacquinot,1
+6446,Q382739,1,wikidata_name_birthyear,Philip McCord Morse,1
+16377,Q116176,1,wikidata_name_birthyear,Ernst Carl Gerlach Stueckelberg,1
+14494,Q376617,1,wikidata_name_birthyear,Geoffrey Foucar Chew,2
+15386,Q347236,1,wikidata_name_birthyear,Marvin Leonard Goldberger,2
+13819,Q348152,1,wikidata_name_birthyear,Stanley Mandelstam,1
+10786,Q257879,1,wikidata_name_birthyear,Lev Andreyevich Artsimovich,1
+16483,Q261269,1,wikidata_name_birthyear,Edward Crisp Bullard,1
+15440,Q235712,1,wikidata_name_birthyear,Eleanor Margaret Burbidge,1
+13284,Q354856,1,wikidata_name_birthyear,Richard Henry Dalitz,1
+16306,Q111447,1,wikidata_name_birthyear,André Guinier,3
+16494,Q2134156,1,wikidata_name_birthyear,Raymond George Herb,1
+16496,Q1629187,1,wikidata_name_birthyear,Peter Bernhard Hirsch,2
+11010,Q88380,1,wikidata_name_birthyear,Willibald Jentschke,1
+16511,Q5292923,1,wikidata_name_birthyear,Don Kirkham,1
+13932,Q2039606,1,wikidata_name_birthyear,Otto Kratky,25
+16517,Q944275,1,wikidata_name_birthyear,Michael James Lighthill,1
+14481,Q2271991,1,wikidata_name_birthyear,Walter Charles Marshall,1
+13297,Q1394712,1,wikidata_name_birthyear,Tullio Regge,3
+16529,Q560647,1,wikidata_name_birthyear,Ronald Samuel Rivlin,1
+16573,Q7192014,1,wikidata_name_birthyear,Pierre-Michel Duffieux,1
+14466,Q2371077,1,wikidata_name_birthyear,Sven Gösta Nilsson,1
+11049,Q107419,1,wikidata_name_birthyear,Norman Foster Ramsey,1
+16600,Q6257702,1,wikidata_name_birthyear,John Shipley Rowlinson,1
+16602,Q71575,1,wikidata_name_birthyear,Harry Lehmann,1
+16603,Q70502,1,wikidata_name_birthyear,Kurt Symanzik,1
+16604,Q75239,1,wikidata_name_birthyear,Wolfhart Zimmermann,1
+11108,Q123280,1,wikidata_name_birthyear,Francis Harry Compton Crick,7
+11107,Q83333,1,wikidata_name_birthyear,James Dewey Watson,7
+11109,Q184659,1,wikidata_name_birthyear,Maurice Hugh Frederick Wilkins,2
+16610,Q709148,1,wikidata_name_birthyear,Ugo Fano,1
+16611,Q4511479,1,wikidata_name_birthyear,Phyllis Freier,1
+10749,Q5344733,1,wikidata_name_birthyear,Edward Purdy Ney,1
+16612,Q290146,1,wikidata_name_birthyear,Edward Joseph Lofgren,1
+16613,Q1396898,1,wikidata_name_birthyear,Frank Friedman Oppenheimer,1
+15629,Q106733,1,wikidata_name_birthyear,Jerome Karle,2
+16616,Q562886,1,wikidata_name_birthyear,Michael Mark Woolfson,1
+14563,Q87402,1,wikidata_name_birthyear,Hans-Peter Dürr,1
+18185,Q1791342,1,wikidata_name_birthyear,J Leite Lopes,1
+16543,Q179282,1,wikidata_name_birthyear,Steven Weinberg,1
+18255,Q450317,1,wikidata_name_birthyear,C. S. Wu,2
+18264,Q5231203,1,wikidata_name_birthyear,D. R. Bates,1
+16384,Q930787,1,wikidata_name_birthyear,Marshall Nicholas Rosenbluth,2
+15476,Q78510,1,wikidata_name_birthyear,Walter Kohn,1
+18295,Q193496,1,wikidata_name_birthyear,J Cronin,4
+13289,Q1293022,1,wikidata_name_birthyear,Vernon Willard Hughes,1
+10849,Q2848268,1,wikidata_name_birthyear,André Maréchal,1
+18327,Q893630,1,wikidata_name_birthyear,B. B. Kadomtsev,1
+18332,Q717421,1,wikidata_name_birthyear,C. C. Lin,1
+18342,Q70999,1,wikidata_name_birthyear,M von Ardenne,1
+18356,Q190745,1,wikidata_name_birthyear,James Rainwater,1
+18358,Q202631,1,wikidata_name_birthyear,J. A. Wheeler,1
+13840,Q181687,1,wikidata_name_birthyear,Robert Eugene Marshak,1
+18395,Q1384866,1,wikidata_name_birthyear,E. C. G. Sudarshan,1
+9563,Q102822,1,wikidata_name_birthyear,Jacobus Henricus Van´t Hoff,11
+949,Q18425,1,wikidata_name_birthyear,Marcellin Berthelot,12
+3022,Q70554,1,wikidata_name_birthyear,Emil Fischer,14
+6352,Q102804,1,wikidata_name_birthyear,Henri Moissan,41
+7351,Q511621,1,wikidata_name_birthyear,William Pope,3
+8579,Q94346,1,wikidata_name_birthyear,Zdenko Skraup,1
+9713,Q57078,1,wikidata_name_birthyear,Adolf von Baeyer,15
+3364,Q15406933,1,wikidata_name_birthyear,Armand Gautier,3
+3420,Q369422,1,wikidata_name_birthyear,Wolcott Gibbs,1
+6439,Q320889,1,wikidata_name_birthyear,Edward Morley,3
+7707,Q189465,1,wikidata_name_birthyear,Theodore Richards,26
+4917,Q106527,1,wikidata_name_birthyear,Rudolf Knietsch,1
+10263,Q61166,1,wikidata_name_birthyear,Johannes Wislicenus,1
+6445,Q434648,1,wikidata_name_birthyear,Harmon Morse,2
+6913,Q12658,1,wikidata_name_birthyear,Wilhelm Ostwald,20
+1428,Q43917,1,wikidata_name_birthyear,Eduard Buchner,6
+1802,Q1088813,1,wikidata_name_birthyear,Giacomo Ciamician,16
+6171,Q9106,1,wikidata_name_birthyear,Dmitri Mendeleev,9
+3649,Q104582,1,wikidata_name_birthyear,Victor Grignard,6
+3812,Q748724,1,wikidata_name_birthyear,Albin Haller,23
+3172,Q62243,1,wikidata_name_birthyear,Adolph Frank,4
+1610,Q76628,1,wikidata_name_birthyear,Heinrich Caro,2
+2873,Q923364,1,wikidata_name_birthyear,Samuel Eyde,8
+1582,Q128759,1,wikidata_name_birthyear,Stanislao Cannizzaro,3
+4670,Q3778561,1,wikidata_name_birthyear,Sophus Jörgensen,2
+8017,Q104575,1,wikidata_name_birthyear,Paul Sabatier,7
+2061,Q62234,1,wikidata_name_birthyear,Theodor Curtius,31
+4876,Q1453094,1,wikidata_name_birthyear,Fredrik Kjellin,1
+9953,Q57127,1,wikidata_name_birthyear,Otto Wallach,5
+10087,Q123014,1,wikidata_name_birthyear,Alfred Werner,17
+3878,Q69483,1,wikidata_name_birthyear,Arthur Hantzsch,2
+4995,Q57128,1,wikidata_name_birthyear,Albrecht Kossel,8
+5703,Q69872,1,wikidata_name_birthyear,Georg Lunge,2
+10210,Q77072,1,wikidata_name_birthyear,Richard Willstätter,28
+953,Q131987,1,wikidata_name_birthyear,Gabriel Émile Bertrand,24
+2799,Q77551,1,wikidata_name_birthyear,Carl Engler,5
+5199,Q124248,1,wikidata_name_birthyear,Hans Landolt,3
+9818,Q86401,1,wikidata_name_birthyear,Edmund von Lippmann,1
+8403,Q2255683,1,wikidata_name_birthyear,Jean Senderens,3
+8311,Q17418234,1,wikidata_name_birthyear,Otto Schönherr,2
+5467,Q63622,1,wikidata_name_birthyear,Carl Liebermann,1
+5950,Q55339891,1,wikidata_name_birthyear,Pierre Martin,2
+8706,Q13521857,1,wikidata_name_birthyear,Walthère Spring,1
+446,Q2327324,1,wikidata_name_birthyear,Angelo Angeli,13
+2713,Q57089,1,wikidata_name_birthyear,Paul Ehrlich,59
+7121,Q2631780,1,wikidata_name_birthyear,William Perkin Jr,15
+8998,Q76593,1,wikidata_name_birthyear,Gustav Tammann,35
+694,Q908133,1,wikidata_name_birthyear,Philippe Barbier,3
+2213,Q901049,1,wikidata_name_birthyear,Hilaire de Chardonnet,1
+3758,Q57075,1,wikidata_name_birthyear,Fritz Haber,7
+9458,Q560404,1,wikidata_name_birthyear,Georges Urbain,56
+3904,Q72406,1,wikidata_name_birthyear,Carl Harries,7
+5112,Q123051,1,wikidata_name_birthyear,William Küster,3
+5896,Q4180253,1,wikidata_name_birthyear,Leon Marchlewski,4
+7603,Q96782636,1,wikidata_name_birthyear,Albert Recoura,5
+10412,Q90591,1,wikidata_name_birthyear,Theodor Zincke,1
+10428,Q78481,1,wikidata_name_birthyear,Richard Zsigmondy,7
+8202,Q6325381,1,wikidata_name_birthyear,Ernst Schmidt,1
+9383,Q75096,1,wikidata_name_birthyear,Alexander Tschirch,3
+9940,Q63131,1,wikidata_name_birthyear,Paul Walden,9
+282,Q123557,1,wikidata_name_birthyear,Emil Abderhalden,51
+7022,Q329221,1,wikidata_name_birthyear,Emanuele Paterno,1
+1198,Q76606,1,wikidata_name_birthyear,Carl Bosch,19
+1238,Q10396301,1,wikidata_name_birthyear,Emile Bourquelot,1
+1825,Q724624,1,wikidata_name_birthyear,Frank Clarke,1
+2684,Q79180,1,wikidata_name_birthyear,Joseph Eder,10
+2711,Q122779,1,wikidata_name_birthyear,Felix Ehrlich,1
+961,Q5574702,1,wikidata_name_birthyear,Knut Beskow,1
+7543,Q6062334,1,wikidata_name_birthyear,Arthur Ramén,1
+3737,Q742532,1,wikidata_name_birthyear,Philippe-Auguste Guye,18
+7233,Q122276,1,wikidata_name_birthyear,Amé Pictet,11
+7399,Q78482,1,wikidata_name_birthyear,Fritz Pregl,10
+3834,Q1587643,1,wikidata_name_birthyear,Hartog Hamburger,7
+8185,Q69571,1,wikidata_name_birthyear,Wilhelm Schlenk,5
+9389,Q241118,1,wikidata_name_birthyear,Mikhail Tsvet,1
+826,Q25539274,1,wikidata_name_birthyear,Martinus Beijerinck,2
+521,Q5560789,1,wikidata_name_birthyear,Ossian Aschan,7
+6783,Q561905,1,wikidata_name_birthyear,Arthur Amos Noyes,1
+6738,Q17540053,1,wikidata_name_birthyear,Emilio Noelting,1
+3221,Q107947,1,wikidata_name_birthyear,Herbert Max Finlay Freundlich,3
+3531,Q904804,1,wikidata_name_birthyear,Moses Gomberg,16
+6477,Q2959867,1,wikidata_name_birthyear,Charles Moureu,2
+559,Q89390,1,wikidata_name_birthyear,Carl Auer von Welsbach,7
+4269,Q465294,1,wikidata_name_birthyear,Arnold Holleman,1
+5441,Q208858,1,wikidata_name_birthyear,Gilbert Lewis,41
+8513,Q91751,1,wikidata_name_birthyear,Henry Siedentopf,2
+1981,Q775969,1,wikidata_name_birthyear,Dirk Coster,9
+9751,Q76613,1,wikidata_name_birthyear,Hans von Euler-Chelpin,16
+2785,Q86357,1,wikidata_name_birthyear,Friedrich Emich,2
+10166,Q76610,1,wikidata_name_birthyear,Heinrich Otto Wieland,10
+287,Q741428,1,wikidata_name_birthyear,John Abel,17
+2320,Q468371,1,wikidata_name_birthyear,André Debierne,1
+3082,Q102428,1,wikidata_name_birthyear,Fritz Foerster,1
+3272,Q28738,1,wikidata_name_birthyear,Casimir Funk,2
+3457,Q3903260,1,wikidata_name_birthyear,Piero Ginori-Conti,1
+6821,Q907768,1,wikidata_name_birthyear,Giuseppe Oddo,1
+10241,Q77142,1,wikidata_name_birthyear,Adolf Windaus,8
+1866,Q320050,1,wikidata_name_birthyear,Ernst Cohen,1
+1048,Q902142,1,wikidata_name_birthyear,Niels Bjerrum,2
+1316,Q105565,1,wikidata_name_birthyear,Julius Bredt,1
+7155,Q88611,1,wikidata_name_birthyear,Kurt Peters,1
+3848,Q5786924,1,wikidata_name_birthyear,Olaf Hammarsten,1
+4303,Q233976,1,wikidata_name_birthyear,Frederick Hopkins,13
+3026,Q76604,1,wikidata_name_birthyear,Hans Fischer,16
+5495,Q7411040,1,wikidata_name_birthyear,Samuel Lind,1
+8975,Q114443,1,wikidata_name_birthyear,Bruno Tacke,2
+707,Q901909,1,wikidata_name_birthyear,George Barger,3
+3895,Q175294,1,wikidata_name_birthyear,Charles Harington,6
+872,Q19288501,1,wikidata_name_birthyear,Kurt Bennewitz,1
+900,Q76614,1,wikidata_name_birthyear,Friedrich Bergius,2
+1106,Q77545,1,wikidata_name_birthyear,Max Bodenstein,15
+7958,Q71846,1,wikidata_name_birthyear,Otto Ruff,13
+1419,Q180142,1,wikidata_name_birthyear,Johannes Brönsted,4
+2577,Q2958948,1,wikidata_name_birthyear,Charles Dufraisse,8
+3887,Q189803,1,wikidata_name_birthyear,Arthur Harden,1
+4122,Q4722661,1,wikidata_name_birthyear,Alfred Hess,1
+3520,Q213668,1,wikidata_name_birthyear,Victor Goldschmidt,11
+3957,Q204600,1,wikidata_name_birthyear,Walter Norman Haworth,16
+9541,Q512725,1,wikidata_name_birthyear,Johannes van Laar,1
+6657,Q65683,1,wikidata_name_birthyear,Carl Neuberg,29
+8926,Q979136,1,wikidata_name_birthyear,Frédéric Swarts,12
+9984,Q76464,1,wikidata_name_birthyear,Otto Warburg,49
+2849,Q88231,1,wikidata_name_birthyear,Arnold Eucken,2
+9710,Q70500,1,wikidata_name_birthyear,Karl von Auwers,4
+2508,Q571640,1,wikidata_name_birthyear,Frederick George Donnan,2
+4881,Q5912834,1,wikidata_name_birthyear,Peter Klason,4
+8746,Q48956,1,wikidata_name_birthyear,Hermann Staudinger,74
+5085,Q1471606,1,wikidata_name_birthyear,Werner Kuhn,18
+7994,Q122996,1,wikidata_name_birthyear,Leopold Ruzicka,22
+8248,Q15447432,1,wikidata_name_birthyear,Werner Schulemann,1
+6732,Q62714,1,wikidata_name_birthyear,Walter Noddack,8
+2432,Q76616,1,wikidata_name_birthyear,Otto Diels,32
+2780,Q71608,1,wikidata_name_birthyear,Gustav Embden,12
+4719,Q73093,1,wikidata_name_birthyear,Paul Karrer,28
+6731,Q77529,1,wikidata_name_birthyear,Ida Noddack,3
+8709,Q94024,1,wikidata_name_birthyear,Ernst Späth,1
+9668,Q157239,1,wikidata_name_birthyear,Artturi Virtanen,23
+9905,Q907961,1,wikidata_name_birthyear,Emil Votocek,3
+1487,Q5327,1,wikidata_name_birthyear,Adolf Butenandt,18
+5118,Q1467159,1,wikidata_name_birthyear,Fritz Kögl,38
+4420,Q3603178,1,wikidata_name_birthyear,Erik Hägglund,2
+5819,Q901889,1,wikidata_name_birthyear,Louis Maillard,1
+9999,Q18814601,1,wikidata_name_birthyear,Edward Washburn,1
+911,Q118533,1,wikidata_name_birthyear,Max Bergmann,2
+2054,Q5542984,1,wikidata_name_birthyear,George Curme,1
+5423,Q902182,1,wikidata_name_birthyear,Phoebus Levene,7
+3008,Q107975742,1,wikidata_name_birthyear,Colin Fink,1
+359,Q76595,1,wikidata_name_birthyear,Kurt Alder,7
+1144,Q8004576,1,wikidata_name_birthyear,William Bone,1
+6219,Q20925091,1,wikidata_name_birthyear,Henri Meulen,1
+4429,Q78059,1,wikidata_name_birthyear,Otto Hönigschmid,1
+8933,Q346532,1,wikidata_name_birthyear,Wojciech Swiętosławski,15
+1026,Q708665,1,wikidata_name_birthyear,Arthur Binz,1
+3914,Q113727,1,wikidata_name_birthyear,Paul Karl Maria Harteck,3
+4977,Q3750494,1,wikidata_name_birthyear,Gustaf Komppa,18
+9207,Q156480,1,wikidata_name_birthyear,Hugo Theorell,28
+9266,Q3288435,1,wikidata_name_birthyear,Marc Tiffeneau,1
+1515,Q20908849,1,wikidata_name_birthyear,Jacob Böeseken,1
+3898,Q8007993,1,wikidata_name_birthyear,William Harkins,1
+4054,Q4066893,1,wikidata_name_birthyear,Victor Henri,1
+4482,Q328995,1,wikidata_name_birthyear,Vladimir Ipatieff,10
+8731,Q105937,1,wikidata_name_birthyear,Wendell Stanley,45
+8815,Q117474,1,wikidata_name_birthyear,Arthur Stoll,17
+1314,Q77536,1,wikidata_name_birthyear,Georg Bredig,1
+3143,Q910362,1,wikidata_name_birthyear,Ernest Fourneau,3
+3461,Q3750052,1,wikidata_name_birthyear,Francesco Giordani,4
+4597,Q55830266,1,wikidata_name_birthyear,Paul Job,1
+7243,Q110126607,1,wikidata_name_birthyear,Maurice Piettre,1
+10207,Q4163158,1,wikidata_name_birthyear,Robley Cook Williams,6
+10323,Q662543,1,wikidata_name_birthyear,Dorothy Wrinch,2
+2777,Q3687162,1,wikidata_name_birthyear,Conrad Elvehjem,9
+769,Q2696470,1,wikidata_name_birthyear,Frederick Bawden,1
+7273,Q1530841,1,wikidata_name_birthyear,Norman Pirie,2
+6764,Q106399,1,wikidata_name_birthyear,John Northrop,45
+7045,Q48983,1,wikidata_name_birthyear,Linus Carl Pauling,68
+10050,Q5505040,1,wikidata_name_birthyear,Fritz Weigert,1
+4461,Q127779,1,wikidata_name_birthyear,Christopher Kelk Ingold,116
+9338,Q3160106,1,wikidata_name_birthyear,Jacques Tréfouël,12
+6696,Q124142,1,wikidata_name_birthyear,Paul Niggli,4
+9549,Q1534260,1,wikidata_name_birthyear,Donald van Slyke,12
+8227,Q74901,1,wikidata_name_birthyear,Rudolf Schoenheimer,2
+8895,Q106756,1,wikidata_name_birthyear,James Sumner,18
+5093,Q27709853,1,wikidata_name_birthyear,Moses Kunitz,3
+10330,Q68222150,1,wikidata_name_birthyear,René Wurmser,1
+1933,Q3806764,1,wikidata_name_birthyear,James Wilfred Cook,9
+7631,Q115490,1,wikidata_name_birthyear,Tadeus Reichstein,17
+5523,Q1732565,1,wikidata_name_birthyear,Karl Paul Link,5
+2555,Q33128,1,wikidata_name_birthyear,Vincent du Vigneaud,37
+8754,Q1586808,1,wikidata_name_birthyear,Harry Steenbock,2
+2875,Q574810,1,wikidata_name_birthyear,Henry Eyring,50
+2462,Q5076898,1,wikidata_name_birthyear,Edward Dodds,9
+10109,Q6238013,1,wikidata_name_birthyear,Arne Westgren,1
+3254,Q2448727,1,wikidata_name_birthyear,Alexander Naumovich Frumkin,24
+5042,Q57191,1,wikidata_name_birthyear,Hans Adolf Krebs,23
+9021,Q505878,1,wikidata_name_birthyear,Hugh Taylor,1
+8398,Q48990,1,wikidata_name_birthyear,Nikolay Nikolayevich Semyonov,6
+8323,Q48973,1,wikidata_name_birthyear,Glenn Theodore Seaborg,23
+10302,Q232316,1,wikidata_name_birthyear,Robert Burns Woodward,111
+2466,Q908247,1,wikidata_name_birthyear,William von Eggers Doering,3
+2408,Q32940416,1,wikidata_name_birthyear,Henri Devaux,1
+9282,Q233026,1,wikidata_name_birthyear,Arne Tiselius,12
+5729,Q123176915,1,wikidata_name_birthyear,Paul Läuger,2
+4194,Q48986,1,wikidata_name_birthyear,Cyril Norman Hinshelwood,12
+305,Q1534144,1,wikidata_name_birthyear,Roger Adams,10
+3986,Q5796635,1,wikidata_name_birthyear,Johan Arvid Hedvall,33
+5319,Q900301,1,wikidata_name_birthyear,Paul Lebeau,1
+6085,Q99052,1,wikidata_name_birthyear,Hans Lebrecht Meerwein,27
+10086,Q15794028,1,wikidata_name_birthyear,Chester Werkman,14
+290,Q377815,1,wikidata_name_birthyear,Philip Abelson,1
+4823,Q3324412,1,wikidata_name_birthyear,Morris Kharasch,21
+7754,Q5239083,1,wikidata_name_birthyear,David Rittenberg,1
+6318,Q4723167,1,wikidata_name_birthyear,Alfred Mirsky,1
+7511,Q15149240,1,wikidata_name_birthyear,Paul Rabe,1
+4527,Q17561197,1,wikidata_name_birthyear,Pierre Jacquet,2
+2427,Q43293224,1,wikidata_name_birthyear,Gerhard Dickel,1
+4794,Q1708246,1,wikidata_name_birthyear,Joseph Kennedy,1
+1872,Q905774,1,wikidata_name_birthyear,Edwin Cohn,19
+3096,Q268874,1,wikidata_name_birthyear,Karl Folkers,11
+3469,Q27581888,1,wikidata_name_birthyear,Domingo Giribaldo,4
+3995,Q610072,1,wikidata_name_birthyear,Michael Heidelberger,23
+7663,Q68368,1,wikidata_name_birthyear,Walter Reppe,64
+9289,Q157242,1,wikidata_name_birthyear,Alexander Robertus Todd,21
+7722,Q52904936,1,wikidata_name_birthyear,Friedrich Richter,1
+4789,Q110101,1,wikidata_name_birthyear,Edward Kendall,27
+6270,Q1732381,1,wikidata_name_birthyear,Karl Miescher,1
+10299,Q1585463,1,wikidata_name_birthyear,Harland Wood,13
+10521,Q907498,1,wikidata_name_birthyear,Ralph Walter Wyckoff,7
+4768,Q1174949,1,wikidata_name_birthyear,David Keilin,29
+782,Q238739,1,wikidata_name_birthyear,George Wells Beadle,13
+1550,Q49347,1,wikidata_name_birthyear,Melvin Calvin,25
+5455,Q707506,1,wikidata_name_birthyear,Choh Hao Li,13
+3072,Q176351,1,wikidata_name_birthyear,Paul John Flory,41
+5504,Q6348816,1,wikidata_name_birthyear,Kaj Ulrik Linderstrøm-Lang,4
+5529,Q77104,1,wikidata_name_birthyear,Fritz Albert Lipmann,10
+8188,Q481291,1,wikidata_name_birthyear,Hermann Irving Schlesinger,25
+9933,Q232308,1,wikidata_name_birthyear,Selman Waksman,45
+6504,Q233355,1,wikidata_name_birthyear,Robert Sanderson Mulliken,23
+5945,Q48977,1,wikidata_name_birthyear,Archer John Porter Martin,6
+8946,Q48979,1,wikidata_name_birthyear,Richard L Synge,2
+9928,Q472997,1,wikidata_name_birthyear,Arthur Wahl,1
+2049,Q18018905,1,wikidata_name_birthyear,Burris Bell Cunningham,10
+5263,Q7982457,1,wikidata_name_birthyear,Wendell Latimer,1
+7123,Q11205530,1,wikidata_name_birthyear,Isadore Perlman,1
+4860,Q7151885,1,wikidata_name_birthyear,Paul Kirk,1
+4006,Q49353,1,wikidata_name_birthyear,Ian Morris Heilbron,5
+5505,Q5956355,1,wikidata_name_birthyear,Axel Lindh,2
+7160,Q7377447,1,wikidata_name_birthyear,Rudolph Peters,7
+2016,Q1878712,1,wikidata_name_birthyear,Lyman Craig,32
+10492,Q5128895,1,wikidata_name_birthyear,Claude Hudson,2
+7110,Q241822,1,wikidata_name_birthyear,Marguerite Perey,5
+8092,Q151564,1,wikidata_name_birthyear,Frederick Sanger,18
+4159,Q78170,1,wikidata_name_birthyear,Walter Hieber,6
+4976,Q1845271,1,wikidata_name_birthyear,Izaak Kolthoff,5
+13462,Q1451734,1,wikidata_name_birthyear,Öjvind Winge,1
+10610,Q76624,1,wikidata_name_birthyear,Karl Ziegler,32
+9015,Q237499,1,wikidata_name_birthyear,Edward Lawrie Tatum,6
+10646,Q214308,1,wikidata_name_birthyear,Fritz Feigl,12
+2990,Q384156,1,wikidata_name_birthyear,Louis Fieser,4
+10651,Q234145,1,wikidata_name_birthyear,Giulio Natta,44
+10654,Q106762,1,wikidata_name_birthyear,George Porter,7
+10660,Q899754,1,wikidata_name_birthyear,Félix Trombe,3
+10665,Q65226,1,wikidata_name_birthyear,Max Volmer,9
+10671,Q1356613,1,wikidata_name_birthyear,Martin David Kamen,21
+3212,Q95361,1,wikidata_name_birthyear,Karl Johann Freudenberg,26
+6817,Q233957,1,wikidata_name_birthyear,Severo Ochoa,7
+10740,Q3642600,1,wikidata_name_birthyear,Boris Arbuzov,1
+10742,Q106360,1,wikidata_name_birthyear,Heinz Fraenckel-Conrat,5
+10743,Q5393100,1,wikidata_name_birthyear,Ernest Gale,1
+10744,Q111947862,1,wikidata_name_birthyear,Joan Folkes,1
+11118,Q5577180,1,wikidata_name_birthyear,Jannik Bjerrum,13
+1974,Q260328,1,wikidata_name_birthyear,Charles Coryell,1
+10802,Q3300287,1,wikidata_name_birthyear,Maurice-Marie Janot,1
+7725,Q5387365,1,wikidata_name_birthyear,Eric Keightley Rideal,1
+574,Q315129,1,wikidata_name_birthyear,Oswald Theodore Avery,37
+10839,Q1108553,1,wikidata_name_birthyear,Colin Munro MacLeod,1
+10840,Q902110,1,wikidata_name_birthyear,Maclyn McCarty,1
+10841,Q122982399,1,wikidata_name_birthyear,Bernard Horecker,3
+10878,Q901569,1,wikidata_name_birthyear,Jean Brachet,5
+11155,Q76602,1,wikidata_name_birthyear,Gerhard Herzberg,21
+4702,Q9175188,1,wikidata_name_birthyear,Bogdan Kamienski,1
+10889,Q233985,1,wikidata_name_birthyear,Luis Federico Leloir,35
+10807,Q88671169,1,wikidata_name_birthyear,Max Mousseron,1
+7400,Q83501,1,wikidata_name_birthyear,Vladimir Prelog,56
+10904,Q327157,1,wikidata_name_birthyear,Gerold Karl Schwarzenbach,11
+10657,Q77171,1,wikidata_name_birthyear,Georg Wittig,115
+10979,Q295678,1,wikidata_name_birthyear,Arthur Kornberg,1
+10983,Q8009672,1,wikidata_name_birthyear,William Pfann,8
+10985,Q24567414,1,wikidata_name_birthyear,Francis Owen Rice,1
+10656,Q18020624,1,wikidata_name_birthyear,Gunter Scheibe,1
+10992,Q3752755,1,wikidata_name_birthyear,Frederick Rossini,1
+10732,Q1298972,1,wikidata_name_birthyear,Egon Wiberg,1
+4271,Q5810786,1,wikidata_name_birthyear,Bror Holmberg,1
+5722,Q44597,1,wikidata_name_birthyear,Feodor Lynen,22
+10669,Q102419,1,wikidata_name_birthyear,Derek Harold Richard Barton,53
+1459,Q2572803,1,wikidata_name_birthyear,Wilhelm Gerhard Burgers,1
+13019,Q76600,1,wikidata_name_birthyear,Manfred Eigen,30
+882,Q4756330,1,wikidata_name_birthyear,Andrew Benson,2
+11096,Q16012577,1,wikidata_name_birthyear,Howard Cary,1
+11097,Q695886,1,wikidata_name_birthyear,Arnold Orville Beckman,1
+11099,Q19286649,1,wikidata_name_birthyear,Josef Engl,1
+11100,Q1707591,1,wikidata_name_birthyear,Joseph Massolle,1
+11101,Q1582885,1,wikidata_name_birthyear,Hans Vogt,1
+3933,Q157212,1,wikidata_name_birthyear,Odd Hassel,17
+11111,Q271703,1,wikidata_name_birthyear,Alfred Hershey,3
+11112,Q257008,1,wikidata_name_birthyear,Martha Chase,1
+11114,Q2645033,1,wikidata_name_birthyear,Alfred Gierer,2
+11115,Q1512493,1,wikidata_name_birthyear,Gerhard Schramm,9
+1007,Q368476,1,wikidata_name_birthyear,Johannes Martin Bijvoet,36
+1647,Q457472,1,wikidata_name_birthyear,Torbjörn Caspersson,12
+11122,Q638558,1,wikidata_name_birthyear,Britton Chance,11
+11125,Q6419814,1,wikidata_name_birthyear,Harry George Drickamer,12
+11140,Q280966,1,wikidata_name_birthyear,Leslie Eleazer Orgel,3
+8538,Q6176040,1,wikidata_name_birthyear,Lars Gunnar Sillén,3
+13889,Q323030,1,wikidata_name_birthyear,Daniel Israel Arnon,24
+11154,Q35698,1,wikidata_name_birthyear,Konrad Emil Bloch,5
+11157,Q235834,1,wikidata_name_birthyear,Ronald George Wreyford Norrish,8
+1951,Q1093895,1,wikidata_name_birthyear,Robert Corey,4
+11161,Q907279,1,wikidata_name_birthyear,Efraim Racker,2
+1746,Q1508843,1,wikidata_name_birthyear,Georges Léon Chaudron,10
+13016,Q78608,1,wikidata_name_birthyear,Carl Djerassi,24
+13074,Q44594,1,wikidata_name_birthyear,Ernst Otto Fischer,11
+3851,Q49349,1,wikidata_name_birthyear,Louis Plack Hammett,20
+6339,Q11548472,1,wikidata_name_birthyear,San-Ichiro Mizushima,11
+13083,Q17325670,1,wikidata_name_birthyear,Peter Pauson,3
+10553,Q18808904,1,wikidata_name_birthyear,Maurice Stacey,2
+10820,Q907856,1,wikidata_name_birthyear,Tadeusz Urbański,1
+10825,Q907372,1,wikidata_name_birthyear,Alexander Vinogradov,4
+13087,Q105074207,1,wikidata_name_birthyear,Karl-Wolfgang Mundry,1
+11095,Q994547,1,wikidata_name_birthyear,Clemens Schöpf,2
+14666,Q1680000,1,wikidata_name_birthyear,James Baddiley,2
+13013,Q737340,1,wikidata_name_birthyear,Neil Bartlett,70
+13015,Q102406,1,wikidata_name_birthyear,Herbert Charles Brown,51
+13027,Q26902514,1,wikidata_name_birthyear,Ludwig August Wilhelm Geilmann,1
+13029,Q2705170,1,wikidata_name_birthyear,Dionyz Ilkovic,1
+13032,Q107462,1,wikidata_name_birthyear,Har Gobind Khorana,15
+13042,Q1270832,1,wikidata_name_birthyear,Noel Slater,1
+13045,Q7427356,1,wikidata_name_birthyear,Saul Winstein,24
+13057,Q1239118,1,wikidata_name_birthyear,Gunnar Blix,1
+13058,Q1358985,1,wikidata_name_birthyear,Ernst Klenk,1
+13059,Q22703749,1,wikidata_name_birthyear,John Monteath Robertson,1
+13060,Q2831706,1,wikidata_name_birthyear,Alberte Pullman,6
+13062,Q2898481,1,wikidata_name_birthyear,Bernard Pullman,6
+494,Q75208,1,wikidata_name_birthyear,Fritz Arndt,7
+10218,Q511581,1,wikidata_name_birthyear,Edgar Bright Wilson Jr.,3
+13066,Q118591924,1,wikidata_name_birthyear,Stanley Bruckenstein,1
+1994,Q900605,1,wikidata_name_birthyear,Charles Alfred Coulson,4
+13348,Q110330,1,wikidata_name_birthyear,Ephraim Katchalski,31
+10819,Q44483,1,wikidata_name_birthyear,Alexander Ivanovich Oparin,4
+10948,Q910690,1,wikidata_name_birthyear,Gopalasamudram Narayanan Ramachandran,3
+14769,Q3656091,1,wikidata_name_birthyear,František Šorm,7
+10502,Q1503418,1,wikidata_name_birthyear,Georg-Maria Schwab,3
+13892,Q1722334,1,wikidata_name_birthyear,Paul Doughty Bartlett,2
+10728,Q455944,1,wikidata_name_birthyear,Erwin Chargaff,3
+13900,Q21166468,1,wikidata_name_birthyear,Ulick Richardson Evans,1
+13934,Q110060,1,wikidata_name_birthyear,Marshall Warren Nirenberg,17
+10592,Q2960053,1,wikidata_name_birthyear,Charles Prévost,4
+7790,Q6075375,1,wikidata_name_birthyear,Jean Roche,3
+10737,Q327794,1,wikidata_name_birthyear,Iwan Nikolov Stranski,3
+13988,Q1507678,1,wikidata_name_birthyear,George Joseph Popják,17
+10593,Q5966313,1,wikidata_name_birthyear,Henrik Gunnar Lundegårdh,1
+13090,Q231402,1,wikidata_name_birthyear,Jacques Monod,1
+13997,Q96851,1,wikidata_name_birthyear,Rudolf Hoppe,3
+14002,Q116960,1,wikidata_name_birthyear,Albert Jakob Eschenmoser,15
+14005,Q110834,1,wikidata_name_birthyear,Alfred Rieche,8
+13371,Q90694,1,wikidata_name_birthyear,Rudolf Criegee,9
+10822,Q2149015,1,wikidata_name_birthyear,Richard Maling Barrer,3
+3822,Q822456,1,wikidata_name_birthyear,Bernard Halpern,3
+14176,Q108891,1,wikidata_name_birthyear,Robert William Holley,8
+14278,Q5346860,1,wikidata_name_birthyear,Edwin Theodore Mertz,1
+6393,Q110952,1,wikidata_name_birthyear,Stanford Moore,8
+8764,Q156492,1,wikidata_name_birthyear,William Howard Stein,7
+14596,Q425980,1,wikidata_name_birthyear,Frank Albert Cotton,4
+14284,Q45717769,1,wikidata_name_birthyear,Jean Lecomte,2
+14613,Q7376946,1,wikidata_name_birthyear,Max Rudolf Lemberg,1
+14617,Q224153,1,wikidata_name_birthyear,Robert Bruce Merrifield,32
+14619,Q18917170,1,wikidata_name_birthyear,Richard Alan Morton,1
+14626,Q1525531,1,wikidata_name_birthyear,Giorgio Piccardi,1
+14633,Q5489712,1,wikidata_name_birthyear,Frank Harold Spedding,3
+14648,Q295724,1,wikidata_name_birthyear,George Wald,1
+14651,Q27708663,1,wikidata_name_birthyear,Esmond Emerson Snell,4
+14660,Q2344572,1,wikidata_name_birthyear,Stephen Brunauer,1
+14661,Q436507,1,wikidata_name_birthyear,Paul Hugh Emmett,2
+14663,Q274128,1,wikidata_name_birthyear,Geoffrey Wilkinson,10
+10980,Q608387,1,wikidata_name_birthyear,Kenneth Sanborn Pitzer,7
+14655,Q106671,1,wikidata_name_birthyear,Erika Cremer,1
+14678,Q358296,1,wikidata_name_birthyear,Arie Jan Haagen-Smit,3
+4212,Q1671177,1,wikidata_name_birthyear,Joseph Oakland Hirschfelder,1
+14685,Q1373133,1,wikidata_name_birthyear,Eugene Patrick Kennedy,2
+10917,Q112311341,1,wikidata_name_birthyear,Henri Normant,13
+14707,Q907045,1,wikidata_name_birthyear,Eugene George Rochow,1
+13343,Q6189083,1,wikidata_name_birthyear,Einar Stenhagen,1
+14711,Q94483,1,wikidata_name_birthyear,Hans Tuppy,1
+10810,Q573507,1,wikidata_name_birthyear,Anthony Leonid Turkevich,6
+14733,Q135151,1,wikidata_name_birthyear,Donald James Cram,2
+14734,Q192603,1,wikidata_name_birthyear,George Andrew Olah,3
+14738,Q53078842,1,wikidata_name_birthyear,Bernard Lewis,1
+14740,Q3815808,1,wikidata_name_birthyear,Klaus Biemann,3
+15509,Q5901505,1,wikidata_name_birthyear,Horace Albert Barker,2
+10806,Q90758,1,wikidata_name_birthyear,Theodor Förster,1
+10666,Q89087,1,wikidata_name_birthyear,Rolf Huisgen,3
+15553,Q910100,1,wikidata_name_birthyear,Harden McConnell,9
+6584,Q5237903,1,wikidata_name_birthyear,David Nachmansohn,2
+10653,Q61481339,1,wikidata_name_birthyear,Roberto Piontelli,2
+15565,Q330225,1,wikidata_name_birthyear,Eugene Rabinowitch,1
+15568,Q22703749,1,wikidata_name_birthyear,John Monteath Robertson,2
+10493,Q60892863,1,wikidata_name_birthyear,Melville Lawrence Wolfrom,1
+11158,Q85507,1,wikidata_name_birthyear,Helmut Zahn,1
+10384,Q649185,1,wikidata_name_birthyear,László Zechmeister,1
+13993,Q76512096,1,wikidata_name_birthyear,Jacques Bénard,1
+15580,Q4684441,1,wikidata_name_birthyear,Adolphe Van Tiggelen,1
+15585,Q901783,1,wikidata_name_birthyear,Gilbert Stork,4
+15586,Q200620,1,wikidata_name_birthyear,Konstantin Antonovich Petrzhak,1
+15548,Q214243,1,wikidata_name_birthyear,Franz Sondheimer,2
+6646,Q869351,1,wikidata_name_birthyear,Costin Nenitzescu,1
+15600,Q7372174,1,wikidata_name_birthyear,Rowland Pettit,1
+15601,Q526942,1,wikidata_name_birthyear,Pehr Victor Edman,8
+15602,Q6053893,1,wikidata_name_birthyear,Jerker Porath,6
+10508,Q2573483,1,wikidata_name_birthyear,Friedrich Wilhelm Jost,1
+15608,Q3098947,1,wikidata_name_birthyear,Gaston Charlot,1
+15680,Q6018611,1,wikidata_name_birthyear,Tetsuo Nozoe,19
+8127,Q55720620,1,wikidata_name_birthyear,George Scatchard,1
+921,Q295696,1,wikidata_name_birthyear,Karl Sune Detlof Bergström,17
+16709,Q2089712,1,wikidata_name_birthyear,David Adriaan van Dorp,5
+15653,Q1175373,1,wikidata_name_birthyear,David Mervyn Blow,1
+15654,Q1173901,1,wikidata_name_birthyear,David Chilton Phillips,4
+15660,Q17307868,1,wikidata_name_birthyear,Christian Klixbüll-Jørgensen,3
+15670,Q1934650,1,wikidata_name_birthyear,George Simms Hammond,1
+15676,Q11108924,1,wikidata_name_birthyear,Charles Gilbert Overberger,1
+16045,Q102278,1,wikidata_name_birthyear,Christian Boehmer Anfinsen,3
+15578,Q121042,1,wikidata_name_birthyear,Duilio Arigoni,7
+16056,Q1278473,1,wikidata_name_birthyear,Setsuro Ebashi,1
+16068,Q4236744,1,wikidata_name_birthyear,Nikolay Konstantinovich Kochetkov,2
+16076,Q506678,1,wikidata_name_birthyear,Alfred Edward Ringwood,2
+16078,Q561999,1,wikidata_name_birthyear,John Dombrowski Roberts,3
+16089,Q68118,1,wikidata_name_birthyear,Earl Wilbur Sutherland Jr.,3
+10824,Q235983,1,wikidata_name_birthyear,Henry Taube,3
+15527,Q16910869,1,wikidata_name_birthyear,Alfred René Jean Paul Ubbelohde,1
+16099,Q7329418,1,wikidata_name_birthyear,Richard Tecwyn Williams,1
+6924,Q2210373,1,wikidata_name_birthyear,Jan Theodoor Gerard Overbeek,5
+16114,Q730814,1,wikidata_name_birthyear,Sidney Walter Fox,1
+16117,Q907162,1,wikidata_name_birthyear,Vitalij Iosifovitj Goldanskij,3
+4146,Q5294516,1,wikidata_name_birthyear,Donald Holroyde Hey,4
+16120,Q177306,1,wikidata_name_birthyear,Ralph Franz Hirschmann,1
+11131,Q457335,1,wikidata_name_birthyear,Ronald Sydney Nyholm,1
+16694,Q136221081,1,wikidata_name_birthyear,Andrew Reginald Howard Cole,1
+16134,Q3645795,1,wikidata_name_birthyear,Bruno Hasbrouck Zimm,2
+16137,Q907534,1,wikidata_name_birthyear,Albert Lester Lehninger,1
+14687,Q907583,1,wikidata_name_birthyear,Alan Rushton Battersby,3
+16190,Q907778,1,wikidata_name_birthyear,Herbert Sander Gutowsky,1
+16192,Q904598,1,wikidata_name_birthyear,Osamu Hayaishi,6
+16198,Q98119943,1,wikidata_name_birthyear,Candin Liteanu,2
+16201,Q15859787,1,wikidata_name_birthyear,Kurt Meyer,1
+16217,Q295700,1,wikidata_name_birthyear,Rodney Robert Porter,2
+8031,Q2960178,1,wikidata_name_birthyear,Charles Sadron,1
+16226,Q2170109,1,wikidata_name_birthyear,Philip Skell,1
+16236,Q111919,1,wikidata_name_birthyear,Bernhard Witkop,2
+10803,Q110935,1,wikidata_name_birthyear,William Nunn Lipscomb Jr.,5
+10670,Q708668,1,wikidata_name_birthyear,Arthur John Birch,2
+16251,Q7152109,1,wikidata_name_birthyear,Paul Mead Doty,1
+16252,Q6309949,1,wikidata_name_birthyear,Julius Marmur,1
+16253,Q21166463,1,wikidata_name_birthyear,Trevor Walworth Goodwin,1
+16254,Q21165286,1,wikidata_name_birthyear,Arthur Charles Neish,1
+16265,Q706011,1,wikidata_name_birthyear,Robert Sidney Cahn,1
+16272,Q3040690,1,wikidata_name_birthyear,Michael Szwarc,2
+16632,Q5534494,1,wikidata_name_birthyear,Geoffrey Burnstock,1
+16638,Q1339808,1,wikidata_name_birthyear,Alexander Sergeevich Davydov,2
+16651,Q1387590,1,wikidata_name_birthyear,Hugh Esmor Huxley,1
+13053,Q8018968,1,wikidata_name_birthyear,William Summer Johnson,1
+4785,Q445781,1,wikidata_name_birthyear,Wiktor Kemula,1
+16048,Q75111,1,wikidata_name_birthyear,Hans Leo Kornberg,1
+6019,Q906477,1,wikidata_name_birthyear,Joseph Edward Mayer,1
+16672,Q219718,1,wikidata_name_birthyear,George Emil Palade,1
+13996,Q510601,1,wikidata_name_birthyear,George Claude Pimentel,1
+16589,Q4910545,1,wikidata_name_birthyear,William Charles Price,1
+16679,Q141147,1,wikidata_name_birthyear,Andrzej Viktor Schally,1
+16688,Q12368609,1,wikidata_name_birthyear,Leonhard Johann Eugen Tiganik,1
+16707,Q904428,1,wikidata_name_birthyear,Ralph Gottfrid Pearson,1
+16657,Q512627,1,wikidata_name_birthyear,Michael Sela,2
+16723,Q3570291,1,wikidata_name_birthyear,Wlodzimierz Kolos,3
+16724,Q2978871,1,wikidata_name_birthyear,Clemens Roothaan,3
+16730,Q5714304,1,wikidata_name_birthyear,Holger Erdtman,3
+15592,Q2063453,1,wikidata_name_birthyear,Paul von Ragué Schleyer,1
+14677,Q1382180,1,wikidata_name_birthyear,Evert Johannes Willem Verwey,4
+16740,Q983188,1,wikidata_name_birthyear,Michael James Steuart Dewar,1
+16744,Q20029630,1,wikidata_name_birthyear,Lutoslaw Wolniewicz,2
+13359,Q5782319,1,wikidata_name_birthyear,Paul Hagenmuller,2
+18853,Q16649453,1,wikidata_name_birthyear,Viktor Holger Hydén,1
+18908,Q735982,1,wikidata_name_birthyear,Sol Spiegelman,2
+14302,Q4191500,1,wikidata_name_birthyear,Leonidas Zervas,1
+13382,Q3122051,1,wikidata_name_birthyear,Guy Henry Ourisson,2
+18958,Q906529,1,wikidata_name_birthyear,John Bannister Goodenough,1
+18983,Q2147079,1,wikidata_name_birthyear,Rex Edward Richards,1
+14591,Q634238,1,wikidata_name_birthyear,Ewart Ray Herbert Jones,1
+18986,Q4236744,1,wikidata_name_birthyear,Nikolay Konstantinovich Kochetkov,1
+16649,Q1603674,1,wikidata_name_birthyear,Helmut Holzer,1
+19011,Q1458776,1,wikidata_name_birthyear,Friedrich Cramer,1
+16266,Q899772,1,wikidata_name_birthyear,Hugh Christopher Longuet-Higgins,1
+19028,Q21165427,1,wikidata_name_birthyear,Brian Selby Hartley,1
+19035,Q5815865,1,wikidata_name_birthyear,Maurice Loyal Huggins,1
+15619,Q730128,1,wikidata_name_birthyear,Otto Wichterle,1
+4276,Q5811467,1,wikidata_name_birthyear,Emil Holmgren,1
+1365,Q588731,1,wikidata_name_birthyear,Ivar Broman,1
+5279,Q189006,1,wikidata_name_birthyear,Alphonse Laveran,12
+7892,Q102034,1,wikidata_name_birthyear,Ronald Ross,14
+3015,Q182964,1,wikidata_name_birthyear,Niels Finsen,15
+5571,Q62982,1,wikidata_name_birthyear,Jacques Loeb,78
+5881,Q2057791,1,wikidata_name_birthyear,Patrick Manson,15
+6214,Q172254,1,wikidata_name_birthyear,Élie Metchnikoff,65
+3615,Q706466,1,wikidata_name_birthyear,Battista Grassi,21
+4941,Q37193,1,wikidata_name_birthyear,Robert Koch,55
+5226,Q1361977,1,wikidata_name_birthyear,John Langley,17
+1554,Q8002127,1,wikidata_name_birthyear,Wilhelm Camerer,1
+1004,Q2843282,1,wikidata_name_birthyear,Amico Bignami,1
+7055,Q42985,1,wikidata_name_birthyear,Ivan Pavlov,49
+7547,Q150526,1,wikidata_name_birthyear,Santiago Ramon y Cajàl,62
+3527,Q150630,1,wikidata_name_birthyear,Camillo Golgi,31
+9720,Q76425,1,wikidata_name_birthyear,Emil von Behring,13
+4406,Q1556633,1,wikidata_name_birthyear,Gustav Hüfner,1
+7668,Q640991,1,wikidata_name_birthyear,Gustaf Retzius,23
+9665,Q76432,1,wikidata_name_birthyear,Rudolph Virchow,3
+9883,Q76146,1,wikidata_name_birthyear,Carl von Voit,2
+3412,Q4775767,1,wikidata_name_birthyear,Anton Ghon,3
+9804,Q123528,1,wikidata_name_birthyear,Albert von Kölliker,4
+4219,Q115601,1,wikidata_name_birthyear,Wilhelm His Sr,2
+7930,Q286440,1,wikidata_name_birthyear,Emile Roux,114
+10347,Q123920,1,wikidata_name_birthyear,Alexandre Yersin,7
+4427,Q943806,1,wikidata_name_birthyear,Andreas Högyes,2
+9752,Q1002332,1,wikidata_name_birthyear,Josef von Fodor,2
+3968,Q716220,1,wikidata_name_birthyear,Henry Head,5
+1217,Q1063407,1,wikidata_name_birthyear,Charles Bouchard,56
+2797,Q63326,1,wikidata_name_birthyear,Wilhelm Engelmann,3
+4874,Q442225,1,wikidata_name_birthyear,Shibasaburo Kitasato,1
+3371,Q61300,1,wikidata_name_birthyear,Carl Gegenbauer,2
+9823,Q92474,1,wikidata_name_birthyear,Josef von Mering,3
+6304,Q76681,1,wikidata_name_birthyear,Oskar Minkowski,12
+7514,Q112448,1,wikidata_name_birthyear,Carl Rabl,3
+8493,Q213504,1,wikidata_name_birthyear,Charles Sherrington,131
+4348,Q896087,1,wikidata_name_birthyear,Ferdinand Hueppe,2
+5731,Q60993,1,wikidata_name_birthyear,Friedrich Löffler,8
+7201,Q73255,1,wikidata_name_birthyear,Richard Pfeiffer,33
+10147,Q1406552,1,wikidata_name_birthyear,Fernand Widal,46
+7951,Q68697,1,wikidata_name_birthyear,Max Rubner,54
+4107,Q68753,1,wikidata_name_birthyear,Oscar Hertwig,23
+1172,Q211787,1,wikidata_name_birthyear,Jules Bordet,101
+3673,Q85476,1,wikidata_name_birthyear,Max Gruber,4
+3770,Q48246,1,wikidata_name_birthyear,Ernst Haeckel,4
+8213,Q77409,1,wikidata_name_birthyear,Oswald Schmiedeberg,18
+4492,Q95331,1,wikidata_name_birthyear,James Israel,1
+9622,Q65056,1,wikidata_name_birthyear,Max Verworn,5
+7613,Q613136,1,wikidata_name_birthyear,Walter Reed,3
+10203,Q3027790,1,wikidata_name_birthyear,Louis Willems,2
+5907,Q289217,1,wikidata_name_birthyear,Étienne-Jules Marey,3
+4291,Q5812797,1,wikidata_name_birthyear,Ernst Homén,3
+1627,Q686126,1,wikidata_name_birthyear,James Carrol,3
+334,Q3622686,1,wikidata_name_birthyear,Aristides Agramonte y Simoni,6
+3864,Q217344,1,wikidata_name_birthyear,Gerhard Armauer Hansen,3
+9723,Q688128,1,wikidata_name_birthyear,Ernst von Bergmann,1
+7718,Q214851,1,wikidata_name_birthyear,Charles Robert Richet,45
+4223,Q65262,1,wikidata_name_birthyear,Eduard Hitzig,5
+5637,Q86085,1,wikidata_name_birthyear,Adolf Lorenz,8
+1385,Q544284,1,wikidata_name_birthyear,David Bruce,31
+8393,Q1439564,1,wikidata_name_birthyear,Hugo Sellheim,2
+4969,Q84585,1,wikidata_name_birthyear,Karl Koller,5
+3582,Q2164702,1,wikidata_name_birthyear,William Gowers,2
+462,Q774381,1,wikidata_name_birthyear,Stephan Apáthy,1
+1682,Q1057343,1,wikidata_name_birthyear,Angelo Celli,3
+1653,Q524137,1,wikidata_name_birthyear,Aldo Castellani,60
+3011,Q742233,1,wikidata_name_birthyear,Carlos Finlay,10
+4259,Q1447291,1,wikidata_name_birthyear,Franz Hofmeister,5
+737,Q322904,1,wikidata_name_birthyear,Edoardo Bassini,4
+9570,Q110223809,1,wikidata_name_birthyear,Giulio Vassale,10
+5591,Q202420,1,wikidata_name_birthyear,Cesare Lombroso,4
+2645,Q547276,1,wikidata_name_birthyear,Arsène d´Arsonval,6
+1456,Q5588059,1,wikidata_name_birthyear,G Burckhardt,1
+8144,Q64321,1,wikidata_name_birthyear,Fritz Schaudinn,2
+10321,Q977408,1,wikidata_name_birthyear,Almroth Wright,14
+1001,Q69260,1,wikidata_name_birthyear,August Bier,40
+5295,Q2471960,1,wikidata_name_birthyear,Jesse Lazear,1
+3215,Q87206,1,wikidata_name_birthyear,Leopold Freund,1
+6640,Q76713,1,wikidata_name_birthyear,Albert Neisser,22
+784,Q18159675,1,wikidata_name_birthyear,John Beard,1
+4068,Q70116,1,wikidata_name_birthyear,Victor Hensen,16
+7811,Q3229685,1,wikidata_name_birthyear,Leonard Rogers,10
+1548,Q437983,1,wikidata_name_birthyear,Albert Calmette,77
+4944,Q115478,1,wikidata_name_birthyear,Emil Kocher,5
+2080,Q72718,1,wikidata_name_birthyear,Vincenz Czerny,3
+8057,Q71183,1,wikidata_name_birthyear,Ernst Salkowski,1
+3849,Q5786924,1,wikidata_name_birthyear,Olof Hammarsten,8
+10328,Q75814,1,wikidata_name_birthyear,Wilhelm Wundt,3
+2480,Q62229,1,wikidata_name_birthyear,Anton Dohrn,2
+2353,Q5026638,1,wikidata_name_birthyear,Camille Delezenne,18
+9857,Q114024,1,wikidata_name_birthyear,Otto von Schrön,1
+1116,Q135503,1,wikidata_name_birthyear,Christian Bohr,3
+4247,Q76069,1,wikidata_name_birthyear,Erich Hoffmann,3
+2309,Q160192,1,wikidata_name_birthyear,Hugo de Vries,3
+8621,Q427418,1,wikidata_name_birthyear,Theobald Smith,38
+6463,Q536227,1,wikidata_name_birthyear,Angelo Mosso,1
+5221,Q95598,1,wikidata_name_birthyear,Oskar Langendorff,1
+7676,Q3157998,1,wikidata_name_birthyear,Jacques-Louis Reverdin,8
+4075,Q64556,1,wikidata_name_birthyear,Ewald Hering,15
+7934,Q61040,1,wikidata_name_birthyear,Wilhelm Roux,16
+6664,Q90814,1,wikidata_name_birthyear,Ernst Neumann,3
+4308,Q1258797,1,wikidata_name_birthyear,Victor Horsley,9
+599,Q980801,1,wikidata_name_birthyear,Guido Baccelli,14
+2967,Q1174416,1,wikidata_name_birthyear,David Ferrier,1
+4971,Q91942,1,wikidata_name_birthyear,Julius Kollmann,1
+8278,Q72734,1,wikidata_name_birthyear,Gustaf Schwalbe,1
+4109,Q85907,1,wikidata_name_birthyear,Richard Hertwig,1
+1249,Q62092,1,wikidata_name_birthyear,Theodor Boveri,1
+3555,Q257279,1,wikidata_name_birthyear,William Gorgas,6
+5680,Q3839796,1,wikidata_name_birthyear,Luigi Luciani,3
+7334,Q2857137,1,wikidata_name_birthyear,Antonin Poncet,1
+7507,Q73164,1,wikidata_name_birthyear,Heinrich Quincke,17
+5016,Q76828,1,wikidata_name_birthyear,Emil Kraepelin,7
+3076,Q555478,1,wikidata_name_birthyear,Carl Flügge,4
+9887,Q77360,1,wikidata_name_birthyear,August von Wassermann,45
+3065,Q984262,1,wikidata_name_birthyear,Simon Flexner,14
+4342,Q1257037,1,wikidata_name_birthyear,Henri Huchard,1
+2808,Q62575,1,wikidata_name_birthyear,Wilhelm Erb,2
+9432,Q85405,1,wikidata_name_birthyear,Paul Uhlenhuth,40
+8825,Q58834,1,wikidata_name_birthyear,Eduard Strassburger,1
+5395,Q8313360,1,wikidata_name_birthyear,Raphaël Lépine,6
+9515,Q55015815,1,wikidata_name_birthyear,Edouard van Beneden,1
+9735,Q78842,1,wikidata_name_birthyear,Viktor von Ebner,2
+6616,Q71858,1,wikidata_name_birthyear,Bernhard Naunyn,3
+4507,Q611821,1,wikidata_name_birthyear,Hughlings Jackson,1
+4083,Q69409,1,wikidata_name_birthyear,Ludimar Hermann,2
+10433,Q75694,1,wikidata_name_birthyear,Nathan Zuntz,3
+686,Q78478,1,wikidata_name_birthyear,Robert Bárány,7
+9534,Q2865369,1,wikidata_name_birthyear,Arthur van Gehuchten,2
+4306,Q683558,1,wikidata_name_birthyear,Jan Horbaczewsky,1
+487,Q3474057,1,wikidata_name_birthyear,Saturnin Arloing,1
+2473,Q569771,1,wikidata_name_birthyear,Alexandre Dogiel,1
+2959,Q1684123,1,wikidata_name_birthyear,Jaume Ferran y Clua,6
+3739,Q708043,1,wikidata_name_birthyear,Felix Guyon,1
+2072,Q1399292,1,wikidata_name_birthyear,Napoléon Cybulski,17
+2730,Q189488,1,wikidata_name_birthyear,Willem Einthoven,31
+5579,Q73435,1,wikidata_name_birthyear,Oskar Loew,1
+9828,Q115766,1,wikidata_name_birthyear,Constantin von Monakow,2
+7561,Q544915,1,wikidata_name_birthyear,Louis Ranvier,1
+5607,Q91523,1,wikidata_name_birthyear,Arthur Looss,4
+1621,Q185777,1,wikidata_name_birthyear,Alexis Carrel,1
+789,Q221723,1,wikidata_name_birthyear,Wladimir Bechterew,10
+1265,Q3651469,1,wikidata_name_birthyear,Camillo Bozzolo,1
+7139,Q3719650,1,wikidata_name_birthyear,Edoardo Perroncito,5
+3115,Q939226,1,wikidata_name_birthyear,Carlo Forlanini,20
+9801,Q85929,1,wikidata_name_birthyear,Johannes von Kries,4
+1403,Q5690388,1,wikidata_name_birthyear,Lauder Brunton,1
+777,Q594936,1,wikidata_name_birthyear,William Bayliss,2
+8739,Q739275,1,wikidata_name_birthyear,Ernest Starling,4
+5774,Q920583,1,wikidata_name_birthyear,James Mackenzie,3
+6740,Q356114,1,wikidata_name_birthyear,Hideyo Noguchi,24
+1702,Q438907,1,wikidata_name_birthyear,Carlos Chagas,2
+3910,Q3100310,1,wikidata_name_birthyear,Ross Harrison,14
+3225,Q18674317,1,wikidata_name_birthyear,Peter Freyer,1
+8771,Q2428829,1,wikidata_name_birthyear,Thor Stenbeck,1
+5604,Q21519458,1,wikidata_name_birthyear,Biagio Longo,1
+8114,Q62330,1,wikidata_name_birthyear,Ferdinand Sauerbruch,56
+6716,Q76587,1,wikidata_name_birthyear,Franz Nissl,2
+6119,Q4290040,1,wikidata_name_birthyear,Samuel Meltzer,2
+2723,Q107609,1,wikidata_name_birthyear,Christiaan Eijkman,27
+5886,Q3719613,1,wikidata_name_birthyear,Edoardo Maragliano,3
+591,Q313062,1,wikidata_name_birthyear,Joseph Babinski,14
+8043,Q122191,1,wikidata_name_birthyear,Hermann Sahli,3
+3209,Q9215,1,wikidata_name_birthyear,Sigmund Freud,33
+532,Q4848334,1,wikidata_name_birthyear,Bailey Ashford,2
+7217,Q5556251,1,wikidata_name_birthyear,August Pi Suñer,6
+1129,Q1871563,1,wikidata_name_birthyear,Louis Bolk,1
+10376,Q330570,1,wikidata_name_birthyear,Gustaf Zander,1
+8377,Q2150577,1,wikidata_name_birthyear,Richard Seefelder,1
+3507,Q1707111,1,wikidata_name_birthyear,Joseph Goldberger,3
+8944,Q123261539,1,wikidata_name_birthyear,William St. Claire Symmers,1
+2065,Q380038,1,wikidata_name_birthyear,Harvey Cushing,37
+3823,Q962960,1,wikidata_name_birthyear,William Halsted,1
+10072,Q174743,1,wikidata_name_birthyear,William Welch,1
+5078,Q94836805,1,wikidata_name_birthyear,Bernhard Krönig,2
+3734,Q97207,1,wikidata_name_birthyear,Hermann Gutzmann,1
+526,Q62306,1,wikidata_name_birthyear,Ludwig Aschoff,9
+9800,Q68093,1,wikidata_name_birthyear,Ludolf von Krehl,2
+4210,Q75103,1,wikidata_name_birthyear,Julius Hirschberg,1
+7063,Q97315,1,wikidata_name_birthyear,Erwin Payr,1
+6010,Q4276164,1,wikidata_name_birthyear,Alexander Maximow,1
+4514,Q72359,1,wikidata_name_birthyear,Abraham Jacobi,1
+9780,Q5803828,1,wikidata_name_birthyear,Carl von Hess,2
+3111,Q22530,1,wikidata_name_birthyear,Auguste Forel,1
+5058,Q152187,1,wikidata_name_birthyear,August Krogh,3
+4067,Q2214976,1,wikidata_name_birthyear,Salomon Henschen,21
+9269,Q553859,1,wikidata_name_birthyear,Robert Tigerstedt,4
+6871,Q73558,1,wikidata_name_birthyear,Hermann Oppenheim,1
+698,Q377985,1,wikidata_name_birthyear,Joseph Barcroft,13
+856,Q3081448,1,wikidata_name_birthyear,Francis Benedict,1
+6686,Q233965,1,wikidata_name_birthyear,Charles Nicolle,13
+8881,Q72035,1,wikidata_name_birthyear,Karl Sudhoff,2
+6044,Q7347469,1,wikidata_name_birthyear,Robert McCarrison,3
+965,Q2833461,1,wikidata_name_birthyear,Alexandre Besredka,5
+5450,Q95974,1,wikidata_name_birthyear,Erich Lexer,1
+6428,Q177681,1,wikidata_name_birthyear,Thomas Morgan,33
+989,Q376593,1,wikidata_name_birthyear,Leonardo Bianchi,7
+4025,Q1580139,1,wikidata_name_birthyear,Hans Held,1
+2978,Q216324,1,wikidata_name_birthyear,Johannes Fibiger,10
+7835,Q9162084,1,wikidata_name_birthyear,Auguste Rollier,6
+936,Q2033564,1,wikidata_name_birthyear,Oskar Bernhard,6
+1301,Q107974,1,wikidata_name_birthyear,Heinrich Braun,2
+4839,Q40513,1,wikidata_name_birthyear,Gustav Killian,2
+1879,Q7378019,1,wikidata_name_birthyear,Rufus Cole,1
+9692,Q63007,1,wikidata_name_birthyear,Oskar Vogt,16
+2614,Q3131031,1,wikidata_name_birthyear,Henri Duret,7
+3264,Q78970,1,wikidata_name_birthyear,Ernst Fuchs,1
+1584,Q503192,1,wikidata_name_birthyear,Walter Cannon,27
+3484,Q3059895,1,wikidata_name_birthyear,Eugène Gley,18
+515,Q329508,1,wikidata_name_birthyear,Maurice Arthus,15
+5205,Q84405,1,wikidata_name_birthyear,Karl Landsteiner,16
+8765,Q85850,1,wikidata_name_birthyear,Eugen Steinach,11
+5418,Q2995006,1,wikidata_name_birthyear,Constantin Levaditi,42
+9688,Q272973,1,wikidata_name_birthyear,Cécile Vogt,13
+3564,Q809499,1,wikidata_name_birthyear,Barthélemy Gosio,1
+788,Q16027315,1,wikidata_name_birthyear,Heinrich Bechhold,1
+5811,Q1323640,1,wikidata_name_birthyear,Rudolf Magnus,31
+681,Q180350,1,wikidata_name_birthyear,Frederick Banting,3
+8788,Q1262360,1,wikidata_name_birthyear,Georg Sticker,1
+8028,Q96625,1,wikidata_name_birthyear,Hans Sachs,2
+4968,Q1666980,1,wikidata_name_birthyear,Wilhelm Kolle,4
+6431,Q4302410,1,wikidata_name_birthyear,Julius Morgenroth,3
+5782,Q232024,1,wikidata_name_birthyear,John James Macleod,2
+8594,Q6792259,1,wikidata_name_birthyear,Maud Slye,1
+6257,Q62926,1,wikidata_name_birthyear,Leonor Michaelis,9
+4423,Q112021,1,wikidata_name_birthyear,Rudolf Höber,3
+2240,Q21553363,1,wikidata_name_birthyear,Adrian de Kleyn,5
+1748,Q4752076,1,wikidata_name_birthyear,Anatole Chauffard,2
+3051,Q69246,1,wikidata_name_birthyear,Paul Flechsig,2
+5959,Q1461025,1,wikidata_name_birthyear,Friedrich Martius,1
+3094,Q909297,1,wikidata_name_birthyear,Otto Folin,6
+590,Q278216,1,wikidata_name_birthyear,Victor Babes,13
+2649,Q962057,1,wikidata_name_birthyear,Felix d´Hérelle,28
+5445,Q262827,1,wikidata_name_birthyear,Thomas Lewis,7
+3998,Q75087,1,wikidata_name_birthyear,Martin Heidenhain,2
+8689,Q57568,1,wikidata_name_birthyear,Hans Spemann,20
+2498,Q55227161,1,wikidata_name_birthyear,Arturo Donaggio,1
+9927,Q78479,1,wikidata_name_birthyear,Julius Wagner-Jauregg,16
+992,Q360964,1,wikidata_name_birthyear,Adolf Bickel,2
+2426,Q5566408,1,wikidata_name_birthyear,Gladys Dick,24
+1211,Q3745118,1,wikidata_name_birthyear,Filippo Bottazzi,6
+5234,Q3262439,1,wikidata_name_birthyear,Louis Lapicque,52
+4045,Q705550,1,wikidata_name_birthyear,Lawrence Henderson,5
+2458,Q4735357,1,wikidata_name_birthyear,Alphonse Dochez,9
+7849,Q2077901,1,wikidata_name_birthyear,Peter Rona,1
+3839,Q5786489,1,wikidata_name_birthyear,August Hammar,4
+6588,Q6054730,1,wikidata_name_birthyear,Otto Naegeli,1
+4709,Q2251007,1,wikidata_name_birthyear,Ariens Kappers,1
+3245,Q121304,1,wikidata_name_birthyear,Paul Frosch,1
+2762,Q18159848,1,wikidata_name_birthyear,Robert Elliot,15
+4287,Q15091573,1,wikidata_name_birthyear,Sören Holth,17
+8181,Q1769966,1,wikidata_name_birthyear,Hjalmar Schiötz,17
+6581,Q16649949,1,wikidata_name_birthyear,Holger Møllgaard,1
+2111,Q72194,1,wikidata_name_birthyear,Henry Hallett Dale,21
+2346,Q3384684,1,wikidata_name_birthyear,Pierre Delbet,1
+3084,Q84373,1,wikidata_name_birthyear,Otfried Foerster,17
+7919,Q298707,1,wikidata_name_birthyear,Peyton Rous,17
+3985,Q20643943,1,wikidata_name_birthyear,Emmanuel Hédon,4
+2678,Q113667,1,wikidata_name_birthyear,Konstantin Economo,1
+3652,Q1514762,1,wikidata_name_birthyear,Gerrit Grijns,16
+5684,Q123175842,1,wikidata_name_birthyear,Arno Luckhardt,3
+5164,Q5340215,1,wikidata_name_birthyear,Edouard Laguesse,10
+418,Q19945386,1,wikidata_name_birthyear,Paul Ancel,20
+1226,Q570685,1,wikidata_name_birthyear,Pol Bouin,36
+5583,Q77173,1,wikidata_name_birthyear,Otto Loewi,27
+7806,Q8076900,1,wikidata_name_birthyear,Angel Roffo,3
+6546,Q2077191,1,wikidata_name_birthyear,Peter Mühlens,1
+6775,Q15999010,1,wikidata_name_birthyear,Frederick Novy,2
+9703,Q214667,1,wikidata_name_birthyear,Franz Volhard,5
+2421,Q55227084,1,wikidata_name_birthyear,Vincenzo Diamare,11
+5893,Q1371887,1,wikidata_name_birthyear,Ettore Marchiafava,2
+3700,Q1029190,1,wikidata_name_birthyear,Camille Guérin,6
+4123,Q4722661,1,wikidata_name_birthyear,Alfred Hess,12
+3622,Q74798,1,wikidata_name_birthyear,Paul Grawitz,1
+6307,Q245000,1,wikidata_name_birthyear,George Minot,57
+4729,Q16662676,1,wikidata_name_birthyear,Genichi Kato,39
+3591,Q1381556,1,wikidata_name_birthyear,Evarts Graham,11
+3176,Q89925,1,wikidata_name_birthyear,Otto Frank,8
+1605,Q4775833,1,wikidata_name_birthyear,Anton Carlson,3
+4023,Q15439641,1,wikidata_name_birthyear,Ludwig Hektoen,1
+2077,Q347292,1,wikidata_name_birthyear,Adalbert Czerny,1
+6371,Q273219,1,wikidata_name_birthyear,Antonio C.de Abreu Freire Egas Moniz,16
+7616,Q2978577,1,wikidata_name_birthyear,Claudius Regaud,4
+9257,Q6209816,1,wikidata_name_birthyear,Torsten Thunberg,15
+6941,Q15457800,1,wikidata_name_birthyear,Victor Pachon,9
+1899,Q59631,1,wikidata_name_birthyear,James Collip,8
+1686,Q27597631,1,wikidata_name_birthyear,Eugenio Centanni,2
+5879,Q12815259,1,wikidata_name_birthyear,Geza Mansfeld,2
+9660,Q2397866,1,wikidata_name_birthyear,Hyacinthe Vincent,17
+4048,Q8048321,1,wikidata_name_birthyear,Yandell Henderson,8
+8476,Q1117138,1,wikidata_name_birthyear,Edward Sharpey Schafer,2
+3290,Q117272245,1,wikidata_name_birthyear,Proceso Gabriel,1
+1968,Q62096,1,wikidata_name_birthyear,Carl Correns,3
+1279,Q7898254,1,wikidata_name_birthyear,Upendranath Brahmachari,6
+3284,Q5748272,1,wikidata_name_birthyear,Robin Fåhraeus,17
+5032,Q85229,1,wikidata_name_birthyear,Friedrich Kraus,1
+5048,Q60166,1,wikidata_name_birthyear,Ernst Kretschmer,1
+9342,Q1726471,1,wikidata_name_birthyear,Paul Trendelenburg,1
+9414,Q2761784,1,wikidata_name_birthyear,Frederick Twort,11
+2337,Q329254,1,wikidata_name_birthyear,Pio del Rio-Hortega,3
+6170,Q6471466,1,wikidata_name_birthyear,Lafayette Mendel,1
+6112,Q1705267,1,wikidata_name_birthyear,Josef Meller,1
+10134,Q273238,1,wikidata_name_birthyear,George Whipple,21
+5400,Q452214,1,wikidata_name_birthyear,René Leriche,79
+8075,Q3108137,1,wikidata_name_birthyear,Giuseppe Sanarelli,26
+3192,Q3270970,1,wikidata_name_birthyear,Léon Frédéricq,2
+809,Q60767753,1,wikidata_name_birthyear,Edwin Beer,1
+7545,Q673325,1,wikidata_name_birthyear,Gaston Ramon,153
+7843,Q1353076,1,wikidata_name_birthyear,Erich Rominger,1
+3537,Q3188627,1,wikidata_name_birthyear,Jules Gonin,12
+10051,Q577522,1,wikidata_name_birthyear,Rudolf Weigl,74
+8317,Q3604420,1,wikidata_name_birthyear,Achille Sclavo,1
+9736,Q113667,1,wikidata_name_birthyear,Constantin von Economo,2
+1074,Q115506,1,wikidata_name_birthyear,Eugen Bleuler,1
+1897,Q59631,1,wikidata_name_birthyear,Bertram Collip,1
+4324,Q237160,1,wikidata_name_birthyear,Bernardo Alberto Houssay,45
+2499,Q3132825,1,wikidata_name_birthyear,Henry Donaldson,1
+2869,Q706034,1,wikidata_name_birthyear,James Ewing,1
+5096,Q11416756,1,wikidata_name_birthyear,Ken Kuré,28
+10421,Q67559,1,wikidata_name_birthyear,Bernhard Zondek,26
+8263,Q98985,1,wikidata_name_birthyear,Hugo Schulz,1
+523,Q73166,1,wikidata_name_birthyear,Selmar Aschheim,10
+2485,Q230612,1,wikidata_name_birthyear,Edward Doisy,3
+8931,Q112660702,1,wikidata_name_birthyear,Moses Swick,1
+1295,Q1873990,1,wikidata_name_birthyear,Ludolph Brauer,9
+6914,Q77292,1,wikidata_name_birthyear,Wolfgang Ostwald,1
+5428,Q3770812,1,wikidata_name_birthyear,Giuseppe Levi,1
+5741,Q64859206,1,wikidata_name_birthyear,Ernst Löwenstein,1
+7323,Q20980009,1,wikidata_name_birthyear,Heinrich Poll,1
+8521,Q11862416,1,wikidata_name_birthyear,Hermann Siemens,1
+5700,Q99212104,1,wikidata_name_birthyear,Einar Lundsgaard,2
+6048,Q52354,1,wikidata_name_birthyear,Elmer McCollum,6
+858,Q2639508,1,wikidata_name_birthyear,Stanley Benedict,1
+6501,Q83598,1,wikidata_name_birthyear,Hermann Joseph Muller,11
+7640,Q1612442,1,wikidata_name_birthyear,Hermann Rein,9
+6730,Q825688,1,wikidata_name_birthyear,Bernhard Nocht,1
+3486,Q95891,1,wikidata_name_birthyear,Themistokles Gluck,4
+10271,Q1733469,1,wikidata_name_birthyear,Karl Wittmaack,2
+4149,Q156482,1,wikidata_name_birthyear,Corneille Heymans,4
+10227,Q635119,1,wikidata_name_birthyear,Kinnier Wilson,1
+8247,Q15447432,1,wikidata_name_birthyear,Werner Schulemann,2
+10243,Q17418324,1,wikidata_name_birthyear,August Wingler,1
+2124,Q1379802,1,wikidata_name_birthyear,Walter Dandy,3
+7212,Q19043546,1,wikidata_name_birthyear,Robert Philip,1
+7009,Q1344079,1,wikidata_name_birthyear,Enrique Paschen,2
+6878,Q1971417,1,wikidata_name_birthyear,Leon Orbeli,4
+5985,Q17626970,1,wikidata_name_birthyear,Pierre Masson,1
+9812,Q215119,1,wikidata_name_birthyear,Alexander von Lichtenberg,1
+375,Q3719039,1,wikidata_name_birthyear,Edgar Allen,4
+8692,Q1591739,1,wikidata_name_birthyear,Alexei Speransky,8
+4032,Q5799354,1,wikidata_name_birthyear,Torsten Hellman,1
+1410,Q4401829,1,wikidata_name_birthyear,Richard Bruynoghe,1
+2823,Q243532,1,wikidata_name_birthyear,Joseph Erlanger,17
+3351,Q273201,1,wikidata_name_birthyear,Herbert Gasser,18
+10325,Q1036871,1,wikidata_name_birthyear,Lien-Teh Wu,1
+4505,Q1070888,1,wikidata_name_birthyear,Chevalier Jackson,2
+4772,Q5079717,1,wikidata_name_birthyear,Charles Kellaway,1
+8107,Q11382436,1,wikidata_name_birthyear,Takaoki Sasaki,14
+4502,Q4058753,1,wikidata_name_birthyear,Andrew Ivy,4
+7946,Q15438350,1,wikidata_name_birthyear,Isidor Rubin,1
+1960,Q1508419,1,wikidata_name_birthyear,George Corner,1
+5133,Q2854120,1,wikidata_name_birthyear,Antoine Lacassagne,2
+5094,Q11369744,1,wikidata_name_birthyear,Yas Kuno,6
+4916,Q85598,1,wikidata_name_birthyear,Hermann Knaus,1
+2468,Q1309584,1,wikidata_name_birthyear,Robert Doerr,3
+6708,Q872093,1,wikidata_name_birthyear,Nils Nilsson-Ehle,3
+3973,Q17183763,1,wikidata_name_birthyear,Selig Hecht,1
+5166,Q1718883,1,wikidata_name_birthyear,Patrick Laidlaw,2
+417,Q19945386,1,wikidata_name_birthyear,Albert Ancel,2
+4160,Q18811185,1,wikidata_name_birthyear,Izrael Hieger,1
+9202,Q46928,1,wikidata_name_birthyear,Max Theiler,4
+3545,Q1356567,1,wikidata_name_birthyear,Ernest Goodpasture,16
+2007,Q17332684,1,wikidata_name_birthyear,Henri Coutard,2
+17662,Q901736,1,wikidata_name_birthyear,Hans Christian Hagedorn,1
+7095,Q3876313,1,wikidata_name_birthyear,Nicola Pende,5
+1390,Q3588379,1,wikidata_name_birthyear,Emile Brumpt,1
+6662,Q5495988,1,wikidata_name_birthyear,Fred Neufeld,2
+2136,Q1336338,1,wikidata_name_birthyear,Jean Darier,1
+3120,Q5737590,1,wikidata_name_birthyear,Gösta Forssell,9
+535,Q122551,1,wikidata_name_birthyear,Max Askanazy,1
+6022,Q1064894,1,wikidata_name_birthyear,Charles Mayo,10
+6682,Q6007281,1,wikidata_name_birthyear,Joseph Nicolas,1
+8051,Q690834,1,wikidata_name_birthyear,Manfred Sakel,9
+3124,Q5737807,1,wikidata_name_birthyear,John Forssman,1
+3508,Q1586522,1,wikidata_name_birthyear,Harry Goldblatt,16
+7937,Q60577745,1,wikidata_name_birthyear,Leonard Rowntree,2
+2494,Q57192,1,wikidata_name_birthyear,Gerhard Domagk,3
+7099,Q7725717,1,wikidata_name_birthyear,Francesco Pentimalli,5
+5713,Q199652,1,wikidata_name_birthyear,Adolpho Lutz,1
+9829,Q2643434,1,wikidata_name_birthyear,Alexander von Muralt,2
+9743,Q87939,1,wikidata_name_birthyear,Anton von Eiselsberg,2
+3262,Q14861532,1,wikidata_name_birthyear,Theodor Frölich,1
+6109,Q3048611,1,wikidata_name_birthyear,Edward Mellanby,8
+6627,Q318054,1,wikidata_name_birthyear,Joseph Needham,2
+8943,Q27602926,1,wikidata_name_birthyear,Virgil Preston Sydenstricker,2
+4654,Q1243023,1,wikidata_name_birthyear,Thomas Jukes,2
+1066,Q131428006,1,wikidata_name_birthyear,Marion Blankenhorn,2
+5572,Q15453738,1,wikidata_name_birthyear,Leo Loeb,1
+6108,Q6796555,1,wikidata_name_birthyear,Lady May Mellanby,3
+10306,Q21062315,1,wikidata_name_birthyear,Dilworth Wayne Woolley,4
+2942,Q3345821,1,wikidata_name_birthyear,Noel Feissinger,1
+895,Q61670,1,wikidata_name_birthyear,Hans Berger,6
+1110,Q55903049,1,wikidata_name_birthyear,Jan Boeke,3
+10414,Q512647,1,wikidata_name_birthyear,Hans Zinsser,3
+3750,Q3371415,1,wikidata_name_birthyear,Paul György,1
+6947,Q1282594,1,wikidata_name_birthyear,Irvine Page,3
+6951,Q2419140,1,wikidata_name_birthyear,Theophilus Painter,1
+10266,Q5395196,1,wikidata_name_birthyear,Ernest Witebsky,7
+901,Q5572403,1,wikidata_name_birthyear,Hilding Berglund,1
+3847,Q5787150,1,wikidata_name_birthyear,Einar Hammarsten,1
+9728,Q69894,1,wikidata_name_birthyear,B von Borries,1
+2280,Q121126,1,wikidata_name_birthyear,Georges de Morsier,1
+10135,Q16750630,1,wikidata_name_birthyear,Lionel E. Whitby,1
+3058,Q37064,1,wikidata_name_birthyear,Alexander Fleming,21
+3070,Q137106,1,wikidata_name_birthyear,Howard Florey,14
+1691,Q2706353,1,wikidata_name_birthyear,Ugo Cerletti,34
+2267,Q366249,1,wikidata_name_birthyear,Ladislas de Meduna,4
+2559,Q2096960,1,wikidata_name_birthyear,René Dubos,5
+1706,Q58054,1,wikidata_name_birthyear,Ernst Chain,2
+547,Q552570,1,wikidata_name_birthyear,Edwin Astwood,4
+6397,Q1466689,1,wikidata_name_birthyear,Herrmann Mooser,1
+8612,Q1626035,1,wikidata_name_birthyear,Homer Smith,10
+5431,Q252487,1,wikidata_name_birthyear,Philip Levine,5
+1953,Q78501,1,wikidata_name_birthyear,Carl Cori,5
+1955,Q204733,1,wikidata_name_birthyear,Gerty Cori,2
+3606,Q217722,1,wikidata_name_birthyear,Ragnar Granit,14
+2901,Q2641921,1,wikidata_name_birthyear,Neil Fairley,2
+1061,Q984215,1,wikidata_name_birthyear,Alfred Blalock,29
+9017,Q271531,1,wikidata_name_birthyear,Helen Taussig,24
+1041,Q6242108,1,wikidata_name_birthyear,John Bittner,5
+3159,Q2423973,1,wikidata_name_birthyear,Thomas Francis,1
+2138,Q113903724,1,wikidata_name_birthyear,Daniel Cady Darrow,1
+3632,Q64021188,1,wikidata_name_birthyear,Alan Gregg,1
+1260,Q315143,1,wikidata_name_birthyear,John Boyd Orr of Brechin,4
+4920,Q6813981,1,wikidata_name_birthyear,Melvin Knisely,5
+9610,Q5392768,1,wikidata_name_birthyear,Ernest Verney,4
+9759,Q60060,1,wikidata_name_birthyear,Karl von Frisch,4
+1464,Q193550,1,wikidata_name_birthyear,Frank Burnet,6
+6979,Q319321,1,wikidata_name_birthyear,George Papanicolaou,18
+4278,Q5811491,1,wikidata_name_birthyear,Gunnar Holmgren,6
+6558,Q115475,1,wikidata_name_birthyear,Paul Hermann Müller,6
+5376,Q1732133,1,wikidata_name_birthyear,Karl Lenggenhager,1
+2015,Q2975553,1,wikidata_name_birthyear,Clarence Crafoord,5
+1022,Q3556774,1,wikidata_name_birthyear,Lucio Bini,5
+3659,Q7343982,1,wikidata_name_birthyear,Robert Gross,5
+793,Q1590825,1,wikidata_name_birthyear,Claude Beck,3
+3633,Q1727360,1,wikidata_name_birthyear,Norman McAlister Gregg,6
+8395,Q89394,1,wikidata_name_birthyear,Hans Selye,17
+3617,Q22893690,1,wikidata_name_birthyear,André Gratia,8
+3916,Q309879,1,wikidata_name_birthyear,Haldan Hartline,2
+4834,Q17418019,1,wikidata_name_birthyear,Walter Kikuth,11
+6271,Q15222601,1,wikidata_name_birthyear,Fritz Mietzsch,3
+2166,Q5643133,1,wikidata_name_birthyear,Hallowell Davis,1
+5634,Q720150,1,wikidata_name_birthyear,Rafael Lorente de Nó,6
+2578,Q1609345,1,wikidata_name_birthyear,Benjamin Duggar,1
+4357,Q155371,1,wikidata_name_birthyear,Charles Huggins,3
+4041,Q235651,1,wikidata_name_birthyear,Philip Hench,11
+4661,Q41532,1,wikidata_name_birthyear,Carl Jung,1
+3921,Q112507,1,wikidata_name_birthyear,Max Hartmann,8
+968,Q867690,1,wikidata_name_birthyear,Charles Herbert Best,10
+1236,Q19897817,1,wikidata_name_birthyear,Georges Bourguignon,3
+4216,Q43466,1,wikidata_name_birthyear,Ludwik Hirszfeld,1
+2709,Q1555759,1,wikidata_name_birthyear,Gustav Ehrhart,1
+17761,Q1356408,1,wikidata_name_birthyear,Ernest Lester Smith,9
+4553,Q808080,1,wikidata_name_birthyear,Barend C Jansen,1
+6238,Q121372,1,wikidata_name_birthyear,Karl Friedrich Meyer,4
+2693,Q910828,1,wikidata_name_birthyear,John Tileston Edsall,1
+9279,Q55073317,1,wikidata_name_birthyear,Nikolaj Vladimirovich Timoféeff-Ressovsky,1
+10257,Q2034102,1,wikidata_name_birthyear,Oskar Wintersteiner,2
+9864,Q1531803,1,wikidata_name_birthyear,Gotthilft von Studnitz,1
+6180,Q27606872,1,wikidata_name_birthyear,Miriam Menkin,1
+10114,Q6238303,1,wikidata_name_birthyear,Axel Westman,1
+6798,Q42297153,1,wikidata_name_birthyear,Gustav Nylin,1
+5347,Q4126616,1,wikidata_name_birthyear,Jörgen Lehmann,2
+4066,Q5801712,1,wikidata_name_birthyear,Folke Henschen,1
+4628,Q6705882,1,wikidata_name_birthyear,Jacob Jongbloed,4
+1430,Q90218,1,wikidata_name_birthyear,Paul Buchner,2
+7235,Q4003455,1,wikidata_name_birthyear,Umberto Pierantoni,2
+4545,Q22692432,1,wikidata_name_birthyear,Robert Janker,4
+1251,Q115448,1,wikidata_name_birthyear,Daniel Bovet,2
+1321,Q5506677,1,wikidata_name_birthyear,Frédéric Bremer,4
+2976,Q75837,1,wikidata_name_birthyear,Robert Feulgen,2
+8504,Q20713592,1,wikidata_name_birthyear,Henry Shortt,1
+5777,Q24884957,1,wikidata_name_birthyear,Madge Macklin,1
+3317,Q55720455,1,wikidata_name_birthyear,James Lawder Gamble,1
+4389,Q2317754,1,wikidata_name_birthyear,Albert Hustin,1
+9973,Q2042613,1,wikidata_name_birthyear,Owen Wangensteen,1
+7634,Q109810062,1,wikidata_name_birthyear,James Reilly,3
+3125,Q77152,1,wikidata_name_birthyear,Werner Forssmann,3
+2791,Q312961,1,wikidata_name_birthyear,John Enders,3
+7874,Q121729,1,wikidata_name_birthyear,Arturo Rosenblueth,1
+4252,Q107935,1,wikidata_name_birthyear,Paul Hoffmann,3
+5587,Q114081,1,wikidata_name_birthyear,Karl Lohmann,3
+4642,Q3719539,1,wikidata_name_birthyear,Erik Jorpes,2
+4919,Q1635859,1,wikidata_name_birthyear,Hugo Knipping,1
+4897,Q71330,1,wikidata_name_birthyear,Karl Kleist,1
+9747,Q237142,1,wikidata_name_birthyear,Ulf von Euler,1
+6931,Q11994943,1,wikidata_name_birthyear,Paul Owren,1
+9733,Q99047,1,wikidata_name_birthyear,Emil von Dungern,1
+3499,Q2547150,1,wikidata_name_birthyear,Walther Goebel,1
+5638,Q78496,1,wikidata_name_birthyear,Konrad Lorenz,1
+8530,Q122000,1,wikidata_name_birthyear,Henry Sigerist,1
+10178,Q821547,1,wikidata_name_birthyear,Carl Wiggers,1
+612,Q247575,1,wikidata_name_birthyear,Zénon-Marcel Bacq,1
+7274,Q16145494,1,wikidata_name_birthyear,Alfred Pischinger,1
+544,Q562321,1,wikidata_name_birthyear,William Astbury,1
+1021,Q2397496,1,wikidata_name_birthyear,Leon Binet,1
+9504,Q1541910,1,wikidata_name_birthyear,Alessandro Vallebona,1
+3766,Q18935970,1,wikidata_name_birthyear,Alexander Haddow,2
+2323,Q743684,1,wikidata_name_birthyear,Robert Debré,2
+4233,Q193650,1,wikidata_name_birthyear,Alan Hodgkin,1
+2457,Q246731,1,wikidata_name_birthyear,Theodosius Dobzhansky,1
+2671,Q273223,1,wikidata_name_birthyear,John Eccles,1
+4732,Q11400374,1,wikidata_name_birthyear,Seizo Katsunuma,1
+2002,Q271757,1,wikidata_name_birthyear,André Frédéric Cournand,1
+7096,Q711394,1,wikidata_name_birthyear,Wilder Penfield,2
+4562,Q1348488,1,wikidata_name_birthyear,Herbert Jasper,1
+7106,Q122927002,1,wikidata_name_birthyear,Antonio de Sousa Pereira,1
+2116,Q21032025,1,wikidata_name_birthyear,Gilbert Dalldorf,1
+10419,Q504,1,wikidata_name_birthyear,Émile Zola,2
+7903,Q202749,1,wikidata_name_birthyear,Edmond Rostand,2
+3404,Q1712645,1,wikidata_name_birthyear,Julius Gersdorff,1
+10339,Q635387,1,wikidata_name_birthyear,Alexandru Dimitrie Xenopol,2
+8018,Q885424,1,wikidata_name_birthyear,Paul Sabatier,5
+2570,Q15686221,1,wikidata_name_birthyear,Louis Ducros,1
+7470,Q42247,1,wikidata_name_birthyear,Sully (René) Prudhomme,20
+6320,Q42596,1,wikidata_name_birthyear,Frederi (Frédéric) Mistral,34
+6990,Q514741,1,wikidata_name_birthyear,Gaston Paris,4
+2841,Q518896,1,wikidata_name_birthyear,Carl Gustaf Estlander,1
+8523,Q41502,1,wikidata_name_birthyear,Henryk Sienkiewicz,7
+8015,Q2369193,1,wikidata_name_birthyear,Auguste Sabatier,1
+1181,Q15686211,1,wikidata_name_birthyear,Charles Borgeaud,3
+7661,Q220856,1,wikidata_name_birthyear,Charles Renouvier,1
+4784,Q1106745,1,wikidata_name_birthyear,Franz Kemény,2
+3089,Q470067,1,wikidata_name_birthyear,Antonio Fogazzaro,10
+1906,Q10311573,1,wikidata_name_birthyear,João da Câmara,1
+9303,Q7243,1,wikidata_name_birthyear,Lev Nikolaevich (Leo) Tolstoy,19
+10370,Q89662,1,wikidata_name_birthyear,Theodor Zahn,3
+4979,Q4230805,1,wikidata_name_birthyear,Anatoly Koni,1
+3947,Q43523,1,wikidata_name_birthyear,Gerhart Hauptmann,4
+10068,Q1040994,1,wikidata_name_birthyear,Karl Weitbrecht,1
+1712,Q57737,1,wikidata_name_birthyear,Houston Stewart Chamberlain,2
+3656,Q574871,1,wikidata_name_birthyear,Hartmann Grisar,1
+6444,Q6536902,1,wikidata_name_birthyear,Lewis Morris,19
+10345,Q40213,1,wikidata_name_birthyear,William Yeats,7
+1595,Q43440,1,wikidata_name_birthyear,Giosuè Carducci,9
+8690,Q144535,1,wikidata_name_birthyear,Herbert Spencer,1
+6188,Q90238,1,wikidata_name_birthyear,George Meredith,6
+6440,Q333519,1,wikidata_name_birthyear,John Morley,11
+1194,Q822329,1,wikidata_name_birthyear,Bernard Bosanquet,1
+716,Q3288641,1,wikidata_name_birthyear,Marcel Barrière,1
+6361,Q25351,1,wikidata_name_birthyear,Theodor Mommsen,1
+1053,Q46405,1,wikidata_name_birthyear,Bjørnstjerne Martinius Bjørnson,4
+2907,Q86443,1,wikidata_name_birthyear,Gustav Falke,1
+3323,Q467497,1,wikidata_name_birthyear,Arne Garborg,9
+9920,Q2315416,1,wikidata_name_birthyear,Charles Wagner,3
+7769,Q4786495,1,wikidata_name_birthyear,Archibald Robertson,1
+2673,Q127349,1,wikidata_name_birthyear,José Echegaray y Eizaguirre,3
+4435,Q36661,1,wikidata_name_birthyear,Henrik Johan Ibsen,3
+6179,Q716799,1,wikidata_name_birthyear,Marcelino Menéndez y Pelayo,5
+3444,Q2243172,1,wikidata_name_birthyear,Iwan Gilkin,5
+1283,Q316045,1,wikidata_name_birthyear,Georg Morris Cohen Brandes,42
+5801,Q49747,1,wikidata_name_birthyear,Maurice Maeterlinck,8
+8665,Q1278915,1,wikidata_name_birthyear,Albert Sorel,9
+1943,Q380277,1,wikidata_name_birthyear,François Coppée,1
+3477,Q748727,1,wikidata_name_birthyear,Carl Friedrich Glasenapp,14
+8936,Q315511,1,wikidata_name_birthyear,Algernon Charles Swinburne,9
+4859,Q34743,1,wikidata_name_birthyear,Rudyard Kipling,3
+2525,Q7346708,1,wikidata_name_birthyear,Robert Langton Douglas,3
+5401,Q28099253,1,wikidata_name_birthyear,Émilie Lerou,1
+1720,Q3568498,1,wikidata_name_birthyear,William Chapman,4
+5152,Q44519,1,wikidata_name_birthyear,Selma Lagerlöf,41
+1258,Q4095226,1,wikidata_name_birthyear,Borden Parker Bowne,8
+1122,Q607202,1,wikidata_name_birthyear,Gaston Boissier,1
+10151,Q1518888,1,wikidata_name_birthyear,Joseph Widmann,6
+7587,Q5541542,1,wikidata_name_birthyear,George Raymond,7
+3951,Q119149,1,wikidata_name_birthyear,Max Haushofer,1
+3694,Q535810,1,wikidata_name_birthyear,Angelo de Gubernatis,14
+979,Q1912248,1,wikidata_name_birthyear,Max Bewer,3
+1161,Q309882,1,wikidata_name_birthyear,William Booth,1
+1136,Q10311195,1,wikidata_name_birthyear,João Bonança,1
+2531,Q966764,1,wikidata_name_birthyear,Holger Drachmann,1
+5778,Q5982168,1,wikidata_name_birthyear,Ian Maclaren,1
+5865,Q4760226,1,wikidata_name_birthyear,Andrés Manjón,1
+878,Q1290837,1,wikidata_name_birthyear,Edouardo Benot,1
+1235,Q198644,1,wikidata_name_birthyear,Paul Bourget,5
+1537,Q55837614,1,wikidata_name_birthyear,Julio Calcaño,1
+3900,Q164699,1,wikidata_name_birthyear,Adolf von Harnack,2
+2851,Q47695,1,wikidata_name_birthyear,Rudolf Eucken,1
+413,Q240576,1,wikidata_name_birthyear,Edmondo de Amicis,2
+3286,Q77377,1,wikidata_name_birthyear,Elisabeth Förster-Nietzsche,8
+9605,Q193680,1,wikidata_name_birthyear,Émile Verhaeren,5
+7956,Q5121471,1,wikidata_name_birthyear,Salvador Rueda,7
+9695,Q16053,1,wikidata_name_birthyear,Eugène Melchoir de Vogüé,1
+3636,Q1669190,1,wikidata_name_birthyear,Martin Greif,2
+5285,Q981891,1,wikidata_name_birthyear,Ernest Lavisse,8
+2652,Q3749858,1,wikidata_name_birthyear,Francesco d´Ovidio,4
+4000,Q129173,1,wikidata_name_birthyear,Verner von Heidenstam,11
+8327,Q6896568,1,wikidata_name_birthyear,Molly Seawell,2
+9990,Q1417981,1,wikidata_name_birthyear,Gustav Warneck,2
+3135,Q2606914,1,wikidata_name_birthyear,Alfred Alfred Jules Émile Fouillée,1
+7793,Q122356,1,wikidata_name_birthyear,Édouard Rod,1
+2666,Q93525,1,wikidata_name_birthyear,Marie von Ebner-Eschenbach,2
+4331,Q526709,1,wikidata_name_birthyear,William Howells,1
+3892,Q132805,1,wikidata_name_birthyear,Thomas Hardy,25
+1332,Q925991,1,wikidata_name_birthyear,Robert Bridges,1
+5208,Q505827,1,wikidata_name_birthyear,Andrew Lang,1
+6507,Q2475967,1,wikidata_name_birthyear,Albert de Mun,1
+390,Q425592,1,wikidata_name_birthyear,Rafael Altamira y Crevea,7
+7602,Q6065384,1,wikidata_name_birthyear,Ernst von der Recke,10
+3260,Q366801,1,wikidata_name_birthyear,Gustav Fröding,2
+4425,Q703531,1,wikidata_name_birthyear,Harald Höffding,6
+8479,Q19185,1,wikidata_name_birthyear,George Bernard Shaw,5
+7867,Q93841,1,wikidata_name_birthyear,Peter Rosegger,3
+8310,Q94707,1,wikidata_name_birthyear,Karl Schönherr,4
+3474,Q131487,1,wikidata_name_birthyear,Karl Gjellerup,15
+4537,Q170509,1,wikidata_name_birthyear,Henry James,4
+3188,Q151936,1,wikidata_name_birthyear,James Frazer,4
+917,Q42156,1,wikidata_name_birthyear,Henri Bergson,8
+2910,Q1143985,1,wikidata_name_birthyear,Salvatore Farina,3
+7114,Q189869,1,wikidata_name_birthyear,Benito Pérez Galdós,11
+8702,Q226525,1,wikidata_name_birthyear,Carl Spitteler,14
+4849,Q1579293,1,wikidata_name_birthyear,Hans Kinck,7
+3982,Q154759,1,wikidata_name_birthyear,Sven Hedin,2
+3222,Q124151,1,wikidata_name_birthyear,Adolf Frey,7
+7341,Q225554,1,wikidata_name_birthyear,Henrik Pontoppidan,4
+7221,Q2512563,1,wikidata_name_birthyear,Edmond Picard,5
+2896,Q551543,1,wikidata_name_birthyear,Émile Faguet,2
+8979,Q7241,1,wikidata_name_birthyear,Rabindranath Tagore,1
+2529,Q970472,1,wikidata_name_birthyear,Edward Dowden,1
+5612,Q312503,1,wikidata_name_birthyear,John Lord Avebury,1
+4929,Q1389656,1,wikidata_name_birthyear,Jakob Knudsen,2
+5764,Q713271,1,wikidata_name_birthyear,Jan Machar,3
+781,Q127539,1,wikidata_name_birthyear,René Bazin,2
+4909,Q2574395,1,wikidata_name_birthyear,Willem Kloos,6
+3689,Q1115941,1,wikidata_name_birthyear,Vilhelm Grønbech,11
+2524,Q981883,1,wikidata_name_birthyear,Charles Doughty,1
+7831,Q47162,1,wikidata_name_birthyear,Romain Rolland,1
+572,Q85155,1,wikidata_name_birthyear,Ferdinand Avenarius,3
+2145,Q18750447,1,wikidata_name_birthyear,Roby Datta,2
+3183,Q332462,1,wikidata_name_birthyear,Ivan Franko,2
+3818,Q597713,1,wikidata_name_birthyear,Per Hallström,6
+8296,Q1926407,1,wikidata_name_birthyear,Henrik Schück,1
+3991,Q718724,1,wikidata_name_birthyear,Gunnar Heiberg,1
+4716,Q134641,1,wikidata_name_birthyear,Erik Axel Karlfeldt,10
+9357,Q3358346,1,wikidata_name_birthyear,Troels Troels-Lund,1
+9573,Q310630,1,wikidata_name_birthyear,Ivan Vazov,1
+8207,Q123291,1,wikidata_name_birthyear,Otto Ernst Schmidt,1
+3655,Q3195304,1,wikidata_name_birthyear,Bertel Gripenberg,14
+1126,Q553955,1,wikidata_name_birthyear,Johan Bojer,5
+1441,Q1078143,1,wikidata_name_birthyear,Olaf Bull,6
+270,Q211039,1,wikidata_name_birthyear,Jeppe Aakjaer,1
+3207,Q75171,1,wikidata_name_birthyear,Gustav Frenssen,1
+3557,Q12706,1,wikidata_name_birthyear,Maksim Gorky,5
+4592,Q161368,1,wikidata_name_birthyear,Alois Jirásek,6
+3853,Q40826,1,wikidata_name_birthyear,Knut Hamsun,3
+4256,Q51513,1,wikidata_name_birthyear,Hugo von Hofmannsthal,4
+4289,Q64404,1,wikidata_name_birthyear,Arno Holz,8
+3315,Q82248,1,wikidata_name_birthyear,John Galsworthy,6
+279,Q8000161,1,wikidata_name_birthyear,Wilbur Abbott,1
+845,Q83184,1,wikidata_name_birthyear,Jacinto Benavente,2
+10399,Q366040,1,wikidata_name_birthyear,Stefan Zeromski,4
+7673,Q3174282,1,wikidata_name_birthyear,Jean Revel,1
+1245,Q274969,1,wikidata_name_birthyear,Émile Boutroux,1
+10075,Q42511,1,wikidata_name_birthyear,Herbert Wells,4
+2829,Q72557,1,wikidata_name_birthyear,Paul Ernst,23
+2992,Q5224626,1,wikidata_name_birthyear,Darrell Figgis,1
+842,Q76032,1,wikidata_name_birthyear,Georg von Below,1
+8411,Q384594,1,wikidata_name_birthyear,Matilde Serao,6
+9445,Q80889,1,wikidata_name_birthyear,Sigrid Undset,4
+7017,Q64162,1,wikidata_name_birthyear,Ludwig von Pastor,6
+10379,Q113681,1,wikidata_name_birthyear,Israel Zangwill,1
+8030,Q6834101,1,wikidata_name_birthyear,Michael Sadleir,1
+9418,Q59687166,1,wikidata_name_birthyear,Hermann Türck,4
+2964,Q689713,1,wikidata_name_birthyear,Guglielmo Ferrero,30
+1449,Q46602,1,wikidata_name_birthyear,Ivan Alexeievitch Bounine,18
+662,Q314498,1,wikidata_name_birthyear,Konstantin Balmont,1
+5102,Q1305870,1,wikidata_name_birthyear,Einar Hjörleifsson Kvaran,2
+5871,Q37030,1,wikidata_name_birthyear,Thomas Mann,3
+2625,Q721763,1,wikidata_name_birthyear,Olav Duun,24
+6659,Q1913127,1,wikidata_name_birthyear,Max Neuburger,1
+4290,Q87969,1,wikidata_name_birthyear,Rudolf Maria Holzapfel,6
+4582,Q159552,1,wikidata_name_birthyear,Johannes Jensen,52
+7590,Q1614825,1,wikidata_name_birthyear,Paul Raynal,2
+6406,Q7150490,1,wikidata_name_birthyear,Paul More,1
+869,Q314158,1,wikidata_name_birthyear,Arnold Bennett,1
+10106,Q722835,1,wikidata_name_birthyear,Edvard Westermarck,2
+1831,Q295830,1,wikidata_name_birthyear,Paul Claudel,6
+6955,Q317967,1,wikidata_name_birthyear,Kostis Palamas,18
+6633,Q346250,1,wikidata_name_birthyear,Ada Negri,5
+5028,Q35448,1,wikidata_name_birthyear,Pyotr Krasnov,1
+4362,Q117018,1,wikidata_name_birthyear,Vicente Huidobro,1
+1155,Q1503761,1,wikidata_name_birthyear,Georg Bonne,11
+5034,Q44328,1,wikidata_name_birthyear,Karl Kraus,4
+336,Q790333,1,wikidata_name_birthyear,Avetis Aharonian,1
+4993,Q154784,1,wikidata_name_birthyear,Josip Kosor,3
+10422,Q1383771,1,wikidata_name_birthyear,Juan Zorilla de San Martín,2
+4966,Q94287,1,wikidata_name_birthyear,Erwin Kolbenheyer,5
+7008,Q3665495,1,wikidata_name_birthyear,Cesare Pascarella,3
+6229,Q76894,1,wikidata_name_birthyear,Eduard Meyer,1
+10128,Q276032,1,wikidata_name_birthyear,Edith Wharton,3
+2840,Q206391,1,wikidata_name_birthyear,Édouard Estaunié,5
+8321,Q2218715,1,wikidata_name_birthyear,Samuel Scott,1
+6954,Q645141,1,wikidata_name_birthyear,Armando Palacio Valdés,1
+2636,Q1937725,1,wikidata_name_birthyear,Theodor Däubler,1
+4341,Q60785,1,wikidata_name_birthyear,Ricarda Huch,7
+9276,Q713284,1,wikidata_name_birthyear,Felix Timmermans,3
+2543,Q41476,1,wikidata_name_birthyear,Hans Adolf Eduard Driesch,8
+728,Q87163,1,wikidata_name_birthyear,Rudolf Bartsch,6
+1065,Q3082880,1,wikidata_name_birthyear,Rufino Blanco-Fombona,4
+3670,Q12280828,1,wikidata_name_birthyear,Ivan Grozev,2
+2694,Q211514,1,wikidata_name_birthyear,Frederik van Eeden,1
+5242,Q4721713,1,wikidata_name_birthyear,Alf Larsen,1
+3388,Q57187,1,wikidata_name_birthyear,Stefan George,2
+7698,Q5019197,1,wikidata_name_birthyear,Cale Young Rice,1
+2027,Q192348,1,wikidata_name_birthyear,Benedetto Croce,14
+7572,Q312769,1,wikidata_name_birthyear,Knud Rasmussen,1
+14152,Q155087,1,wikidata_name_birthyear,Thornton Niven Wilder,21
+7779,Q1294394,1,wikidata_name_birthyear,Edwin Robinson,4
+516,Q20792056,1,wikidata_name_birthyear,Clotilde de Arvelo,1
+10191,Q84894,1,wikidata_name_birthyear,Anton Wildgans,4
+4726,Q84835,1,wikidata_name_birthyear,Rudolf Kassner,7
+9496,Q200639,1,wikidata_name_birthyear,Paul Valéry,27
+4669,Q717186,1,wikidata_name_birthyear,Arvid Järnefelt,1
+8537,Q132723,1,wikidata_name_birthyear,Frans Sillanpää,39
+4203,Q5400516,1,wikidata_name_birthyear,Yrjö Hirn,1
+5444,Q123469,1,wikidata_name_birthyear,Sinclair Lewis,1
+2537,Q486096,1,wikidata_name_birthyear,Theodore Dreiser,1
+2974,Q77024,1,wikidata_name_birthyear,Lion Feuchtwanger,1
+6213,Q5971668,1,wikidata_name_birthyear,Laura Mestre,1
+6178,Q381953,1,wikidata_name_birthyear,Ramón Menéndez Pidal,54
+4540,Q353873,1,wikidata_name_birthyear,Francis Jammes,1
+425,Q168569,1,wikidata_name_birthyear,Martin Andersen Nexø,3
+4133,Q25973,1,wikidata_name_birthyear,Hermann Hesse,8
+1353,Q254383,1,wikidata_name_birthyear,Ivana Brlic-Mazuranic,6
+7649,Q47293,1,wikidata_name_birthyear,Erich Maria Remarque,3
+3316,Q263683,1,wikidata_name_birthyear,Manuel Gálvez,7
+8557,Q216134,1,wikidata_name_birthyear,Upton Beall Sinclair,8
+1094,Q241981,1,wikidata_name_birthyear,Michael Blümelhuber,5
+6880,Q3750370,1,wikidata_name_birthyear,Francesco Orestano,1
+2754,Q84356562,1,wikidata_name_birthyear,Percival Elgood,1
+2739,Q1027772,1,wikidata_name_birthyear,Vilhelm Ekelund,2
+6815,Q5750911,1,wikidata_name_birthyear,Carlos María Ocantos,2
+7525,Q156349,1,wikidata_name_birthyear,Sarvepalli Radhakrishnan,18
+6891,Q153020,1,wikidata_name_birthyear,José Ortega y Gasset,18
+1967,Q610769,1,wikidata_name_birthyear,António Correia de Oliveira,14
+986,Q359705,1,wikidata_name_birthyear,Chajim Bialik,2
+810,Q472071,1,wikidata_name_birthyear,Max Beerbohm,1
+8759,Q111567,1,wikidata_name_birthyear,Hermann Stehr,4
+805,Q380842,1,wikidata_name_birthyear,Joseph Bédier,2
+3327,Q2787340,1,wikidata_name_birthyear,Francisco García Calderón,2
+3328,Q5709090,1,wikidata_name_birthyear,Ventura García Calderón,2
+4038,Q1809582,1,wikidata_name_birthyear,Jarl Hemmer,7
+3813,Q571689,1,wikidata_name_birthyear,Ole Hallesby,1
+3459,Q112588,1,wikidata_name_birthyear,Franz Karl Ginzkey,2
+6935,Q93157,1,wikidata_name_birthyear,Eugene O´Neill,3
+5951,Q129155,1,wikidata_name_birthyear,Roger Martin du Gard,5
+8194,Q322520,1,wikidata_name_birthyear,Jean Schlumberger,2
+10408,Q694826,1,wikidata_name_birthyear,Tadeusz Zielinski,2
+7269,Q1403,1,wikidata_name_birthyear,Luigi Pirandello,1
+4270,Q5650140,1,wikidata_name_birthyear,Hans Holm,1
+5938,Q16773621,1,wikidata_name_birthyear,Maria Madalena de Martel Patrício,14
+9669,Q5341389,1,wikidata_name_birthyear,Edvarts Virza,4
+5738,Q6151421,1,wikidata_name_birthyear,Sven Lönborg,1
+5838,Q286253,1,wikidata_name_birthyear,Émile Mâle,1
+4698,Q3480970,1,wikidata_name_birthyear,Gudmundur Kamban,1
+9022,Q521410,1,wikidata_name_birthyear,Saul Tchernichowsky,1
+7836,Q334983,1,wikidata_name_birthyear,Jules Romains,8
+1847,Q7933226,1,wikidata_name_birthyear,Violet Clifton,1
+9440,Q185085,1,wikidata_name_birthyear,Miguel de Unamuno y Jugo,5
+7721,Q89233,1,wikidata_name_birthyear,Elise Richter,2
+5973,Q471413,1,wikidata_name_birthyear,John Masefield,2
+1760,Q183167,1,wikidata_name_birthyear,Gilbert Chesterton,1
+8948,Q920991,1,wikidata_name_birthyear,Dezsö Szabó,1
+7658,Q15997062,1,wikidata_name_birthyear,Víctor Manuel Rendón,1
+6575,Q2585507,1,wikidata_name_birthyear,Arvid Mörne,4
+3854,Q112388,1,wikidata_name_birthyear,Enrica von Handel-Mazzetti,2
+4878,Q60698,1,wikidata_name_birthyear,Ludwig Klages,2
+9315,Q241470,1,wikidata_name_birthyear,Cecile Tormay,9
+2908,Q76539,1,wikidata_name_birthyear,Hans Fallada,2
+2581,Q20733,1,wikidata_name_birthyear,Georges Duhamel,18
+820,Q3425944,1,wikidata_name_birthyear,René Béhaine,9
+5812,Q646689,1,wikidata_name_birthyear,Maurice Magre,2
+8159,Q67576,1,wikidata_name_birthyear,Arnold Schering,1
+8990,Q4981978,1,wikidata_name_birthyear,Maila Talvio,3
+3460,Q177411,1,wikidata_name_birthyear,Jean Giono,7
+4647,Q2266966,1,wikidata_name_birthyear,Maria Jotuni,1
+2906,Q721749,1,wikidata_name_birthyear,Johan Falkberget,25
+9620,Q586323,1,wikidata_name_birthyear,Albert Verwey,3
+8007,Q4994383,1,wikidata_name_birthyear,Valdemar Rördam,3
+8058,Q344320,1,wikidata_name_birthyear,Sally Salminen,3
+1432,Q80900,1,wikidata_name_birthyear,Pearl Buck,9
+6326,Q173540,1,wikidata_name_birthyear,Margaret Mitchell,1
+1724,Q3132461,1,wikidata_name_birthyear,Henriette Charasson,17
+8155,Q202355,1,wikidata_name_birthyear,Arthur van Schendel,1
+4397,Q81447,1,wikidata_name_birthyear,Aldous Huxley,3
+9033,Q924740,1,wikidata_name_birthyear,Herman Teirlinck,3
+1632,Q5458117,1,wikidata_name_birthyear,Flávio de Carvalho,1
+7303,Q99889224,1,wikidata_name_birthyear,Egidio Poblete Escudero,1
+4335,Q47667,1,wikidata_name_birthyear,Hu Shih,2
+628,Q27559987,1,wikidata_name_birthyear,Eugène Baie,5
+4364,Q276280,1,wikidata_name_birthyear,Johan Huizinga,10
+9960,Q548004,1,wikidata_name_birthyear,Hugh Walpole,1
+2097,Q242423,1,wikidata_name_birthyear,Maria Dabrowska,3
+7822,Q441439,1,wikidata_name_birthyear,Henriette Roland Holst van der Schalk,2
+5492,Q334086,1,wikidata_name_birthyear,Lin Yutang,4
+8080,Q193608,1,wikidata_name_birthyear,Carl Sandburg,5
+1598,Q5602474,1,wikidata_name_birthyear,Gösta Carlberg,1
+635,Q47514990,1,wikidata_name_birthyear,Albert Bailly,1
+1092,Q725559,1,wikidata_name_birthyear,Edmund Blunden,6
+7182,Q4957412,1,wikidata_name_birthyear,Branislav Petronievic,3
+7012,Q1377326,1,wikidata_name_birthyear,Teixeira de Pascoaes,5
+6424,Q1065287,1,wikidata_name_birthyear,Charles Morgan,8
+1615,Q77491,1,wikidata_name_birthyear,Hans Carossa,3
+8564,Q331173,1,wikidata_name_birthyear,Sigfrid Siwertz,1
+888,Q184656,1,wikidata_name_birthyear,Nikolaj Berdyayev,7
+567,Q192207,1,wikidata_name_birthyear,Sri Aurobindo,2
+4029,Q2033811,1,wikidata_name_birthyear,Franz Hellens,2
+625,Q270584,1,wikidata_name_birthyear,Elisabet Bagriana,4
+10083,Q78514,1,wikidata_name_birthyear,Franz Werfel,4
+8766,Q39212,1,wikidata_name_birthyear,John Steinbeck,5
+10463,Q571691,1,wikidata_name_birthyear,Arnulf Øverland,14
+7553,Q123635,1,wikidata_name_birthyear,Charles-Ferdinand Ramuz,10
+9443,Q154410,1,wikidata_name_birthyear,Marie Under,14
+2757,Q37767,1,wikidata_name_birthyear,Thomas Eliot,7
+3128,Q189119,1,wikidata_name_birthyear,Edward Morgan Forster,9
+9629,Q381443,1,wikidata_name_birthyear,Tarjei Vesaas,36
+1797,Q8016,1,wikidata_name_birthyear,Winston Leonard Spencer Churchill,17
+7016,Q41223,1,wikidata_name_birthyear,Boris Pasternak,9
+519,Q380439,1,wikidata_name_birthyear,Schalom Asch,2
+3644,Q5734709,1,wikidata_name_birthyear,Herbert Grierson,1
+3426,Q47484,1,wikidata_name_birthyear,André Gide,2
+6005,Q81685,1,wikidata_name_birthyear,François Mauriac,8
+8531,Q359839,1,wikidata_name_birthyear,Angelos Sikelianos,7
+8539,Q168431,1,wikidata_name_birthyear,Ignazio Silone,5
+4681,Q731925,1,wikidata_name_birthyear,Toyohiko Kagawa,9
+6934,Q4893489,1,wikidata_name_birthyear,Bernard O´Dowd,3
+4692,Q1358306,1,wikidata_name_birthyear,Horace Kallen,1
+4747,Q214622,1,wikidata_name_birthyear,Nikos Kazantzakis,6
+2545,Q3565263,1,wikidata_name_birthyear,Georgios Drossinis,4
+10340,Q1133269,1,wikidata_name_birthyear,Grigorios Xenopoulos,1
+5150,Q93137,1,wikidata_name_birthyear,Pär Fabian Lagerkvist,9
+5850,Q151164,1,wikidata_name_birthyear,Georges André Malraux,53
+8503,Q42398,1,wikidata_name_birthyear,Mikhail Sholokhov,18
+4037,Q23434,1,wikidata_name_birthyear,Ernest Hemingway,4
+5292,Q80321,1,wikidata_name_birthyear,Halldór Kiljan Laxness,23
+8220,Q2357623,1,wikidata_name_birthyear,Zalman Schneur,1
+3039,Q5298346,1,wikidata_name_birthyear,Dorothy Fisher,2
+600,Q650303,1,wikidata_name_birthyear,Riccardo Bacchelli,15
+9345,Q1373357,1,wikidata_name_birthyear,George Macauley Trevelyan,1
+1883,Q218679,1,wikidata_name_birthyear,Sidonie Gabrielle Colette,1
+4387,Q328765,1,wikidata_name_birthyear,Taha Hussein,13
+3618,Q5366455,1,wikidata_name_birthyear,Jacinto Grau Delgado,1
+7682,Q462721,1,wikidata_name_birthyear,Alfonso Reyes,2
+6933,Q315170,1,wikidata_name_birthyear,Sean O´Casey,5
+6403,Q161933,1,wikidata_name_birthyear,Alberto Moravia,13
+1572,Q34670,1,wikidata_name_birthyear,Albert Camus,2
+5391,Q471664,1,wikidata_name_birthyear,Leonid Leonov,2
+3540,Q43258,1,wikidata_name_birthyear,Enrique González Martínez,1
+1421,Q84423,1,wikidata_name_birthyear,Martin Buber,9
+5309,Q62798,1,wikidata_name_birthyear,Gertrud von Le Fort,1
+6781,Q1390604,1,wikidata_name_birthyear,Alfred Noyes,1
+9327,Q185381,1,wikidata_name_birthyear,Arnold Toynbee,2
+3619,Q201732,1,wikidata_name_birthyear,Robert von Ranke Graves,7
+2602,Q458658,1,wikidata_name_birthyear,Edward J Moreton Drax Plunkett Dunsany,1
+1083,Q2090464,1,wikidata_name_birthyear,Jakobus Bloem,1
+9633,Q437782,1,wikidata_name_birthyear,Simon Vestdijk,24
+4563,Q76509,1,wikidata_name_birthyear,Karl Jaspers,1
+9962,Q193111,1,wikidata_name_birthyear,Mika Waltari,7
+8719,Q223230,1,wikidata_name_birthyear,Leopold Staff,1
+3628,Q128560,1,wikidata_name_birthyear,Graham Greene,18
+3248,Q168728,1,wikidata_name_birthyear,Robert Frost,2
+7523,Q2161620,1,wikidata_name_birthyear,Thomas Raddall,1
+7980,Q33760,1,wikidata_name_birthyear,Bertrand Russell,44
+2130,Q1388664,1,wikidata_name_birthyear,Júlio Dantas,1
+1077,Q182804,1,wikidata_name_birthyear,Karen Blixen,1
+2414,Q131805,1,wikidata_name_birthyear,John Dewey,1
+1355,Q84150,1,wikidata_name_birthyear,Hermann Broch,1
+12009,Q311401,1,wikidata_name_birthyear,Romulo Gallegos,10
+12028,Q1000729,1,wikidata_name_birthyear,José-Maria Ferreira de Castro,4
+12042,Q702468,1,wikidata_name_birthyear,Salvador de Madariaga y Rojo,11
+13601,Q704552,1,wikidata_name_birthyear,Werner Bergengruen,1
+8288,Q49325,1,wikidata_name_birthyear,Albert Schweitzer,32
+12069,Q583797,1,wikidata_name_birthyear,Alberto Hidalgo,1
+12079,Q102483,1,wikidata_name_birthyear,Jaroslav Seifert,2
+12090,Q83174,1,wikidata_name_birthyear,Eugenio Montale,24
+12091,Q311802,1,wikidata_name_birthyear,Giuseppe Ungaretti,13
+12100,Q654747,1,wikidata_name_birthyear,Leslie Poles Hartley,2
+12110,Q134942,1,wikidata_name_birthyear,William Somerset Maugham,2
+12112,Q163366,1,wikidata_name_birthyear,Ezra Pound,8
+12119,Q1399264,1,wikidata_name_birthyear,Henri Bosco,2
+6982,Q529858,1,wikidata_name_birthyear,Giovanni Papini,2
+12135,Q165823,1,wikidata_name_birthyear,George Seferis,1
+12257,Q236630,1,wikidata_name_birthyear,Marcel Pagnol,1
+13234,Q379956,1,wikidata_name_birthyear,Henry de Montherlant,9
+12260,Q34189,1,wikidata_name_birthyear,Pablo Neruda,17
+12262,Q551761,1,wikidata_name_birthyear,Jean Guitton,1
+12271,Q116750,1,wikidata_name_birthyear,Gonzague de Reynold,1
+12281,Q154145,1,wikidata_name_birthyear,Gabriel Marcel,3
+12287,Q909,1,wikidata_name_birthyear,Jorge Luis Borges,34
+12292,Q732569,1,wikidata_name_birthyear,Jules Supervielle,1
+12293,Q76727,1,wikidata_name_birthyear,Ernst Jünger,4
+12321,Q37327,1,wikidata_name_birthyear,Samuel Beckett,22
+12323,Q6522877,1,wikidata_name_birthyear,Lennox Robinson,1
+12329,Q311037,1,wikidata_name_birthyear,Väinö Linna,10
+12331,Q312628,1,wikidata_name_birthyear,Carlo Levi,2
+12337,Q9364,1,wikidata_name_birthyear,Jean-Paul Sartre,5
+12339,Q512877,1,wikidata_name_birthyear,Knuth Becker,1
+12341,Q517743,1,wikidata_name_birthyear,André Chamson,23
+12346,Q92319,1,wikidata_name_birthyear,Frank Thiess,1
+12349,Q558960,1,wikidata_name_birthyear,Jaroslaw Iwaszkiewicz,3
+12362,Q83038,1,wikidata_name_birthyear,Salvatore Quasimodo,3
+12374,Q316213,1,wikidata_name_birthyear,Junichiro Tanizaki,2
+12388,Q128790,1,wikidata_name_birthyear,Georges Simenon,4
+12397,Q1827287,1,wikidata_name_birthyear,Lionel Trilling,2
+12401,Q312720,1,wikidata_name_birthyear,Robert Penn Warren,3
+12404,Q325428,1,wikidata_name_birthyear,Miroslav Krleza,10
+12365,Q443786,1,wikidata_name_birthyear,Maurice Bowra,2
+12408,Q134262,1,wikidata_name_birthyear,Tennessee Williams,2
+12012,Q1382427,1,wikidata_name_birthyear,Fernand Baldensperger,1
+12411,Q1398332,1,wikidata_name_birthyear,John Cowper Powys,1
+12428,Q298051,1,wikidata_name_birthyear,Julien Gracq,3
+12455,Q4128,1,wikidata_name_birthyear,Louis Aragon,14
+12466,Q2428288,1,wikidata_name_birthyear,Frank Raymond Leavis,1
+12475,Q44851,1,wikidata_name_birthyear,Miguel Torga,2
+12487,Q6004485,1,wikidata_name_birthyear,Maria Raquel Adler,1
+11598,Q75868,1,wikidata_name_birthyear,Arnold Zweig,6
+12490,Q115483,1,wikidata_name_birthyear,Max Rudolf Frisch,13
+12519,Q443528,1,wikidata_name_birthyear,John Boynton Priestley,1
+12526,Q315015,1,wikidata_name_birthyear,René Émile Char,7
+12527,Q124527,1,wikidata_name_birthyear,James Thurber,3
+12536,Q371019,1,wikidata_name_birthyear,Aksel Sandemose,3
+12538,Q42747,1,wikidata_name_birthyear,Heinrich Böll,29
+12540,Q908585,1,wikidata_name_birthyear,Junzaburo Nishiwaki,4
+12084,Q892,1,wikidata_name_birthyear,John Ronald Reuel Tolkien,2
+12557,Q23481,1,wikidata_name_birthyear,Friedrich Dürrenmatt,16
+12586,Q179025,1,wikidata_name_birthyear,Jean Anouilh,4
+12589,Q43736,1,wikidata_name_birthyear,Yasunari Kawabata,4
+12590,Q219784,1,wikidata_name_birthyear,Lawrence Durrell,5
+15732,Q333575,1,wikidata_name_birthyear,Charles Percy Snow,6
+12580,Q178698,1,wikidata_name_birthyear,Wystan Hugh Auden,40
+12597,Q704931,1,wikidata_name_birthyear,Edmund Wilson,8
+12602,Q7197,1,wikidata_name_birthyear,Simone Lucie Ernestine Marie de Beauvoir,2
+12664,Q59837,1,wikidata_name_birthyear,Jorge Guillén Álvarez,12
+12708,Q1751663,1,wikidata_name_birthyear,Pietro Ubaldi,5
+13737,Q156201,1,wikidata_name_birthyear,Roman Osipovich Jakobson,1
+12682,Q365406,1,wikidata_name_birthyear,Vilhelm Moberg,9
+12522,Q76546,1,wikidata_name_birthyear,Emil Erich Kästner,7
+12632,Q2600983,1,wikidata_name_birthyear,Josep Carner,7
+12669,Q131326,1,wikidata_name_birthyear,Eyvind Johnson,17
+12755,Q76820,1,wikidata_name_birthyear,Carl Zuckmayer,8
+12758,Q331798,1,wikidata_name_birthyear,Andreas William Heinesen,10
+12630,Q309716,1,wikidata_name_birthyear,Michel Butor,4
+12662,Q518748,1,wikidata_name_birthyear,Jean Guéhenno,1
+12672,Q561479,1,wikidata_name_birthyear,Marcel Jouhandeau,3
+12680,Q134456,1,wikidata_name_birthyear,Yukio Mishima,3
+15263,Q36591,1,wikidata_name_birthyear,Vladimir Vladimirovich Nabokov,14
+12691,Q965935,1,wikidata_name_birthyear,Henri Queffélec,1
+12697,Q57074,1,wikidata_name_birthyear,Nelly Sachs,4
+12703,Q154545,1,wikidata_name_birthyear,Léopold Sédar Senghor,6
+12707,Q3121336,1,wikidata_name_birthyear,Gustave Thibon,3
+13187,Q75603,1,wikidata_name_birthyear,Miguel Ángel Asturias,5
+13197,Q132589,1,wikidata_name_birthyear,Camilo José Cela,2
+13199,Q153905,1,wikidata_name_birthyear,Paul Celan,5
+13205,Q366311,1,wikidata_name_birthyear,Gunnar Ekelöf,2
+13207,Q164469,1,wikidata_name_birthyear,Pierre Emmanuel,1
+13208,Q1371154,1,wikidata_name_birthyear,James Thomas Farrell,1
+13224,Q46706,1,wikidata_name_birthyear,Eugène Ionesco,8
+13228,Q981448,1,wikidata_name_birthyear,Robert Traill Spence Lowell IV,5
+13259,Q981981,1,wikidata_name_birthyear,Hugh MacDiarmid,1
+5958,Q132695,1,wikidata_name_birthyear,Harry Martinson,15
+13232,Q160780,1,wikidata_name_birthyear,Henri Michaux,2
+12032,Q964355,1,wikidata_name_birthyear,José Maria Peman,22
+13238,Q3159742,1,wikidata_name_birthyear,Jacques Perret,1
+13239,Q2487151,1,wikidata_name_birthyear,Jacques Pirenne,1
+13241,Q236958,1,wikidata_name_birthyear,Katherine Anne Porter,3
+13246,Q88296,1,wikidata_name_birthyear,Ina Seidel,1
+13255,Q469885,1,wikidata_name_birthyear,Judith Wright,8
+13735,Q80440,1,wikidata_name_birthyear,Anna Achmatova,5
+13742,Q152388,1,wikidata_name_birthyear,Theodor Wiesengrund Adorno,1
+13744,Q1790503,1,wikidata_name_birthyear,Alceu Amoroso Lima,1
+13748,Q435755,1,wikidata_name_birthyear,Tudor Arghezi,1
+13750,Q216466,1,wikidata_name_birthyear,Alejo Carpentier y Valmont,4
+13752,Q2714618,1,wikidata_name_birthyear,Gilbert Cesbron,1
+13761,Q3141517,1,wikidata_name_birthyear,Pierre-Jakez Helias,1
+13763,Q381107,1,wikidata_name_birthyear,Gyula Illyés,12
+13768,Q62365,1,wikidata_name_birthyear,Marie Luise Kaschnitz,2
+13778,Q368812,1,wikidata_name_birthyear,Konstantin Paustovskij,3
+13783,Q216398,1,wikidata_name_birthyear,Allan Sillitoe,1
+13791,Q1037670,1,wikidata_name_birthyear,Carl Erik Soya,1
+13795,Q193674,1,wikidata_name_birthyear,Henri Troyat,1
+13803,Q163118,1,wikidata_name_birthyear,Marguerite Yourcenar,1
+14114,Q507746,1,wikidata_name_birthyear,Alexandre Arnoux,2
+14118,Q471948,1,wikidata_name_birthyear,Johan Collett Müller Borgen,1
+14126,Q378645,1,wikidata_name_birthyear,Carlo Emilio Gadda,1
+14130,Q275175,1,wikidata_name_birthyear,Witold Marian Gombrowicz,3
+14131,Q6538,1,wikidata_name_birthyear,Günter Wilhelm Grass,17
+14136,Q683230,1,wikidata_name_birthyear,Thierry Maulnier Maulnier,1
+14139,Q3132969,1,wikidata_name_birthyear,Henri Muller,1
+12573,Q2545709,1,wikidata_name_birthyear,Walter Pabst,1
+12272,Q681776,1,wikidata_name_birthyear,Pierre-Henri Simon,1
+14150,Q202385,1,wikidata_name_birthyear,Arnold Wesker,2
+14758,Q184440,1,wikidata_name_birthyear,Jorge Amado,13
+14765,Q379745,1,wikidata_name_birthyear,Carlos Drummond de Andrade,3
+14773,Q83059,1,wikidata_name_birthyear,Saul Bellow,6
+14948,Q1370235,1,wikidata_name_birthyear,Emil Boyson,2
+13633,Q715163,1,wikidata_name_birthyear,Arturo Capdevila,3
+14956,Q1370166,1,wikidata_name_birthyear,Rabbe Arnfinn Enckell,10
+14958,Q44584,1,wikidata_name_birthyear,Hans Magnus Enzensberger,2
+14961,Q184622,1,wikidata_name_birthyear,Jean Genet,1
+14964,Q4499083,1,wikidata_name_birthyear,Lawrence Sargent Hall,1
+14968,Q67405,1,wikidata_name_birthyear,Friedrich Georg Jünger,1
+14973,Q151523,1,wikidata_name_birthyear,Georg Lukács,1
+14977,Q5878790,1,wikidata_name_birthyear,Germán Pardo García,6
+15007,Q2785040,1,wikidata_name_birthyear,André Pézard,1
+15000,Q131549,1,wikidata_name_birthyear,Claude Eugène Henri Simon,9
+14988,Q2628029,1,wikidata_name_birthyear,Pavlo Tychyna,2
+14990,Q2632284,1,wikidata_name_birthyear,Ivan Drach,2
+14991,Q274302,1,wikidata_name_birthyear,Lina Kostenko,1
+15005,Q3324600,1,wikidata_name_birthyear,Agustí Bartra,2
+15012,Q3184834,1,wikidata_name_birthyear,Joseph Delteil,1
+13248,Q704015,1,wikidata_name_birthyear,Konstantin Fedin,1
+15017,Q161363,1,wikidata_name_birthyear,Zbigniew Herbert,1
+15018,Q471450,1,wikidata_name_birthyear,Vladimír Holan,8
+15055,Q1122051,1,wikidata_name_birthyear,Edward Montague Compton Mackenzie,17
+15037,Q278495,1,wikidata_name_birthyear,Marianne Craig Moore,1
+15038,Q18832,1,wikidata_name_birthyear,Sławomir Mrożek,2
+15058,Q327275,1,wikidata_name_birthyear,Tadeusz Rózewicz,4
+15284,Q540155,1,wikidata_name_birthyear,Friedebert Tuglas,3
+15043,Q7177470,1,wikidata_name_birthyear,Peter Vansittart,1
+15048,Q129187,1,wikidata_name_birthyear,Patrick White,19
+15051,Q287460,1,wikidata_name_birthyear,Angus Wilson,2
+15081,Q219420,1,wikidata_name_birthyear,Edward Franklin Albee,3
+15087,Q347767,1,wikidata_name_birthyear,Jerzy Andrzejewski,3
+15104,Q80064,1,wikidata_name_birthyear,Elias Canetti,7
+15107,Q965990,1,wikidata_name_birthyear,Jean Cassou,1
+15113,Q223955,1,wikidata_name_birthyear,Aimé Césaire,2
+15131,Q862935,1,wikidata_name_birthyear,Louis Guilloux,1
+15137,Q712734,1,wikidata_name_birthyear,Yasushi Inoue,1
+15141,Q167112,1,wikidata_name_birthyear,Bernhard Karlgren,1
+15146,Q77753,1,wikidata_name_birthyear,Karl Krolow,2
+15148,Q76412,1,wikidata_name_birthyear,Siegfried Lenz,5
+15152,Q2600504,1,wikidata_name_birthyear,Hugh MacLennan,4
+5920,Q45723,1,wikidata_name_birthyear,Jacques Maritain,2
+15163,Q1212738,1,wikidata_name_birthyear,László Mécs,17
+15165,Q80596,1,wikidata_name_birthyear,Arthur Miller,4
+15174,Q123389,1,wikidata_name_birthyear,Robert Pinget,1
+15175,Q573813,1,wikidata_name_birthyear,Anthony Powell,1
+15177,Q218690,1,wikidata_name_birthyear,Raymond Queneau,1
+15181,Q216266,1,wikidata_name_birthyear,Alain Robbe-Grillet,2
+15182,Q1075045,1,wikidata_name_birthyear,Gustave Roud,1
+15184,Q4356127,1,wikidata_name_birthyear,Hans Ruin,4
+15185,Q555358,1,wikidata_name_birthyear,Hannu Sulo Salama,2
+15187,Q297758,1,wikidata_name_birthyear,Nathalie Sarraute,1
+15192,Q12898765,1,wikidata_name_birthyear,Ton Smerdel,1
+15196,Q2468239,1,wikidata_name_birthyear,Zaharia Stancu,19
+15201,Q4498551,1,wikidata_name_birthyear,Ho Huu Tuong,1
+16470,Q2602795,1,wikidata_name_birthyear,Gerard Walschap,13
+15226,Q500999,1,wikidata_name_birthyear,Eugen Barbu,1
+15699,Q546023,1,wikidata_name_birthyear,Fazıl Hüsnü Dağlarca,3
+15314,Q372549,1,wikidata_name_birthyear,Salvador Espriu i Castelló,6
+15242,Q3435194,1,wikidata_name_birthyear,Robert Ganzo,1
+15243,Q444876,1,wikidata_name_birthyear,Paavo Juhani Haavikko,3
+15247,Q1064421,1,wikidata_name_birthyear,Sei Itō,1
+15316,Q843830,1,wikidata_name_birthyear,Tatsuzō Ishikawa,1
+15253,Q112214,1,wikidata_name_birthyear,Alexander Lernet-Holenia,1
+15317,Q2420498,1,wikidata_name_birthyear,John Saunders Lewis,2
+15259,Q128985,1,wikidata_name_birthyear,Harold Macmillan,2
+15268,Q72790,1,wikidata_name_birthyear,Victoria Ocampo,3
+15271,Q535311,1,wikidata_name_birthyear,Pandelis Prevelakis,2
+15275,Q123698,1,wikidata_name_birthyear,Denis de Rougemont,2
+15320,Q330652,1,wikidata_name_birthyear,Abraham Sutzkever,2
+15289,Q5490239,1,wikidata_name_birthyear,Frank Waters,1
+15298,Q444423,1,wikidata_name_birthyear,Sándor Weöres,5
+15304,Q4739067,1,wikidata_name_birthyear,Amado Magcalas Yuzon,2
+15689,Q273210,1,wikidata_name_birthyear,James Arthur Baldwin,1
+15691,Q3351726,1,wikidata_name_birthyear,Tarashankar Bandyopadhyay,2
+15693,Q1345193,1,wikidata_name_birthyear,Mikola Bažan,1
+15694,Q109833219,1,wikidata_name_birthyear,Jawad Boulos,1
+15700,Q2068149,1,wikidata_name_birthyear,Tsendiin Damdinsüren,1
+15702,Q120117,1,wikidata_name_birthyear,Paul Demiéville,1
+15704,Q157322,1,wikidata_name_birthyear,Romain Gary,3
+15705,Q22750,1,wikidata_name_birthyear,Maurice Genevoix,1
+15706,Q44183,1,wikidata_name_birthyear,William Gerald Golding,4
+15711,Q2369634,1,wikidata_name_birthyear,Younghill Kang,1
+15715,Q78494,1,wikidata_name_birthyear,Arthur Koestler,2
+15716,Q313758,1,wikidata_name_birthyear,Philip Arthur Larkin,2
+12396,Q633354,1,wikidata_name_birthyear,Archibald MacLeish,1
+15767,Q5504807,1,wikidata_name_birthyear,Fritiof Nilsson Piraten,1
+15727,Q297409,1,wikidata_name_birthyear,Yiannis Ritsos,5
+15728,Q1393458,1,wikidata_name_birthyear,Georges Schehadé,4
+15729,Q77325,1,wikidata_name_birthyear,Arno Schmidt,2
+15735,Q18391,1,wikidata_name_birthyear,Elie Wiesel,74
+15737,Q6461426,1,wikidata_name_birthyear,José García Villa,4
+15740,Q1278677,1,wikidata_name_birthyear,Henry William Williamson,1
+16390,Q2226193,1,wikidata_name_birthyear,Said Akl,1
+16403,Q469627,1,wikidata_name_birthyear,Louis Paul Boon,8
+16407,Q217619,1,wikidata_name_birthyear,Anthony Burgess,3
+12693,Q2385894,1,wikidata_name_birthyear,Suniti Kumar Chatterji,2
+16415,Q319578,1,wikidata_name_birthyear,Sri Chinmoy Kumar Ghose,8
+16420,Q546023,1,wikidata_name_birthyear,Fazil Hüsnü Daglarca,2
+16422,Q160478,1,wikidata_name_birthyear,Odysseas Elytis,2
+16423,Q2776972,1,wikidata_name_birthyear,Jacob Glatstein,1
+16426,Q47619,1,wikidata_name_birthyear,Nadine Gordimer,3
+16427,Q334952,1,wikidata_name_birthyear,Julien Green,8
+16428,Q2019161,1,wikidata_name_birthyear,Tawfiq al-Hakim,3
+16434,Q208101,1,wikidata_name_birthyear,Joseph Heller,1
+15189,Q156201,1,wikidata_name_birthyear,Roman Jacobson,1
+16436,Q517710,1,wikidata_name_birthyear,Ferenc Juhász,2
+16440,Q40874,1,wikidata_name_birthyear,Doris Lessing,3
+16442,Q55767,1,wikidata_name_birthyear,Astrid Lindgren,2
+16446,Q98541947,1,wikidata_name_birthyear,Stanislaus Lynch,1
+16447,Q180962,1,wikidata_name_birthyear,Norman Kingsley Mailer,3
+16448,Q351547,1,wikidata_name_birthyear,Bernard Malamud,3
+16450,Q3087137,1,wikidata_name_birthyear,Frederick Feikema Manfred,6
+16453,Q543798,1,wikidata_name_birthyear,Veijo Väinö Valvo Meri,2
+16455,Q44593,1,wikidata_name_birthyear,Vidiadhar Surajprasad Naipaul,3
+16456,Q2311487,1,wikidata_name_birthyear,Mikhail Naimy,1
+16459,Q361623,1,wikidata_name_birthyear,Alan Stewart Paton,1
+16463,Q187019,1,wikidata_name_birthyear,Philip Milton Roth,1
+16469,Q5482528,1,wikidata_name_birthyear,Henry Francis Montgomery Stuart,1
+16472,Q10833802,1,wikidata_name_birthyear,Vu Hoang Chuong,1
+16474,Q1967240,1,wikidata_name_birthyear,Aaron Zeitlin,1
+16751,Q380645,1,wikidata_name_birthyear,Conrad Potter Aiken,1
+16752,Q134644,1,wikidata_name_birthyear,Vicente Pío Marcelino Cirilo Aleixandre y Merlo,1
+16764,Q923019,1,wikidata_name_birthyear,Miodrag Bulatovic,2
+16767,Q3497110,1,wikidata_name_birthyear,Chiang Yee,1
+16772,Q123553,1,wikidata_name_birthyear,Albert Cohen,1
+16774,Q365056,1,wikidata_name_birthyear,Adolfo Costa du Rels,2
+16785,Q444876,1,wikidata_name_birthyear,Paavo Juhani Haavikko,1
+16792,Q5406929,1,wikidata_name_birthyear,Eugen Jebelean,4
+16795,Q327142,1,wikidata_name_birthyear,Yasar Kemal,3
+16803,Q48589,1,wikidata_name_birthyear,Zenta Maurina,1
+16810,Q187765,1,wikidata_name_birthyear,Henry Valentine Miller,1
+16815,Q1337955,1,wikidata_name_birthyear,John Crowe Ransom,1
+16816,Q75612,1,wikidata_name_birthyear,Isaac Bashevis Singer,5
+16852,Q3372390,1,wikidata_name_birthyear,Paul Voivenel,1
+15966,Q274163,1,wikidata_name_birthyear,Louise Weiss,6
+639,Q191016,1,wikidata_name_birthyear,Fredrik Bajer,56
+7015,Q180409,1,wikidata_name_birthyear,Frédéric Passy,39
+2190,Q367248,1,wikidata_name_birthyear,Jean de Bloch,5
+2021,Q189841,1,wikidata_name_birthyear,William Randal Cremer,25
+2387,Q382744,1,wikidata_name_birthyear,Chevalier Edouard Eugène Descamps,27
+2569,Q122368,1,wikidata_name_birthyear,Élie Ducommun,17
+2594,Q12091,1,wikidata_name_birthyear,Jean Henry Dunant,9
+3493,Q179458,1,wikidata_name_birthyear,Charles Albert Gobat,7
+5567,Q2324034,1,wikidata_name_birthyear,Jan Jacob Lodewijk ten Kate,2
+5580,Q105647,1,wikidata_name_birthyear,Eduard Loewenthal,12
+5562,Q2895165,1,wikidata_name_birthyear,Belva Ann Lockwood,2
+6490,Q124535,1,wikidata_name_birthyear,Gustave Moynier,4
+7720,Q99119,1,wikidata_name_birthyear,Adolf Richter,46
+8750,Q288301,1,wikidata_name_birthyear,William Thomas Stead,7
+9438,Q126716,1,wikidata_name_birthyear,Otto Umfrid,31
+19301,Q3262567,1,wikidata_name_birthyear,Louis Léger Vauthier,1
+500,Q192618,1,wikidata_name_birthyear,Klas Pontus Arnoldson,31
+3504,Q3552163,1,wikidata_name_birthyear,Urbain Gohier,6
+6368,Q12086,1,wikidata_name_birthyear,Ernesto Teodoro Moneta,70
+5659,Q4722768,1,wikidata_name_birthyear,Alfred Henry Love,3
+5697,Q4566367,1,wikidata_name_birthyear,John Theodor Lund,8
+7073,Q12354135,1,wikidata_name_birthyear,Priscilla Hannah Peckover,5
+7393,Q1622709,1,wikidata_name_birthyear,Hodgson Pratt,22
+1030,Q24175452,1,wikidata_name_birthyear,Walter Bion,3
+2134,Q94518563,1,wikidata_name_birthyear,William Evans Darby,19
+7653,Q230814,1,wikidata_name_birthyear,Louis Renault,15
+697,Q5565726,1,wikidata_name_birthyear,Thomas Barclay,33
+726,Q215576,1,wikidata_name_birthyear,Richard Bartholdt,16
+8596,Q721781,1,wikidata_name_birthyear,Paul Smet de Naeyer,1
+7858,Q33866,1,wikidata_name_birthyear,Theodore Roosevelt,7
+1292,Q53620,1,wikidata_name_birthyear,Karl Hjalmar Branting,7
+3959,Q117101,1,wikidata_name_birthyear,John Milton Hay,1
+6052,Q8016383,1,wikidata_name_birthyear,William McDowell,19
+6802,Q572442,1,wikidata_name_birthyear,Ernest Nys,35
+9961,Q13509,1,wikidata_name_birthyear,Léon Walras,3
+10012,Q6233433,1,wikidata_name_birthyear,Edvard Wavrinsky,19
+10112,Q1314430,1,wikidata_name_birthyear,John Westlake,1
+6711,Q88528,1,wikidata_name_birthyear,Otfried Nippold,5
+10248,Q15987519,1,wikidata_name_birthyear,Erving Winslow,1
+10372,Q11758,1,wikidata_name_birthyear,Louis Lazare Zamenhof,13
+1233,Q217706,1,wikidata_name_birthyear,Léon Victor Auguste Bourgeois,25
+1607,Q484265,1,wikidata_name_birthyear,Andrew Carnegie,5
+3160,Q51056,1,wikidata_name_birthyear,Francis Joseph I,3
+5715,Q710026,1,wikidata_name_birthyear,Luigi Luzzati,3
+8598,Q94628105,1,wikidata_name_birthyear,Albert Keith Smiley,3
+482,Q606450,1,wikidata_name_birthyear,Nagao Ariga,1
+812,Q202049,1,wikidata_name_birthyear,Auguste-Marie-François Beernaert,1
+3016,Q1230576,1,wikidata_name_birthyear,Pasquale Fiore,6
+3227,Q78488,1,wikidata_name_birthyear,Alfred Hermann Fried,30
+4633,Q290343,1,wikidata_name_birthyear,David Starr Jordan,7
+6193,Q101993438,1,wikidata_name_birthyear,Alexandre Mérignhac,2
+2613,Q105995110,1,wikidata_name_birthyear,Victor Hugo Duras,1
+5125,Q190894,1,wikidata_name_birthyear,Henri Marie La Fontaine,23
+5746,Q18526841,1,wikidata_name_birthyear,Charles Wright Macara,5
+492,Q274889,1,wikidata_name_birthyear,Émile Arnaud,25
+539,Q216872,1,wikidata_name_birthyear,Tobias Michael Carel Asser,2
+3285,Q66023,1,wikidata_name_birthyear,Friedrich Wilhelm Förster,15
+6343,Q365609,1,wikidata_name_birthyear,Gaston Moch,8
+6455,Q55999,1,wikidata_name_birthyear,Felix Stone Moscheles,17
+6466,Q159726,1,wikidata_name_birthyear,John Raleigh Mott,14
+2787,Q2677,1,wikidata_name_birthyear,Friedrich Wilhelm Emperor William II,3
+10269,Q155329,1,wikidata_name_birthyear,Count Sergey Yulyevich Witte,2
+10425,Q96414,1,wikidata_name_birthyear,Philipp Zorn,5
+5009,Q1374145,1,wikidata_name_birthyear,Maxim Maximovich Kovalevsky,1
+449,Q272224,1,wikidata_name_birthyear,Ralph Norman Angell Lane,18
+7524,Q123334,1,wikidata_name_birthyear,Paul Martin Rade,1
+7992,Q3526491,1,wikidata_name_birthyear,Théodore Eugène César Ruyssen,14
+10383,Q724871,1,wikidata_name_birthyear,Estanislas Severo Zeballos,7
+4326,Q11310416,1,wikidata_name_birthyear,Charles Auguste Benjamin Houzeau de Lehaie,3
+2945,Q94762228,1,wikidata_name_birthyear,Richard Feldhaus,1
+3276,Q3779288,1,wikidata_name_birthyear,Guido Fusinato,1
+3597,Q1794503,1,wikidata_name_birthyear,Gregers Winther Wulfsberg Gram,6
+9849,Q560539,1,wikidata_name_birthyear,Alexander Frederik von Savornin Lohman,4
+5969,Q78492,1,wikidata_name_birthyear,Tomás Garrigue Masaryk,18
+6069,Q83982479,1,wikidata_name_birthyear,Edwin Doak Mead,1
+6070,Q27633363,1,wikidata_name_birthyear,Lucia True Ames Mead,1
+8976,Q35648,1,wikidata_name_birthyear,William Howard Taft,1
+9366,Q4888674,1,wikidata_name_birthyear,Benjamin Franklin Trueblood,3
+3468,Q3719594,1,wikidata_name_birthyear,Edoardo Giretti,4
+2532,Q726607,1,wikidata_name_birthyear,Luis Marìa Drago,1
+5214,Q206446,1,wikidata_name_birthyear,Christian Lous Lange,7
+349,Q55008046,1,wikidata_name_birthyear,Albert I,40
+1005,Q3725632,1,wikidata_name_birthyear,Enrico Bignami,2
+4441,Q1780986,1,wikidata_name_birthyear,Nils Claus Ihlen,2
+9955,Q156797,1,wikidata_name_birthyear,Knut Agaton Wallenberg,2
+5187,Q112023,1,wikidata_name_birthyear,Heinrich Lammasch,7
+311,Q180989,1,wikidata_name_birthyear,Jane Addams,93
+1860,Q10396332,1,wikidata_name_birthyear,Érico Marinho da Gama Coelho,1
+367,Q18363,1,wikidata_name_birthyear,Alfonso XIII,1
+8292,Q853932,1,wikidata_name_birthyear,Rosika Schwimmer,11
+8320,Q6130367,1,wikidata_name_birthyear,James Brown Scott,31
+8298,Q74745,1,wikidata_name_birthyear,Walther Adrian Schücking,29
+10230,Q34296,1,wikidata_name_birthyear,Thomas Woodrow Wilson,12
+3349,Q44905,1,wikidata_name_birthyear,Pietro Gasparri,2
+2236,Q94899157,1,wikidata_name_birthyear,Benjamin de Jong van Beek en Donk,3
+4312,Q3353361,1,wikidata_name_birthyear,Hans Jakob Horst,20
+5255,Q1712788,1,wikidata_name_birthyear,Julius Lassen,1
+6187,Q468097,1,wikidata_name_birthyear,Désiré-Joseph Mercier,1
+8859,Q705960,1,wikidata_name_birthyear,Svante Elis Strömgren,6
+4300,Q35236,1,wikidata_name_birthyear,Herbert Clark Hoover,4
+1414,Q469673,1,wikidata_name_birthyear,Elsa Brändström,5
+1833,Q1582878,1,wikidata_name_birthyear,Hans Viktor Clausen,3
+5548,Q134982,1,wikidata_name_birthyear,David Lloyd George,4
+3647,Q342765,1,wikidata_name_birthyear,Arthur Griffith,2
+4358,Q313252,1,wikidata_name_birthyear,Charles Evans Hughes,10
+3890,Q35286,1,wikidata_name_birthyear,Warren Gamaliel Harding,2
+4410,Q31810,1,wikidata_name_birthyear,Paul Hymans,2
+4574,Q258887,1,wikidata_name_birthyear,Eglantine Jebb,2
+4817,Q9317,1,wikidata_name_birthyear,John Maynard Keynes,7
+5508,Q55955,1,wikidata_name_birthyear,Carl Albert Lindhagen,43
+6599,Q72292,1,wikidata_name_birthyear,Fridtjof Nansen,3
+6720,Q367132,1,wikidata_name_birthyear,Francesco Saverio Nitti,9
+316,Q5542641,1,wikidata_name_birthyear,Axel Theodor Adelswärd,3
+9672,Q12702,1,wikidata_name_birthyear,Edgar Algernon Robert Gascoyne Viscount Cecil of Chelwood,18
+2968,Q3089805,1,wikidata_name_birthyear,Frédéric Ferrière,4
+4426,Q196860,1,wikidata_name_birthyear,Carl Zeth Konstantin Höglund,1
+10061,Q523355,1,wikidata_name_birthyear,André Weiss,33
+7418,Q793616,1,wikidata_name_birthyear,Prince Carl of Sweden,21
+2324,Q334993,1,wikidata_name_birthyear,Eugene Victor Debs,3
+6416,Q332459,1,wikidata_name_birthyear,Edmund Dene Morel,13
+2920,Q5726194,1,wikidata_name_birthyear,Paul Fauchille,2
+6426,Q6105886,1,wikidata_name_birthyear,John Hartman Morgan,5
+7501,Q76696,1,wikidata_name_birthyear,Ludwig Quidde,42
+1437,Q273607,1,wikidata_name_birthyear,Ferdinand Edouard Buisson,9
+5756,Q166646,1,wikidata_name_birthyear,Ramsay MacDonald,9
+670,Q683535,1,wikidata_name_birthyear,Oswald Balzer,1
+862,Q152274,1,wikidata_name_birthyear,Edvard Benes,18
+1330,Q179888,1,wikidata_name_birthyear,Aristide Pierre Henri Briand,12
+8841,Q103955,1,wikidata_name_birthyear,Gustav Stresemann,10
+4809,Q70618,1,wikidata_name_birthyear,Harry Clément Ulrich Kessler,1
+5709,Q155419,1,wikidata_name_birthyear,Hans Luther,4
+7321,Q1230002,1,wikidata_name_birthyear,Nikolaos Sokrates Politis,5
+8496,Q704995,1,wikidata_name_birthyear,Viscount Shishaku Shibusawa Eiichi,4
+1538,Q3724359,1,wikidata_name_birthyear,Emilio Caldara,1
+4339,Q116882,1,wikidata_name_birthyear,Max Huber,5
+6470,Q559892,1,wikidata_name_birthyear,Giuseppe Motta,11
+8507,Q1236629,1,wikidata_name_birthyear,James Thomson Shotwell,20
+9441,Q298317,1,wikidata_name_birthyear,Bo Östen Undén,3
+614,Q12665,1,wikidata_name_birthyear,Robert Stephenson Smyth Baden-Powell,20
+3112,Q22530,1,wikidata_name_birthyear,Auguste-Henri Forel,5
+1784,Q1142911,1,wikidata_name_birthyear,Hans Severin Christensen,1
+4097,Q274344,1,wikidata_name_birthyear,Édouard Herriot,4
+4776,Q193009,1,wikidata_name_birthyear,Frank Billings Kellogg,11
+5432,Q42411138,1,wikidata_name_birthyear,Salmon Oliver Levinson,3
+5566,Q368368,1,wikidata_name_birthyear,Bernhard Cornelis Johannes Loder,5
+7805,Q208993,1,wikidata_name_birthyear,Nicholas Roerich,3
+8094,Q1248451,1,wikidata_name_birthyear,Charles François Marc Marie Sangnier,2
+1493,Q271517,1,wikidata_name_birthyear,Nicholas Murray Butler,12
+1721,Q6135895,1,wikidata_name_birthyear,James Henry George Chapple,1
+1877,Q136405979,1,wikidata_name_birthyear,Samuel Colcord,2
+2332,Q73108,1,wikidata_name_birthyear,Gustav Adolf Deissmann,2
+8519,Q105593,1,wikidata_name_birthyear,Friedrich Siegmund-Schultze,4
+3434,Q3049092,1,wikidata_name_birthyear,Efisio Giglio-Tos,9
+4432,Q579,1,wikidata_name_birthyear,Carlos Ibàñez del Campo,4
+5345,Q131010,1,wikidata_name_birthyear,Augusto Bernardino Leguía y Salcedo,4
+10043,Q103078,1,wikidata_name_birthyear,Hans Wehberg,9
+460,Q1226953,1,wikidata_name_birthyear,Dionisio Anzilotti,2
+6797,Q1210648,1,wikidata_name_birthyear,Didrik Nyholm,2
+958,Q464318,1,wikidata_name_birthyear,Annie Besant,1
+6509,Q3354026,1,wikidata_name_birthyear,Peter Rochegune Munch,4
+1840,Q3592114,1,wikidata_name_birthyear,Étienne Clémentel,11
+1991,Q78525,1,wikidata_name_birthyear,Count Richard Nicolas Coudenhove-Kalergi,64
+2121,Q89439,1,wikidata_name_birthyear,Adolf Damaschke,6
+3988,Q2392638,1,wikidata_name_birthyear,Gerrit Jan Heering,3
+4043,Q208665,1,wikidata_name_birthyear,Arthur Henderson,5
+5171,Q2848072,1,wikidata_name_birthyear,André Lalande,1
+393,Q2623058,1,wikidata_name_birthyear,Alejandro Alvarez,9
+1379,Q18911814,1,wikidata_name_birthyear,Herbert Runham Brown,6
+2123,Q3419153,1,wikidata_name_birthyear,Raoul Dandurand,1
+2816,Q959002,1,wikidata_name_birthyear,Rafael Waldemar Erich,10
+5276,Q151983,1,wikidata_name_birthyear,Pierre Laval,4
+7391,Q6733763,1,wikidata_name_birthyear,Raja Mahendra Pratap,1
+6389,Q173897,1,wikidata_name_birthyear,John Bassett Moore,3
+8313,Q852140,1,wikidata_name_birthyear,Vittorio Scialoja,5
+2194,Q18363,1,wikidata_name_birthyear,Don Alfonso de Borbón y Habsburgo,2
+732,Q573584,1,wikidata_name_birthyear,Victor Basch,1
+783,Q62131252,1,wikidata_name_birthyear,Arthur Charles Frederick Beales,1
+2538,Q1730768,1,wikidata_name_birthyear,Karl Drexel,6
+9762,Q72110,1,wikidata_name_birthyear,Hellmut von Gerlach,1
+4346,Q1890532,1,wikidata_name_birthyear,Manley Ottmer Hudson,3
+5313,Q3262467,1,wikidata_name_birthyear,Louis Erasme Le Fur,1
+5146,Q527226,1,wikidata_name_birthyear,Isbel Lady Aberdeen and Temair,3
+2039,Q20726,1,wikidata_name_birthyear,Andreo Cseh,1
+2392,Q932340,1,wikidata_name_birthyear,Paul Desjardins,2
+3860,Q956253,1,wikidata_name_birthyear,Albert Auguste Gabriel Hanotaux,1
+4705,Q104264,1,wikidata_name_birthyear,Hermann Kantorowicz,2
+4778,Q84165,1,wikidata_name_birthyear,Hans Kelsen,5
+4779,Q5152,1,wikidata_name_birthyear,Mustafa Pascha Kemal,1
+5872,Q12331647,1,wikidata_name_birthyear,Peter Manniche,2
+6531,Q538478,1,wikidata_name_birthyear,George Gilbert Aimé Murray,4
+7251,Q885,1,wikidata_name_birthyear,Józef Klemens Pilsudski,1
+7856,Q8007,1,wikidata_name_birthyear,Franklin Delano Roosevelt,7
+1008,Q1712156,1,wikidata_name_birthyear,Julie Bikle,3
+1796,Q56242333,1,wikidata_name_birthyear,Samuel Harden Church,2
+5110,Q94897589,1,wikidata_name_birthyear,Friedrich Heinrich Christoph Küster,2
+9836,Q76358,1,wikidata_name_birthyear,Carl von Ossietzky,7
+5174,Q193672,1,wikidata_name_birthyear,Carlos Saavedra Lamas,11
+2269,Q9587596,1,wikidata_name_birthyear,Afranio de Mello Franco,47
+6540,Q23559,1,wikidata_name_birthyear,Benito Amilcare Andrea Mussolini,2
+1156,Q3130710,1,wikidata_name_birthyear,Henri Bonnet,1
+4231,Q333429,1,wikidata_name_birthyear,Samuel John Gurney Hoare,2
+4368,Q202979,1,wikidata_name_birthyear,Cordell Hull,34
+6254,Q6894613,1,wikidata_name_birthyear,Moina Michael,2
+7642,Q78639,1,wikidata_name_birthyear,Max Reinhardt,2
+9368,Q152474,1,wikidata_name_birthyear,Rafael Leónidas Trujillo Molina,12
+9662,Q886213,1,wikidata_name_birthyear,Stenio Joseph Vincent,12
+1386,Q23358,1,wikidata_name_birthyear,Stanley Melbourne Bruce,1
+1644,Q11928079,1,wikidata_name_birthyear,Joaquím Cases-Carbó,1
+3000,Q104580,1,wikidata_name_birthyear,Edo Fimmen,2
+3320,Q1001,1,wikidata_name_birthyear,Mahatma Mohandas Karamchand Gandhi,12
+3505,Q124472055,1,wikidata_name_birthyear,Henri Golay,6
+8958,Q469664,1,wikidata_name_birthyear,Henrietta Szold,1
+1689,Q116353,1,wikidata_name_birthyear,Pierre Cérésole,8
+4648,Q155415,1,wikidata_name_birthyear,Léon Jouhaux,9
+4741,Q76586,1,wikidata_name_birthyear,Karl Kautsky,8
+1668,Q270207,1,wikidata_name_birthyear,Carrie Chapman Catt,2
+7276,Q42323,1,wikidata_name_birthyear,Pius XI,1
+2682,Q128995,1,wikidata_name_birthyear,Anthony Eden,3
+5540,Q310100,1,wikidata_name_birthyear,Maksim Maksimovitch Litvinov,1
+8625,Q214321,1,wikidata_name_birthyear,Jan Christian Smuts,1
+651,Q215139,1,wikidata_name_birthyear,Emily Greene Balch,13
+2202,Q980014,1,wikidata_name_birthyear,Louis Gustave Jean Marie de Brouckère,4
+4972,Q179558,1,wikidata_name_birthyear,Alexandra Mikhaylovna Kollontay,12
+959,Q1786221,1,wikidata_name_birthyear,Fredrik Natanael Beskow,1
+2059,Q1827237,1,wikidata_name_birthyear,Lionel George Curtis,1
+3830,Q1039034,1,wikidata_name_birthyear,Carl Joachim Hambro,1
+7277,Q2604,1,wikidata_name_birthyear,Pius XII,2
+7854,Q83396,1,wikidata_name_birthyear,Anna Eleanor Roosevelt,6
+8129,Q672261,1,wikidata_name_birthyear,Georges Scelle,13
+9425,Q1698522,1,wikidata_name_birthyear,Johannes Ude,22
+10411,Q2835533,1,wikidata_name_birthyear,Alfred Zimmern,1
+2207,Q436585,1,wikidata_name_birthyear,Antonio Sanchez de Bustamante y Sirvén,7
+1857,Q111245407,1,wikidata_name_birthyear,Ewing Cockrell,8
+3703,Q355587,1,wikidata_name_birthyear,José Gustavo Guerrero,6
+6359,Q132899,1,wikidata_name_birthyear,Vyacheslav Mikhaylovich Molotov,5
+7660,Q11726,1,wikidata_name_birthyear,Karl Renner,2
+5351,Q103895,1,wikidata_name_birthyear,Otto Lehmann-Russbüldt,14
+9370,Q11613,1,wikidata_name_birthyear,Harry Truman,6
+9956,Q152850,1,wikidata_name_birthyear,Raoul Wallenberg,25
+1649,Q232873,1,wikidata_name_birthyear,René Cassin,3
+6383,Q131117,1,wikidata_name_birthyear,Maria Montessori,6
+7069,Q5307262,1,wikidata_name_birthyear,Andrew Russell Pearson,2
+7125,Q93330,1,wikidata_name_birthyear,Juan Domingo Perón,3
+1446,Q213500,1,wikidata_name_birthyear,Ralph Johnson Bunche,1
+1973,Q1326740,1,wikidata_name_birthyear,Walter Robert Corti,7
+2863,Q1388459,1,wikidata_name_birthyear,Herbert Vere Evatt,2
+4395,Q561814,1,wikidata_name_birthyear,Robert Maynard Hutchins,5
+5937,Q151414,1,wikidata_name_birthyear,George Catlett Marshall,2
+7038,Q155394,1,wikidata_name_birthyear,Paul I of Greece,3
+8837,Q2975581,1,wikidata_name_birthyear,Clarence Streit,50
+1425,Q457020,1,wikidata_name_birthyear,Frank Buchman,94
+5465,Q1271,1,wikidata_name_birthyear,Trygve Halvdan Lie,11
+9571,Q111585583,1,wikidata_name_birthyear,Louis Constant Vauthier,5
+7421,Q150747,1,wikidata_name_birthyear,Princess Wilhelmina of The Netherlands,1
+1182,Q1528124,1,wikidata_name_birthyear,Giuseppe Borgese,1
+7915,Q96597,1,wikidata_name_birthyear,Elisabeth Rotten,5
+2363,Q3130952,1,wikidata_name_birthyear,Henri Demont,2
+3372,Q71432,1,wikidata_name_birthyear,Paul Geheeb,3
+4807,Q457663,1,wikidata_name_birthyear,Felix Kersten,8
+6735,Q211856,1,wikidata_name_birthyear,Philip Noel-Baker,7
+8713,Q128626,1,wikidata_name_birthyear,Louis St. Laurent,2
+7071,Q128604,1,wikidata_name_birthyear,Lester Pearson,2
+10016,Q116885639,1,wikidata_name_birthyear,Barbara Waylen,1
+1123,Q1879500,1,wikidata_name_birthyear,Léopold Boissier,10
+1660,Q187948,1,wikidata_name_birthyear,Josué de Castro,9
+1775,Q923514,1,wikidata_name_birthyear,George Brock Chisholm,4
+2526,Q1391996,1,wikidata_name_birthyear,William Douglas,1
+3592,Q5489054,1,wikidata_name_birthyear,Frank Porter Graham,2
+5546,Q12002,1,wikidata_name_birthyear,Alberto Lleras,2
+7851,Q961743,1,wikidata_name_birthyear,Candido Mariano de Silva Rondon,10
+8093,Q285514,1,wikidata_name_birthyear,Margaret Sanger,31
+9979,Q3161474,1,wikidata_name_birthyear,James Warburg,1
+4773,Q38203,1,wikidata_name_birthyear,Helen Keller,3
+318,Q2492,1,wikidata_name_birthyear,Konrad Adenauer,3
+565,Q158772,1,wikidata_name_birthyear,Vincent Auriol,1
+620,Q30141300,1,wikidata_name_birthyear,Gertrude Baer,7
+2159,Q5131308,1,wikidata_name_birthyear,Clement Davies,7
+2585,Q223677,1,wikidata_name_birthyear,John Foster Dulles,1
+2733,Q9916,1,wikidata_name_birthyear,Dwight David Eisenhower,8
+5483,Q5233191,1,wikidata_name_birthyear,David Lilienthal,1
+6175,Q314265,1,wikidata_name_birthyear,Pierre Mendés-France,1
+9391,Q301707,1,wikidata_name_birthyear,William Tubman,2
+1638,Q208537,1,wikidata_name_birthyear,Pablo Casals,14
+5267,Q1443639,1,wikidata_name_birthyear,Frank Charles Laubach,5
+6937,Q202171,1,wikidata_name_birthyear,Juho Kusti Paasikivi,2
+7648,Q2904922,1,wikidata_name_birthyear,Eugene Relgis,1
+7744,Q199642,1,wikidata_name_birthyear,Jules Rimet,1
+3843,Q1267,1,wikidata_name_birthyear,Dag Hjalmar Agne Carl Hammarskjöld,7
+6847,Q17120088,1,wikidata_name_birthyear,Ole Fredrik Olden,1
+11432,Q158850,1,wikidata_name_birthyear,Dominique Pire,3
+11464,Q1364026,1,wikidata_name_birthyear,Norman Cousins,17
+11473,Q285865,1,wikidata_name_birthyear,Joseph Paul-Boncour,1
+11477,Q302073,1,wikidata_name_birthyear,Joseph Retinger,1
+11499,Q231525,1,wikidata_name_birthyear,Olave Lady Baden-Powell,1
+886,Q7051963,1,wikidata_name_birthyear,Normann Bentwich,2
+11506,Q94177,1,wikidata_name_birthyear,Louis Sohn,41
+11512,Q504192,1,wikidata_name_birthyear,Andrew Wellington Cordier,2
+11518,Q152452,1,wikidata_name_birthyear,Gunnar Myrdal,2
+11521,Q655560,1,wikidata_name_birthyear,Werenfried Van Straaten,2
+11533,Q1063803,1,wikidata_name_birthyear,Charles Braibant,6
+11541,Q52157080,1,wikidata_name_birthyear,Umberto Campagnolo,4
+11543,Q593304,1,wikidata_name_birthyear,Cyrus Eaton,27
+11555,Q2706190,1,wikidata_name_birthyear,Raoul Follereau,3
+11560,Q45081,1,wikidata_name_birthyear,Hermann Gmeiner,99
+11562,Q1229605,1,wikidata_name_birthyear,Oskar Helmer,2
+11568,Q569464,1,wikidata_name_birthyear,Felix Kir,2
+11570,Q315572,1,wikidata_name_birthyear,Nobusuke Kishi,1
+11573,Q810041,1,wikidata_name_birthyear,Basil O´Connor,4
+11603,Q13021,1,wikidata_name_birthyear,Vinoba Bhave,10
+11604,Q2725433,1,wikidata_name_birthyear,Danilo Dolci,10
+11605,Q5443535,1,wikidata_name_birthyear,Fenner Brockway,7
+11630,Q66023,1,wikidata_name_birthyear,Friedrich Wilhelm Foerster,1
+11631,Q3623502,1,wikidata_name_birthyear,Arnaldo Fortini,1
+11647,Q1515607,1,wikidata_name_birthyear,Gertrud Kurz-Hohl,5
+11701,Q637057,1,wikidata_name_birthyear,Charles Lutz,3
+11703,Q70950,1,wikidata_name_birthyear,Marie Elisabeth Lüders,1
+11704,Q2564543,1,wikidata_name_birthyear,Jules Moch,3
+12767,Q5607510,1,wikidata_name_birthyear,Clark Grenville,18
+3269,Q550255,1,wikidata_name_birthyear,James William Fulbright,3
+12778,Q5322152,1,wikidata_name_birthyear,Eli Stanley Jones,2
+4771,Q179858,1,wikidata_name_birthyear,Urho Kekkonen,3
+12784,Q9696,1,wikidata_name_birthyear,John Kennedy,1
+13689,Q18197802,1,wikidata_name_birthyear,Charles Richet,1
+12795,Q64791,1,wikidata_name_birthyear,Fritz von Unruh,4
+12843,Q7609285,1,wikidata_name_birthyear,Stephen Galatti,2
+12844,Q5585169,1,wikidata_name_birthyear,Gordon Waverly Gilkey,2
+12902,Q96502,1,wikidata_name_birthyear,Heinrich Grüber,1
+12904,Q3898068,1,wikidata_name_birthyear,Paul Gray Hoffman,16
+12912,Q335533,1,wikidata_name_birthyear,Adolfo Lopez Mateos,2
+12957,Q44847,1,wikidata_name_birthyear,Daisetz Suzuki,1
+12959,Q9161,1,wikidata_name_birthyear,Josip Brotz Tito,1
+13422,Q321637,1,wikidata_name_birthyear,Josef Lukl Hromádka,1
+13424,Q9640,1,wikidata_name_birthyear,Lyndon Baines Johnson,1
+13430,Q8027,1,wikidata_name_birthyear,Martin Luther King,2
+13439,Q155691,1,wikidata_name_birthyear,Paul-Henri Spaak,1
+13443,Q162820,1,wikidata_name_birthyear,Norman Thomas,3
+9221,Q84561,1,wikidata_name_birthyear,Hans Thirring,3
+14091,Q4669218,1,wikidata_name_birthyear,Abraham Vereide,4
+14012,Q4794565,1,wikidata_name_birthyear,Karl Arne Geijer,1
+14022,Q16975,1,wikidata_name_birthyear,Paulus VI,2
+14024,Q887063,1,wikidata_name_birthyear,Galo Plaza Lasso,1
+14025,Q311719,1,wikidata_name_birthyear,Adlai Ewing Stevenson II,1
+14027,Q1264,1,wikidata_name_birthyear,Situ U Thant,7
+14029,Q301804,1,wikidata_name_birthyear,Shigeru Yoshida,5
+14065,Q643348,1,wikidata_name_birthyear,Habib Ben Ali Bourguiba,2
+14067,Q469580,1,wikidata_name_birthyear,Joseph Leo Cardijn,2
+14102,Q3753437,1,wikidata_name_birthyear,Joaquín Sanz Gadea,3
+14080,Q153839,1,wikidata_name_birthyear,Martin Niemöller,1
+14085,Q350681,1,wikidata_name_birthyear,Adam Rapacki,4
+14088,Q183181,1,wikidata_name_birthyear,Jan Tinbergen,2
+14324,Q3486701,1,wikidata_name_birthyear,Geoffrey Leonard Cheshire,1
+14352,Q878956,1,wikidata_name_birthyear,Ernest Henry Gruening,2
+6447,Q676399,1,wikidata_name_birthyear,Wayne Morse,2
+14353,Q61146,1,wikidata_name_birthyear,Kurt Hahn,2
+14405,Q310913,1,wikidata_name_birthyear,Thich Nhat Hahn,6
+14356,Q310913,1,wikidata_name_birthyear,Thich Nhat Hanh,1
+14361,Q779523,1,wikidata_name_birthyear,William Ernest Hocking,1
+14811,Q863530,1,wikidata_name_birthyear,Binay Ranjan Sen,2
+14377,Q317248,1,wikidata_name_birthyear,Robert Sargent Shriver,1
+10320,Q4349539,1,wikidata_name_birthyear,Quincy Wright,2
+14777,Q203843,1,wikidata_name_birthyear,Alfonso Garcia Robles,2
+14785,Q1264,1,wikidata_name_birthyear,U Thant,4
+14789,Q4582458,1,wikidata_name_birthyear,Eric Wyndham White,1
+14791,Q57240,1,wikidata_name_birthyear,Ernst Bloch,2
+14794,Q1388759,1,wikidata_name_birthyear,René Maheu,4
+14807,Q8045741,1,wikidata_name_birthyear,James Yen,1
+14809,Q562364,1,wikidata_name_birthyear,Halvard Lange,9
+14818,Q154824,1,wikidata_name_birthyear,Norman Ernest Borlaug,7
+14829,Q64791,1,wikidata_name_birthyear,Fritz von Unruh,1
+14832,Q1954760,1,wikidata_name_birthyear,Frans Hemerijckx,3
+14866,Q543393,1,wikidata_name_birthyear,Giorgio La Pira,1
+14869,Q2847242,1,wikidata_name_birthyear,André Beauguitte,1
+14871,Q125781014,1,wikidata_name_birthyear,Spurgeon Milton Keeny,10
+14878,Q366363,1,wikidata_name_birthyear,Paul Dudley White,3
+14883,Q150543,1,wikidata_name_birthyear,Alexander Dubcek,1
+14884,Q16010923,1,wikidata_name_birthyear,William Chapman Foster,3
+14887,Q1699735,1,wikidata_name_birthyear,John Davison Rockefeller III,1
+14891,Q9049,1,wikidata_name_birthyear,Noam Chomsky,1
+14899,Q93887377,1,wikidata_name_birthyear,Harry Willis Miller,1
+14902,Q6366254,1,wikidata_name_birthyear,Kaoru Hatoyama,1
+14907,Q8004884,1,wikidata_name_birthyear,William Bertalan Walsh,1
+14916,Q5739501,1,wikidata_name_birthyear,Herman Wells,1
+9600,Q113042,1,wikidata_name_birthyear,Alfred Verdross-Drossberg,2
+15845,Q152437,1,wikidata_name_birthyear,Alva Myrdal,2
+15850,Q6974591,1,wikidata_name_birthyear,Isaac Lewin,4
+15868,Q203843,1,wikidata_name_birthyear,Alfonso Garcia Robles,5
+15953,Q102289,1,wikidata_name_birthyear,Richard Buckminster Fuller,2
+15956,Q2514,1,wikidata_name_birthyear,Willy Brandt,5
+15761,Q344246,1,wikidata_name_birthyear,Orlando Villas Bôas,5
+15762,Q16930010,1,wikidata_name_birthyear,Claudio Villas Bôas,5
+15962,Q355425,1,wikidata_name_birthyear,Cesar Chavez,3
+15971,Q4585238,1,wikidata_name_birthyear,Carl Emil Christian Bonnevie,1
+15972,Q159700,1,wikidata_name_birthyear,Jean Monnet,9
+16943,Q244395,1,wikidata_name_birthyear,Seán MacBride,11
+14881,Q128967,1,wikidata_name_birthyear,Edward Heath,1
+17231,Q30547,1,wikidata_name_birthyear,Mother Teresa,8
+17005,Q3357302,1,wikidata_name_birthyear,Annie Margareth Skau,1
+17023,Q3355468,1,wikidata_name_birthyear,Elise Ottesen-Jensen,1
+17028,Q15269387,1,wikidata_name_birthyear,Ranganath Ramachandra Diwakar,1
+17030,Q165405,1,wikidata_name_birthyear,Helen Suzman,1
+17032,Q41751966,1,wikidata_name_birthyear,Isabelle Lyon Dean Grant,1
+17038,Q213550,1,wikidata_name_birthyear,Billy Graham,1
+17052,Q9025145,1,wikidata_name_birthyear,Luis Kutner,1
+17058,Q9161,1,wikidata_name_birthyear,Josip Broz Tito,46
+17066,Q1260,1,wikidata_name_birthyear,Kurt Waldheim,1
+17072,Q66107,1,wikidata_name_birthyear,Henry Alfred Kissinger,3
+17075,Q117271731,1,wikidata_name_birthyear,Marcelo Nubla,1
+17077,Q319578,1,wikidata_name_birthyear,Sri Chinmoy,2
+17085,Q214892,1,wikidata_name_birthyear,Robert Schirokauer Hartman,4
+17099,Q9588,1,wikidata_name_birthyear,Richard Milhous Nixon,11
+17114,Q173563,1,wikidata_name_birthyear,Mzee Jomo Kenyatta,2
+17136,Q233969,1,wikidata_name_birthyear,Le Duc Tho,1
+17168,Q232407,1,wikidata_name_birthyear,Jeannette Rankin,1
+17189,Q1369497,1,wikidata_name_birthyear,Paul Emile Léger,1
+17209,Q431085,1,wikidata_name_birthyear,Daniel Ellsberg,1
+15898,Q1149,1,wikidata_name_birthyear,Indira Gandhi,1
+17226,Q331742,1,wikidata_name_birthyear,George Stanley McGovern,1
+17235,Q997,1,wikidata_name_birthyear,Andrei Sakharov,14
+17317,Q215686,1,wikidata_name_birthyear,Hiltgunt Zassenhaus,2
+18673,Q2165147,1,wikidata_name_birthyear,Romesh Chandra,5
+18678,Q870909,1,wikidata_name_birthyear,Arvid Pardo,1
+18688,Q1381410,1,wikidata_name_birthyear,Lluis-María Xirinacs,1
+18690,Q214407,1,wikidata_name_birthyear,Félix Houphouët-Boigny,7
+12798,Q321037,1,wikidata_name_birthyear,Edvard Hambro,1
+15950,Q326830,1,wikidata_name_birthyear,Johan Galtung,1
+17127,Q105480,1,wikidata_name_birthyear,Kenneth David Kaunda,2
