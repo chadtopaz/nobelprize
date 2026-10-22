@@ -99,7 +99,7 @@ cc <- d2 %>%
   mutate(controls = map2(pool, nominee_id, function(p, ch) {
     alts <- setdiff(p, ch)
     if (length(alts) == 0) return(integer(0))
-    sample(alts, min(K_CONTROLS, length(alts)))
+    alts[sample.int(length(alts), min(K_CONTROLS, length(alts)))]
   })) %>%
   select(record_id, prize, year, nominator_id, s_ctry, nominee_id, controls)
 

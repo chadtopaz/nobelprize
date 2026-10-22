@@ -1,5 +1,28 @@
 # Changelog
 
+## Version 2.2 — October 2026
+
+One further error, confined to the conditional-logit companion analysis (`Code/Analysis/18_clogit_prominence.R`), was identified in an October 2026 read-only review of the code against the saved results, after version 2.1 was released and before publication. All other scripts, data files, and result tables are unchanged from version 2.1.
+
+### Conditional-logit control sampling (`Code/Analysis/18_clogit_prominence.R`)
+
+**What was wrong.** For each nomination record, the script samples up to 20 control candidates from the other candidates nominated in the same prize-year with `sample(alts, min(K_CONTROLS, length(alts)))`. Candidate identifiers are numeric. When a record's pool contains exactly one alternative, R's `sample()` treats the single number as a range and draws an integer from `1:alts`, producing a nonexistent candidate identifier. That control then failed the covariate join and the record was dropped from the risk sets. Three Literature 1963 records were lost this way. Four Literature 1961 records have no alternative candidate at all and are excluded legitimately.
+
+**What changed.** The sampling line is now `alts[sample.int(length(alts), min(K_CONTROLS, length(alts)))]`, which selects elements by index. The zero-alternative guard, the seed (1901), K = 20, the covariates, and the estimation are unchanged. No other script was rerun; nothing else in the pipeline reads this script's output.
+
+**Sample.** 527,199 case-control rows across 25,837 records → 527,205 rows across 25,840 records (of 25,844 geography-complete records; the four records without an alternative candidate remain excluded). Because R's sampler consumes a variable number of random draws, the control sets of two subsequently processed Literature 1964 records also differ from version 2.1; all other control sets are unchanged.
+
+**Results, before → after** (`Data/results_clogit_prominence.csv`; the version 2.1 file is preserved outside the package).
+
+| Model | Term | OR v2.1 | OR v2.2 | Robust SE v2.1 | Robust SE v2.2 | p v2.1 | p v2.2 |
+|---|---|---|---|---|---|---|---|
+| bare | same_country | 11.14850 | 11.14582 | 0.030133 | 0.030137 | 0 (underflow) | 0 (underflow) |
+| with_lang_prominence | same_country | 5.77698 | 5.77622 | 0.046418 | 0.046418 | 2.02e-312 | 2.27e-312 |
+| with_lang_prominence | shared_lang | 2.17337 | 2.17308 | 0.046475 | 0.046474 | 1.24e-62 | 1.30e-62 |
+| with_lang_prominence | log_prior | 1.318969 | 1.318948 | 0.0077971 | 0.0077970 | 3.83e-276 | 4.06e-276 |
+
+Every value reported in the paper (odds ratios 11.1/11.15, 5.78, 2.17, and 1.32; p < 10^-61 and p < 10^-275) is unchanged at its reported precision. The two sample counts in the supplement (§S8) are updated.
+
 ## Version 2.1 — October 2026
 
 Two errors were identified in a September 2026 audit of the replication package, during review of the paper; the corrections were completed in October 2026, after the paper was accepted and before publication. Both were confined to a secondary analysis and a single robustness row; the primary analyses (homophily ratios, blockwise and clustered permutation tests, gravity/PPML model, conditional logit, representativeness and IPW re-estimate, flow asymmetry, temporal trends) and their result tables are unchanged from version 2.0.
