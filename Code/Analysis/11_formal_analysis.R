@@ -171,6 +171,8 @@ if (any(missing_files)) {
 # Load data files
 demo   <- read_csv(input_files$demo, show_col_types = FALSE)
 gov    <- read_csv(input_files$gov, show_col_types = FALSE)
+source("Code/Data Gathering/00b_roster_corrections.R")  # v2.3: same sourced corrections as script 08
+gov    <- apply_roster_corrections(gov)
 vet    <- read_csv(input_files$vet, show_col_types = FALSE)
 noms   <- read_csv(input_files$noms, show_col_types = FALSE)
 nom_pq <- read_csv(input_files$nom_pq, show_col_types = FALSE)
@@ -1351,8 +1353,16 @@ for (i in seq_len(nrow(blockwise_df))) {
 # all sharing the same geography. This violates independence and could inflate
 # significance. The clustered permutation test shuffles geography labels across
 # nominators rather than edges: each nominator keeps their set of nominees, but
-# receives a randomly reassigned geography. This preserves within-nominator
-# correlation structure, providing a valid test under dependence.
+# receives a randomly reassigned geography.
+#
+# LEGACY / WITHDRAWN (version 2.3). The observed statistic below uses each
+# record's own nominator country, whereas the permutations assign every
+# nominator a single country (that of its first record); 210 nominators carry
+# more than one country, so the observed configuration is not one the
+# permutation family generates. The output (results_clustered_homophily.csv)
+# is retained for provenance and can still be regenerated, but it is no longer
+# used for inference in the paper. It was never part of the 49-test Bonferroni
+# family.
 #
 # Concretely: if nominator A (from France) nominated 10 people, and nominator B
 # (from Germany) nominated 3, a single permutation might swap their labels so

@@ -179,6 +179,7 @@
 # =============================================================================
 
 source("Code/Data Gathering/00_utils.R")
+source("Code/Data Gathering/00b_roster_corrections.R")  # v2.3: sourced service-date corrections
 
 # =============================================================================
 # REPORT SETUP: Tee Output to Both Console and File
@@ -349,6 +350,9 @@ for (f in expected_output) {
 section("2", "Governing Bodies (Script 01)")
 
 gb <- read_csv(data_path("governing_bodies.csv"), show_col_types = FALSE)
+# v2.3: report the raw missing-end count, then apply the sourced corrections used by scripts 08, 10, and 11
+gb_raw_rsas_missing_end <- sum(gb$body == "RSAS" & is.na(gb$endyear))
+gb <- apply_roster_corrections(gb)
 
 subsection("Record counts by body")
 gb_counts <- gb %>% count(body) %>% arrange(desc(n))
@@ -417,6 +421,7 @@ rsas_total <- nrow(rsas)
 rpt(sprintf("    RSAS members: %d total, %d still missing endyear (%.1f%%)",
             rsas_total, rsas_missing_end, 100 * rsas_missing_end / rsas_total))
 check_info("endyear for RSAS members was imputed from Wikidata death_year in script 06.")
+rpt(sprintf("    Before sourced roster corrections (roster_corrections.csv): %d RSAS members missing endyear", gb_raw_rsas_missing_end))
 if (rsas_missing_end > 0) {
   check_info(sprintf("%d RSAS members have no endyear (likely still living or death_year unknown).", rsas_missing_end))
 }

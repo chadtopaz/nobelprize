@@ -24,6 +24,7 @@ The manuscript text and supplementary materials are not included here; they live
 ├── Code/
 │   ├── Data Gathering/          # Scripts 00–09: data acquisition and network construction
 │   │   ├── 00_utils.R                 # Shared utility functions (Wikidata/Wikipedia API helpers)
+│   │   ├── 00b_roster_corrections.R   # Sourced service-date corrections applied when the roster is read (v2.3)
 │   │   ├── 01_governing_bodies.R      # Scrape governing body membership
 │   │   ├── 02_vetting_bodies.R        # Scrape vetting body (Nobel Committee) membership
 │   │   ├── 03_nominators_nominees.R   # Parse nomination archive records
@@ -51,6 +52,10 @@ The manuscript text and supplementary materials are not included here; they live
 ├── LICENSE
 └── README.md
 ```
+
+## Version 2.3 (October 2026): one roster date corrected; one auxiliary check withdrawn
+
+Version 2.3 makes two bounded changes identified in an October 2026 read-only review, after version 2.2 and before publication; see `CHANGELOG.md` for the full before/after account. (1) One Royal Swedish Academy member elected in 1788 had no death date in Wikidata and was therefore treated as active throughout 1901–1975; the Academy's register records his death in 1815. A sourced one-row corrections file (`Data/intermediate/roster_corrections.csv`) and the helper `Code/Data Gathering/00b_roster_corrections.R` now set his end year when the roster is read (scripts 08, 09, 10, 11). Scripts 08 and 09 were rerun: `edges.csv` loses exactly the 1,318 governing-body edges he generated (514,111 → 512,793) and `nodes.csv` loses his row (8,134 → 8,133). None of those edges carried geography. The 25,844 geography-complete nomination records and the geography-complete institutional edge sets used for the reported geographic analyses are unchanged; no saved analysis result table changes. `Data/data_diagnostics_report.txt` was also regenerated to record the corrected network counts. (2) The clustered nominator-level permutation check in `11_formal_analysis.R` compared an observed statistic computed with record-specific nominator countries against permutations that assign one country per nominator; it is withdrawn from the paper and marked LEGACY in the code, with its output retained for provenance. All other scripts, data files, and result tables are unchanged from version 2.2.
 
 ## Version 2.2 (October 2026): corrected control sampling in the conditional logit
 

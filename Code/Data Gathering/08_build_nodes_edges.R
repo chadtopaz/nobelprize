@@ -118,6 +118,7 @@
 # =============================================================================
 
 source("Code/Data Gathering/00_utils.R")
+source("Code/Data Gathering/00b_roster_corrections.R")  # v2.3: sourced service-date corrections
 
 # =============================================================================
 # 1. Load all intermediate data files
@@ -159,6 +160,9 @@ load_if_exists <- function(filename, label) {
 
 # Load all five intermediate files (NULL if missing)
 governing   <- load_if_exists("governing_bodies.csv", "Governing bodies")
+# v2.3: apply sourced roster corrections (Data/intermediate/roster_corrections.csv)
+# before the Nobel-era filter below; see 00b_roster_corrections.R.
+if (!is.null(governing)) governing <- apply_roster_corrections(governing)
 vetting     <- load_if_exists("vetting_bodies.csv",   "Vetting bodies")
 nominations <- load_if_exists("nominations.csv",      "Nominations")
 laureates   <- load_if_exists("laureates.csv",        "Laureates")

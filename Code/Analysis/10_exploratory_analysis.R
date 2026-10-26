@@ -187,6 +187,8 @@ rpt <- function(...) {
 
 demo   <- read_csv(int_path("demographics.csv"), show_col_types = FALSE)
 gov    <- read_csv(int_path("governing_bodies.csv"), show_col_types = FALSE)
+source("Code/Data Gathering/00b_roster_corrections.R")  # v2.3
+gov    <- apply_roster_corrections(gov)
 vet    <- read_csv(int_path("vetting_bodies.csv"), show_col_types = FALSE)
 noms   <- read_csv(int_path("nominations.csv"), show_col_types = FALSE)
 nom_pq <- read_csv(int_path("nomination_people_qids.csv"), show_col_types = FALSE)

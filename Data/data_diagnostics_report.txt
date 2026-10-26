@@ -1,5 +1,5 @@
 NOBEL PRIZE MULTILAYER NETWORK — DATA DIAGNOSTICS REPORT
-Generated: 2026-02-25 15:50:57
+Generated: 2026-10-25 17:23:47
 Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
 
 
@@ -22,8 +22,8 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
   [PASS] wikidata_no_birthyear_cache.rds           9835 items  (48,893 bytes, 2026-02-23 17:30)
 
   --- Final output files (Data/) ---
-  [PASS] nodes.csv                              8134 rows × 13 cols  (1,326,176 bytes)
-  [PASS] edges.csv                            514111 rows × 6 cols  (29,712,874 bytes)
+  [PASS] nodes.csv                              8133 rows × 13 cols  (1,326,093 bytes)
+  [PASS] edges.csv                            512793 rows × 6 cols  (29,636,524 bytes)
 
 ==============================================================================
   SECTION 2: GOVERNING BODIES (SCRIPT 01)
@@ -41,7 +41,7 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
       endyear:   1905 – 1970  (missing: 0)
     RSAS:
       startyear: 1739 – 2025  (missing: 0)
-      endyear:   1731 – 2026  (missing: 441)
+      endyear:   1731 – 2026  (missing: 440)
     Storting:
       startyear: 1814 – 2025  (missing: 0)
       endyear:   1814 – 2025  (missing: 181)
@@ -55,12 +55,13 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
   [PASS] Swedish Academy                202 / 202 (100.0%)
   --- Karolinska coverage gap ---
   [WARNING] Karolinska max endyear = 1970. Post-1970 data MISSING (structural gap).
-  [INFO] The Nobel Assembly roster is not publicly available post-1970.
-  [INFO] Contact: nobelforum@nobelprizemedicine.org
+  [INFO] Digitized state calendars documenting the KI professoriate end circa 1972;
+  [INFO] the Nobel Assembly created in 1977 also has no public roster.
   --- RSAS endyear imputation ---
-    RSAS members: 2312 total, 441 still missing endyear (19.1%)
+    RSAS members: 2312 total, 440 still missing endyear (19.0%)
   [INFO] endyear for RSAS members was imputed from Wikidata death_year in script 06.
-  [INFO] 441 RSAS members have no endyear (likely still living or death_year unknown).
+    Before sourced roster corrections (roster_corrections.csv): 441 RSAS members missing endyear
+  [INFO] 440 RSAS members have no endyear (likely still living or death_year unknown).
   --- Temporal anomalies ---
   [WARNING] 3 records have startyear > endyear:
       Q8755 | RSAS | 1747 > 1746
@@ -408,17 +409,17 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
 ==============================================================================
 
   --- Overview ---
-    Nodes: 8,134
-    Edges: 514,111
+    Nodes: 8,133
+    Edges: 512,793
   --- Edge type distribution ---
-    governing_body            → vetting_body    252,476  (49.1%)
-    governing_body            → laureate        146,761  (28.5%)
-    vetting_body              → nominator        87,492  (17.0%)
+    governing_body            → vetting_body    251,588  (49.1%)
+    governing_body            → laureate        146,331  (28.5%)
+    vetting_body              → nominator        87,492  (17.1%)
     nominator                 → nominee          26,654  (5.2%)
     vetting_body              → laureate            728  (0.1%)
   --- Edge count by prize ---
-    Physics                   199,934
-    Chemistry                 167,210
+    Physics                   199,201
+    Chemistry                 166,625
     Physiology/Medicine        71,229
     Peace                      62,994
     Literature                 12,744
@@ -426,22 +427,22 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
     Min year: 1901
     Max year: 2025
   --- NOM: prefix IDs (unresolved nomination people) ---
-    NOM: prefix IDs in edges: 78,325 / 1,028,222 (7.6%)
+    NOM: prefix IDs in edges: 78,325 / 1,025,586 (7.6%)
   [PASS] Only 7.6% of edge endpoints use NOM: IDs.
-    Edges with at least one NOM: ID: 75,207 / 514,111 (14.6%)
+    Edges with at least one NOM: ID: 75,207 / 512,793 (14.7%)
   --- Self-loops ---
   [WARNING] 1374 self-loops found (from_qid == to_qid).
   --- Duplicate edges ---
   [PASS] No duplicate edges.
   --- Degree distribution (edges per node) ---
     Among QID-resolved edges:
-      Nodes involved: 6157
-      Mean degree:    142.6
+      Nodes involved: 6156
+      Mean degree:    142.2
       Median degree:  28
-      Max degree:     14978  (Q6238013)
+      Max degree:     14910  (Q6238013)
       Min degree:     1
   --- Isolate nodes (in nodes.csv but no edges) ---
-    Isolate nodes: 1131 / 8134 (13.9%)
+    Isolate nodes: 1131 / 8133 (13.9%)
   [INFO] 1131 nodes have no edges (may be nomination people with QIDs but no NOM: edges resolved).
   --- Prize-year coverage: governing→laureate edges ---
   [WARNING] 55 prize-years have laureates but no governing→laureate edges:
@@ -518,7 +519,7 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
 
   6. RSAS ENDYEAR IMPUTATION
      RSAS members' endyear is imputed from Wikidata death_year (script 06).
-     Still missing after imputation: 441 / 2312 (19.1%)
+     Still missing after imputation: 440 / 2312 (19.0%)
      These are likely living members whose actual departure date is unknown.
 
   7. STORTING TERM CONSOLIDATION
