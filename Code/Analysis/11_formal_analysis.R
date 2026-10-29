@@ -1158,7 +1158,11 @@ message(sprintf("    Baseline H = %.3f, worst-case H = %.3f (%.1f%% reduction)",
 # Only the existing record-level scenarios below are retained.
 
 # --- Bound 2: Prolific nominator leave-out ---
+# v2.4: rank identified nominators only. The 481 geography-complete records with
+# no nominator identifier stay in the analytic set at every cutoff. Previously they
+# formed one NA pseudo-nominator (481 records), which was removed at every cutoff.
 nominator_counts <- nom_geo %>%
+  filter(!is.na(nominator_person_id)) %>%
   count(nominator_person_id, sort = TRUE)
 n_nominators <- nrow(nominator_counts)
 
@@ -1243,7 +1247,7 @@ sensitivity_bounds <- tibble(
     "All missing records assumed cross-country",
     "All historically recoded same-country matches removed",
     "Missing geography + recoding combined",
-    paste0("Top ", sensitivity_leaveout$pct_removed * 100, "% prolific nominators removed")
+    paste0("Top ", sensitivity_leaveout$pct_removed * 100, "% of identified nominators (by record count) removed")
   ),
   n_edges = c(n_complete, n_complete + n_missing, n_complete,
               n_complete + n_missing, sensitivity_leaveout$n_edges_remaining),

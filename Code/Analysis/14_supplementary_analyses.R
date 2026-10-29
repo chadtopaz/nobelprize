@@ -46,6 +46,8 @@
 #     - results_nominator_heterogeneity.csv: Per-nominator homophily summary
 #     - results_nominator_heterogeneity_by_country.csv: By nominator country
 #     - results_temporal_trend_tests.csv: Regression coefficients for trends
+#     - results_laureate_breadth.csv, results_laureate_breadth_summary.csv (v2.4):
+#       distinct nominator countries per eventual laureate linked to the archive (§S6.10)
 #
 # Dependencies:
 #   - tidyverse
@@ -113,6 +115,7 @@ message("\n=== Analysis 2: Nominator Heterogeneity ===")
 
 # Per-nominator aggregation (across all nominations)
 nominator_level <- nom_data %>%
+  filter(!is.na(nominator_person_id)) %>%   # v2.4: drop the NA pseudo-nominator (481 records)
   group_by(nominator_person_id) %>%
   summarise(
     country         = first(nominator_country_modern),
@@ -306,6 +309,42 @@ write_csv(trend_results, data_path("results_temporal_trend_tests.csv"))
 message("  Saved results_temporal_trend_tests.csv")
 
 # =============================================================================
+# ANALYSIS 4 (v2.4): NOMINATION BREADTH PER LINKED LAUREATE (supplement §S6.10)
+# =============================================================================
+# For every eventual laureate (any prize, awards through 2025) whose QID is linked
+# to at least one archive nominee identifier by the automated linkage (including
+# the API-ranked multi-matches), pool the nominations of all linked identifiers
+# across prizes and years and count distinct nominator countries. Laureates with
+# no nomination carrying a nominator country are excluded (expect 449 laureates).
+
+message("\n=== Analysis 4: Nomination breadth per linked laureate ===")
+
+laureate_breadth <- qid_map %>%
+  filter(!is.na(qid), qid != "", qid %in% laureate_qids) %>%
+  select(person_id, qid) %>%
+  inner_join(
+    nominations %>%
+      filter(!is.na(nominator_country_modern), nominator_country_modern != "NA") %>%
+      select(nominee_person_id, nominator_country_modern),
+    by = c("person_id" = "nominee_person_id")
+  ) %>%
+  group_by(qid) %>%
+  summarise(n_nominator_countries = n_distinct(nominator_country_modern), .groups = "drop")
+
+laureate_breadth_summary <- tibble(
+  statistic = c("n_laureates", "median", "mean", "q1", "q3"),
+  value = c(nrow(laureate_breadth),
+            median(laureate_breadth$n_nominator_countries),
+            mean(laureate_breadth$n_nominator_countries),
+            unname(quantile(laureate_breadth$n_nominator_countries, 0.25)),
+            unname(quantile(laureate_breadth$n_nominator_countries, 0.75)))
+)
+print(laureate_breadth_summary)
+write_csv(laureate_breadth, data_path("results_laureate_breadth.csv"))
+write_csv(laureate_breadth_summary, data_path("results_laureate_breadth_summary.csv"))
+message("  Saved results_laureate_breadth.csv and results_laureate_breadth_summary.csv")
+
+# =============================================================================
 # DONE
 # =============================================================================
 
@@ -317,3 +356,4 @@ message("  Data/results_laureate_*.csv (analysis sample, sample flow, exclusions
 message("  Data/results_nominator_heterogeneity.csv")
 message("  Data/results_nominator_heterogeneity_by_country.csv")
 message("  Data/results_temporal_trend_tests.csv")
+message("  Data/results_laureate_breadth.csv, Data/results_laureate_breadth_summary.csv")

@@ -1,5 +1,5 @@
 NOBEL PRIZE MULTILAYER NETWORK — DATA DIAGNOSTICS REPORT
-Generated: 2026-10-25 17:23:47
+Generated: 2026-10-29 06:53:03
 Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
 
 
@@ -10,9 +10,9 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
   --- Intermediate files (Data/intermediate/) ---
   [PASS] governing_bodies.csv                   6935 rows × 5 cols  (310,590 bytes, 2026-02-23 17:36)
   [PASS] vetting_bodies.csv                      269 rows × 5 cols  (17,605 bytes, 2026-02-23 08:30)
-  [PASS] nominations.csv                       27958 rows × 21 cols  (6,612,652 bytes, 2026-02-23 18:17)
+  [PASS] nominations.csv                       27958 rows × 21 cols  (6,612,652 bytes, 2026-10-29 06:52)
   [PASS] laureates.csv                           927 rows × 8 cols  (159,430 bytes, 2026-02-23 09:06)
-  [PASS] demographics.csv                      10206 rows × 13 cols  (1,607,649 bytes, 2026-02-23 18:17)
+  [PASS] demographics.csv                      10206 rows × 13 cols  (1,607,661 bytes, 2026-10-29 06:52)
   [PASS] nomination_people.csv                 14474 rows × 2 cols  (316,122 bytes, 2026-02-23 17:29)
   [PASS] nomination_people_qids.csv            14474 rows × 8 cols  (721,473 bytes, 2026-02-23 17:30)
 
@@ -22,7 +22,7 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
   [PASS] wikidata_no_birthyear_cache.rds           9835 items  (48,893 bytes, 2026-02-23 17:30)
 
   --- Final output files (Data/) ---
-  [PASS] nodes.csv                              8133 rows × 13 cols  (1,326,093 bytes)
+  [PASS] nodes.csv                              8133 rows × 13 cols  (1,326,105 bytes)
   [PASS] edges.csv                            512793 rows × 6 cols  (29,636,524 bytes)
 
 ==============================================================================
@@ -389,17 +389,16 @@ Working directory: /Users/chadtopaz/Documents/Research/Current/2026 Nobel Prize
     Northern America          : 861
     Eastern Europe            : 528
     Southern Europe           : 314
-    Eastern Asia              : 114
+    Eastern Asia              : 115
     South America             : 87
-    Southern Asia             : 59
+    Southern Asia             : 71
     Australia and New Zealand : 53
-    Western Asia              : 53
+    Western Asia              : 41
     Sub-Saharan Africa        : 39
     Northern Africa           : 21
     South-Eastern Asia        : 18
     Central America           : 15
     Caribbean                 : 12
-    Central Asia              : 1
   --- Nominations — country mapping coverage ---
   [PASS] Nominee country mapped: 26446 / 26466 (99.9%)
   [PASS] Nominator country mapped: 27230 / 27302 (99.7%)

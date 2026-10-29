@@ -97,7 +97,7 @@ dyads <- d %>%
   group_by(prize, decade) %>%
   group_modify(function(g, key) {
     cnt <- g %>% count(s, r, name = "n")
-    crossing(s = unique(g$s), r = unique(g$r)) %>%
+    tidyr::crossing(s = unique(g$s), r = unique(g$r)) %>%   # v2.4: namespaced; igraph (script 13) masks crossing() in a shared session
       left_join(cnt, by = c("s", "r")) %>%
       mutate(n = replace_na(n, 0L))
   }) %>%

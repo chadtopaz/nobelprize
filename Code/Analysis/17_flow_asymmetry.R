@@ -79,14 +79,16 @@ return_ratios <- function(s_sub, r_sub) {
             as_tibble(table(subregion = r_sub)) %>% rename(received = n),
             by = "subregion") %>%
     mutate(across(c(sent, received), ~replace_na(., 0L)),
-           ratio = received / pmax(sent, 1))
+           # v2.4: a subregion that sent no nomination has no return ratio (NA).
+           # Previously received / pmax(sent, 1) gave a finite value when sent = 0.
+           ratio = if_else(sent > 0, received / sent, NA_real_))
 }
 
 cross_flows <- function(s_sub, r_sub) {
   # Cross-region flows only: outbound = region sends to a different region;
   # inbound = region receives from a different region. Valid Bernoulli test.
   ok <- !is.na(s_sub) & !is.na(r_sub) & s_sub != r_sub
-  tibble(subregion = union(unique(s_sub[!is.na(s_sub)]),
+  tibble(subregion = base::union(unique(s_sub[!is.na(s_sub)]),
                            unique(r_sub[!is.na(r_sub)]))) %>%
     rowwise() %>%
     mutate(cross_sent = sum(ok & s_sub == subregion),
@@ -109,8 +111,13 @@ boot_ratios <- function(dd, B = B_BOOT) {
                  use.names = FALSE)
     return_ratios(dd$s_sub[ix], dd$r_sub[ix]) %>% mutate(.b = b)
   })
+  # v2.4: percentiles are taken over the resamples in which the subregion sent at
+  # least one nomination; n_boot_valid counts those resamples (a subregion absent
+  # from a resample contributes no row, as before).
   band <- sims %>% group_by(subregion) %>%
-    summarise(boot_lo = quantile(ratio, 0.025), boot_hi = quantile(ratio, 0.975),
+    summarise(boot_lo = quantile(ratio, 0.025, na.rm = TRUE),
+              boot_hi = quantile(ratio, 0.975, na.rm = TRUE),
+              n_boot_valid = sum(!is.na(ratio)),
               .groups = "drop")
   obs %>%
     left_join(band, by = "subregion") %>%
@@ -145,7 +152,7 @@ flow_matrix <- function(dd) {
   obs <- dd %>% count(from = s_sub, to = r_sub, name = "obs")
   fs  <- dd %>% count(from = s_sub) %>% mutate(p_from = n / sum(n)) %>% select(from, p_from)
   ts  <- dd %>% count(to   = r_sub) %>% mutate(p_to   = n / sum(n)) %>% select(to, p_to)
-  crossing(fs, ts) %>%
+  tidyr::crossing(fs, ts) %>%   # v2.4: namespaced; igraph (script 13) masks crossing() in a shared session
     mutate(expected = n * p_from * p_to) %>%
     left_join(obs, by = c("from", "to")) %>%
     mutate(obs = replace_na(obs, 0L),

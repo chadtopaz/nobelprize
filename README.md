@@ -32,6 +32,7 @@ The manuscript text and supplementary materials are not included here; they live
 │   │   ├── 05_match_nomination_qids.R # Match nomination records to Wikidata QIDs
 │   │   ├── 06_wikidata_demographics.R # Query Wikidata for birth country, dates, gender
 │   │   ├── 07_standardize_geography.R # Map birth countries to UN subregions/continents
+│   │   ├── 07b_m49_subregion_fix.R    # In-place UN M49 subregion correction to the shipped intermediate files (v2.4)
 │   │   ├── 08_build_nodes_edges.R     # Construct node and edge tables
 │   │   └── 09_data_diagnostics.R      # Data quality checks and coverage statistics
 │   └── Analysis/                # Scripts 10–18: statistical analysis and visualization
@@ -52,6 +53,10 @@ The manuscript text and supplementary materials are not included here; they live
 ├── LICENSE
 └── README.md
 ```
+
+## Version 2.4 (October 2026): two subregion codes, one sensitivity ranking, zero-sender ratios, package completeness
+
+Version 2.4 makes four bounded corrections identified in a from-scratch audit of the version 2.3 code and data, plus two completeness additions; see `CHANGELOG.md` for the full before/after account. (1) Mongolia and Iran are moved to their UN M49 subregions (Eastern Asia and Southern Asia); the new `Code/Data Gathering/07b_m49_subregion_fix.R` applies the correction to the shipped intermediate files in place, and `nodes.csv` changes in 13 `birth_subregion` values while `edges.csv` is unchanged. (2) The prolific-nominator leave-out in `11_formal_analysis.R` ranks identified nominators only; the 481 records without a nominator identifier no longer form a pseudo-nominator that was removed at every cutoff (H = 5.21 / 5.44 / 5.63, were 5.13 / 5.34 / 5.51). (3) In `17_flow_asymmetry.R` a subregion that sent no nominations has no return ratio, and bootstrap percentiles are taken over valid resamples; all flow intervals were regenerated from the seeded script. (4) The completed manual-validation file and protocol (`Data/manual_validation_verified.csv`, `Data/manual_validation_protocol.md`, `Data/results_manual_validation_by_subregion.csv`) are added, and `14_supplementary_analyses.R` now generates the laureate nomination-breadth statistic (`Data/results_laureate_breadth*.csv`). The primary country- and continent-level results, every permutation p-value, and the gravity, conditional-logit and laureate estimates are unchanged.
 
 ## Version 2.3 (October 2026): one roster date corrected; one auxiliary check withdrawn
 
@@ -128,6 +133,8 @@ Permutation tests use 10,000 iterations and are parallelized via the `furrr` pac
 | `results_gravity_main.csv`, `results_gravity_by_prize.csv` | Gravity/PPML same-country premia (pooled and by prize) |
 | `results_clogit_prominence.csv` | Conditional-logit odds ratios with prominence control |
 | `results_qid_*.csv` | QID-subset coverage, propensity, movers, and IPW re-estimate |
+| `manual_validation_verified.csv`, `manual_validation_protocol.md`, `results_manual_validation_by_subregion.csv` | Completed, author-verified resolution of the 200-name manual-validation sample, its protocol, and the by-subregion summary (v2.4) |
+| `results_laureate_breadth.csv`, `results_laureate_breadth_summary.csv` | Distinct nominator countries per linked eventual laureate, and summary statistics (v2.4) |
 | `results_flow_return_ratios_*.csv` | Cross-region return ratios with bootstrap CIs and direction tests |
 | `results_flow_matrix_*.csv` | Directed O−E flow matrices with permutation bands |
 | `results_laureate_prediction.csv` | Laureate association on the unambiguously linked nominee subset: comparison of mean same-country shares, permutation p-value, and the single pooled logistic regression |

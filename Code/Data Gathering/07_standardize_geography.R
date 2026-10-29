@@ -241,13 +241,11 @@ country_mapping <- tribble(
   "UNITED STATES",                    "United States",            "Northern America",         "Americas",
 
   # --- ASIA ---
-  # Central Asia (Mongolia, and former Soviet republics: Kazakhstan, Kyrgyzstan, etc.)
-  # Note: Only Mongolia represented in Nobel data; other Central Asian countries
-  # have minimal Nobel presence and are not included in this mapping.
-  "Mongolia",                         "Mongolia",                 "Central Asia",             "Asia",
-  "MONGOLIA",                         "Mongolia",                 "Central Asia",             "Asia",
-
-  # Eastern Asia (China, Japan, Korea, Taiwan)
+  # Eastern Asia (China, Japan, Korea, Mongolia, Taiwan)
+  # v2.4: Mongolia corrected from "Central Asia" to "Eastern Asia", its UN M49 subregion
+  # (https://unstats.un.org/unsd/methodology/m49/). No Central Asian country occurs in the data.
+  "Mongolia",                         "Mongolia",                 "Eastern Asia",             "Asia",
+  "MONGOLIA",                         "Mongolia",                 "Eastern Asia",             "Asia",
   # CRITICAL HISTORICAL MAPPINGS:
   #   - "People's Republic of China" → China (PRC, 1949+)
   #   - "Republic of China" → China (historical: pre-1949 mainland / Taiwan)
@@ -324,7 +322,8 @@ country_mapping <- tribble(
   "Ceylon",                           "Sri Lanka",                "Southern Asia",            "Asia",
   "CEYLON",                           "Sri Lanka",                "Southern Asia",            "Asia",
 
-  # Western Asia / Middle East (Israel, Palestine, Iran, Iraq, Saudi Arabia, etc.)
+  # Western Asia / Middle East (Israel, Palestine, Iraq, Saudi Arabia, etc.)
+  # v2.4: Iran corrected from "Western Asia" to "Southern Asia", its UN M49 subregion.
   # CRITICAL HISTORICAL MAPPINGS:
   #   - "SYRIAN ARAB REPUBLIC" → Syria (official UN name; common nobelprize.org variant)
   #   - "PALESTINIAN TERRITORY" → Palestine (UN convention for occupied territories)
@@ -340,8 +339,8 @@ country_mapping <- tribble(
   "ARMENIA",                          "Armenia",                  "Western Asia",             "Asia",
   "Azerbaijan",                       "Azerbaijan",               "Western Asia",             "Asia",
   "Georgia",                          "Georgia",                  "Western Asia",             "Asia",
-  "Iran",                             "Iran",                     "Western Asia",             "Asia",
-  "IRAN",                             "Iran",                     "Western Asia",             "Asia",
+  "Iran",                             "Iran",                     "Southern Asia",            "Asia",
+  "IRAN",                             "Iran",                     "Southern Asia",            "Asia",
   "Iraq",                             "Iraq",                     "Western Asia",             "Asia",
   "Israel",                           "Israel",                   "Western Asia",             "Asia",
   "ISRAEL",                           "Israel",                   "Western Asia",             "Asia",

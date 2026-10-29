@@ -28,7 +28,7 @@
   N = 4006 unique nominees
   Gender known: 3596 | Female: 4.7% | Male: 95.3%
   Geo known: 3643 | Europe: 65.7% | Americas: 28.9% | Asia: 3.9%
-  Effective continents: 2.30 | Effective subregions: 5.80
+  Effective continents: 2.30 | Effective subregions: 5.79
   Top subregions: Western Europe (34.8%), Northern America (25.9%), Northern Europe (18.3%)
 
 --- LAUREATES (1901-1975, joined with demographics) ---
@@ -42,7 +42,7 @@
   N = 927 laureate-prize records
   Gender known: 893 | Female: 7.2% | Male: 92.8%
   Geo known: 892 | Europe: 55.0% | Americas: 31.5% | Asia: 8.9%
-  Effective continents: 2.94 | Effective subregions: 7.15
+  Effective continents: 2.94 | Effective subregions: 7.16
   Top subregions: Northern America (29.3%), Western Europe (23.1%), Northern Europe (18.6%)
 
 
@@ -79,7 +79,7 @@
   Governing (Swedish Academy): N=202 | Female=8.9% | Europe=99.0% | EffCont=1.06 | EffSub=1.06
   Vetting (Nobel Committee for Literature): N=35 | Female=17.1% | Europe=100.0% | EffCont=1.00 | EffSub=1.00
   Nominators: N=2104 | Female=3.9% | Europe=76.7% | EffCont=2.00 | EffSub=5.93
-  Nominees: N=879 | Female=8.6% | Europe=76.9% | EffCont=2.08 | EffSub=6.85
+  Nominees: N=879 | Female=8.6% | Europe=76.9% | EffCont=2.08 | EffSub=6.82
   Laureates (≤1975): N=72 | Female=8.3% | Europe=79.2% | EffCont=1.97 | EffSub=6.54
 
 === PEACE ===
@@ -100,6 +100,8 @@ share the same continent or subregion. We compare to a null model: the
 expected match rate if edges were rewired randomly preserving layer sizes.
 
 --- NOMINATOR → NOMINEE (from nominations.csv directly) ---
+This analysis uses the full nomination archive with geographic enrichment
+from script 03. Edges are nominator-nominee pairs with geographic data.
 
   Total edges with geo for both endpoints: 25,844
   Same continent: 20,497 / 25,844 (79.3%)
@@ -113,6 +115,9 @@ expected match rate if edges were rewired randomly preserving layer sizes.
   Homophily ratio (observed/expected): 4.85
 
 --- NOMINATOR → NOMINEE HOMOPHILY BY PRIZE ---
+Breaks down the homophily analysis by prize. Useful for comparing whether
+certain prizes have stronger geographic clustering than others.
+Note: Physiology/Medicine prizes are stored as 'Medicine' in nominations.csv.
 
   Chemistry (N=5,010):
     Same continent: 76.4% (expected 55.5%, ratio 1.38)
@@ -132,12 +137,12 @@ expected match rate if edges were rewired randomly preserving layer sizes.
 
 --- OTHER EDGE TYPES (QID-based, joined with nodes.csv) ---
 
-  governing_body → vetting_body (N=20,083):
-    Same continent: 95.2% (expected 95.2%, ratio 1.00)
-    Same country:   72.4% (expected 37.3%, ratio 1.94)
   governing_body → laureate (N=96,506):
     Same continent: 50.6% (expected 50.3%, ratio 1.01)
     Same country:   4.4% (expected 4.2%, ratio 1.06)
+  governing_body → vetting_body (N=197,756):
+    Same continent: 94.5% (expected 94.5%, ratio 1.00)
+    Same country:   65.5% (expected 39.7%, ratio 1.65)
   nominator → nominee (N=8,119):
     Same continent: 74.0% (expected 62.7%, ratio 1.18)
     Same country:   32.1% (expected 8.4%, ratio 3.82)
@@ -154,6 +159,8 @@ expected match rate if edges were rewired randomly preserving layer sizes.
 ==============================================================================
 
 --- NOMINEE GEOGRAPHIC DIVERSITY BY DECADE ---
+Tracks how the geographic diversity of nominees (people nominated for the prize)
+changes over the ~100-year period of the nomination archive.
 
   1900s: N=2,877 | Europe=94.2% | EffCont=1.28 | EffSub=3.66 | Subregions=12
   1910s: N=2,664 | Europe=89.4% | EffCont=1.45 | EffSub=3.60 | Subregions=13
@@ -162,7 +169,7 @@ expected match rate if edges were rewired randomly preserving layer sizes.
   1940s: N=2,160 | Europe=57.4% | EffCont=2.21 | EffSub=5.05 | Subregions=14
   1950s: N=3,281 | Europe=54.5% | EffCont=2.25 | EffSub=4.50 | Subregions=14
   1960s: N=4,557 | Europe=55.1% | EffCont=2.40 | EffSub=5.12 | Subregions=15
-  1970s: N=3,452 | Europe=55.7% | EffCont=2.52 | EffSub=6.43 | Subregions=16
+  1970s: N=3,452 | Europe=55.7% | EffCont=2.52 | EffSub=6.42 | Subregions=15
 
 --- NOMINATOR GEOGRAPHIC DIVERSITY BY DECADE ---
 
@@ -276,6 +283,8 @@ Open (anyone eligible can nominate): Literature, Peace
 ==============================================================================
 
 --- OVERALL FLOW MATRIX (top 30 flows) ---
+Shows the strongest nomination flows between subregions.
+Example: 'Northern Europe → Northern Europe' shows intra-regional nominations.
 
   Nominator subregion          → Nominee subregion               Count    Pct
   ------------------------------------------------------------------------------
@@ -384,7 +393,6 @@ Return ratio > 1 means region receives more than it sends.
   Northern America                4,714    6,802    2,088   1.44
   South America                     403      535      132   1.33
   Caribbean                          65       67        2   1.03
-  Central Asia                        0        1        1   1.00
   Western Europe                 10,578   10,127     -451   0.96
   Sub-Saharan Africa                 66       63       -3   0.95
   Eastern Europe                  1,591    1,477     -114   0.93
@@ -392,7 +400,7 @@ Return ratio > 1 means region receives more than it sends.
   South-Eastern Asia                 37       33       -4   0.89
   Southern Europe                 1,807    1,584     -223   0.88
   Central America                    59       49      -10   0.83
-  Eastern Asia                      364      267      -97   0.73
+  Eastern Asia                      364      268      -96   0.74
   Northern Europe                 6,834    4,974   -1,860   0.73
   Australia and New Zealand         171      106      -65   0.62
   Northern Africa                    97       56      -41   0.58

@@ -335,7 +335,7 @@ Q1082440,Christian Zetlitz Bretteville,male,Norway,Norway,1800,1871,politician,N
 Q1082481,Per-Kristian Foss,male,Norway,Norway,1950,NA,editing staff; politician,NA,Norway,Northern Europe,Europe,Norway
 Q10833802,Vũ Hoàng Chương,male,NA,NA,1916,1976,poet,NA,NA,NA,NA,NA
 Q108413630,Kathy Lie,female,Norway,Norway,1964,NA,naturopath; politician; nurse; manager; electrician; self-employed person; preschool teacher,NA,Norway,Northern Europe,Europe,Norway
-Q108541095,Mahmoud Farahmand,male,Iran,Norway,1979,NA,politician,NA,Iran,Western Asia,Asia,Norway
+Q108541095,Mahmoud Farahmand,male,Iran,Norway,1979,NA,politician,NA,Iran,Southern Asia,Asia,Norway
 Q108541191,Irene Ojala,female,Norway,Norway,1960,NA,politician,NA,Norway,Northern Europe,Europe,Norway
 Q108576,Daniel Carleton Gajdusek,male,United States,United States,1923,2008,physician; anthropologist; virologist; biologist,NA,United States,Northern America,Americas,United States
 Q10858357,Ole O. Lian,male,Norway,Norway,1868,1925,politician; typographer; trade unionist,NA,Norway,Northern Europe,Europe,Norway
@@ -963,7 +963,7 @@ Q12011915,Østen Olsen Ovren,male,Norway,Norway,1780,1843,politician; farmer,NA,
 Q12016986,František Drtina,male,Czech Republic,Czechoslovakia,1861,1925,philosopher; teacher; pedagogue; politician,"Faculty of Arts, Charles University in Prague",Czech Republic,Eastern Europe,Europe,Czechoslovakia
 Q12017213,František Krejčí,male,Czech Republic,Czechoslovakia,1858,1934,politician; philosopher; psychologist; pedagogue,"Faculty of Arts, Charles University in Prague",Czech Republic,Eastern Europe,Europe,Czechoslovakia
 Q120183,Alfred Kühn,male,Germany,West Germany; Germany,1885,1968,zoologist; university teacher; teacher; geneticist; biologist; chemist; entomologist,University of Göttingen; University of Freiburg; University of Tübingen; Max Planck Institute for Biology; Humboldt-Universität zu Berlin; Kaiser Wilhelm Society,Germany,Western Europe,Europe,West Germany; Germany
-Q120216,Ali Javan,male,Iran,United States; Pahlavi Iran,1926,2016,inventor; professor; physicist,Columbia University; Massachusetts Institute of Technology; Bell Labs,Iran,Western Asia,Asia,United States; Pahlavi Iran
+Q120216,Ali Javan,male,Iran,United States; Pahlavi Iran,1926,2016,inventor; professor; physicist,Columbia University; Massachusetts Institute of Technology; Bell Labs,Iran,Southern Asia,Asia,United States; Pahlavi Iran
 Q12042439,NA,male,Czech Republic,NA,1916,1983,neurologist; physician; researcher; pedagogue,NA,Czech Republic,Eastern Europe,Europe,NA
 Q12086,Ernesto Teodoro Moneta,male,Italy,Kingdom of Italy,1833,1918,writer; journalist; military personnel,NA,Italy,Southern Europe,Europe,Kingdom of Italy
 Q12091,Henry Dunant,male,Switzerland,France; Switzerland,1828,1910,entrepreneur; writer; founder; merchant,Compagnie genevoise des colonies suisses,Switzerland,Western Europe,Europe,France; Switzerland
@@ -1446,7 +1446,7 @@ Q127944,Arthur Holly Compton,male,United States,United States,1892,1962,theoreti
 Q1280797,Robert Adair,male,United States,United States,1924,2020,writer; nuclear physicist; university teacher; physicist,Yale University,United States,Northern America,Americas,United States
 Q1281062,Georges Perrot,male,France,France,1832,1914,historian of classical antiquity; translator; historian; archaeologist; university teacher; hellenist; art historian; classical archaeologist; epigrapher,University of Paris; École pratique des hautes études,France,Western Europe,Europe,France
 Q12815259,Géza Mansfeld,male,Hungary,Hungary,1882,1950,pharmacologist; physician,NA,Hungary,Eastern Europe,Europe,Hungary
-Q128245,Mohammad Reza I of Iran,male,Iran,Pahlavi Iran,1919,1980,politician; monarch,NA,Iran,Western Asia,Asia,Pahlavi Iran
+Q128245,Mohammad Reza I of Iran,male,Iran,Pahlavi Iran,1919,1980,politician; monarch,NA,Iran,Southern Asia,Asia,Pahlavi Iran
 Q1282594,Irvine Page,male,United States,United States,1901,1991,writer; physiologist,NA,United States,Northern America,Americas,United States
 Q1283044,James Dungey,male,NA,United Kingdom,1923,2015,physicist,NA,NA,NA,NA,United Kingdom
 Q128337,Paula Eerola,female,Finland,Finland,1962,NA,researcher; physicist,University of Helsinki; Lund University,Finland,Northern Europe,Europe,Finland
@@ -1493,7 +1493,7 @@ Q1309725,Ernst Penzoldt,male,Germany,Germany,1892,1955,writer; sculptor; painter
 Q130975,Robert A. Millikan,male,United States,United States,1868,1953,physicist; university teacher,University of Chicago; California Institute of Technology,United States,Northern America,Americas,United States
 Q131010,Augusto Leguía,male,Peru,Peru,1863,1932,politician; economist; businessperson,NA,Peru,South America,Americas,Peru
 Q131117,Maria Montessori,female,Italy,Italy; Kingdom of Italy,1870,1952,physician; essayist; pedagogue,Sapienza University of Rome,Italy,Southern Europe,Europe,Italy; Kingdom of Italy
-Q131152,Shirin Ebadi,female,Iran,Iran,1947,NA,lawyer; politician; writer; judge; jurist; women's rights activist; human rights defender; peace activist,University of Tehran,Iran,Western Asia,Asia,Iran
+Q131152,Shirin Ebadi,female,Iran,Iran,1947,NA,lawyer; politician; writer; judge; jurist; women's rights activist; human rights defender; peace activist,University of Tehran,Iran,Southern Asia,Asia,Iran
 Q131318,Juan Ramón Jiménez,male,Spain,Spain,1880,1958,writer; poet,"University of Maryland, Baltimore County",Spain,Southern Europe,Europe,Spain
 Q131326,Eyvind Johnson,male,Sweden,Sweden,1900,1976,film screenwriter; translator; writer; journalist; poet; film director; novelist,NA,Sweden,Northern Europe,Europe,Sweden
 Q131428006,Marion Blankenhorn,male,NA,NA,1885,1957,physician,NA,NA,NA,NA,NA
@@ -3308,7 +3308,7 @@ Q206505,Adolfo Pérez Esquivel,male,Argentina,Argentina,1931,NA,architect; write
 Q2066649,Pedro Miguel Obligado,male,Argentina,Argentina,1892,1967,writer; screenwriter; poet,NA,Argentina,South America,Americas,Argentina
 Q2067227,Per Martin-Löf,male,Sweden,Sweden,1942,NA,philosopher; ornithologist; university teacher; statistician,Stockholm University,Sweden,Northern Europe,Europe,Sweden
 Q2067917,Søren Jaabæk,male,Norway,Norway,1814,1894,politician; translator; farmer; teacher; editing staff,NA,Norway,Northern Europe,Europe,Norway
-Q2068149,Tsendiin Damdinsüren,male,Mongolia,Mongolia,1908,1986,translator; writer,NA,Mongolia,Central Asia,Asia,Mongolia
+Q2068149,Tsendiin Damdinsüren,male,Mongolia,Mongolia,1908,1986,translator; writer,NA,Mongolia,Eastern Asia,Asia,Mongolia
 Q2070238,Percy Dudgeon Quensel,male,Sweden,Sweden,1881,1966,mineralogist; university teacher; geologist,Uppsala University; Stockholm University,Sweden,Northern Europe,Europe,Sweden
 Q20707625,Ole Johan Olsen,male,Norway,Norway,1884,1939,politician,NA,Norway,Northern Europe,Europe,Norway
 Q20707958,Knut Jacobsen,male,Norway,Norway,1885,1976,politician; banker,NA,Norway,Northern Europe,Europe,Norway
@@ -4409,7 +4409,7 @@ Q313348,Jean-Henri Fabre,male,France,France,1823,1915,writer; poet; botanist; na
 Q313568,Johan August Arfwedson,male,Sweden,Sweden,1792,1841,notary; chemist,NA,Sweden,Northern Europe,Europe,Sweden
 Q313758,Philip Larkin,male,United Kingdom,United Kingdom,1922,1985,poet,University of Leicester; University of Hull,United Kingdom,Northern Europe,Europe,United Kingdom
 Q313872,Helge von Koch,male,Sweden,Sweden,1870,1924,mathematician; university teacher,Royal Institute of Technology; Stockholm University,Sweden,Northern Europe,Europe,Sweden
-Q3140995,Hossein Ghods Nakhai,male,Iran,Iran,1911,1977,diplomat; politician; poet,NA,Iran,Western Asia,Asia,Iran
+Q3140995,Hossein Ghods Nakhai,male,Iran,Iran,1911,1977,diplomat; politician; poet,NA,Iran,Southern Asia,Asia,Iran
 Q3141517,Pêr-Jakez Helias,male,France,France,1914,1995,writer; journalist; teacher; poet,NA,France,Western Europe,Europe,France
 Q314158,Arnold Bennett,male,United Kingdom,United Kingdom,1867,1931,writer; journalist; screenwriter; novelist; autobiographer; diarist; playwright; literary critic,NA,United Kingdom,Northern Europe,Europe,United Kingdom
 Q3141621,Jónas Kristjánsson,male,NA,Iceland,1924,2014,writer; historian; academic,National Archive of Iceland; Árni Magnússon Institute for Icelandic Studies,NA,NA,NA,Iceland
@@ -5241,7 +5241,7 @@ Q4077669,Aurel Baranga,male,Romania,Romania,1913,1979,poet; diarist; playwright,
 Q40826,Knut Hamsun,male,Norway,Norway,1859,1952,novelist; writer; poet; playwright; critic,NA,Norway,Northern Europe,Europe,Norway
 Q4083246,Ture Gabriel Bielke,male,Sweden,Sweden,1684,1763,politician; military personnel,NA,Sweden,Northern Europe,Europe,Sweden
 Q40852,Edward Jenner,male,United Kingdom,United Kingdom of Great Britain and Ireland,1749,1823,physician; naturalist; biologist,NA,United Kingdom,Northern Europe,Europe,United Kingdom of Great Britain and Ireland
-Q40874,Doris Lessing,female,Iran,United Kingdom of Great Britain and Ireland; United Kingdom,1919,2013,writer; screenwriter; poet; novelist; autobiographer; playwright; essayist; science fiction writer; prose writer,NA,Iran,Western Asia,Asia,United Kingdom of Great Britain and Ireland; United Kingdom
+Q40874,Doris Lessing,female,Iran,United Kingdom of Great Britain and Ireland; United Kingdom,1919,2013,writer; screenwriter; poet; novelist; autobiographer; playwright; essayist; science fiction writer; prose writer,NA,Iran,Southern Asia,Asia,United Kingdom of Great Britain and Ireland; United Kingdom
 Q40904,Werner Heisenberg,male,Germany,Nazi Germany; German Empire; Weimar Republic; West Germany,1901,1976,theoretical physicist,Humboldt-Universität zu Berlin; Ludwig-Maximilians-Universität München; University of Göttingen; Leipzig University; University of Copenhagen; University of St Andrews; Max Planck Institute for Physics; German nuclear program during World War II,Germany,Western Europe,Europe,Germany; Weimar Republic; West Germany
 Q4090474,Peter Boysen Jensen,male,Denmark,Kingdom of Denmark,1883,1959,botanist; chemist,University of Copenhagen,Denmark,Northern Europe,Europe,Denmark
 Q4095226,Borden Parker Bowne,male,United States,United States,1847,1910,writer; philosopher; theologian,Boston University,United States,Northern America,Americas,United States
@@ -5634,7 +5634,7 @@ Q4582323,Egil Andersen Hylleraas,male,Norway,Norway,1898,1965,professor; physici
 Q4582415,Kolbjørn Varmann,male,Norway,Norway,1904,1980,politician; Lutheran pastor,NA,Norway,Northern Europe,Europe,Norway
 Q4582458,Eric Wyndham White,male,NA,NA,1913,1980,diplomat; lawyer; economist,United Nations,NA,NA,NA,NA
 Q4582881,Thomas Cathinco Bang,male,Norway,Norway,1827,1902,politician; jurist,NA,Norway,Northern Europe,Europe,Norway
-Q4583252,Mazyar Keshvari,male,Iran,Norway,1981,NA,convict; politician,NA,Iran,Western Asia,Asia,Norway
+Q4583252,Mazyar Keshvari,male,Iran,Norway,1981,NA,convict; politician,NA,Iran,Southern Asia,Asia,Norway
 Q4583816,Peder Juel von Cappelen,male,Norway,Norway,1763,1837,politician,NA,Norway,Northern Europe,Europe,Norway
 Q4584505,Gudmund Harlem,male,Norway,Norway,1917,1988,politician; physician,Norwegian Institute of Technology,Norway,Northern Europe,Europe,Norway
 Q4584582,Peter N. Myhre,male,Norway,Norway,1954,NA,politician,NA,Norway,Northern Europe,Europe,Norway
@@ -6092,8 +6092,8 @@ Q4966035,Karin Markides,female,NA,Sweden,1951,NA,academic,Chalmers University of
 Q4966258,Maria Masucci,female,NA,Sweden,1953,NA,physician,Karolinska Institutet,NA,NA,NA,Sweden
 Q4966394,Ellen Mattson,female,Sweden,Sweden,1962,NA,writer; novelist,NA,Sweden,Northern Europe,Europe,Sweden
 Q4967579,Henrik Syse,male,Norway,Norway,1966,NA,philosopher; university teacher,University of Oslo,Norway,Northern Europe,Europe,Norway
-Q4967771,Narges Mohammadi,female,Iran,Iran; Pahlavi Iran,1972,NA,journalist; human rights defender,Defenders of Human Rights Center,Iran,Western Asia,Asia,Iran; Pahlavi Iran
-Q4968221,Jila Mossaed,female,Iran,Iran,1948,NA,writer; poet,NA,Iran,Western Asia,Asia,Iran
+Q4967771,Narges Mohammadi,female,Iran,Iran; Pahlavi Iran,1972,NA,journalist; human rights defender,Defenders of Human Rights Center,Iran,Southern Asia,Asia,Iran; Pahlavi Iran
+Q4968221,Jila Mossaed,female,Iran,Iran,1948,NA,writer; poet,NA,Iran,Southern Asia,Asia,Iran
 Q4968736,Erna Möller,female,Sweden,Sweden,1940,NA,physician; immunologist; university teacher,Karolinska Institutet,Sweden,Northern Europe,Europe,Sweden
 Q496877,Lester Germer,male,United States,United States,1896,1971,mountaineer; physicist,NA,United States,Northern America,Americas,United States
 Q4969169,Brit Hoel,female,Norway,Norway,1942,NA,politician,NA,Norway,Northern Europe,Europe,Norway
@@ -6309,7 +6309,7 @@ Q526827,Lajos Jánossy,male,Hungary,Hungary,1912,1978,astrophysicist; politician
 Q526942,Pehr Victor Edman,male,Sweden,Sweden,1916,1977,physician; biochemist; university teacher; chemist,Lund University,Sweden,Northern Europe,Europe,Sweden
 Q527177,Trond Giske,male,Norway,Norway,1966,NA,politician,NA,Norway,Northern Europe,Europe,Norway
 Q527226,"Ishbel Hamilton-Gordon, Marchioness of Aberdeen and Temair",female,United Kingdom,United Kingdom,1857,1939,suffragist; writer; editor,NA,United Kingdom,Northern Europe,Europe,United Kingdom
-Q5273847,Masud Gharahkhani,male,Iran,Norway,1982,NA,politician; radiographer,NA,Iran,Western Asia,Asia,Norway
+Q5273847,Masud Gharahkhani,male,Iran,Norway,1982,NA,politician; radiographer,NA,Iran,Southern Asia,Asia,Norway
 Q5274121,Diderik Bøgvad,male,Norway,Norway,1792,1856,politician,NA,Norway,Northern Europe,Europe,Norway
 Q5274122,Diderik Iversen Tønseth,male,Norway,Norway,1818,1893,politician; preacher; farmer; teacher,NA,Norway,Northern Europe,Europe,Norway
 Q5274225,Gunnar Alf Larsen,male,Norway,Norway,1919,2003,politician,NA,Norway,Northern Europe,Europe,Norway
@@ -9817,7 +9817,7 @@ Q8750,Michael Faraday,male,United Kingdom,Kingdom of Great Britain; United Kingd
 Q87524,Marietta Blau,female,Austria,Cisleithania; Austria,1894,1970,physicist; nuclear physicist; university teacher,National Polytechnic Institute; University of Miami; Universidad Michoacana de San Nicolás de Hidalgo; Goethe University Frankfurt; Brookhaven National Laboratory; Columbia University; Miami University; Universidad Vasco de Quiroga,Austria,Western Europe,Europe,Cisleithania; Austria
 Q8753,Enrico Fermi,male,Italy,United States; Kingdom of Italy; Italy,1901,1954,inventor; nuclear physicist; university teacher; physicist; theoretical physicist,University of Chicago; Sapienza University of Rome; University of Florence; Leiden University; University of Göttingen; Columbia University; Enrico Fermi Institute,Italy,Southern Europe,Europe,United States; Kingdom of Italy; Italy
 Q8755,Colin MacLaurin,male,Australia,Kingdom of Scotland; Kingdom of Great Britain,1698,1746,astronomer; physicist; mathematician,University of Edinburgh; Marischal College,Australia,Australia and New Zealand,Oceania,Kingdom of Scotland; Kingdom of Great Britain
-Q876117,Manouchehr Eghbal,male,Iran,Iran,1909,1977,politician; physician; university teacher,University of Tabriz,Iran,Western Asia,Asia,Iran
+Q876117,Manouchehr Eghbal,male,Iran,Iran,1909,1977,politician; physician; university teacher,University of Tabriz,Iran,Southern Asia,Asia,Iran
 Q8772,Joseph Fourier,male,France,France,1768,1830,mathematician,Commission des Sciences et des Arts; Lycée Jacques-Amyot d'Auxerre; French Academy of Sciences; École polytechnique,France,Western Europe,Europe,France
 Q87759581,Sigurd Kvammen Rafaelsen,male,NA,Norway,1985,NA,politician,NA,NA,NA,NA,Norway
 Q87771,Friedrich Heer,male,Austria,Austria,1916,1983,writer; historian; dramaturge; pedagogue; theologian; cultural historian; opinion journalist,University of Vienna,Austria,Western Europe,Europe,Austria
@@ -9987,7 +9987,7 @@ Q923514,Brock Chisholm,male,Canada,Canada,1896,1971,politician; psychiatrist,Uni
 Q923813,Oded Schramm,male,Israel,Israel; United States,1961,2008,mathematician,Microsoft Research,Israel,Western Asia,Asia,Israel; United States
 Q924143,Johan August Wahlberg,male,Sweden,Sweden; Union between Sweden and Norway,1810,1856,explorer; entomologist; zoologist; botanist; naturalist; ornithologist,NA,Sweden,Northern Europe,Europe,Sweden; Union between Sweden and Norway
 Q92423,Hans-Arwed Weidenmüller,male,Germany,Germany,1933,NA,university teacher; physicist,Heidelberg University,Germany,Western Europe,Europe,Germany
-Q924275,Ehsan Yarshater,male,Iran,Iran,1920,2018,writer,Columbia University,Iran,Western Asia,Asia,Iran
+Q924275,Ehsan Yarshater,male,Iran,Iran,1920,2018,writer,Columbia University,Iran,Southern Asia,Asia,Iran
 Q92430,Wolfgang Gaede,male,Germany,Germany,1878,1945,university teacher; physicist,Karlsruhe Institute of Technology,Germany,Western Europe,Europe,Germany
 Q924416,Jakob Langebek,male,Denmark,Kingdom of Denmark,1710,1775,lexicographer; archivist; historian,NA,Denmark,Northern Europe,Europe,Denmark
 Q924456,Herbert Olivecrona,male,Sweden,Sweden,1891,1980,bandy player; surgeon; neurosurgeon,Karolinska Institutet,Sweden,Northern Europe,Europe,Sweden
